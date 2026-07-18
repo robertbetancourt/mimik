@@ -22,7 +22,7 @@ export function ChipSelector<T extends string | number>({
     <View className="rounded-3xl bg-surface px-5 py-4">
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
-      <View className="mt-3 flex-row flex-wrap gap-2">
+      <View className="mt-3 flex-row gap-2">
         {options.map((option) => {
           const selected = option.value === value;
           return (
@@ -31,7 +31,9 @@ export function ChipSelector<T extends string | number>({
               accessibilityRole="button"
               accessibilityState={{ selected }}
               onPress={() => onChange(option.value)}
-              className={`rounded-full px-4 py-2 ${selected ? "bg-primary" : "bg-background"}`}
+              className={`flex-1 items-center rounded-full px-3 py-2 ${
+                selected ? "bg-primary" : "bg-background"
+              }`}
             >
               <Text className={`font-sans-bold text-sm ${selected ? "text-white" : "text-ink/70"}`}>
                 {option.label}

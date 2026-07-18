@@ -1,14 +1,18 @@
 import { useRouter } from "expo-router";
+import * as ScreenOrientation from "expo-screen-orientation";
 import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { allCategories } from "@/features/categories";
 import { CategoryGrid } from "@/features/categories/CategoryGrid";
 import { useMatchStore } from "@/features/match/store";
+import { useLockOrientation } from "@/lib/useLockOrientation";
 
 export default function CategorySelection() {
   const router = useRouter();
   const selectCategory = useMatchStore((state) => state.selectCategory);
+
+  useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
   function handleSelect(categoryId: string) {
     selectCategory(categoryId);

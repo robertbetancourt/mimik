@@ -1,7 +1,8 @@
 import { useRouter } from "expo-router";
+import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
-import { Pressable, ScrollView, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Pressable, ScrollView, View } from "react-native";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { ChipSelector } from "@/components/ui/ChipSelector";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
@@ -10,20 +11,34 @@ import { getCategoryById } from "@/features/categories";
 import { SelectedCategoryHero } from "@/features/match/SelectedCategoryHero";
 import {
   MAX_PLAYERS,
-  MAX_ROUNDS,
   MIN_PLAYERS,
-  MIN_ROUNDS,
   ROUND_DURATIONS_SECONDS,
+  ROUND_STEPS,
   useMatchStore,
 } from "@/features/match/store";
+import { useLockOrientation } from "@/lib/useLockOrientation";
 
 const roundDurationOptions = ROUND_DURATIONS_SECONDS.map((seconds) => ({
   label: `${seconds}s`,
   value: seconds,
 }));
 
+function getRoundsIndex(totalRounds: number, infiniteMode: boolean): number {
+  if (infiniteMode) return ROUND_STEPS.length - 1;
+  const index = ROUND_STEPS.indexOf(totalRounds);
+  return index === -1 ? 0 : index;
+}
+
+function formatRoundsStep(index: number): string {
+  const step = ROUND_STEPS[index];
+  return step === "infinite" ? "∞" : `${step}`;
+}
+
 export default function GameSetup() {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
+
+  useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
   const playerCount = useMatchStore((state) => state.playerCount);
@@ -36,6 +51,17 @@ export default function GameSetup() {
   const setInfiniteMode = useMatchStore((state) => state.setInfiniteMode);
 
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
+  const roundsIndex = getRoundsIndex(totalRounds, infiniteMode);
+
+  function handleRoundsChange(index: number) {
+    const step = ROUND_STEPS[index];
+    if (step === "infinite") {
+      setInfiniteMode(true);
+    } else {
+      setInfiniteMode(false);
+      setTotalRounds(step);
+    }
+  }
 
   return (
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
@@ -60,7 +86,7 @@ export default function GameSetup() {
           />
 
           <ChipSelector
-            label="Duración de la ronda"
+            label="Duración del turno"
             options={roundDurationOptions}
             value={roundDurationSeconds}
             onChange={setRoundDurationSeconds}
@@ -68,32 +94,19 @@ export default function GameSetup() {
 
           <Stepper
             label="Número de rondas"
-            value={totalRounds}
-            min={MIN_ROUNDS}
-            max={MAX_ROUNDS}
-            onChange={setTotalRounds}
-            formatValue={() => (infiniteMode ? "∞" : `${totalRounds}`)}
+            value={roundsIndex}
+            min={0}
+            max={ROUND_STEPS.length - 1}
+            onChange={handleRoundsChange}
+            formatValue={formatRoundsStep}
           />
-
-          <Pressable
-            accessibilityRole="button"
-            accessibilityState={{ selected: infiniteMode }}
-            onPress={() => setInfiniteMode(!infiniteMode)}
-            className="flex-row items-center justify-between rounded-3xl bg-surface px-5 py-4"
-          >
-            <Text className="font-sans-bold text-base text-ink">Jugar sin límite de rondas</Text>
-            <View
-              className={`h-7 w-12 justify-center rounded-full px-1 ${
-                infiniteMode ? "items-end bg-primary" : "items-start bg-background"
-              }`}
-            >
-              <View className="h-5 w-5 rounded-full bg-white" />
-            </View>
-          </Pressable>
         </View>
       </ScrollView>
 
-      <View className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pb-6 pt-4">
+      <View
+        className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
+        style={{ paddingBottom: insets.bottom + 24 }}
+      >
         <PrimaryButton label="Comenzar partida" onPress={() => router.push("/countdown")} />
       </View>
     </SafeAreaView>

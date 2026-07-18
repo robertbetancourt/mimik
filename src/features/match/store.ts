@@ -3,10 +3,9 @@ import { create } from "zustand";
 export const MIN_PLAYERS = 2;
 export const MAX_PLAYERS = 12;
 
-export const MIN_ROUNDS = 1;
-export const MAX_ROUNDS = 10;
-
 export const ROUND_DURATIONS_SECONDS = [30, 45, 60, 90, 120];
+
+export const ROUND_STEPS: (number | "infinite")[] = [1, 2, 3, 5, "infinite"];
 
 interface MatchState {
   selectedCategoryId: string | null;

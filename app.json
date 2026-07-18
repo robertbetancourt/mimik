@@ -4,7 +4,7 @@
     "slug": "mimik",
     "version": "1.0.0",
     "scheme": "mimik",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/app-icons/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
