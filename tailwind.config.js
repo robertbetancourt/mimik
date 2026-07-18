@@ -12,6 +12,11 @@ module.exports = {
         success: "#3DBE6C",
         error: "#E85C4A",
       },
+      fontFamily: {
+        sans: ["Urbanist_400Regular"],
+        "sans-semibold": ["Urbanist_600SemiBold"],
+        "sans-bold": ["Urbanist_700Bold"],
+      },
     },
   },
   plugins: [],

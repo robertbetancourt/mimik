@@ -14,4 +14,5 @@ export const categoryIllustrations: Record<Category["id"], number> = {
   peliculas: require("../../../assets/images/categories/movies.png"),
   superheroes: require("../../../assets/images/categories/superheroes.png"),
   "tv-series": require("../../../assets/images/categories/tv-series.png"),
+  mix: require("../../../assets/images/categories/mix.png"),
 };
