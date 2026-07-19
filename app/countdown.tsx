@@ -5,6 +5,7 @@ import { ChevronLeft } from "lucide-react-native";
 import { useCallback, useEffect, useState } from "react";
 import { BackHandler, Image, Pressable, Text, View } from "react-native";
 import Animated, {
+  runOnJS,
   useAnimatedStyle,
   useSharedValue,
   withSequence,
@@ -26,6 +27,9 @@ export default function Countdown() {
 
   // null = waiting for the correct position, otherwise index into COUNTDOWN_STEPS.
   const [stepIndex, setStepIndex] = useState<number | null>(null);
+  // Lags stepIndex by a brief fade-out so numbers crossfade instead of
+  // swapping instantly — purely visual, doesn't affect the countdown timing.
+  const [displayIndex, setDisplayIndex] = useState<number | null>(null);
 
   const scale = useSharedValue(1);
   const opacity = useSharedValue(1);
@@ -68,20 +72,37 @@ export default function Countdown() {
     const isFinalStep = stepIndex === COUNTDOWN_STEPS.length - 1;
     Haptics.impactAsync(isFinalStep ? Haptics.ImpactFeedbackStyle.Heavy : Haptics.ImpactFeedbackStyle.Light);
 
-    scale.value = 0.6;
-    scale.value = withSequence(
-      withTiming(1.12, { duration: 140 }),
-      withTiming(1, { duration: 120 }),
-    );
-    opacity.value = 0;
-    opacity.value = withTiming(1, { duration: 150 });
-
     const timeout = setTimeout(() => {
       setStepIndex((current) => (current === null ? null : current + 1));
     }, STEP_DURATION_MS);
 
     return () => clearTimeout(timeout);
-  }, [stepIndex, isOriented, router, scale, opacity]);
+  }, [stepIndex, isOriented, router]);
+
+  // Crossfade the displayed number: fade out, swap, then scale in with a
+  // small overshoot. The very first number has nothing to fade from.
+  useEffect(() => {
+    if (stepIndex === displayIndex) return;
+
+    if (displayIndex === null || stepIndex === null) {
+      setDisplayIndex(stepIndex);
+      return;
+    }
+
+    opacity.value = withTiming(0, { duration: 70 }, (finished) => {
+      if (finished) runOnJS(setDisplayIndex)(stepIndex);
+    });
+  }, [stepIndex, displayIndex, opacity]);
+
+  useEffect(() => {
+    if (displayIndex === null) return;
+    scale.value = 0.6;
+    scale.value = withSequence(
+      withTiming(1.12, { duration: 140 }),
+      withTiming(1, { duration: 120 }),
+    );
+    opacity.value = withTiming(1, { duration: 150 });
+  }, [displayIndex, scale, opacity]);
 
   const isCounting = stepIndex !== null && stepIndex < COUNTDOWN_STEPS.length;
   const isInterrupted = isCounting && !isOriented;
@@ -96,9 +117,9 @@ export default function Countdown() {
         <ChevronLeft size={22} color="#2B2118" />
       </Pressable>
 
-      {isCounting && !isInterrupted ? (
+      {isCounting && !isInterrupted && displayIndex !== null ? (
         <Animated.View style={animatedStyle}>
-          <Text className="font-sans-bold text-8xl text-ink">{COUNTDOWN_STEPS[stepIndex]}</Text>
+          <Text className="font-sans-bold text-8xl text-ink">{COUNTDOWN_STEPS[displayIndex]}</Text>
         </Animated.View>
       ) : isInterrupted ? (
         <Text className="text-center font-sans-bold text-4xl text-ink">

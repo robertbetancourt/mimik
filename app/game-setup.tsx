@@ -65,7 +65,7 @@ export default function GameSetup() {
 
   return (
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
-      <ScrollView contentContainerClassName="px-4 pb-32 pt-4" showsVerticalScrollIndicator={false}>
+      <ScrollView contentContainerClassName="px-4 pb-44 pt-4" showsVerticalScrollIndicator={false}>
         <Pressable
           accessibilityRole="button"
           onPress={() => router.back()}
