@@ -5,6 +5,9 @@ const UPDATE_INTERVAL_MS = 100;
 const TILT_THRESHOLD = 0.6;
 const NEUTRAL_THRESHOLD = 0.3;
 const COOLDOWN_MS = 700;
+// Small pause once the phone is back at neutral before the next word shows —
+// makes the pacing feel intentional instead of instant.
+const CENTER_HOLD_MS = 130;
 
 export type TiltSensorMode = "gesture" | "neutral" | "off";
 
@@ -25,6 +28,8 @@ interface UseTiltSensorOptions {
 export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered }: UseTiltSensorOptions) {
   const armedRef = useRef(true);
   const lastTriggerRef = useRef(0);
+  const neutralSinceRef = useRef<number | null>(null);
+  const centeredFiredRef = useRef(false);
   const callbacksRef = useRef({ onTiltDown, onTiltUp, onCentered });
   callbacksRef.current = { onTiltDown, onTiltUp, onCentered };
 
@@ -32,13 +37,30 @@ export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered }: UseTil
     if (mode === "off") return;
 
     armedRef.current = true;
+    neutralSinceRef.current = null;
+    centeredFiredRef.current = false;
     Accelerometer.setUpdateInterval(UPDATE_INTERVAL_MS);
 
     const subscription = Accelerometer.addListener(({ z }) => {
       const isNeutral = Math.abs(z) < NEUTRAL_THRESHOLD;
 
       if (mode === "neutral") {
-        if (isNeutral) callbacksRef.current.onCentered();
+        if (centeredFiredRef.current) return;
+
+        if (!isNeutral) {
+          neutralSinceRef.current = null;
+          return;
+        }
+
+        if (neutralSinceRef.current === null) {
+          neutralSinceRef.current = Date.now();
+          return;
+        }
+
+        if (Date.now() - neutralSinceRef.current >= CENTER_HOLD_MS) {
+          centeredFiredRef.current = true;
+          callbacksRef.current.onCentered();
+        }
         return;
       }
 

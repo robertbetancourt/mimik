@@ -3,8 +3,9 @@ import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
 import { useCallback, useEffect, useState } from "react";
-import { BackHandler, Image, Pressable, Text, View } from "react-native";
+import { BackHandler, Image, Pressable, Text } from "react-native";
 import Animated, {
+  FadeIn,
   runOnJS,
   useAnimatedStyle,
   useSharedValue,
@@ -14,6 +15,8 @@ import Animated, {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { useForeheadOrientation } from "@/features/gameplay/useForeheadOrientation";
+import { useMatchStore } from "@/features/match/store";
+import { getCharacterById } from "@/features/players/characters";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 
 const COUNTDOWN_STEPS = ["3", "2", "1", "¡Ya!"];
@@ -22,6 +25,10 @@ const STEP_DURATION_MS = 700;
 export default function Countdown() {
   const router = useRouter();
   const isOriented = useForeheadOrientation();
+  const players = useMatchStore((state) => state.players);
+  const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
+  const currentPlayer = players[currentPlayerIndex];
+  const currentCharacter = currentPlayer ? getCharacterById(currentPlayer.characterId) : undefined;
 
   useLockOrientation(ScreenOrientation.OrientationLock.LANDSCAPE);
 
@@ -126,19 +133,20 @@ export default function Countdown() {
           Vuelve a colocar el teléfono sobre tu frente.
         </Text>
       ) : (
-        <View className="items-center gap-5">
-          <Image
-            source={require("../branding/mimik/waiting.png")}
-            resizeMode="contain"
-            style={{ width: 84, height: 84 }}
-          />
-          <Text className="text-center font-sans-bold text-4xl text-ink">
-            Coloca el teléfono en tu frente
+        <Animated.View entering={FadeIn.duration(220)} className="items-center gap-2">
+          {currentCharacter ? (
+            <Image
+              source={currentCharacter.illustration}
+              resizeMode="contain"
+              style={{ width: 120, height: 120 }}
+            />
+          ) : null}
+          <Text className="text-center font-sans text-base text-ink/60">Es el turno de</Text>
+          <Text className="text-center font-sans-bold text-4xl text-ink">{currentPlayer?.name}</Text>
+          <Text className="mt-3 text-center font-sans-bold text-lg text-ink/70">
+            Coloca el teléfono sobre tu frente.
           </Text>
-          <Text className="text-center font-sans text-lg text-ink/60">
-            La partida comenzará automáticamente.
-          </Text>
-        </View>
+        </Animated.View>
       )}
     </SafeAreaView>
   );

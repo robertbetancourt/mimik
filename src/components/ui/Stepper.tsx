@@ -1,5 +1,7 @@
 import { Minus, Plus } from "lucide-react-native";
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
+
+import { IconButton } from "@/components/ui/IconButton";
 
 interface StepperProps {
   label: string;
@@ -20,31 +22,25 @@ export function Stepper({ label, value, min, max, step = 1, onChange, formatValu
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
       <View className="flex-row items-center gap-4">
-        <Pressable
-          accessibilityRole="button"
+        <IconButton
           disabled={!canDecrease}
           onPress={() => onChange(value - step)}
-          className={`h-11 w-11 items-center justify-center rounded-full bg-background ${
-            canDecrease ? "" : "opacity-30"
-          }`}
+          className="h-11 w-11 bg-background"
         >
           <Minus size={20} color="#2B2118" />
-        </Pressable>
+        </IconButton>
 
         <Text className="min-w-[32px] text-center font-sans-bold text-lg text-ink">
           {formatValue ? formatValue(value) : value}
         </Text>
 
-        <Pressable
-          accessibilityRole="button"
+        <IconButton
           disabled={!canIncrease}
           onPress={() => onChange(value + step)}
-          className={`h-11 w-11 items-center justify-center rounded-full bg-background ${
-            canIncrease ? "" : "opacity-30"
-          }`}
+          className="h-11 w-11 bg-background"
         >
           <Plus size={20} color="#2B2118" />
-        </Pressable>
+        </IconButton>
       </View>
     </View>
   );

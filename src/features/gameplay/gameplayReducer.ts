@@ -7,8 +7,8 @@ export interface GameplayState {
   status: GameplayStatus;
   words: Word[];
   currentIndex: number;
-  correctCount: number;
-  passedCount: number;
+  correctWords: Word[];
+  passedWords: Word[];
   timeRemaining: number;
   lastFeedback: FeedbackType | null;
 }
@@ -26,8 +26,8 @@ export function createInitialGameplayState(words: Word[], roundDurationSeconds: 
     status: "ready",
     words,
     currentIndex: 0,
-    correctCount: 0,
-    passedCount: 0,
+    correctWords: [],
+    passedWords: [],
     timeRemaining: roundDurationSeconds,
     lastFeedback: null,
   };
@@ -39,13 +39,27 @@ export function gameplayReducer(state: GameplayState, action: GameplayAction): G
       if (state.status !== "ready") return state;
       return { ...state, status: "playing" };
 
-    case "CORRECT":
+    case "CORRECT": {
       if (state.status !== "playing") return state;
-      return { ...state, status: "feedback", lastFeedback: "correct", correctCount: state.correctCount + 1 };
+      const word = state.words[state.currentIndex];
+      return {
+        ...state,
+        status: "feedback",
+        lastFeedback: "correct",
+        correctWords: [...state.correctWords, word],
+      };
+    }
 
-    case "PASS":
+    case "PASS": {
       if (state.status !== "playing") return state;
-      return { ...state, status: "feedback", lastFeedback: "pass", passedCount: state.passedCount + 1 };
+      const word = state.words[state.currentIndex];
+      return {
+        ...state,
+        status: "feedback",
+        lastFeedback: "pass",
+        passedWords: [...state.passedWords, word],
+      };
+    }
 
     case "FEEDBACK_DONE": {
       if (state.status !== "feedback") return state;

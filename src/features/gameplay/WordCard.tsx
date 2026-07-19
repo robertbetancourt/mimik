@@ -14,20 +14,20 @@ function getFontSize(word: string): number {
 }
 
 export function WordCard({ word }: WordCardProps) {
-  const translateY = useSharedValue(28);
+  const translateY = useSharedValue(10);
   const opacity = useSharedValue(0);
-  const scale = useSharedValue(0.9);
+  const scale = useSharedValue(0.98);
 
   useEffect(() => {
-    // Slide up from below with a small overshoot before settling — plays
-    // on every new word, including the very first one after the countdown.
-    translateY.value = 28;
+    // Fade in, ease up into place, subtle scale overshoot — plays on every
+    // new word, including the very first one after the countdown.
+    translateY.value = 10;
     opacity.value = 0;
-    scale.value = 0.9;
+    scale.value = 0.98;
 
-    translateY.value = withSequence(withTiming(-6, { duration: 160 }), withTiming(0, { duration: 110 }));
-    opacity.value = withTiming(1, { duration: 160 });
-    scale.value = withSequence(withTiming(1.08, { duration: 160 }), withTiming(1, { duration: 110 }));
+    translateY.value = withTiming(0, { duration: 220 });
+    opacity.value = withTiming(1, { duration: 200 });
+    scale.value = withSequence(withTiming(1.02, { duration: 140 }), withTiming(1, { duration: 90 }));
   }, [word, translateY, opacity, scale]);
 
   const animatedStyle = useAnimatedStyle(() => ({

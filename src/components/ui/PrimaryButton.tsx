@@ -1,6 +1,7 @@
+import * as Haptics from "expo-haptics";
 import type { LucideIcon } from "lucide-react-native";
 import { Pressable, Text } from "react-native";
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
+import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 interface PrimaryButtonProps {
   label: string;
@@ -10,6 +11,7 @@ interface PrimaryButtonProps {
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
+const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
 export function PrimaryButton({ label, icon: Icon, disabled, onPress }: PrimaryButtonProps) {
   const scale = useSharedValue(1);
@@ -23,12 +25,15 @@ export function PrimaryButton({ label, icon: Icon, disabled, onPress }: PrimaryB
       accessibilityRole="button"
       accessibilityState={{ disabled }}
       disabled={disabled}
-      onPress={onPress}
+      onPress={() => {
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+        onPress();
+      }}
       onPressIn={() => {
-        scale.value = withTiming(0.97, { duration: 100 });
+        scale.value = withSpring(0.96, SPRING_CONFIG);
       }}
       onPressOut={() => {
-        scale.value = withTiming(1, { duration: 100 });
+        scale.value = withSpring(1, SPRING_CONFIG);
       }}
       style={animatedStyle}
       className={`flex-row items-center justify-center gap-2 rounded-full bg-primary py-4 ${

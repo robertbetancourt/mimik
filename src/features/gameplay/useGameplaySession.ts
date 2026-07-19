@@ -55,7 +55,7 @@ export function useGameplaySession(words: Word[], roundDurationSeconds: number) 
     lastFeedback: state.lastFeedback,
     currentWord: state.words[state.currentIndex] as Word | undefined,
     timeRemaining: state.timeRemaining,
-    correctCount: state.correctCount,
-    passedCount: state.passedCount,
+    correctWords: state.correctWords,
+    passedWords: state.passedWords,
   };
 }

@@ -1,13 +1,17 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
+import { useState } from "react";
 import { Pressable, ScrollView, View } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { ChipSelector } from "@/components/ui/ChipSelector";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
+import { SoundSelector } from "@/components/ui/SoundSelector";
 import { Stepper } from "@/components/ui/Stepper";
 import { getCategoryById } from "@/features/categories";
+import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
+import { useSoundPreview } from "@/features/gameplay/useSoundPreview";
 import { SelectedCategoryHero } from "@/features/match/SelectedCategoryHero";
 import {
   MAX_PLAYERS,
@@ -16,6 +20,8 @@ import {
   ROUND_STEPS,
   useMatchStore,
 } from "@/features/match/store";
+import { PlayerEditorSheet } from "@/features/players/PlayerEditorSheet";
+import { PlayerGrid } from "@/features/players/PlayerGrid";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 
 const roundDurationOptions = ROUND_DURATIONS_SECONDS.map((seconds) => ({
@@ -41,17 +47,37 @@ export default function GameSetup() {
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
-  const playerCount = useMatchStore((state) => state.playerCount);
-  const setPlayerCount = useMatchStore((state) => state.setPlayerCount);
+  const players = useMatchStore((state) => state.players);
+  const addPlayer = useMatchStore((state) => state.addPlayer);
+  const removeLastPlayer = useMatchStore((state) => state.removeLastPlayer);
   const roundDurationSeconds = useMatchStore((state) => state.roundDurationSeconds);
   const setRoundDurationSeconds = useMatchStore((state) => state.setRoundDurationSeconds);
   const totalRounds = useMatchStore((state) => state.totalRounds);
   const setTotalRounds = useMatchStore((state) => state.setTotalRounds);
   const infiniteMode = useMatchStore((state) => state.infiniteMode);
   const setInfiniteMode = useMatchStore((state) => state.setInfiniteMode);
+  const endTurnSoundId = useMatchStore((state) => state.endTurnSoundId);
+  const setEndTurnSoundId = useMatchStore((state) => state.setEndTurnSoundId);
+
+  const { play: previewSound } = useSoundPreview();
+  const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
+  const editingPlayer = players.find((player) => player.id === editingPlayerId) ?? null;
 
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
   const roundsIndex = getRoundsIndex(totalRounds, infiniteMode);
+
+  function handlePlayerCountChange(nextCount: number) {
+    if (nextCount > players.length) {
+      addPlayer();
+    } else {
+      removeLastPlayer();
+    }
+  }
+
+  function handlePreviewSound(soundId: string) {
+    const sound = endTurnSounds.find((option) => option.id === soundId);
+    if (sound) previewSound(sound.file);
+  }
 
   function handleRoundsChange(index: number) {
     const step = ROUND_STEPS[index];
@@ -79,11 +105,15 @@ export default function GameSetup() {
         <View className="mt-6 gap-3">
           <Stepper
             label="Jugadores"
-            value={playerCount}
+            value={players.length}
             min={MIN_PLAYERS}
             max={MAX_PLAYERS}
-            onChange={setPlayerCount}
+            onChange={handlePlayerCountChange}
           />
+
+          <View className="rounded-3xl bg-surface px-5 py-4">
+            <PlayerGrid players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
+          </View>
 
           <ChipSelector
             label="Duración del turno"
@@ -100,6 +130,14 @@ export default function GameSetup() {
             onChange={handleRoundsChange}
             formatValue={formatRoundsStep}
           />
+
+          <SoundSelector
+            label="Sonido de fin de turno"
+            options={endTurnSounds}
+            selectedId={endTurnSoundId}
+            onChange={setEndTurnSoundId}
+            onPreview={handlePreviewSound}
+          />
         </View>
       </ScrollView>
 
@@ -109,6 +147,8 @@ export default function GameSetup() {
       >
         <PrimaryButton label="Comenzar partida" onPress={() => router.push("/countdown")} />
       </View>
+
+      <PlayerEditorSheet player={editingPlayer} onClose={() => setEditingPlayerId(null)} />
     </SafeAreaView>
   );
 }
