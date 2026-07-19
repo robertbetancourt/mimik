@@ -18,6 +18,8 @@ interface ConfirmDialogProps {
   onSecondary: () => void;
   /** Tapping the backdrop is always the safe, non-destructive action. */
   onBackdropPress: () => void;
+  /** Highlights the primary button in red for destructive confirmations. */
+  destructivePrimary?: boolean;
 }
 
 const TIMING = { duration: 180, easing: Easing.out(Easing.cubic) };
@@ -31,6 +33,7 @@ export function ConfirmDialog({
   secondaryLabel,
   onSecondary,
   onBackdropPress,
+  destructivePrimary,
 }: ConfirmDialogProps) {
   const progress = useSharedValue(0);
   const [shouldRender, setShouldRender] = useState(visible);
@@ -69,7 +72,7 @@ export function ConfirmDialog({
         <Pressable
           accessibilityRole="button"
           onPress={onPrimary}
-          className="mt-5 items-center rounded-full bg-primary py-3.5"
+          className={`mt-5 items-center rounded-full py-3.5 ${destructivePrimary ? "bg-error" : "bg-primary"}`}
         >
           <Text className="font-sans-bold text-base text-white">{primaryLabel}</Text>
         </Pressable>

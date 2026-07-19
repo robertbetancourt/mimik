@@ -43,11 +43,20 @@ interface MatchState {
   players: Player[];
   addPlayer: () => void;
   removeLastPlayer: () => void;
+  removePlayer: (playerId: string) => void;
   renamePlayer: (playerId: string, name: string) => void;
   setPlayerCharacter: (playerId: string, characterId: string) => void;
 
   currentPlayerIndex: number;
-  advanceToNextPlayer: () => void;
+  currentRound: number;
+  /**
+   * Call after a turn's score has already been recorded. Advances to the
+   * next player, rolling into the next round once every player has had a
+   * turn. Returns true once the configured number of rounds is complete
+   * (never, in infinite mode) — the caller should route to Final Results
+   * instead of the next Preparation screen when that happens.
+   */
+  advanceTurn: () => boolean;
 
   lastTurnResult: TurnResult | null;
   setLastTurnResult: (result: TurnResult) => void;
@@ -66,6 +75,11 @@ interface MatchState {
 
   endTurnSoundId: string;
   setEndTurnSoundId: (soundId: string) => void;
+
+  /** Same players, characters, names, category and settings — fresh scores and round progress. */
+  startRematch: () => void;
+  /** Full reset, as if the app just launched. */
+  resetMatch: () => void;
 }
 
 export const useMatchStore = create<MatchState>((set, get) => ({
@@ -79,6 +93,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       selectedCategoryId: categoryId,
       players: createInitialPlayers(),
       currentPlayerIndex: 0,
+      currentRound: 1,
       lastTurnResult: null,
       playerScores: {},
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
@@ -89,9 +104,16 @@ export const useMatchStore = create<MatchState>((set, get) => ({
 
   players: createInitialPlayers(),
   currentPlayerIndex: 0,
-  advanceToNextPlayer: () => {
-    const { players, currentPlayerIndex } = get();
-    set({ currentPlayerIndex: (currentPlayerIndex + 1) % players.length });
+  currentRound: 1,
+  advanceTurn: () => {
+    const { players, currentPlayerIndex, currentRound, totalRounds, infiniteMode } = get();
+    const nextIndex = (currentPlayerIndex + 1) % players.length;
+    const roundJustCompleted = nextIndex === 0;
+    const nextRound = roundJustCompleted ? currentRound + 1 : currentRound;
+    const matchFinished = !infiniteMode && roundJustCompleted && nextRound > totalRounds;
+
+    set({ currentPlayerIndex: nextIndex, currentRound: nextRound });
+    return matchFinished;
   },
 
   lastTurnResult: null,
@@ -117,6 +139,11 @@ export const useMatchStore = create<MatchState>((set, get) => ({
     if (players.length <= MIN_PLAYERS) return;
     set({ players: players.slice(0, -1) });
   },
+  removePlayer: (playerId) => {
+    const players = get().players;
+    if (players.length <= MIN_PLAYERS) return;
+    set({ players: players.filter((player) => player.id !== playerId) });
+  },
   renamePlayer: (playerId, name) =>
     set({
       players: get().players.map((player) => (player.id === playerId ? { ...player, name } : player)),
@@ -139,4 +166,26 @@ export const useMatchStore = create<MatchState>((set, get) => ({
 
   endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
   setEndTurnSoundId: (soundId) => set({ endTurnSoundId: soundId }),
+
+  startRematch: () =>
+    set({
+      currentPlayerIndex: 0,
+      currentRound: 1,
+      playerScores: {},
+      lastTurnResult: null,
+    }),
+
+  resetMatch: () =>
+    set({
+      selectedCategoryId: null,
+      players: createInitialPlayers(),
+      currentPlayerIndex: 0,
+      currentRound: 1,
+      lastTurnResult: null,
+      playerScores: {},
+      roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
+      totalRounds: DEFAULT_TOTAL_ROUNDS,
+      infiniteMode: false,
+      endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
+    }),
 }));

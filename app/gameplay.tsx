@@ -33,7 +33,7 @@ export default function Gameplay() {
   const addTurnScore = useMatchStore((state) => state.addTurnScore);
   const players = useMatchStore((state) => state.players);
   const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
-  const { playCorrect, playPass } = useGameplaySounds();
+  const { playCorrect, playPass, playTimeUp } = useGameplaySounds();
   const previousStatus = useRef(status);
   const [exitDialogVisible, setExitDialogVisible] = useState(false);
 
@@ -58,6 +58,7 @@ export default function Gameplay() {
     setLastTurnResult({ correctWords, passedWords });
     const currentPlayer = players[currentPlayerIndex];
     if (currentPlayer) addTurnScore(currentPlayer.id, correctWords.length);
+    playTimeUp();
     const timeout = setTimeout(() => router.replace("/turn-results"), 300);
     return () => clearTimeout(timeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps

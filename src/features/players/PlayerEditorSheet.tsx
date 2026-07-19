@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Image, Text, TextInput, View } from "react-native";
+import { Image, Pressable, Text, TextInput, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
@@ -11,7 +11,7 @@ import {
   characters,
   getCharacterById,
 } from "@/features/players/characters";
-import { useMatchStore } from "@/features/match/store";
+import { MIN_PLAYERS, useMatchStore } from "@/features/match/store";
 import type { Player } from "@/types/player";
 
 interface PlayerEditorSheetProps {
@@ -22,6 +22,8 @@ interface PlayerEditorSheetProps {
 export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
   const renamePlayer = useMatchStore((state) => state.renamePlayer);
   const setPlayerCharacter = useMatchStore((state) => state.setPlayerCharacter);
+  const removePlayer = useMatchStore((state) => state.removePlayer);
+  const playerCount = useMatchStore((state) => state.players.length);
 
   const [categoryId, setCategoryId] = useState(ALL_CHARACTERS_CATEGORY_ID);
 
@@ -44,8 +46,39 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
       ? characters
       : characters.filter((item) => item.categoryId === categoryId);
 
+  function handleRemove() {
+    if (!player) return;
+    removePlayer(player.id);
+    onClose();
+  }
+
   return (
-    <BottomSheet visible={player !== null} onClose={onClose}>
+    <BottomSheet
+      visible={player !== null}
+      onClose={onClose}
+      footer={
+        player ? (
+          <View className="flex-row gap-3">
+            {playerCount > MIN_PLAYERS ? (
+              <Pressable
+                accessibilityRole="button"
+                onPress={handleRemove}
+                className="flex-1 items-center justify-center rounded-full bg-error/10 py-3.5"
+              >
+                <Text className="font-sans-bold text-base text-error">Eliminar</Text>
+              </Pressable>
+            ) : null}
+            <Pressable
+              accessibilityRole="button"
+              onPress={onClose}
+              className="flex-1 items-center justify-center rounded-full bg-primary py-3.5"
+            >
+              <Text className="font-sans-bold text-base text-white">Aceptar</Text>
+            </Pressable>
+          </View>
+        ) : null
+      }
+    >
       {player ? (
         <View className="gap-4">
           <View className="items-center">

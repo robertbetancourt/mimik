@@ -1,14 +1,16 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { Image, ScrollView, Text, View } from "react-native";
-import Animated, { LinearTransition } from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { CloseCircleIcon, TickCircleIcon } from "@/components/icons/FeedbackIcons";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
+import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { useMatchStore } from "@/features/match/store";
 import { getCharacterById } from "@/features/players/characters";
 import { NextPlayerButton } from "@/features/players/NextPlayerButton";
+import { PlayerRankRow } from "@/features/players/PlayerRankRow";
+import { rankPlayers } from "@/features/players/ranking";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 
 export default function TurnResults() {
@@ -19,8 +21,11 @@ export default function TurnResults() {
   const players = useMatchStore((state) => state.players);
   const playerScores = useMatchStore((state) => state.playerScores);
   const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
+  const currentRound = useMatchStore((state) => state.currentRound);
+  const totalRounds = useMatchStore((state) => state.totalRounds);
+  const infiniteMode = useMatchStore((state) => state.infiniteMode);
   const lastTurnResult = useMatchStore((state) => state.lastTurnResult);
-  const advanceToNextPlayer = useMatchStore((state) => state.advanceToNextPlayer);
+  const advanceTurn = useMatchStore((state) => state.advanceTurn);
 
   const currentPlayer = players[currentPlayerIndex];
   const currentCharacter = currentPlayer ? getCharacterById(currentPlayer.characterId) : undefined;
@@ -28,20 +33,26 @@ export default function TurnResults() {
   const correctWords = lastTurnResult?.correctWords ?? [];
   const passedWords = lastTurnResult?.passedWords ?? [];
 
-  const ranked = [...players].sort((a, b) => (playerScores[b.id] ?? 0) - (playerScores[a.id] ?? 0));
+  const ranked = rankPlayers(players, playerScores);
 
   const nextPlayerIndex = players.length > 0 ? (currentPlayerIndex + 1) % players.length : 0;
   const nextPlayer = players[nextPlayerIndex];
   const nextCharacter = nextPlayer ? getCharacterById(nextPlayer.characterId) : undefined;
 
+  // Mirrors advanceTurn()'s finishing condition without mutating the store,
+  // so the button can announce the podium instead of a next player that
+  // will never actually play.
+  const isMatchWillFinish =
+    !infiniteMode && nextPlayerIndex === 0 && currentRound + 1 > totalRounds;
+
   function handleContinue() {
-    advanceToNextPlayer();
-    router.replace("/countdown");
+    const matchFinished = advanceTurn();
+    router.replace(matchFinished ? "/final-results" : "/countdown");
   }
 
   return (
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
-      <ScrollView contentContainerClassName="items-center px-6 pb-40 pt-8" showsVerticalScrollIndicator={false}>
+      <ScrollView contentContainerClassName="items-center px-6 pb-48 pt-8" showsVerticalScrollIndicator={false}>
         {currentCharacter ? (
           <Image source={currentCharacter.illustration} resizeMode="contain" style={{ width: 110, height: 110 }} />
         ) : null}
@@ -112,31 +123,9 @@ export default function TurnResults() {
         <View className="mt-6 w-full">
           <Text className="mb-3 font-sans-bold text-base text-ink">Clasificación</Text>
           <View className="gap-2">
-            {ranked.map((player, index) => {
-              const character = getCharacterById(player.characterId);
-              return (
-                <Animated.View
-                  key={player.id}
-                  layout={LinearTransition.duration(280)}
-                  className="flex-row items-center gap-3 rounded-2xl bg-surface p-2.5"
-                >
-                  <Text className="w-5 text-center font-sans-bold text-sm text-ink/40">{index + 1}</Text>
-                  <View className="h-9 w-9 items-center justify-center rounded-full bg-background">
-                    {character ? (
-                      <Image
-                        source={character.illustration}
-                        resizeMode="contain"
-                        style={{ width: 24, height: 24 }}
-                      />
-                    ) : null}
-                  </View>
-                  <Text className="flex-1 font-sans-bold text-sm text-ink" numberOfLines={1}>
-                    {player.name}
-                  </Text>
-                  <Text className="font-sans-bold text-base text-ink">{playerScores[player.id] ?? 0}</Text>
-                </Animated.View>
-              );
-            })}
+            {ranked.map(({ player, rank, score }) => (
+              <PlayerRankRow key={player.id} rank={rank} player={player} score={score} />
+            ))}
           </View>
         </View>
       </ScrollView>
@@ -145,11 +134,15 @@ export default function TurnResults() {
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
         style={{ paddingBottom: insets.bottom + 24 }}
       >
-        <NextPlayerButton
-          playerName={nextPlayer?.name ?? ""}
-          characterIllustration={nextCharacter?.illustration}
-          onPress={handleContinue}
-        />
+        {isMatchWillFinish ? (
+          <PrimaryButton label="🏆 Ver podio" onPress={handleContinue} />
+        ) : (
+          <NextPlayerButton
+            playerName={nextPlayer?.name ?? ""}
+            characterIllustration={nextCharacter?.illustration}
+            onPress={handleContinue}
+          />
+        )}
       </View>
     </SafeAreaView>
   );

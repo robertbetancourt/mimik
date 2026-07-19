@@ -2,6 +2,7 @@ import { BlurView } from "expo-blur";
 import { useEffect, useState } from "react";
 import { Pressable, ScrollView, useWindowDimensions, View } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Animated, {
   Easing,
   runOnJS,
@@ -14,6 +15,8 @@ interface BottomSheetProps {
   visible: boolean;
   onClose: () => void;
   children: React.ReactNode;
+  /** Rendered below the scrollable area, always visible without scrolling. */
+  footer?: React.ReactNode;
 }
 
 // Smooth native-style slide, no bounce.
@@ -26,8 +29,9 @@ const SHEET_HEIGHT_RATIO = 0.72;
 const DISMISS_DISTANCE = 45;
 const DISMISS_VELOCITY = 600;
 
-export function BottomSheet({ visible, onClose, children }: BottomSheetProps) {
+export function BottomSheet({ visible, onClose, children, footer }: BottomSheetProps) {
   const { height: screenHeight } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
   const sheetHeight = screenHeight * SHEET_HEIGHT_RATIO;
   const translateY = useSharedValue(screenHeight);
   const backdropProgress = useSharedValue(0);
@@ -98,12 +102,21 @@ export function BottomSheet({ visible, onClose, children }: BottomSheetProps) {
 
         <ScrollView
           className="flex-1 px-5"
-          contentContainerClassName="pb-8"
+          contentContainerStyle={{ paddingBottom: footer ? 12 : insets.bottom + 24 }}
           showsVerticalScrollIndicator={false}
           nestedScrollEnabled
         >
           {children}
         </ScrollView>
+
+        {footer ? (
+          <View
+            className="border-t border-ink/5 px-5 pt-3"
+            style={{ paddingBottom: insets.bottom + 16 }}
+          >
+            {footer}
+          </View>
+        ) : null}
       </Animated.View>
     </View>
   );
