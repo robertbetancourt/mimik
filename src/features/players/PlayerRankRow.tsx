@@ -2,6 +2,7 @@ import { Image, Text, View } from "react-native";
 import Animated, { LinearTransition } from "react-native-reanimated";
 
 import { getCharacterById } from "@/features/players/characters";
+import { cardShadow } from "@/theme/shadow";
 import type { Player } from "@/types/player";
 
 interface PlayerRankRowProps {
@@ -16,6 +17,7 @@ export function PlayerRankRow({ rank, player, score }: PlayerRankRowProps) {
   return (
     <Animated.View
       layout={LinearTransition.duration(280)}
+      style={cardShadow}
       className="flex-row items-center gap-3 rounded-2xl bg-surface p-2.5"
     >
       <Text className="w-5 text-center font-sans-bold text-sm text-ink/40">{rank}</Text>

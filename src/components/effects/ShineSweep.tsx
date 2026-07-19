@@ -1,14 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { View } from "react-native";
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withDelay,
-  withRepeat,
-  withSequence,
-  withTiming,
-} from "react-native-reanimated";
+import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 
 interface ShineSweepProps {
   enabled: boolean;
@@ -18,24 +11,18 @@ interface ShineSweepProps {
 }
 
 const SWEEP_DURATION_MS = 700;
-const PAUSE_MS = 3600;
 
-// A thin, dim highlight that sweeps across the wrapped content every few
-// seconds — a cheap stand-in for a real light shine, no rotation or bounce.
+// A single, thin highlight sweep across the trophy — sync point: fires once,
+// right after the winner has settled (enabled flips true then). No loop.
 export function ShineSweep({ enabled, width, height, children }: ShineSweepProps) {
   const progress = useSharedValue(0);
+  const hasSweptRef = useRef(false);
 
   useEffect(() => {
-    if (!enabled) return;
+    if (!enabled || hasSweptRef.current) return;
+    hasSweptRef.current = true;
 
-    progress.value = withRepeat(
-      withSequence(
-        withTiming(1, { duration: SWEEP_DURATION_MS }),
-        withDelay(PAUSE_MS, withTiming(1, { duration: 0 })),
-        withTiming(0, { duration: 0 }),
-      ),
-      -1,
-    );
+    progress.value = withTiming(1, { duration: SWEEP_DURATION_MS });
   }, [enabled, progress]);
 
   const sweepStyle = useAnimatedStyle(() => ({

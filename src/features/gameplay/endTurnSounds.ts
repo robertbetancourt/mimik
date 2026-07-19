@@ -7,6 +7,11 @@ export interface EndTurnSoundOption {
 // Add new files here — the picker UI reads this list, nothing else to touch.
 export const endTurnSounds: EndTurnSoundOption[] = [
   {
+    id: "classic",
+    label: "Clásico",
+    file: require("../../../assets/sounds/game-finish/end-correct.mp3"),
+  },
+  {
     id: "retro-arcade",
     label: "Retro Arcade",
     file: require("../../../assets/sounds/game-finish/arcade-retro-game-over.wav"),

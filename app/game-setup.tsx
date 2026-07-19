@@ -3,6 +3,7 @@ import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, ScrollView, View } from "react-native";
+import Animated from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { ChipSelector } from "@/components/ui/ChipSelector";
@@ -20,9 +21,11 @@ import {
   ROUND_STEPS,
   useMatchStore,
 } from "@/features/match/store";
+import { useMatchSettingsEntrance } from "@/features/match/useMatchSettingsEntrance";
 import { PlayerEditorSheet } from "@/features/players/PlayerEditorSheet";
 import { PlayerGrid } from "@/features/players/PlayerGrid";
 import { useLockOrientation } from "@/lib/useLockOrientation";
+import { cardShadow } from "@/theme/shadow";
 
 const roundDurationOptions = ROUND_DURATIONS_SECONDS.map((seconds) => ({
   label: `${seconds}s`,
@@ -45,6 +48,7 @@ export default function GameSetup() {
   const insets = useSafeAreaInsets();
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
+  const { headerStyle, settingStyles, buttonStyle } = useMatchSettingsEntrance();
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
   const players = useMatchStore((state) => state.players);
@@ -92,61 +96,72 @@ export default function GameSetup() {
   return (
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
       <ScrollView contentContainerClassName="px-4 pb-44 pt-4" showsVerticalScrollIndicator={false}>
-        <Pressable
-          accessibilityRole="button"
-          onPress={() => router.back()}
-          className="h-11 w-11 items-center justify-center rounded-full bg-surface"
-        >
-          <ChevronLeft size={22} color="#2B2118" />
-        </Pressable>
+        <Animated.View style={headerStyle}>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.back()}
+            style={cardShadow}
+            className="h-11 w-11 items-center justify-center rounded-full bg-surface"
+          >
+            <ChevronLeft size={22} color="#2B2118" />
+          </Pressable>
 
-        <View className="mt-4">{category ? <SelectedCategoryHero category={category} /> : null}</View>
+          <View className="mt-4">{category ? <SelectedCategoryHero category={category} /> : null}</View>
+        </Animated.View>
 
         <View className="mt-6 gap-3">
-          <Stepper
-            label="Jugadores"
-            value={players.length}
-            min={MIN_PLAYERS}
-            max={MAX_PLAYERS}
-            onChange={handlePlayerCountChange}
-          />
+          <Animated.View style={settingStyles[0]}>
+            <Stepper
+              label="Jugadores"
+              value={players.length}
+              min={MIN_PLAYERS}
+              max={MAX_PLAYERS}
+              onChange={handlePlayerCountChange}
+            />
+          </Animated.View>
 
-          <View className="rounded-3xl bg-surface px-5 py-4">
+          <Animated.View style={[cardShadow, settingStyles[1]]} className="rounded-3xl bg-surface px-5 py-4">
             <PlayerGrid players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
-          </View>
+          </Animated.View>
 
-          <ChipSelector
-            label="Duración del turno"
-            options={roundDurationOptions}
-            value={roundDurationSeconds}
-            onChange={setRoundDurationSeconds}
-          />
+          <Animated.View style={settingStyles[2]}>
+            <ChipSelector
+              label="Duración del turno"
+              options={roundDurationOptions}
+              value={roundDurationSeconds}
+              onChange={setRoundDurationSeconds}
+            />
+          </Animated.View>
 
-          <Stepper
-            label="Número de rondas"
-            value={roundsIndex}
-            min={0}
-            max={ROUND_STEPS.length - 1}
-            onChange={handleRoundsChange}
-            formatValue={formatRoundsStep}
-          />
+          <Animated.View style={settingStyles[3]}>
+            <Stepper
+              label="Número de rondas"
+              value={roundsIndex}
+              min={0}
+              max={ROUND_STEPS.length - 1}
+              onChange={handleRoundsChange}
+              formatValue={formatRoundsStep}
+            />
+          </Animated.View>
 
-          <SoundSelector
-            label="Sonido de fin de turno"
-            options={endTurnSounds}
-            selectedId={endTurnSoundId}
-            onChange={setEndTurnSoundId}
-            onPreview={handlePreviewSound}
-          />
+          <Animated.View style={settingStyles[4]}>
+            <SoundSelector
+              label="Sonido de fin de turno"
+              options={endTurnSounds}
+              selectedId={endTurnSoundId}
+              onChange={setEndTurnSoundId}
+              onPreview={handlePreviewSound}
+            />
+          </Animated.View>
         </View>
       </ScrollView>
 
-      <View
+      <Animated.View
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
-        style={{ paddingBottom: insets.bottom + 24 }}
+        style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
       >
         <PrimaryButton label="Comenzar partida" onPress={() => router.push("/countdown")} />
-      </View>
+      </Animated.View>
 
       <PlayerEditorSheet player={editingPlayer} onClose={() => setEditingPlayerId(null)} />
     </SafeAreaView>

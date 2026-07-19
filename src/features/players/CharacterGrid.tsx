@@ -1,10 +1,13 @@
 import * as Haptics from "expo-haptics";
+import { useEffect } from "react";
 import { Image, Pressable } from "react-native";
 import Animated, {
   FadeIn,
+  interpolateColor,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
+  withTiming,
 } from "react-native-reanimated";
 
 import type { Character } from "@/features/players/characters";
@@ -19,6 +22,11 @@ interface CharacterGridProps {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
+const SURFACE_COLOR = "#FFFBF4";
+const SELECTED_BG = "#FF7A4526";
+const BORDER_IDLE = "rgba(43, 33, 24, 0)";
+const BORDER_SELECTED = "#FF7A45";
+
 function CharacterOption({
   character,
   selected,
@@ -29,9 +37,16 @@ function CharacterOption({
   onPress: () => void;
 }) {
   const scale = useSharedValue(1);
+  const selectedProgress = useSharedValue(selected ? 1 : 0);
+
+  useEffect(() => {
+    selectedProgress.value = withTiming(selected ? 1 : 0, { duration: 180 });
+  }, [selected, selectedProgress]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
+    backgroundColor: interpolateColor(selectedProgress.value, [0, 1], [SURFACE_COLOR, SELECTED_BG]),
+    borderColor: interpolateColor(selectedProgress.value, [0, 1], [BORDER_IDLE, BORDER_SELECTED]),
   }));
 
   return (
@@ -48,10 +63,8 @@ function CharacterOption({
       onPressOut={() => {
         scale.value = withSpring(1, SPRING_CONFIG);
       }}
-      style={animatedStyle}
-      className={`w-[22%] items-center justify-center rounded-2xl border-2 py-2 ${
-        selected ? "border-primary bg-primary/10" : "border-transparent bg-surface"
-      }`}
+      style={[animatedStyle, { borderWidth: 2 }]}
+      className="w-[22%] items-center justify-center rounded-2xl py-2"
     >
       <Image source={character.illustration} resizeMode="contain" style={{ width: 40, height: 40 }} />
     </AnimatedPressable>

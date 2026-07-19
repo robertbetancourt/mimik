@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react-native";
 import { Text, View } from "react-native";
 
 import { IconButton } from "@/components/ui/IconButton";
+import { cardShadow } from "@/theme/shadow";
 
 interface SoundOption {
   id: string;
@@ -31,7 +32,7 @@ export function SoundSelector({ label, options, selectedId, onChange, onPreview 
   }
 
   return (
-    <View className="rounded-3xl bg-surface px-5 py-4">
+    <View style={cardShadow} className="rounded-3xl bg-surface px-5 py-4">
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
       <View className="mt-3 flex-row items-center justify-between">

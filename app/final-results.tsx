@@ -39,8 +39,16 @@ export default function FinalResults() {
   const thirdCharacter = third ? getCharacterById(third.player.characterId) : undefined;
 
   const { play: playCelebrationSound } = useCelebrationSound();
-  const { entranceDone, screenStyle, trophyStyle, podiumStyle, thirdStyle, secondStyle, winnerStyle } =
-    usePodiumEntrance({
+  const {
+    entranceDone,
+    screenStyle,
+    trophyStyle,
+    podiumStyle,
+    thirdStyle,
+    secondStyle,
+    winnerStyle,
+    buttonStyle,
+  } = usePodiumEntrance({
       hasSecond: Boolean(second),
       hasThird: Boolean(third),
       onWinnerRevealed: playCelebrationSound,
@@ -131,9 +139,9 @@ export default function FinalResults() {
 
       <ConfettiBurst enabled={entranceDone} />
 
-      <View
+      <Animated.View
+        style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
-        style={{ paddingBottom: insets.bottom + 24 }}
       >
         <PrimaryButton label="🎮 Revancha" onPress={handleRematch} />
         <Text
@@ -143,7 +151,7 @@ export default function FinalResults() {
         >
           🏠 Inicio
         </Text>
-      </View>
+      </Animated.View>
     </SafeAreaView>
   );
 }

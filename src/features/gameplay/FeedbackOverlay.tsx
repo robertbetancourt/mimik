@@ -20,10 +20,16 @@ export function FeedbackOverlay({ feedback }: FeedbackOverlayProps) {
   const contentScale = useSharedValue(0.6);
 
   useEffect(() => {
-    if (feedback) {
+    if (feedback === "correct") {
+      // A touch more energetic — a small celebratory pop.
       opacity.value = withTiming(1, { duration: 80 });
       contentScale.value = 0.6;
-      contentScale.value = withSpring(1, { damping: 12, stiffness: 220 });
+      contentScale.value = withSpring(1, { damping: 11, stiffness: 240 });
+    } else if (feedback === "pass") {
+      // Softer and calmer — this isn't an error, just "next word".
+      opacity.value = withTiming(1, { duration: 100 });
+      contentScale.value = 0.85;
+      contentScale.value = withTiming(1, { duration: 180 });
     } else {
       opacity.value = withTiming(0, { duration: 120 });
     }

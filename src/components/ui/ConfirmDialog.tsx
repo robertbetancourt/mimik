@@ -1,3 +1,4 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { useEffect, useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import Animated, {
@@ -7,6 +8,8 @@ import Animated, {
   useSharedValue,
   withTiming,
 } from "react-native-reanimated";
+
+import { buttonShadow, overlayShadow } from "@/theme/shadow";
 
 interface ConfirmDialogProps {
   visible: boolean;
@@ -23,6 +26,8 @@ interface ConfirmDialogProps {
 }
 
 const TIMING = { duration: 180, easing: Easing.out(Easing.cubic) };
+const PRIMARY_GRADIENT = ["#FF9A6B", "#FF7A45", "#F0632C"] as const;
+const DESTRUCTIVE_GRADIENT = ["#F0806F", "#E85C4A", "#D6482F"] as const;
 
 export function ConfirmDialog({
   visible,
@@ -65,16 +70,22 @@ export function ConfirmDialog({
         <Pressable style={{ flex: 1 }} onPress={onBackdropPress} />
       </Animated.View>
 
-      <Animated.View style={cardStyle} className="w-[80%] max-w-sm rounded-3xl bg-background p-5">
+      <Animated.View
+        style={[cardStyle, overlayShadow]}
+        className="w-[80%] max-w-sm rounded-3xl bg-background p-5"
+      >
         <Text className="text-center font-sans-bold text-xl text-ink">{title}</Text>
-        <Text className="mt-2 text-center font-sans text-base text-ink/70">{message}</Text>
+        <Text className="mt-2 text-center font-sans text-base text-ink/60">{message}</Text>
 
-        <Pressable
-          accessibilityRole="button"
-          onPress={onPrimary}
-          className={`mt-5 items-center rounded-full py-3.5 ${destructivePrimary ? "bg-error" : "bg-primary"}`}
-        >
-          <Text className="font-sans-bold text-base text-white">{primaryLabel}</Text>
+        <Pressable accessibilityRole="button" onPress={onPrimary} style={buttonShadow} className="mt-5 overflow-hidden rounded-full">
+          <LinearGradient
+            colors={destructivePrimary ? DESTRUCTIVE_GRADIENT : PRIMARY_GRADIENT}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            className="items-center py-3.5"
+          >
+            <Text className="font-sans-bold text-base text-white">{primaryLabel}</Text>
+          </LinearGradient>
         </Pressable>
 
         <Pressable accessibilityRole="button" onPress={onSecondary} className="mt-2 items-center py-3">

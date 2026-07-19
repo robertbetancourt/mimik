@@ -16,6 +16,7 @@ interface CategoryGridProps {
 interface ColumnItem {
   category: Category;
   variant: CategoryCardVariant;
+  index: number;
 }
 
 // Categories are grouped into blocks of 3: one "tall" card and a pair of
@@ -26,14 +27,15 @@ const BLOCK_SIZE = 3;
 function splitIntoColumns(categories: Category[]): [ColumnItem[], ColumnItem[]] {
   const left: ColumnItem[] = [];
   const right: ColumnItem[] = [];
+  let index = 0;
 
   for (let start = 0, blockIndex = 0; start < categories.length; start += BLOCK_SIZE, blockIndex++) {
     const [tall, ...pair] = categories.slice(start, start + BLOCK_SIZE);
     const tallColumn = blockIndex % 2 === 0 ? left : right;
     const pairColumn = blockIndex % 2 === 0 ? right : left;
 
-    tallColumn.push({ category: tall, variant: "hero" });
-    pair.forEach((category) => pairColumn.push({ category, variant: "default" }));
+    tallColumn.push({ category: tall, variant: "hero", index: index++ });
+    pair.forEach((category) => pairColumn.push({ category, variant: "default", index: index++ }));
   }
 
   return [left, right];
@@ -48,10 +50,11 @@ function CategoryColumn({
 }) {
   return (
     <View className="flex-1" style={{ gap: CARD_GAP }}>
-      {items.map(({ category, variant }) => (
+      {items.map(({ category, variant, index }) => (
         <CategoryCard
           key={category.id}
           variant={variant}
+          index={index}
           illustration={categoryIllustrations[category.id]}
           title={category.titulo}
           description={category.descripcion}

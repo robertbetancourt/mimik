@@ -6,9 +6,11 @@ module.exports = {
     extend: {
       colors: {
         background: "#FFF7ED",
-        surface: "#FFFDF9",
+        surface: "#FFFBF4",
         ink: "#2B2118",
         primary: "#FF7A45",
+        "primary-light": "#FF9A6B",
+        "primary-dark": "#F0632C",
         success: "#3DBE6C",
         error: "#E85C4A",
       },

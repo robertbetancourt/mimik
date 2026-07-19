@@ -11,6 +11,8 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
+import { overlayShadow } from "@/theme/shadow";
+
 interface BottomSheetProps {
   visible: boolean;
   onClose: () => void;
@@ -89,34 +91,41 @@ export function BottomSheet({ visible, onClose, children, footer }: BottomSheetP
       </Animated.View>
 
       <Animated.View
-        style={[{ height: sheetHeight, position: "absolute", left: 0, right: 0, bottom: 0 }, sheetStyle]}
-        className="overflow-hidden rounded-t-3xl bg-background"
+        style={[
+          { height: sheetHeight, position: "absolute", left: 0, right: 0, bottom: 0 },
+          sheetStyle,
+          overlayShadow,
+        ]}
       >
-        {/* Only the handle is draggable, so the content below can scroll
-            freely without fighting the dismiss gesture. */}
-        <GestureDetector gesture={pan}>
-          <View className="items-center py-3">
-            <View className="h-1.5 w-10 rounded-full bg-ink/15" />
-          </View>
-        </GestureDetector>
+        {/* Shadows don't render through overflow: hidden, so clipping lives
+            on this inner wrapper instead of the shadow-casting one above. */}
+        <View className="flex-1 overflow-hidden rounded-t-3xl bg-background">
+          {/* Only the handle is draggable, so the content below can scroll
+              freely without fighting the dismiss gesture. */}
+          <GestureDetector gesture={pan}>
+            <View className="items-center py-3">
+              <View className="h-1.5 w-10 rounded-full bg-ink/15" />
+            </View>
+          </GestureDetector>
 
-        <ScrollView
-          className="flex-1 px-5"
-          contentContainerStyle={{ paddingBottom: footer ? 12 : insets.bottom + 24 }}
-          showsVerticalScrollIndicator={false}
-          nestedScrollEnabled
-        >
-          {children}
-        </ScrollView>
-
-        {footer ? (
-          <View
-            className="border-t border-ink/5 px-5 pt-3"
-            style={{ paddingBottom: insets.bottom + 16 }}
+          <ScrollView
+            className="flex-1 px-5"
+            contentContainerStyle={{ paddingBottom: footer ? 12 : insets.bottom + 24 }}
+            showsVerticalScrollIndicator={false}
+            nestedScrollEnabled
           >
-            {footer}
-          </View>
-        ) : null}
+            {children}
+          </ScrollView>
+
+          {footer ? (
+            <View
+              className="border-t border-ink/5 px-5 pt-3"
+              style={{ paddingBottom: insets.bottom + 16 }}
+            >
+              {footer}
+            </View>
+          ) : null}
+        </View>
       </Animated.View>
     </View>
   );

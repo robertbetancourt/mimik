@@ -7,9 +7,12 @@ const SHAPES = ["rect", "circle", "diamond"] as const;
 type Shape = (typeof SHAPES)[number];
 
 const NORMAL_PARTICLE_COUNT = 9;
-const BIG_PARTICLE_COUNT = 26;
+const BIG_PARTICLE_COUNT = 30;
 const WAVE_GAP_MS = 4000;
 const NORMAL_WAVE_SPAN_MS = 2000;
+// Perf/battery: the podium screen can sit idle a long time — stop spawning
+// waves after a handful instead of forever.
+const MAX_WAVES = 4;
 
 interface Particle {
   x: number;
@@ -30,10 +33,10 @@ function randomParticle(x: number, big: boolean): Particle {
     delay: Math.random() * (big ? 220 : 300),
     // "fall speed variation" — the big burst spreads timing further apart.
     duration: big ? 900 + Math.random() * 700 : 1200 + Math.random() * 300,
-    rise: big ? 70 + Math.random() * 60 : 80 + Math.random() * 20,
+    rise: big ? 75 + Math.random() * 65 : 80 + Math.random() * 20,
     shape: SHAPES[Math.floor(Math.random() * SHAPES.length)],
     color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
-    size: big ? 6 + Math.random() * 8 : 6 + Math.random() * 6,
+    size: big ? 8 + Math.random() * 9 : 6 + Math.random() * 6,
     rotation: Math.random() * 360,
   };
 }
@@ -92,9 +95,9 @@ interface ConfettiBurstProps {
   enabled: boolean;
 }
 
-// A clearly visible burst the instant the winner is revealed (bigger count,
-// wider spread, varied fall speed), then settles into short, subtle waves
-// every few seconds — never a constant rain.
+// Sync point: the biggest burst fires exactly when `enabled` flips true,
+// i.e. the instant the winner lands (not the earlier reveal spring). Settles
+// into short, subtle waves every few seconds, capped so it never runs forever.
 export function ConfettiBurst({ enabled }: ConfettiBurstProps) {
   const { width } = useWindowDimensions();
   const anchorX = width / 2;
@@ -117,7 +120,13 @@ export function ConfettiBurst({ enabled }: ConfettiBurstProps) {
 
     setWave(1);
     const interval = setInterval(() => {
-      setWave((current) => current + 1);
+      setWave((current) => {
+        if (current >= MAX_WAVES) {
+          clearInterval(interval);
+          return current;
+        }
+        return current + 1;
+      });
     }, NORMAL_WAVE_SPAN_MS + WAVE_GAP_MS);
 
     return () => clearInterval(interval);

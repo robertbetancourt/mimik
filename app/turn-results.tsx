@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { Image, ScrollView, Text, View } from "react-native";
+import Animated from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { CloseCircleIcon, TickCircleIcon } from "@/components/icons/FeedbackIcons";
@@ -11,12 +12,16 @@ import { getCharacterById } from "@/features/players/characters";
 import { NextPlayerButton } from "@/features/players/NextPlayerButton";
 import { PlayerRankRow } from "@/features/players/PlayerRankRow";
 import { rankPlayers } from "@/features/players/ranking";
+import { useTurnResultsEntrance } from "@/features/players/useTurnResultsEntrance";
 import { useLockOrientation } from "@/lib/useLockOrientation";
+import { cardShadow } from "@/theme/shadow";
 
 export default function TurnResults() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
+  const { characterStyle, scoreStyle, decorationStyle, countersStyle, leaderboardStyle, buttonStyle } =
+    useTurnResultsEntrance();
 
   const players = useMatchStore((state) => state.players);
   const playerScores = useMatchStore((state) => state.playerScores);
@@ -53,16 +58,18 @@ export default function TurnResults() {
   return (
     <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
       <ScrollView contentContainerClassName="items-center px-6 pb-48 pt-8" showsVerticalScrollIndicator={false}>
-        {currentCharacter ? (
-          <Image source={currentCharacter.illustration} resizeMode="contain" style={{ width: 110, height: 110 }} />
-        ) : null}
-        <Text className="mt-2 font-sans-bold text-2xl text-ink">{currentPlayer?.name}</Text>
+        <Animated.View style={characterStyle} className="items-center">
+          {currentCharacter ? (
+            <Image source={currentCharacter.illustration} resizeMode="contain" style={{ width: 110, height: 110 }} />
+          ) : null}
+          <Text className="mt-2 font-sans-bold text-2xl text-ink">{currentPlayer?.name}</Text>
+        </Animated.View>
 
-        <View className="mt-5 flex-row items-center justify-center">
-          <Image
+        <Animated.View style={scoreStyle} className="mt-5 flex-row items-center justify-center">
+          <Animated.Image
             source={require("../assets/images/ui/left-points.png")}
             resizeMode="contain"
-            style={{ width: 80, height: 80, marginRight: -16, zIndex: 1 }}
+            style={[{ width: 80, height: 80, marginRight: -16, zIndex: 1 }, decorationStyle]}
           />
           <AnimatedCounter
             value={correctWords.length}
@@ -74,19 +81,26 @@ export default function TurnResults() {
               textAlign: "center",
             }}
           />
-          <Image
+          <Animated.Image
             source={require("../assets/images/ui/right-points.png")}
             resizeMode="contain"
-            style={{ width: 80, height: 80, marginLeft: -16, zIndex: 1 }}
+            style={[{ width: 80, height: 80, marginLeft: -16, zIndex: 1 }, decorationStyle]}
           />
-        </View>
-        <Text className="-mt-1 font-sans text-base text-ink/60">puntos</Text>
+        </Animated.View>
+        <Animated.Text
+          style={[{ marginTop: -4, fontFamily: "Urbanist_400Regular", fontSize: 16, color: "#2B211899" }, scoreStyle]}
+        >
+          puntos
+        </Animated.Text>
 
-        <View className="mt-8 w-full gap-3">
-          <View className="rounded-3xl bg-surface p-4">
+        <Animated.View style={countersStyle} className="mt-8 w-full gap-3">
+          <View style={cardShadow} className="rounded-3xl bg-surface p-4">
             <View className="flex-row items-center gap-2">
               <TickCircleIcon size={20} color="#3DBE6C" />
               <Text className="font-sans-bold text-base text-ink">Correctas</Text>
+              <Text className="font-sans-bold text-base text-ink/40">
+                · <AnimatedCounter value={correctWords.length} duration={500} style={{ fontSize: 16, fontFamily: "Urbanist_700Bold", color: "#2B211866" }} />
+              </Text>
             </View>
             {correctWords.length === 0 ? (
               <Text className="mt-2 font-sans text-sm text-ink/50">Ninguna esta vez.</Text>
@@ -101,10 +115,13 @@ export default function TurnResults() {
             )}
           </View>
 
-          <View className="rounded-3xl bg-surface p-4">
+          <View style={cardShadow} className="rounded-3xl bg-surface p-4">
             <View className="flex-row items-center gap-2">
               <CloseCircleIcon size={20} color="#E85C4A" />
               <Text className="font-sans-bold text-base text-ink">Pasadas</Text>
+              <Text className="font-sans-bold text-base text-ink/40">
+                · <AnimatedCounter value={passedWords.length} duration={500} style={{ fontSize: 16, fontFamily: "Urbanist_700Bold", color: "#2B211866" }} />
+              </Text>
             </View>
             {passedWords.length === 0 ? (
               <Text className="mt-2 font-sans text-sm text-ink/50">Ninguna esta vez.</Text>
@@ -118,21 +135,21 @@ export default function TurnResults() {
               </View>
             )}
           </View>
-        </View>
+        </Animated.View>
 
-        <View className="mt-6 w-full">
+        <Animated.View style={leaderboardStyle} className="mt-6 w-full">
           <Text className="mb-3 font-sans-bold text-base text-ink">Clasificación</Text>
           <View className="gap-2">
             {ranked.map(({ player, rank, score }) => (
               <PlayerRankRow key={player.id} rank={rank} player={player} score={score} />
             ))}
           </View>
-        </View>
+        </Animated.View>
       </ScrollView>
 
-      <View
+      <Animated.View
+        style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
-        style={{ paddingBottom: insets.bottom + 24 }}
       >
         {isMatchWillFinish ? (
           <PrimaryButton label="🏆 Ver podio" onPress={handleContinue} />
@@ -143,7 +160,7 @@ export default function TurnResults() {
             onPress={handleContinue}
           />
         )}
-      </View>
+      </Animated.View>
     </SafeAreaView>
   );
 }

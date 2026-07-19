@@ -18,11 +18,11 @@ interface UsePodiumEntranceOptions {
 const SOFT_SPRING = { damping: 14, stiffness: 140 };
 const STRONG_SPRING = { damping: 11, stiffness: 170 };
 
-const TROPHY_DELAY = 150;
-const PODIUM_DELAY = 450;
-const THIRD_DELAY = 750;
-const SECOND_DELAY = 900;
-const WINNER_DELAY = 1050;
+const TROPHY_DELAY = 120;
+const PODIUM_DELAY = 380;
+const THIRD_DELAY = 620;
+const SECOND_DELAY = 760;
+const WINNER_DELAY = 900;
 
 // Scripted, one-shot entrance: fade → trophy drops → podium rises → 3rd →
 // 2nd → winner (strongest entrance, then a single joyful jump). Everything
@@ -42,6 +42,8 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
   const winnerJumpY = useSharedValue(0);
   const winnerSquashX = useSharedValue(1);
   const winnerSquashY = useSharedValue(1);
+  const buttonOpacity = useSharedValue(0);
+  const buttonY = useSharedValue(10);
 
   useEffect(() => {
     screenOpacity.value = withTiming(1, { duration: 300 });
@@ -61,28 +63,36 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
       WINNER_DELAY,
       withSpring(1, STRONG_SPRING, (finished) => {
         if (!finished) return;
-        runOnJS(onWinnerRevealed)();
 
-        // Anticipation (tiny crouch) → jump (stretch) → soft landing (squash) → settle.
+        // Sync point: anticipation (crouch) → jump → landing squash → settle.
+        // onWinnerRevealed (celebration sound) fires at the landing squash,
+        // not the crouch — it should land with the impact, not the windup.
         winnerJumpY.value = withSequence(
-          withTiming(5, { duration: 90 }),
-          withTiming(-22, { duration: 170 }),
-          withTiming(0, { duration: 180 }),
-          withTiming(0, { duration: 140 }, (jumpFinished) => {
-            if (jumpFinished) runOnJS(setEntranceDone)(true);
+          withTiming(4, { duration: 80 }),
+          withTiming(-18, { duration: 150 }),
+          withTiming(0, { duration: 160 }, (jumpFinished) => {
+            if (jumpFinished) runOnJS(onWinnerRevealed)();
+          }),
+          withTiming(0, { duration: 120 }, (settleFinished) => {
+            if (!settleFinished) return;
+            runOnJS(setEntranceDone)(true);
+            // Sync point: CTA only appears once the celebration is over —
+            // small fade + lift, no pulsing.
+            buttonOpacity.value = withTiming(1, { duration: 260 });
+            buttonY.value = withTiming(0, { duration: 260 });
           }),
         );
         winnerSquashY.value = withSequence(
-          withTiming(0.9, { duration: 90 }),
-          withTiming(1.08, { duration: 170 }),
-          withTiming(0.92, { duration: 130 }),
-          withTiming(1, { duration: 190 }),
+          withTiming(0.94, { duration: 80 }),
+          withTiming(1.05, { duration: 150 }),
+          withTiming(0.96, { duration: 110 }),
+          withTiming(1, { duration: 150 }),
         );
         winnerSquashX.value = withSequence(
-          withTiming(1.08, { duration: 90 }),
-          withTiming(0.94, { duration: 170 }),
-          withTiming(1.06, { duration: 130 }),
-          withTiming(1, { duration: 190 }),
+          withTiming(1.04, { duration: 80 }),
+          withTiming(0.97, { duration: 150 }),
+          withTiming(1.03, { duration: 110 }),
+          withTiming(1, { duration: 150 }),
         );
       }),
     );
@@ -114,5 +124,19 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
     ],
   }));
 
-  return { entranceDone, screenStyle, trophyStyle, podiumStyle, thirdStyle, secondStyle, winnerStyle };
+  const buttonStyle = useAnimatedStyle(() => ({
+    opacity: buttonOpacity.value,
+    transform: [{ translateY: buttonY.value }],
+  }));
+
+  return {
+    entranceDone,
+    screenStyle,
+    trophyStyle,
+    podiumStyle,
+    thirdStyle,
+    secondStyle,
+    winnerStyle,
+    buttonStyle,
+  };
 }

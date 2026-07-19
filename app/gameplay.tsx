@@ -4,14 +4,17 @@ import * as ScreenOrientation from "expo-screen-orientation";
 import { X } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
 import { Pressable, Text, View } from "react-native";
+import Animated, { FadeIn } from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 import { getCategoryById } from "@/features/categories";
+import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
 import { FeedbackOverlay } from "@/features/gameplay/FeedbackOverlay";
 import { TimerBar } from "@/features/gameplay/TimerBar";
 import { useGameplaySession } from "@/features/gameplay/useGameplaySession";
 import { useGameplaySounds } from "@/features/gameplay/useGameplaySounds";
+import { useSoundPreview } from "@/features/gameplay/useSoundPreview";
 import { WordCard } from "@/features/gameplay/WordCard";
 import { useMatchStore } from "@/features/match/store";
 import { useLockOrientation } from "@/lib/useLockOrientation";
@@ -33,7 +36,9 @@ export default function Gameplay() {
   const addTurnScore = useMatchStore((state) => state.addTurnScore);
   const players = useMatchStore((state) => state.players);
   const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
-  const { playCorrect, playPass, playTimeUp } = useGameplaySounds();
+  const endTurnSoundId = useMatchStore((state) => state.endTurnSoundId);
+  const { playCorrect, playPass } = useGameplaySounds();
+  const { play: playEndTurnSound } = useSoundPreview();
   const previousStatus = useRef(status);
   const [exitDialogVisible, setExitDialogVisible] = useState(false);
 
@@ -58,7 +63,8 @@ export default function Gameplay() {
     setLastTurnResult({ correctWords, passedWords });
     const currentPlayer = players[currentPlayerIndex];
     if (currentPlayer) addTurnScore(currentPlayer.id, correctWords.length);
-    playTimeUp();
+    const selectedSound = endTurnSounds.find((sound) => sound.id === endTurnSoundId);
+    if (selectedSound) playEndTurnSound(selectedSound.file);
     const timeout = setTimeout(() => router.replace("/turn-results"), 300);
     return () => clearTimeout(timeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -81,7 +87,13 @@ export default function Gameplay() {
 
       <View className="flex-1 flex-row">
         <View className="flex-1 items-center justify-center" style={{ marginTop: -16 }}>
-          {status === "playing" && currentWord ? <WordCard word={currentWord.texto} /> : null}
+          {/* Also true during the brief "ready" beat right after the
+              countdown's GO — the word is already known, so showing it
+              immediately (its own entrance animation still plays) avoids a
+              blank gap between the countdown and gameplay. */}
+          {(status === "playing" || status === "ready") && currentWord ? (
+            <WordCard word={currentWord.texto} />
+          ) : null}
 
           {status === "waitingForCenter" ? (
             <Text className="text-center font-sans-bold text-4xl text-white">
@@ -90,10 +102,10 @@ export default function Gameplay() {
           ) : null}
 
           {status === "turnFinished" ? (
-            <View className="items-center gap-2">
+            <Animated.View entering={FadeIn.duration(180)} className="items-center gap-2">
               <Text className="text-5xl">⏰</Text>
               <Text className="text-center font-sans-bold text-4xl text-white">¡Tiempo!</Text>
-            </View>
+            </Animated.View>
           ) : null}
         </View>
 

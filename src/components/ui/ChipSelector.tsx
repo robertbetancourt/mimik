@@ -9,6 +9,8 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
+import { cardShadow } from "@/theme/shadow";
+
 interface ChipOption<T extends string | number> {
   label: string;
   value: T;
@@ -26,6 +28,8 @@ const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
 const SURFACE_COLOR = "#FFF7ED";
 const PRIMARY_COLOR = "#FF7A45";
+const BORDER_IDLE = "rgba(43, 33, 24, 0)";
+const BORDER_SELECTED = "#F0632C";
 
 function Chip({
   label,
@@ -45,6 +49,7 @@ function Chip({
 
   const containerStyle = useAnimatedStyle(() => ({
     backgroundColor: interpolateColor(selectedProgress.value, [0, 1], [SURFACE_COLOR, PRIMARY_COLOR]),
+    borderColor: interpolateColor(selectedProgress.value, [0, 1], [BORDER_IDLE, BORDER_SELECTED]),
     transform: [{ scale: scale.value }],
   }));
 
@@ -66,7 +71,7 @@ function Chip({
       onPressOut={() => {
         scale.value = withSpring(1, SPRING_CONFIG);
       }}
-      style={[containerStyle, { flex: 1 }]}
+      style={[containerStyle, { flex: 1, borderWidth: 1.5 }]}
       className="items-center rounded-full px-3 py-2"
     >
       <Animated.Text
@@ -85,7 +90,7 @@ export function ChipSelector<T extends string | number>({
   onChange,
 }: ChipSelectorProps<T>) {
   return (
-    <View className="rounded-3xl bg-surface px-5 py-4">
+    <View style={cardShadow} className="rounded-3xl bg-surface px-5 py-4">
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
       <View className="mt-3 flex-row gap-2">
