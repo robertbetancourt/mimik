@@ -1,4 +1,5 @@
 import { LinearGradient } from "expo-linear-gradient";
+import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import Animated, {
@@ -77,7 +78,15 @@ export function ConfirmDialog({
         <Text className="text-center font-sans-bold text-xl text-ink">{title}</Text>
         <Text className="mt-2 text-center font-sans text-base text-ink/60">{message}</Text>
 
-        <Pressable accessibilityRole="button" onPress={onPrimary} style={buttonShadow} className="mt-5 overflow-hidden rounded-full">
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+            onPrimary();
+          }}
+          style={buttonShadow}
+          className="mt-5 overflow-hidden rounded-full"
+        >
           <LinearGradient
             colors={destructivePrimary ? DESTRUCTIVE_GRADIENT : PRIMARY_GRADIENT}
             start={{ x: 0, y: 0 }}
@@ -88,7 +97,14 @@ export function ConfirmDialog({
           </LinearGradient>
         </Pressable>
 
-        <Pressable accessibilityRole="button" onPress={onSecondary} className="mt-2 items-center py-3">
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => {
+            Haptics.selectionAsync();
+            onSecondary();
+          }}
+          className="mt-2 items-center py-3"
+        >
           <Text className="font-sans-bold text-base text-ink/60">{secondaryLabel}</Text>
         </Pressable>
       </Animated.View>

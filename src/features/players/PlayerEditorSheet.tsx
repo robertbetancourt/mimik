@@ -1,3 +1,4 @@
+import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import { Image, Pressable, Text, TextInput, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
@@ -48,14 +49,31 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
 
   function handleRemove() {
     if (!player) return;
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
     removePlayer(player.id);
     onClose();
+  }
+
+  // A blank (or whitespace-only) name would leave the player unlabeled
+  // everywhere downstream — leaderboard, podium, "Turno de ___". Falls back
+  // silently instead of blocking the close, since this can also fire from
+  // the sheet's swipe-to-dismiss / backdrop-tap paths, not just Aceptar.
+  function handleClose() {
+    if (player && player.name.trim() === "") {
+      renamePlayer(player.id, "Jugador");
+    }
+    onClose();
+  }
+
+  function handleAccept() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    handleClose();
   }
 
   return (
     <BottomSheet
       visible={player !== null}
-      onClose={onClose}
+      onClose={handleClose}
       footer={
         player ? (
           <View className="flex-row gap-3">
@@ -70,7 +88,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
             ) : null}
             <Pressable
               accessibilityRole="button"
-              onPress={onClose}
+              onPress={handleAccept}
               className="flex-1 items-center justify-center rounded-full bg-primary py-3.5"
             >
               <Text className="font-sans-bold text-base text-white">Aceptar</Text>
@@ -96,7 +114,9 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
             value={player.name}
             onChangeText={(text) => renamePlayer(player.id, text)}
             placeholder="Nombre del jugador"
+            accessibilityLabel="Nombre del jugador"
             maxLength={20}
+            returnKeyType="done"
             className="rounded-2xl bg-surface px-4 py-3 text-center font-sans-bold text-lg text-ink"
           />
 

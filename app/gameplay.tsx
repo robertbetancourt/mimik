@@ -2,8 +2,8 @@ import { useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { X } from "lucide-react-native";
-import { useEffect, useRef, useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { BackHandler, Pressable, Text, View } from "react-native";
 import Animated, { FadeIn } from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -42,6 +42,19 @@ export default function Gameplay() {
   const previousStatus = useRef(status);
   const [exitDialogVisible, setExitDialogVisible] = useState(false);
 
+  // Without this, Android's hardware back button pops the navigation stack
+  // directly and silently drops the turn in progress — the same exit needs
+  // the same confirmation regardless of which back affordance triggers it.
+  const handleHardwareBack = useCallback(() => {
+    setExitDialogVisible(true);
+    return true;
+  }, []);
+
+  useEffect(() => {
+    const subscription = BackHandler.addEventListener("hardwareBackPress", handleHardwareBack);
+    return () => subscription.remove();
+  }, [handleHardwareBack]);
+
   useEffect(() => {
     if (status === "feedback" && previousStatus.current !== "feedback") {
       if (lastFeedback === "correct") {
@@ -60,6 +73,7 @@ export default function Gameplay() {
   // navigation, so it has to be captured into the store first).
   useEffect(() => {
     if (status !== "turnFinished") return;
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     setLastTurnResult({ correctWords, passedWords });
     const currentPlayer = players[currentPlayerIndex];
     if (currentPlayer) addTurnScore(currentPlayer.id, correctWords.length);
@@ -78,7 +92,10 @@ export default function Gameplay() {
         <Text className="font-sans-bold text-lg text-white/70">{category?.titulo}</Text>
         <Pressable
           accessibilityRole="button"
-          onPress={() => setExitDialogVisible(true)}
+          onPress={() => {
+            Haptics.selectionAsync();
+            setExitDialogVisible(true);
+          }}
           className="h-9 w-9 items-center justify-center rounded-full bg-white/10"
         >
           <X size={18} color="rgba(255,255,255,0.7)" />
@@ -97,7 +114,7 @@ export default function Gameplay() {
 
           {status === "waitingForCenter" ? (
             <Text className="text-center font-sans-bold text-4xl text-white">
-              Vuelve a colocar el teléfono en tu frente.
+              Vuelve a colocar el teléfono sobre tu frente.
             </Text>
           ) : null}
 

@@ -21,6 +21,7 @@ import { useForeheadOrientation } from "@/features/gameplay/useForeheadOrientati
 import { useMatchStore } from "@/features/match/store";
 import { getCharacterById } from "@/features/players/characters";
 import { useLockOrientation } from "@/lib/useLockOrientation";
+import { cardShadow } from "@/theme/shadow";
 
 const COUNTDOWN_STEPS = ["3", "2", "1", "¡Ya!"];
 const STEP_DURATION_MS = 700;
@@ -64,6 +65,7 @@ export default function Countdown() {
   const breatheStyle = useAnimatedStyle(() => ({ transform: [{ scale: breathe.value }] }));
 
   const handleBack = useCallback(() => {
+    Haptics.selectionAsync();
     router.back();
   }, [router]);
 
@@ -144,6 +146,7 @@ export default function Countdown() {
       <Pressable
         accessibilityRole="button"
         onPress={handleBack}
+        style={cardShadow}
         className="absolute left-6 top-6 h-11 w-11 items-center justify-center rounded-full bg-surface"
       >
         <ChevronLeft size={22} color="#2B2118" />

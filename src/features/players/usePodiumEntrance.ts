@@ -1,3 +1,4 @@
+import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import {
   runOnJS,
@@ -71,7 +72,9 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
           withTiming(4, { duration: 80 }),
           withTiming(-18, { duration: 150 }),
           withTiming(0, { duration: 160 }, (jumpFinished) => {
-            if (jumpFinished) runOnJS(onWinnerRevealed)();
+            if (!jumpFinished) return;
+            runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Heavy);
+            runOnJS(onWinnerRevealed)();
           }),
           withTiming(0, { duration: 120 }, (settleFinished) => {
             if (!settleFinished) return;

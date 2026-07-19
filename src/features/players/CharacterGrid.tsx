@@ -63,7 +63,7 @@ function CharacterOption({
       onPressOut={() => {
         scale.value = withSpring(1, SPRING_CONFIG);
       }}
-      style={[animatedStyle, { borderWidth: 2 }]}
+      style={[animatedStyle, { borderWidth: 1.5 }]}
       className="w-[22%] items-center justify-center rounded-2xl py-2"
     >
       <Image source={character.illustration} resizeMode="contain" style={{ width: 40, height: 40 }} />

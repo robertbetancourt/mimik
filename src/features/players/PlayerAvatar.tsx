@@ -1,3 +1,4 @@
+import * as Haptics from "expo-haptics";
 import { useEffect } from "react";
 import { Image, Pressable, Text, View } from "react-native";
 import Animated, {
@@ -60,7 +61,10 @@ export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
     >
       <AnimatedPressable
         accessibilityRole="button"
-        onPress={onPress}
+        onPress={() => {
+          Haptics.selectionAsync();
+          onPress();
+        }}
         onPressIn={() => {
           pressScale.value = withSpring(0.92, PRESS_SPRING);
         }}

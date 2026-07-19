@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
 import { useState } from "react";
@@ -99,7 +100,10 @@ export default function GameSetup() {
         <Animated.View style={headerStyle}>
           <Pressable
             accessibilityRole="button"
-            onPress={() => router.back()}
+            onPress={() => {
+              Haptics.selectionAsync();
+              router.back();
+            }}
             style={cardShadow}
             className="h-11 w-11 items-center justify-center rounded-full bg-surface"
           >

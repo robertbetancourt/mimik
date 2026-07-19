@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react-native";
 import { Image, Pressable, Text } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
+import { buttonShadow } from "@/theme/shadow";
+
 interface NextPlayerButtonProps {
   playerName: string;
   characterIllustration?: number;
@@ -32,7 +34,7 @@ export function NextPlayerButton({ playerName, characterIllustration, onPress }:
       onPressOut={() => {
         scale.value = withSpring(1, SPRING_CONFIG);
       }}
-      style={animatedStyle}
+      style={[animatedStyle, buttonShadow]}
       className="flex-row items-center justify-center gap-2 rounded-full bg-primary py-4"
     >
       {characterIllustration ? (
