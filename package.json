@@ -30,7 +30,7 @@
     "expo-status-bar": "~3.0.9",
     "lucide-react-native": "^1.25.0",
     "nativewind": "^4.2.6",
-    "react": "^19.1.0",
+    "react": "19.1.0",
     "react-native": "^0.81.5",
     "react-native-gesture-handler": "~2.28.0",
     "react-native-reanimated": "~4.1.1",
@@ -48,6 +48,9 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.5",
     "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "react-dom": "19.1.0"
   },
   "private": true
 }
