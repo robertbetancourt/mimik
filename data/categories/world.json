@@ -1,0 +1,870 @@
+{
+  "id": "world",
+  "titulo": "Mundo",
+  "descripcion": "Adivina lugares icónicos de todo el mundo.",
+  "version": 1,
+  "idioma": "es",
+  "ilustracion": "assets/images/categories/countries.png",
+  "palabras": [
+    {
+      "id": "afganistan",
+      "texto": "Afganistán"
+    },
+    {
+      "id": "alemania",
+      "texto": "Alemania"
+    },
+    {
+      "id": "arabia-saudita",
+      "texto": "Arabia Saudita"
+    },
+    {
+      "id": "argelia",
+      "texto": "Argelia"
+    },
+    {
+      "id": "argentina",
+      "texto": "Argentina"
+    },
+    {
+      "id": "australia",
+      "texto": "Australia"
+    },
+    {
+      "id": "austria",
+      "texto": "Austria"
+    },
+    {
+      "id": "bahamas",
+      "texto": "Bahamas"
+    },
+    {
+      "id": "bangladesh",
+      "texto": "Bangladesh"
+    },
+    {
+      "id": "bolivia",
+      "texto": "Bolivia"
+    },
+    {
+      "id": "brasil",
+      "texto": "Brasil"
+    },
+    {
+      "id": "bulgaria",
+      "texto": "Bulgaria"
+    },
+    {
+      "id": "belgica",
+      "texto": "Bélgica"
+    },
+    {
+      "id": "camboya",
+      "texto": "Camboya"
+    },
+    {
+      "id": "canada",
+      "texto": "Canadá"
+    },
+    {
+      "id": "catar",
+      "texto": "Catar"
+    },
+    {
+      "id": "cataratas-del-niagara",
+      "texto": "Cataratas del Niágara"
+    },
+    {
+      "id": "chile",
+      "texto": "Chile"
+    },
+    {
+      "id": "china",
+      "texto": "China"
+    },
+    {
+      "id": "colombia",
+      "texto": "Colombia"
+    },
+    {
+      "id": "corea-del-norte",
+      "texto": "Corea del Norte"
+    },
+    {
+      "id": "corea-del-sur",
+      "texto": "Corea del Sur"
+    },
+    {
+      "id": "costa-rica",
+      "texto": "Costa Rica"
+    },
+    {
+      "id": "croacia",
+      "texto": "Croacia"
+    },
+    {
+      "id": "cuba",
+      "texto": "Cuba"
+    },
+    {
+      "id": "dinamarca",
+      "texto": "Dinamarca"
+    },
+    {
+      "id": "dubai",
+      "texto": "Dubái"
+    },
+    {
+      "id": "ecuador",
+      "texto": "Ecuador"
+    },
+    {
+      "id": "egipto",
+      "texto": "Egipto"
+    },
+    {
+      "id": "el-salvador",
+      "texto": "El Salvador"
+    },
+    {
+      "id": "emiratos-arabes-unidos",
+      "texto": "Emiratos Árabes Unidos"
+    },
+    {
+      "id": "eslovaquia",
+      "texto": "Eslovaquia"
+    },
+    {
+      "id": "eslovenia",
+      "texto": "Eslovenia"
+    },
+    {
+      "id": "espana",
+      "texto": "España"
+    },
+    {
+      "id": "estados-unidos",
+      "texto": "Estados Unidos"
+    },
+    {
+      "id": "estatua-de-la-libertad",
+      "texto": "Estatua de la Libertad"
+    },
+    {
+      "id": "etiopia",
+      "texto": "Etiopía"
+    },
+    {
+      "id": "filipinas",
+      "texto": "Filipinas"
+    },
+    {
+      "id": "finlandia",
+      "texto": "Finlandia"
+    },
+    {
+      "id": "francia",
+      "texto": "Francia"
+    },
+    {
+      "id": "gran-canion",
+      "texto": "Gran Cañón"
+    },
+    {
+      "id": "gran-muralla-china",
+      "texto": "Gran Muralla China"
+    },
+    {
+      "id": "grecia",
+      "texto": "Grecia"
+    },
+    {
+      "id": "guatemala",
+      "texto": "Guatemala"
+    },
+    {
+      "id": "haiti",
+      "texto": "Haití"
+    },
+    {
+      "id": "honduras",
+      "texto": "Honduras"
+    },
+    {
+      "id": "hungria",
+      "texto": "Hungría"
+    },
+    {
+      "id": "india",
+      "texto": "India"
+    },
+    {
+      "id": "indonesia",
+      "texto": "Indonesia"
+    },
+    {
+      "id": "irak",
+      "texto": "Irak"
+    },
+    {
+      "id": "irlanda",
+      "texto": "Irlanda"
+    },
+    {
+      "id": "iran",
+      "texto": "Irán"
+    },
+    {
+      "id": "islandia",
+      "texto": "Islandia"
+    },
+    {
+      "id": "israel",
+      "texto": "Israel"
+    },
+    {
+      "id": "italia",
+      "texto": "Italia"
+    },
+    {
+      "id": "jamaica",
+      "texto": "Jamaica"
+    },
+    {
+      "id": "japon",
+      "texto": "Japón"
+    },
+    {
+      "id": "jordania",
+      "texto": "Jordania"
+    },
+    {
+      "id": "kenia",
+      "texto": "Kenia"
+    },
+    {
+      "id": "londres",
+      "texto": "Londres"
+    },
+    {
+      "id": "libano",
+      "texto": "Líbano"
+    },
+    {
+      "id": "machu-picchu",
+      "texto": "Machu Picchu"
+    },
+    {
+      "id": "madagascar",
+      "texto": "Madagascar"
+    },
+    {
+      "id": "malasia",
+      "texto": "Malasia"
+    },
+    {
+      "id": "marruecos",
+      "texto": "Marruecos"
+    },
+    {
+      "id": "mongolia",
+      "texto": "Mongolia"
+    },
+    {
+      "id": "monte-everest",
+      "texto": "Monte Everest"
+    },
+    {
+      "id": "mexico",
+      "texto": "México"
+    },
+    {
+      "id": "nepal",
+      "texto": "Nepal"
+    },
+    {
+      "id": "nicaragua",
+      "texto": "Nicaragua"
+    },
+    {
+      "id": "nigeria",
+      "texto": "Nigeria"
+    },
+    {
+      "id": "noruega",
+      "texto": "Noruega"
+    },
+    {
+      "id": "nueva-york",
+      "texto": "Nueva York"
+    },
+    {
+      "id": "nueva-zelanda",
+      "texto": "Nueva Zelanda"
+    },
+    {
+      "id": "pakistan",
+      "texto": "Pakistán"
+    },
+    {
+      "id": "panama",
+      "texto": "Panamá"
+    },
+    {
+      "id": "paraguay",
+      "texto": "Paraguay"
+    },
+    {
+      "id": "paris",
+      "texto": "París"
+    },
+    {
+      "id": "paises-bajos",
+      "texto": "Países Bajos"
+    },
+    {
+      "id": "peru",
+      "texto": "Perú"
+    },
+    {
+      "id": "piramides-de-guiza",
+      "texto": "Pirámides de Guiza"
+    },
+    {
+      "id": "polonia",
+      "texto": "Polonia"
+    },
+    {
+      "id": "portugal",
+      "texto": "Portugal"
+    },
+    {
+      "id": "reino-unido",
+      "texto": "Reino Unido"
+    },
+    {
+      "id": "republica-checa",
+      "texto": "República Checa"
+    },
+    {
+      "id": "republica-dominicana",
+      "texto": "República Dominicana"
+    },
+    {
+      "id": "roma",
+      "texto": "Roma"
+    },
+    {
+      "id": "rumania",
+      "texto": "Rumanía"
+    },
+    {
+      "id": "rusia",
+      "texto": "Rusia"
+    },
+    {
+      "id": "rio-de-janeiro",
+      "texto": "Río de Janeiro"
+    },
+    {
+      "id": "serbia",
+      "texto": "Serbia"
+    },
+    {
+      "id": "singapur",
+      "texto": "Singapur"
+    },
+    {
+      "id": "siria",
+      "texto": "Siria"
+    },
+    {
+      "id": "sudafrica",
+      "texto": "Sudáfrica"
+    },
+    {
+      "id": "suecia",
+      "texto": "Suecia"
+    },
+    {
+      "id": "barcelona",
+      "texto": "Barcelona"
+    },
+    {
+      "id": "madrid",
+      "texto": "Madrid"
+    },
+    {
+      "id": "venecia",
+      "texto": "Venecia"
+    },
+    {
+      "id": "amsterdam",
+      "texto": "Ámsterdam"
+    },
+    {
+      "id": "berlin",
+      "texto": "Berlín"
+    },
+    {
+      "id": "atenas",
+      "texto": "Atenas"
+    },
+    {
+      "id": "lisboa",
+      "texto": "Lisboa"
+    },
+    {
+      "id": "praga",
+      "texto": "Praga"
+    },
+    {
+      "id": "viena",
+      "texto": "Viena"
+    },
+    {
+      "id": "bruselas",
+      "texto": "Bruselas"
+    },
+    {
+      "id": "moscu",
+      "texto": "Moscú"
+    },
+    {
+      "id": "estambul",
+      "texto": "Estambul"
+    },
+    {
+      "id": "el-cairo",
+      "texto": "El Cairo"
+    },
+    {
+      "id": "pekin",
+      "texto": "Pekín"
+    },
+    {
+      "id": "hong-kong",
+      "texto": "Hong Kong"
+    },
+    {
+      "id": "singapur-ciudad",
+      "texto": "Singapur"
+    },
+    {
+      "id": "bangkok",
+      "texto": "Bangkok"
+    },
+    {
+      "id": "seul",
+      "texto": "Seúl"
+    },
+    {
+      "id": "bombay",
+      "texto": "Bombay"
+    },
+    {
+      "id": "delhi",
+      "texto": "Delhi"
+    },
+    {
+      "id": "los-angeles",
+      "texto": "Los Ángeles"
+    },
+    {
+      "id": "las-vegas",
+      "texto": "Las Vegas"
+    },
+    {
+      "id": "san-francisco",
+      "texto": "San Francisco"
+    },
+    {
+      "id": "washington-dc",
+      "texto": "Washington D. C."
+    },
+    {
+      "id": "chicago",
+      "texto": "Chicago"
+    },
+    {
+      "id": "toronto",
+      "texto": "Toronto"
+    },
+    {
+      "id": "vancouver",
+      "texto": "Vancouver"
+    },
+    {
+      "id": "ciudad-de-mexico",
+      "texto": "Ciudad de México"
+    },
+    {
+      "id": "la-habana",
+      "texto": "La Habana"
+    },
+    {
+      "id": "buenos-aires",
+      "texto": "Buenos Aires"
+    },
+    {
+      "id": "lima",
+      "texto": "Lima"
+    },
+    {
+      "id": "santiago",
+      "texto": "Santiago"
+    },
+    {
+      "id": "cristo-redentor",
+      "texto": "Cristo Redentor"
+    },
+    {
+      "id": "coliseo-romano",
+      "texto": "Coliseo Romano"
+    },
+    {
+      "id": "taj-mahal",
+      "texto": "Taj Mahal"
+    },
+    {
+      "id": "big-ben",
+      "texto": "Big Ben"
+    },
+    {
+      "id": "opera-de-sidney",
+      "texto": "Ópera de Sídney"
+    },
+    {
+      "id": "torre-de-pisa",
+      "texto": "Torre de Pisa"
+    },
+    {
+      "id": "sagrada-familia",
+      "texto": "Sagrada Familia"
+    },
+    {
+      "id": "arco-del-triunfo",
+      "texto": "Arco del Triunfo"
+    },
+    {
+      "id": "stonehenge",
+      "texto": "Stonehenge"
+    },
+    {
+      "id": "monte-rushmore",
+      "texto": "Monte Rushmore"
+    },
+    {
+      "id": "petra",
+      "texto": "Petra"
+    },
+    {
+      "id": "angkor-wat",
+      "texto": "Angkor Wat"
+    },
+    {
+      "id": "burj-khalifa",
+      "texto": "Burj Khalifa"
+    },
+    {
+      "id": "puente-golden-gate",
+      "texto": "Puente Golden Gate"
+    },
+    {
+      "id": "canal-de-panama",
+      "texto": "Canal de Panamá"
+    },
+    {
+      "id": "canal-de-suez",
+      "texto": "Canal de Suez"
+    },
+    {
+      "id": "moais-isla-de-pascua",
+      "texto": "Moáis de la Isla de Pascua"
+    },
+    {
+      "id": "monte-fuji",
+      "texto": "Monte Fuji"
+    },
+    {
+      "id": "kilimanjaro",
+      "texto": "Monte Kilimanjaro"
+    },
+    {
+      "id": "k2",
+      "texto": "K2"
+    },
+    {
+      "id": "aconcagua",
+      "texto": "Aconcagua"
+    },
+    {
+      "id": "mont-blanc",
+      "texto": "Mont Blanc"
+    },
+    {
+      "id": "vesubio",
+      "texto": "Vesubio"
+    },
+    {
+      "id": "etna",
+      "texto": "Etna"
+    },
+    {
+      "id": "krakatoa",
+      "texto": "Krakatoa"
+    },
+    {
+      "id": "mauna-loa",
+      "texto": "Mauna Loa"
+    },
+    {
+      "id": "amazonas",
+      "texto": "Amazonas"
+    },
+    {
+      "id": "rio-nilo",
+      "texto": "Río Nilo"
+    },
+    {
+      "id": "rio-misisipi",
+      "texto": "Río Misisipi"
+    },
+    {
+      "id": "rio-yangtse",
+      "texto": "Río Yangtsé"
+    },
+    {
+      "id": "rio-danubio",
+      "texto": "Río Danubio"
+    },
+    {
+      "id": "rio-ganges",
+      "texto": "Río Ganges"
+    },
+    {
+      "id": "oceano-pacifico",
+      "texto": "Océano Pacífico"
+    },
+    {
+      "id": "oceano-atlantico",
+      "texto": "Océano Atlántico"
+    },
+    {
+      "id": "oceano-indico",
+      "texto": "Océano Índico"
+    },
+    {
+      "id": "oceano-artico",
+      "texto": "Océano Ártico"
+    },
+    {
+      "id": "oceano-antartico",
+      "texto": "Océano Antártico"
+    },
+    {
+      "id": "mar-mediterraneo",
+      "texto": "Mar Mediterráneo"
+    },
+    {
+      "id": "mar-caribe",
+      "texto": "Mar Caribe"
+    },
+    {
+      "id": "mar-rojo",
+      "texto": "Mar Rojo"
+    },
+    {
+      "id": "mar-muerto",
+      "texto": "Mar Muerto"
+    },
+    {
+      "id": "mar-negro",
+      "texto": "Mar Negro"
+    },
+    {
+      "id": "hawai",
+      "texto": "Hawái"
+    },
+    {
+      "id": "isla-de-pascua",
+      "texto": "Isla de Pascua"
+    },
+    {
+      "id": "galapagos",
+      "texto": "Islas Galápagos"
+    },
+    {
+      "id": "bora-bora",
+      "texto": "Bora Bora"
+    },
+    {
+      "id": "bali",
+      "texto": "Bali"
+    },
+    {
+      "id": "islandia-isla",
+      "texto": "Islandia"
+    },
+    {
+      "id": "groenlandia",
+      "texto": "Groenlandia"
+    },
+    {
+      "id": "sicilia",
+      "texto": "Sicilia"
+    },
+    {
+      "id": "santorini",
+      "texto": "Santorini"
+    },
+    {
+      "id": "maldivas",
+      "texto": "Maldivas"
+    },
+    {
+      "id": "selva-amazonica",
+      "texto": "Selva Amazónica"
+    },
+    {
+      "id": "bosque-negro",
+      "texto": "Bosque Negro"
+    },
+    {
+      "id": "yellowstone",
+      "texto": "Yellowstone"
+    },
+    {
+      "id": "yosemite",
+      "texto": "Yosemite"
+    },
+    {
+      "id": "serengeti",
+      "texto": "Serengeti"
+    },
+    {
+      "id": "sahara",
+      "texto": "Sáhara"
+    },
+    {
+      "id": "gobi",
+      "texto": "Desierto del Gobi"
+    },
+    {
+      "id": "atacama",
+      "texto": "Desierto de Atacama"
+    },
+    {
+      "id": "kalahari",
+      "texto": "Desierto del Kalahari"
+    },
+    {
+      "id": "mojave",
+      "texto": "Desierto de Mojave"
+    },
+    {
+      "id": "aurora-boreal",
+      "texto": "Aurora Boreal"
+    },
+    {
+      "id": "circulo-polar-artico",
+      "texto": "Círculo Polar Ártico"
+    },
+    {
+      "id": "polo-norte",
+      "texto": "Polo Norte"
+    },
+    {
+      "id": "polo-sur",
+      "texto": "Polo Sur"
+    },
+    {
+      "id": "antartida",
+      "texto": "Antártida"
+    },
+    {
+      "id": "fiordos-de-noruega",
+      "texto": "Fiordos de Noruega"
+    },
+    {
+      "id": "bahia-de-halong",
+      "texto": "Bahía de Halong"
+    },
+    {
+      "id": "acantilados-de-moher",
+      "texto": "Acantilados de Moher"
+    },
+    {
+      "id": "cueva-azul",
+      "texto": "Cueva Azul"
+    },
+    {
+      "id": "uluru",
+      "texto": "Uluru"
+    },
+    {
+      "id": "glaciar-perito-moreno",
+      "texto": "Glaciar Perito Moreno"
+    },
+    {
+      "id": "camino-del-inca",
+      "texto": "Camino del Inca"
+    },
+    {
+      "id": "valle-de-los-reyes",
+      "texto": "Valle de los Reyes"
+    },
+    {
+      "id": "capadocia",
+      "texto": "Capadocia"
+    },
+    {
+      "id": "bahia-de-rio",
+      "texto": "Bahía de Río de Janeiro"
+    },
+    {
+      "id": "gran-arrecife-de-coral",
+      "texto": "Gran Arrecife de Coral"
+    },
+    {
+      "id": "suiza",
+      "texto": "Suiza"
+    },
+    {
+      "id": "sidney",
+      "texto": "Sídney"
+    },
+    {
+      "id": "tailandia",
+      "texto": "Tailandia"
+    },
+    {
+      "id": "tokio",
+      "texto": "Tokio"
+    },
+    {
+      "id": "torre-eiffel",
+      "texto": "Torre Eiffel"
+    },
+    {
+      "id": "turquia",
+      "texto": "Turquía"
+    },
+    {
+      "id": "ucrania",
+      "texto": "Ucrania"
+    },
+    {
+      "id": "uruguay",
+      "texto": "Uruguay"
+    },
+    {
+      "id": "venezuela",
+      "texto": "Venezuela"
+    },
+    {
+      "id": "vietnam",
+      "texto": "Vietnam"
+    }
+  ]
+}

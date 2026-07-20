@@ -10,9 +10,9 @@ export const categoryIllustrations: Record<Category["id"], number> = {
   games: require("../../../assets/images/categories/games.png"),
   logos: require("../../../assets/images/categories/logos.png"),
   musica: require("../../../assets/images/categories/music.png"),
-  paises: require("../../../assets/images/categories/countries.png"),
   peliculas: require("../../../assets/images/categories/movies.png"),
   superheroes: require("../../../assets/images/categories/superheroes.png"),
   "tv-series": require("../../../assets/images/categories/tv-series.png"),
   mix: require("../../../assets/images/categories/mix.png"),
+  world: require("../../../assets/images/categories/countries.png"),
 };

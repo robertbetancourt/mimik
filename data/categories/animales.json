@@ -6,106 +6,805 @@
   "idioma": "es",
   "ilustracion": "assets/images/categories/animals.png",
   "palabras": [
-    { "id": "perro", "texto": "Perro" },
-    { "id": "gato", "texto": "Gato" },
-    { "id": "conejo", "texto": "Conejo" },
-    { "id": "hamster", "texto": "Hámster" },
-    { "id": "cobaya", "texto": "Cobaya" },
-    { "id": "caballo", "texto": "Caballo" },
-    { "id": "vaca", "texto": "Vaca" },
-    { "id": "toro", "texto": "Toro" },
-    { "id": "cerdo", "texto": "Cerdo" },
-    { "id": "oveja", "texto": "Oveja" },
-    { "id": "cabra", "texto": "Cabra" },
-    { "id": "burro", "texto": "Burro" },
-    { "id": "gallina", "texto": "Gallina" },
-    { "id": "gallo", "texto": "Gallo" },
-    { "id": "pato", "texto": "Pato" },
-    { "id": "ganso", "texto": "Ganso" },
-    { "id": "pavo", "texto": "Pavo" },
-    { "id": "paloma", "texto": "Paloma" },
-    { "id": "canario", "texto": "Canario" },
-    { "id": "loro", "texto": "Loro" },
-    { "id": "aguila", "texto": "Águila" },
-    { "id": "halcon", "texto": "Halcón" },
-    { "id": "buho", "texto": "Búho" },
-    { "id": "flamenco", "texto": "Flamenco" },
-    { "id": "pelicano", "texto": "Pelícano" },
-    { "id": "pinguino", "texto": "Pingüino" },
-    { "id": "avestruz", "texto": "Avestruz" },
-    { "id": "cisne", "texto": "Cisne" },
-    { "id": "colibri", "texto": "Colibrí" },
-    { "id": "murcielago", "texto": "Murciélago" },
-    { "id": "leon", "texto": "León" },
-    { "id": "tigre", "texto": "Tigre" },
-    { "id": "leopardo", "texto": "Leopardo" },
-    { "id": "guepardo", "texto": "Guepardo" },
-    { "id": "jaguar", "texto": "Jaguar" },
-    { "id": "puma", "texto": "Puma" },
-    { "id": "lobo", "texto": "Lobo" },
-    { "id": "zorro", "texto": "Zorro" },
-    { "id": "oso", "texto": "Oso" },
-    { "id": "oso-polar", "texto": "Oso Polar" },
-    { "id": "oso-panda", "texto": "Oso Panda" },
-    { "id": "koala", "texto": "Koala" },
-    { "id": "canguro", "texto": "Canguro" },
-    { "id": "chimpance", "texto": "Chimpancé" },
-    { "id": "gorila", "texto": "Gorila" },
-    { "id": "orangutan", "texto": "Orangután" },
-    { "id": "mono", "texto": "Mono" },
-    { "id": "perezoso", "texto": "Perezoso" },
-    { "id": "mapache", "texto": "Mapache" },
-    { "id": "ardilla", "texto": "Ardilla" },
-    { "id": "castor", "texto": "Castor" },
-    { "id": "nutria", "texto": "Nutria" },
-    { "id": "zorrillo", "texto": "Zorrillo" },
-    { "id": "elefante", "texto": "Elefante" },
-    { "id": "jirafa", "texto": "Jirafa" },
-    { "id": "cebra", "texto": "Cebra" },
-    { "id": "rinoceronte", "texto": "Rinoceronte" },
-    { "id": "hipopotamo", "texto": "Hipopótamo" },
-    { "id": "bufalo", "texto": "Búfalo" },
-    { "id": "bisonte", "texto": "Bisonte" },
-    { "id": "camello", "texto": "Camello" },
-    { "id": "dromedario", "texto": "Dromedario" },
-    { "id": "llama", "texto": "Llama" },
-    { "id": "alpaca", "texto": "Alpaca" },
-    { "id": "venado", "texto": "Venado" },
-    { "id": "alce", "texto": "Alce" },
-    { "id": "reno", "texto": "Reno" },
-    { "id": "jabali", "texto": "Jabalí" },
-    { "id": "cocodrilo", "texto": "Cocodrilo" },
-    { "id": "caiman", "texto": "Caimán" },
-    { "id": "tortuga", "texto": "Tortuga" },
-    { "id": "iguana", "texto": "Iguana" },
-    { "id": "camaleon", "texto": "Camaleón" },
-    { "id": "lagarto", "texto": "Lagarto" },
-    { "id": "serpiente", "texto": "Serpiente" },
-    { "id": "cobra", "texto": "Cobra" },
-    { "id": "piton", "texto": "Pitón" },
-    { "id": "anaconda", "texto": "Anaconda" },
-    { "id": "rana", "texto": "Rana" },
-    { "id": "sapo", "texto": "Sapo" },
-    { "id": "salamandra", "texto": "Salamandra" },
-    { "id": "pez-payaso", "texto": "Pez Payaso" },
-    { "id": "tiburon", "texto": "Tiburón" },
-    { "id": "ballena", "texto": "Ballena" },
-    { "id": "delfin", "texto": "Delfín" },
-    { "id": "orca", "texto": "Orca" },
-    { "id": "pulpo", "texto": "Pulpo" },
-    { "id": "calamar", "texto": "Calamar" },
-    { "id": "medusa", "texto": "Medusa" },
-    { "id": "caballito-de-mar", "texto": "Caballito de Mar" },
-    { "id": "estrella-de-mar", "texto": "Estrella de Mar" },
-    { "id": "cangrejo", "texto": "Cangrejo" },
-    { "id": "langosta", "texto": "Langosta" },
-    { "id": "camaron", "texto": "Camarón" },
-    { "id": "mariposa", "texto": "Mariposa" },
-    { "id": "abeja", "texto": "Abeja" },
-    { "id": "avispa", "texto": "Avispa" },
-    { "id": "hormiga", "texto": "Hormiga" },
-    { "id": "arana", "texto": "Araña" },
-    { "id": "escorpion", "texto": "Escorpión" },
-    { "id": "caracol", "texto": "Caracol" }
+    {
+      "id": "perro",
+      "texto": "Perro"
+    },
+    {
+      "id": "gato",
+      "texto": "Gato"
+    },
+    {
+      "id": "conejo",
+      "texto": "Conejo"
+    },
+    {
+      "id": "hamster",
+      "texto": "Hámster"
+    },
+    {
+      "id": "conejillo-de-indias",
+      "texto": "Conejillo de Indias"
+    },
+    {
+      "id": "caballo",
+      "texto": "Caballo"
+    },
+    {
+      "id": "vaca",
+      "texto": "Vaca"
+    },
+    {
+      "id": "toro",
+      "texto": "Toro"
+    },
+    {
+      "id": "cerdo",
+      "texto": "Cerdo"
+    },
+    {
+      "id": "oveja",
+      "texto": "Oveja"
+    },
+    {
+      "id": "cabra",
+      "texto": "Cabra"
+    },
+    {
+      "id": "burro",
+      "texto": "Burro"
+    },
+    {
+      "id": "gallina",
+      "texto": "Gallina"
+    },
+    {
+      "id": "gallo",
+      "texto": "Gallo"
+    },
+    {
+      "id": "pato",
+      "texto": "Pato"
+    },
+    {
+      "id": "ganso",
+      "texto": "Ganso"
+    },
+    {
+      "id": "pavo",
+      "texto": "Pavo"
+    },
+    {
+      "id": "paloma",
+      "texto": "Paloma"
+    },
+    {
+      "id": "canario",
+      "texto": "Canario"
+    },
+    {
+      "id": "loro",
+      "texto": "Loro"
+    },
+    {
+      "id": "aguila",
+      "texto": "Águila"
+    },
+    {
+      "id": "halcon",
+      "texto": "Halcón"
+    },
+    {
+      "id": "buho",
+      "texto": "Búho"
+    },
+    {
+      "id": "flamenco",
+      "texto": "Flamenco"
+    },
+    {
+      "id": "pelicano",
+      "texto": "Pelícano"
+    },
+    {
+      "id": "pinguino",
+      "texto": "Pingüino"
+    },
+    {
+      "id": "avestruz",
+      "texto": "Avestruz"
+    },
+    {
+      "id": "cisne",
+      "texto": "Cisne"
+    },
+    {
+      "id": "colibri",
+      "texto": "Colibrí"
+    },
+    {
+      "id": "murcielago",
+      "texto": "Murciélago"
+    },
+    {
+      "id": "leon",
+      "texto": "León"
+    },
+    {
+      "id": "tigre",
+      "texto": "Tigre"
+    },
+    {
+      "id": "leopardo",
+      "texto": "Leopardo"
+    },
+    {
+      "id": "guepardo",
+      "texto": "Guepardo"
+    },
+    {
+      "id": "jaguar",
+      "texto": "Jaguar"
+    },
+    {
+      "id": "puma",
+      "texto": "Puma"
+    },
+    {
+      "id": "lobo",
+      "texto": "Lobo"
+    },
+    {
+      "id": "zorro",
+      "texto": "Zorro"
+    },
+    {
+      "id": "oso",
+      "texto": "Oso"
+    },
+    {
+      "id": "oso-polar",
+      "texto": "Oso Polar"
+    },
+    {
+      "id": "oso-panda",
+      "texto": "Oso Panda"
+    },
+    {
+      "id": "koala",
+      "texto": "Koala"
+    },
+    {
+      "id": "canguro",
+      "texto": "Canguro"
+    },
+    {
+      "id": "chimpance",
+      "texto": "Chimpancé"
+    },
+    {
+      "id": "gorila",
+      "texto": "Gorila"
+    },
+    {
+      "id": "orangutan",
+      "texto": "Orangután"
+    },
+    {
+      "id": "mono",
+      "texto": "Mono"
+    },
+    {
+      "id": "perezoso",
+      "texto": "Perezoso"
+    },
+    {
+      "id": "mapache",
+      "texto": "Mapache"
+    },
+    {
+      "id": "ardilla",
+      "texto": "Ardilla"
+    },
+    {
+      "id": "castor",
+      "texto": "Castor"
+    },
+    {
+      "id": "nutria",
+      "texto": "Nutria"
+    },
+    {
+      "id": "erizo",
+      "texto": "Erizo"
+    },
+    {
+      "id": "mofeta",
+      "texto": "Mofeta"
+    },
+    {
+      "id": "elefante",
+      "texto": "Elefante"
+    },
+    {
+      "id": "jirafa",
+      "texto": "Jirafa"
+    },
+    {
+      "id": "cebra",
+      "texto": "Cebra"
+    },
+    {
+      "id": "rinoceronte",
+      "texto": "Rinoceronte"
+    },
+    {
+      "id": "hipopotamo",
+      "texto": "Hipopótamo"
+    },
+    {
+      "id": "bufalo",
+      "texto": "Búfalo"
+    },
+    {
+      "id": "bisonte",
+      "texto": "Bisonte"
+    },
+    {
+      "id": "camello",
+      "texto": "Camello"
+    },
+    {
+      "id": "dromedario",
+      "texto": "Dromedario"
+    },
+    {
+      "id": "llama",
+      "texto": "Llama"
+    },
+    {
+      "id": "alpaca",
+      "texto": "Alpaca"
+    },
+    {
+      "id": "venado",
+      "texto": "Venado"
+    },
+    {
+      "id": "alce",
+      "texto": "Alce"
+    },
+    {
+      "id": "reno",
+      "texto": "Reno"
+    },
+    {
+      "id": "jabali",
+      "texto": "Jabalí"
+    },
+    {
+      "id": "cocodrilo",
+      "texto": "Cocodrilo"
+    },
+    {
+      "id": "tortuga",
+      "texto": "Tortuga"
+    },
+    {
+      "id": "iguana",
+      "texto": "Iguana"
+    },
+    {
+      "id": "camaleon",
+      "texto": "Camaleón"
+    },
+    {
+      "id": "lagarto",
+      "texto": "Lagarto"
+    },
+    {
+      "id": "serpiente",
+      "texto": "Serpiente"
+    },
+    {
+      "id": "cobra",
+      "texto": "Cobra"
+    },
+    {
+      "id": "piton",
+      "texto": "Pitón"
+    },
+    {
+      "id": "anaconda",
+      "texto": "Anaconda"
+    },
+    {
+      "id": "rana",
+      "texto": "Rana"
+    },
+    {
+      "id": "sapo",
+      "texto": "Sapo"
+    },
+    {
+      "id": "pez-payaso",
+      "texto": "Pez Payaso"
+    },
+    {
+      "id": "foca",
+      "texto": "Foca"
+    },
+    {
+      "id": "tiburon",
+      "texto": "Tiburón"
+    },
+    {
+      "id": "ballena",
+      "texto": "Ballena"
+    },
+    {
+      "id": "delfin",
+      "texto": "Delfín"
+    },
+    {
+      "id": "orca",
+      "texto": "Orca"
+    },
+    {
+      "id": "pulpo",
+      "texto": "Pulpo"
+    },
+    {
+      "id": "calamar",
+      "texto": "Calamar"
+    },
+    {
+      "id": "medusa",
+      "texto": "Medusa"
+    },
+    {
+      "id": "caballito-de-mar",
+      "texto": "Caballito de Mar"
+    },
+    {
+      "id": "estrella-de-mar",
+      "texto": "Estrella de Mar"
+    },
+    {
+      "id": "cangrejo",
+      "texto": "Cangrejo"
+    },
+    {
+      "id": "camaron",
+      "texto": "Camarón"
+    },
+    {
+      "id": "mariposa",
+      "texto": "Mariposa"
+    },
+    {
+      "id": "abeja",
+      "texto": "Abeja"
+    },
+    {
+      "id": "avispa",
+      "texto": "Avispa"
+    },
+    {
+      "id": "hormiga",
+      "texto": "Hormiga"
+    },
+    {
+      "id": "arana",
+      "texto": "Araña"
+    },
+    {
+      "id": "escorpion",
+      "texto": "Escorpión"
+    },
+    {
+      "id": "caracol",
+      "texto": "Caracol"
+    },
+    {
+      "id": "foca-leopardo",
+      "texto": "Foca Leopardo"
+    },
+    {
+      "id": "morsa",
+      "texto": "Morsa"
+    },
+    {
+      "id": "manati",
+      "texto": "Manatí"
+    },
+    {
+      "id": "dugongo",
+      "texto": "Dugongo"
+    },
+    {
+      "id": "morsa",
+      "texto": "Morsa"
+    },
+    {
+      "id": "beluga",
+      "texto": "Beluga"
+    },
+    {
+      "id": "narval",
+      "texto": "Narval"
+    },
+    {
+      "id": "cachalote",
+      "texto": "Cachalote"
+    },
+    {
+      "id": "mantarraya",
+      "texto": "Mantarraya"
+    },
+    {
+      "id": "raya",
+      "texto": "Raya"
+    },
+    {
+      "id": "anguila",
+      "texto": "Anguila"
+    },
+    {
+      "id": "morena",
+      "texto": "Morena"
+    },
+    {
+      "id": "atun",
+      "texto": "Atún"
+    },
+    {
+      "id": "salmon",
+      "texto": "Salmón"
+    },
+    {
+      "id": "pez-espada",
+      "texto": "Pez Espada"
+    },
+    {
+      "id": "pez-globo",
+      "texto": "Pez Globo"
+    },
+    {
+      "id": "pez-luna",
+      "texto": "Pez Luna"
+    },
+    {
+      "id": "pez-volador",
+      "texto": "Pez Volador"
+    },
+    {
+      "id": "pez-sierra",
+      "texto": "Pez Sierra"
+    },
+    {
+      "id": "pez-electrico",
+      "texto": "Pez Eléctrico"
+    },
+    {
+      "id": "piraña",
+      "texto": "Piraña"
+    },
+    {
+      "id": "trucha",
+      "texto": "Trucha"
+    },
+    {
+      "id": "bacalao",
+      "texto": "Bacalao"
+    },
+    {
+      "id": "mero",
+      "texto": "Mero"
+    },
+    {
+      "id": "mejillon",
+      "texto": "Mejillón"
+    },
+    {
+      "id": "ostra",
+      "texto": "Ostra"
+    },
+    {
+      "id": "almeja",
+      "texto": "Almeja"
+    },
+    {
+      "id": "erizo-de-mar",
+      "texto": "Erizo de Mar"
+    },
+    {
+      "id": "babosa",
+      "texto": "Babosa"
+    },
+    {
+      "id": "lombriz",
+      "texto": "Lombriz"
+    },
+    {
+      "id": "ciempies",
+      "texto": "Ciempiés"
+    },
+    {
+      "id": "milpies",
+      "texto": "Milpiés"
+    },
+    {
+      "id": "libelula",
+      "texto": "Libélula"
+    },
+    {
+      "id": "mantis",
+      "texto": "Mantis"
+    },
+    {
+      "id": "saltamontes",
+      "texto": "Saltamontes"
+    },
+    {
+      "id": "grillo",
+      "texto": "Grillo"
+    },
+    {
+      "id": "mariquita",
+      "texto": "Mariquita"
+    },
+    {
+      "id": "escarabajo",
+      "texto": "Escarabajo"
+    },
+    {
+      "id": "mosca",
+      "texto": "Mosca"
+    },
+    {
+      "id": "mosquito",
+      "texto": "Mosquito"
+    },
+    {
+      "id": "cigarra",
+      "texto": "Cigarra"
+    },
+    {
+      "id": "polilla",
+      "texto": "Polilla"
+    },
+    {
+      "id": "termita",
+      "texto": "Termita"
+    },
+    {
+      "id": "garrapata",
+      "texto": "Garrapata"
+    },
+    {
+      "id": "cochinilla",
+      "texto": "Cochinilla"
+    },
+    {
+      "id": "avispon",
+      "texto": "Avispón"
+    },
+    {
+      "id": "cuervo",
+      "texto": "Cuervo"
+    },
+    {
+      "id": "cuervo",
+      "texto": "Cuervo"
+    },
+    {
+      "id": "golondrina",
+      "texto": "Golondrina"
+    },
+    {
+      "id": "gorrion",
+      "texto": "Gorrión"
+    },
+    {
+      "id": "tucan",
+      "texto": "Tucán"
+    },
+    {
+      "id": "pavo-real",
+      "texto": "Pavo Real"
+    },
+    {
+      "id": "kiwi",
+      "texto": "Kiwi"
+    },
+    {
+      "id": "cacatua",
+      "texto": "Cacatúa"
+    },
+    {
+      "id": "cacatua-negra",
+      "texto": "Cacatúa Negra"
+    },
+    {
+      "id": "golondrina",
+      "texto": "Golondrina"
+    },
+    {
+      "id": "faisan",
+      "texto": "Faisán"
+    },
+    {
+      "id": "codorniz",
+      "texto": "Codorniz"
+    },
+    {
+      "id": "perdiz",
+      "texto": "Perdiz"
+    },
+    {
+      "id": "garza",
+      "texto": "Garza"
+    },
+    {
+      "id": "cigueña",
+      "texto": "Cigüeña"
+    },
+    {
+      "id": "papagayo",
+      "texto": "Papagayo"
+    },
+    {
+      "id": "suricata",
+      "texto": "Suricata"
+    },
+    {
+      "id": "hiena",
+      "texto": "Hiena"
+    },
+    {
+      "id": "tapir",
+      "texto": "Tapir"
+    },
+    {
+      "id": "okapi",
+      "texto": "Okapi"
+    },
+    {
+      "id": "wombat",
+      "texto": "Wombat"
+    },
+    {
+      "id": "equidna",
+      "texto": "Equidna"
+    },
+    {
+      "id": "ornitorrinco",
+      "texto": "Ornitorrinco"
+    },
+    {
+      "id": "diablo-de-tasmania",
+      "texto": "Diablo de Tasmania"
+    },
+    {
+      "id": "pangolin",
+      "texto": "Pangolín"
+    },
+    {
+      "id": "armadillo",
+      "texto": "Armadillo"
+    },
+    {
+      "id": "tejon",
+      "texto": "Tejón"
+    },
+    {
+      "id": "huron",
+      "texto": "Hurón"
+    },
+    {
+      "id": "comadreja",
+      "texto": "Comadreja"
+    },
+    {
+      "id": "vison",
+      "texto": "Visón"
+    },
+    {
+      "id": "lince",
+      "texto": "Lince"
+    },
+    {
+      "id": "carnero",
+      "texto": "Carnero"
+    },
+    {
+      "id": "antilope",
+      "texto": "Antílope"
+    },
+    {
+      "id": "gacela",
+      "texto": "Gacela"
+    },
+    {
+      "id": "impala",
+      "texto": "Impala"
+    },
+    {
+      "id": "yak",
+      "texto": "Yak"
+    },
+    {
+      "id": "ñu",
+      "texto": "Ñu"
+    },
+    {
+      "id": "cebu",
+      "texto": "Cebú"
+    },
+    {
+      "id": "mula",
+      "texto": "Mula"
+    },
+    {
+      "id": "cecilia",
+      "texto": "Cecilia"
+    },
+    {
+      "id": "geco",
+      "texto": "Geco"
+    },
+    {
+      "id": "dragon-de-komodo",
+      "texto": "Dragón de Komodo"
+    },
+    {
+      "id": "boa",
+      "texto": "Boa"
+    },
+    {
+      "id": "vibora",
+      "texto": "Víbora"
+    },
+    {
+      "id": "cascabel",
+      "texto": "Serpiente de Cascabel"
+    },
+    {
+      "id": "triton",
+      "texto": "Tritón"
+    },
+    {
+      "id": "ajolote",
+      "texto": "Ajolote"
+    },
+    {
+      "id": "renacuajo",
+      "texto": "Renacuajo"
+    },
+    {
+      "id": "cisne-negro",
+      "texto": "Cisne Negro"
+    },
+    {
+      "id": "gaviota",
+      "texto": "Gaviota"
+    },
+    {
+      "id": "petirrojo",
+      "texto": "Petirrojo"
+    },
+    {
+      "id": "carbonero",
+      "texto": "Carbonero"
+    },
+    {
+      "id": "abejorro",
+      "texto": "Abejorro"
+    },
+    {
+      "id": "camaron-pistola",
+      "texto": "Camarón Pistola"
+    }
   ]
 }

@@ -2,111 +2,609 @@
   "id": "superheroes",
   "titulo": "Superhéroes",
   "descripcion": "Adivina superhéroes famosos.",
-  "version": 1,
+  "version": 2,
   "idioma": "es",
   "ilustracion": "assets/images/categories/superheroes.png",
   "palabras": [
-    { "id": "superman", "texto": "Superman" },
-    { "id": "batman", "texto": "Batman" },
-    { "id": "mujer-maravilla", "texto": "Mujer Maravilla" },
-    { "id": "flash", "texto": "Flash" },
-    { "id": "aquaman", "texto": "Aquaman" },
-    { "id": "linterna-verde", "texto": "Linterna Verde" },
-    { "id": "cyborg", "texto": "Cyborg" },
-    { "id": "detective-marciano", "texto": "Detective Marciano" },
-    { "id": "flecha-verde", "texto": "Flecha Verde" },
-    { "id": "canario-negro", "texto": "Canario Negro" },
-    { "id": "shazam", "texto": "Shazam" },
-    { "id": "hombre-halcon", "texto": "Hombre Halcón" },
-    { "id": "chica-halcon", "texto": "Chica Halcón" },
-    { "id": "zatanna", "texto": "Zatanna" },
-    { "id": "constantine", "texto": "Constantine" },
-    { "id": "robin", "texto": "Robin" },
-    { "id": "ala-nocturna", "texto": "Ala Nocturna" },
-    { "id": "batichica", "texto": "Batichica" },
-    { "id": "capucha-roja", "texto": "Capucha Roja" },
-    { "id": "supergirl", "texto": "Supergirl" },
-    { "id": "escarabajo-azul", "texto": "Escarabajo Azul" },
-    { "id": "doctor-destino", "texto": "Doctor Destino" },
-    { "id": "hombre-elastico", "texto": "Hombre Elástico" },
-    { "id": "atomo", "texto": "Átomo" },
-    { "id": "booster-gold", "texto": "Booster Gold" },
-    { "id": "iron-man", "texto": "Iron Man" },
-    { "id": "capitan-america", "texto": "Capitán América" },
-    { "id": "thor", "texto": "Thor" },
-    { "id": "hulk", "texto": "Hulk" },
-    { "id": "viuda-negra", "texto": "Viuda Negra" },
-    { "id": "ojo-de-halcon", "texto": "Ojo de Halcón" },
-    { "id": "hombre-arana", "texto": "Hombre Araña" },
-    { "id": "doctor-strange", "texto": "Doctor Strange" },
-    { "id": "pantera-negra", "texto": "Pantera Negra" },
-    { "id": "capitana-marvel", "texto": "Capitana Marvel" },
-    { "id": "bruja-escarlata", "texto": "Bruja Escarlata" },
-    { "id": "vision", "texto": "Visión" },
-    { "id": "halcon", "texto": "Halcón" },
-    { "id": "soldado-del-invierno", "texto": "Soldado del Invierno" },
-    { "id": "hombre-hormiga", "texto": "Hombre Hormiga" },
-    { "id": "avispa", "texto": "Avispa" },
-    { "id": "senor-de-las-estrellas", "texto": "Señor de las Estrellas" },
-    { "id": "groot", "texto": "Groot" },
-    { "id": "rocket", "texto": "Rocket" },
-    { "id": "gamora", "texto": "Gamora" },
-    { "id": "drax", "texto": "Drax" },
-    { "id": "mantis", "texto": "Mantis" },
-    { "id": "loki", "texto": "Loki" },
-    { "id": "caballero-luna", "texto": "Caballero Luna" },
-    { "id": "daredevil", "texto": "Daredevil" },
-    { "id": "castigador", "texto": "Castigador" },
-    { "id": "blade", "texto": "Blade" },
-    { "id": "motorista-fantasma", "texto": "Motorista Fantasma" },
-    { "id": "silver-surfer", "texto": "Silver Surfer" },
-    { "id": "antorcha-humana", "texto": "Antorcha Humana" },
-    { "id": "la-cosa", "texto": "La Cosa" },
-    { "id": "mujer-invisible", "texto": "Mujer Invisible" },
-    { "id": "senor-fantastico", "texto": "Señor Fantástico" },
-    { "id": "wolverine", "texto": "Wolverine" },
-    { "id": "ciclope", "texto": "Cíclope" },
-    { "id": "tormenta", "texto": "Tormenta" },
-    { "id": "jean-grey", "texto": "Jean Grey" },
-    { "id": "rogue", "texto": "Rogue" },
-    { "id": "bestia", "texto": "Bestia" },
-    { "id": "nightcrawler", "texto": "Nightcrawler" },
-    { "id": "profesor-x", "texto": "Profesor X" },
-    { "id": "deadpool", "texto": "Deadpool" },
-    { "id": "elektra", "texto": "Elektra" },
-    { "id": "spawn", "texto": "Spawn" },
-    { "id": "hellboy", "texto": "Hellboy" },
-    { "id": "la-mascara", "texto": "La Máscara" },
-    { "id": "tortugas-ninja", "texto": "Tortugas Ninja" },
-    { "id": "leonardo", "texto": "Leonardo" },
-    { "id": "raphael", "texto": "Raphael" },
-    { "id": "donatello", "texto": "Donatello" },
-    { "id": "michelangelo", "texto": "Michelangelo" },
-    { "id": "ben-10", "texto": "Ben 10" },
-    { "id": "max-steel", "texto": "Max Steel" },
-    { "id": "he-man", "texto": "He-Man" },
-    { "id": "she-ra", "texto": "She-Ra" },
-    { "id": "astro-boy", "texto": "Astro Boy" },
-    { "id": "sailor-moon", "texto": "Sailor Moon" },
-    { "id": "goku", "texto": "Goku" },
-    { "id": "gohan", "texto": "Gohan" },
-    { "id": "vegeta", "texto": "Vegeta" },
-    { "id": "piccolo", "texto": "Piccolo" },
-    { "id": "naruto", "texto": "Naruto" },
-    { "id": "sasuke", "texto": "Sasuke" },
-    { "id": "kakashi", "texto": "Kakashi" },
-    { "id": "luffy", "texto": "Luffy" },
-    { "id": "zoro", "texto": "Zoro" },
-    { "id": "sanji", "texto": "Sanji" },
-    { "id": "saitama", "texto": "Saitama" },
-    { "id": "genos", "texto": "Genos" },
-    { "id": "all-might", "texto": "All Might" },
-    { "id": "deku", "texto": "Deku" },
-    { "id": "bakugo", "texto": "Bakugo" },
-    { "id": "shoto-todoroki", "texto": "Shoto Todoroki" },
-    { "id": "invencible", "texto": "Invencible" },
-    { "id": "omni-man", "texto": "Omni-Man" },
-    { "id": "cat-noir", "texto": "Cat Noir" },
-    { "id": "ladybug", "texto": "Ladybug" }
+    {
+      "id": "superman",
+      "texto": "Superman"
+    },
+    {
+      "id": "batman",
+      "texto": "Batman"
+    },
+    {
+      "id": "mujer-maravilla",
+      "texto": "Mujer Maravilla"
+    },
+    {
+      "id": "flash",
+      "texto": "Flash"
+    },
+    {
+      "id": "aquaman",
+      "texto": "Aquaman"
+    },
+    {
+      "id": "linterna-verde",
+      "texto": "Linterna Verde"
+    },
+    {
+      "id": "cyborg",
+      "texto": "Cyborg"
+    },
+    {
+      "id": "capitan-planeta",
+      "texto": "Capitán Planeta"
+    },
+    {
+      "id": "flecha-verde",
+      "texto": "Flecha Verde"
+    },
+    {
+      "id": "power-ranger",
+      "texto": "Power Ranger"
+    },
+    {
+      "id": "shazam",
+      "texto": "Shazam"
+    },
+    {
+      "id": "ultraman",
+      "texto": "Ultraman"
+    },
+    {
+      "id": "kim-possible",
+      "texto": "Kim Possible"
+    },
+    {
+      "id": "inspector-gadget",
+      "texto": "Inspector Gadget"
+    },
+    {
+      "id": "miles-morales",
+      "texto": "Miles Morales"
+    },
+    {
+      "id": "robin",
+      "texto": "Robin"
+    },
+    {
+      "id": "ala-nocturna",
+      "texto": "Ala Nocturna"
+    },
+    {
+      "id": "batichica",
+      "texto": "Batichica"
+    },
+    {
+      "id": "spider-gwen",
+      "texto": "Spider-Gwen"
+    },
+    {
+      "id": "supergirl",
+      "texto": "Supergirl"
+    },
+    {
+      "id": "mr-increible",
+      "texto": "Mr. Increíble"
+    },
+    {
+      "id": "doctor-destino",
+      "texto": "Doctor Destino"
+    },
+    {
+      "id": "elastigirl",
+      "texto": "Elastigirl"
+    },
+    {
+      "id": "frozono",
+      "texto": "Frozono"
+    },
+    {
+      "id": "baymax",
+      "texto": "Baymax"
+    },
+    {
+      "id": "iron-man",
+      "texto": "Iron Man"
+    },
+    {
+      "id": "capitan-america",
+      "texto": "Capitán América"
+    },
+    {
+      "id": "thor",
+      "texto": "Thor"
+    },
+    {
+      "id": "hulk",
+      "texto": "Hulk"
+    },
+    {
+      "id": "viuda-negra",
+      "texto": "Viuda Negra"
+    },
+    {
+      "id": "ojo-de-halcon",
+      "texto": "Ojo de Halcón"
+    },
+    {
+      "id": "hombre-arana",
+      "texto": "Hombre Araña"
+    },
+    {
+      "id": "doctor-strange",
+      "texto": "Doctor Strange"
+    },
+    {
+      "id": "pantera-negra",
+      "texto": "Pantera Negra"
+    },
+    {
+      "id": "capitana-marvel",
+      "texto": "Capitana Marvel"
+    },
+    {
+      "id": "bruja-escarlata",
+      "texto": "Bruja Escarlata"
+    },
+    {
+      "id": "vision",
+      "texto": "Visión"
+    },
+    {
+      "id": "halcon",
+      "texto": "Halcón"
+    },
+    {
+      "id": "soldado-del-invierno",
+      "texto": "Soldado del Invierno"
+    },
+    {
+      "id": "hombre-hormiga",
+      "texto": "Hombre Hormiga"
+    },
+    {
+      "id": "avispa",
+      "texto": "Avispa"
+    },
+    {
+      "id": "senor-de-las-estrellas",
+      "texto": "Señor de las Estrellas"
+    },
+    {
+      "id": "groot",
+      "texto": "Groot"
+    },
+    {
+      "id": "rocket",
+      "texto": "Rocket"
+    },
+    {
+      "id": "gamora",
+      "texto": "Gamora"
+    },
+    {
+      "id": "drax",
+      "texto": "Drax"
+    },
+    {
+      "id": "capitana-carter",
+      "texto": "Capitana Carter"
+    },
+    {
+      "id": "loki",
+      "texto": "Loki"
+    },
+    {
+      "id": "daredevil",
+      "texto": "Daredevil"
+    },
+    {
+      "id": "hipo",
+      "texto": "Hipo"
+    },
+    {
+      "id": "blade",
+      "texto": "Blade"
+    },
+    {
+      "id": "motorista-fantasma",
+      "texto": "Motorista Fantasma"
+    },
+    {
+      "id": "po",
+      "texto": "Po"
+    },
+    {
+      "id": "antorcha-humana",
+      "texto": "Antorcha Humana"
+    },
+    {
+      "id": "la-cosa",
+      "texto": "La Cosa"
+    },
+    {
+      "id": "mujer-invisible",
+      "texto": "Mujer Invisible"
+    },
+    {
+      "id": "senor-fantastico",
+      "texto": "Señor Fantástico"
+    },
+    {
+      "id": "wolverine",
+      "texto": "Wolverine"
+    },
+    {
+      "id": "ciclope",
+      "texto": "Cíclope"
+    },
+    {
+      "id": "tormenta",
+      "texto": "Tormenta"
+    },
+    {
+      "id": "jean-grey",
+      "texto": "Jean Grey"
+    },
+    {
+      "id": "violeta-parr",
+      "texto": "Violeta Parr"
+    },
+    {
+      "id": "bestia",
+      "texto": "Bestia"
+    },
+    {
+      "id": "jack-jack",
+      "texto": "Jack-Jack"
+    },
+    {
+      "id": "profesor-x",
+      "texto": "Profesor X"
+    },
+    {
+      "id": "deadpool",
+      "texto": "Deadpool"
+    },
+    {
+      "id": "elektra",
+      "texto": "Elektra"
+    },
+    {
+      "id": "dash",
+      "texto": "Dash"
+    },
+    {
+      "id": "hellboy",
+      "texto": "Hellboy"
+    },
+    {
+      "id": "la-mascara",
+      "texto": "La Máscara"
+    },
+    {
+      "id": "tortugas-ninja",
+      "texto": "Tortugas Ninja"
+    },
+    {
+      "id": "leonardo",
+      "texto": "Leonardo"
+    },
+    {
+      "id": "raphael",
+      "texto": "Raphael"
+    },
+    {
+      "id": "donatello",
+      "texto": "Donatello"
+    },
+    {
+      "id": "michelangelo",
+      "texto": "Michelangelo"
+    },
+    {
+      "id": "ben-10",
+      "texto": "Ben 10"
+    },
+    {
+      "id": "max-steel",
+      "texto": "Max Steel"
+    },
+    {
+      "id": "he-man",
+      "texto": "He-Man"
+    },
+    {
+      "id": "she-ra",
+      "texto": "She-Ra"
+    },
+    {
+      "id": "ms-marvel",
+      "texto": "Ms. Marvel"
+    },
+    {
+      "id": "sailor-moon",
+      "texto": "Sailor Moon"
+    },
+    {
+      "id": "goku",
+      "texto": "Goku"
+    },
+    {
+      "id": "gohan",
+      "texto": "Gohan"
+    },
+    {
+      "id": "vegeta",
+      "texto": "Vegeta"
+    },
+    {
+      "id": "piccolo",
+      "texto": "Piccolo"
+    },
+    {
+      "id": "naruto",
+      "texto": "Naruto"
+    },
+    {
+      "id": "sasuke",
+      "texto": "Sasuke"
+    },
+    {
+      "id": "kakashi",
+      "texto": "Kakashi"
+    },
+    {
+      "id": "luffy",
+      "texto": "Luffy"
+    },
+    {
+      "id": "zoro",
+      "texto": "Zoro"
+    },
+    {
+      "id": "sanji",
+      "texto": "Sanji"
+    },
+    {
+      "id": "saitama",
+      "texto": "Saitama"
+    },
+    {
+      "id": "moon-knight",
+      "texto": "Moon Knight"
+    },
+    {
+      "id": "all-might",
+      "texto": "All Might"
+    },
+    {
+      "id": "deku",
+      "texto": "Deku"
+    },
+    {
+      "id": "stitch",
+      "texto": "Stitch"
+    },
+    {
+      "id": "capitan-cavernicola",
+      "texto": "Capitán Cavernícola"
+    },
+    {
+      "id": "space-ghost",
+      "texto": "Space Ghost"
+    },
+    {
+      "id": "birdman",
+      "texto": "Birdman"
+    },
+    {
+      "id": "fantasma",
+      "texto": "El Fantasma"
+    },
+    {
+      "id": "zorro",
+      "texto": "El Zorro"
+    },
+    {
+      "id": "llanero-solitario",
+      "texto": "El Llanero Solitario"
+    },
+    {
+      "id": "tarzan",
+      "texto": "Tarzán"
+    },
+    {
+      "id": "flash-gordon",
+      "texto": "Flash Gordon"
+    },
+    {
+      "id": "buck-rogers",
+      "texto": "Buck Rogers"
+    },
+    {
+      "id": "john-carter",
+      "texto": "John Carter"
+    },
+    {
+      "id": "rocketeer",
+      "texto": "The Rocketeer"
+    },
+    {
+      "id": "phantomias",
+      "texto": "Phantomias"
+    },
+    {
+      "id": "darkwing-duck",
+      "texto": "Darkwing Duck"
+    },
+    {
+      "id": "gargamel",
+      "texto": "Papá Pitufo"
+    },
+    {
+      "id": "optimus-prime",
+      "texto": "Optimus Prime"
+    },
+    {
+      "id": "bumblebee",
+      "texto": "Bumblebee"
+    },
+    {
+      "id": "megazord",
+      "texto": "Megazord"
+    },
+    {
+      "id": "voltron",
+      "texto": "Voltron"
+    },
+    {
+      "id": "mazinger-z",
+      "texto": "Mazinger Z"
+    },
+    {
+      "id": "afrodita-a",
+      "texto": "Afrodita A"
+    },
+    {
+      "id": "grendizer",
+      "texto": "Grendizer"
+    },
+    {
+      "id": "goldorak",
+      "texto": "Goldorak"
+    },
+    {
+      "id": "gigantor",
+      "texto": "Gigantor"
+    },
+    {
+      "id": "eva-01",
+      "texto": "EVA-01"
+    },
+    {
+      "id": "shinji",
+      "texto": "Shinji Ikari"
+    },
+    {
+      "id": "kaneda",
+      "texto": "Kaneda"
+    },
+    {
+      "id": "akira",
+      "texto": "Akira"
+    },
+    {
+      "id": "tanjiro",
+      "texto": "Tanjiro"
+    },
+    {
+      "id": "nezuko",
+      "texto": "Nezuko"
+    },
+    {
+      "id": "inosuke",
+      "texto": "Inosuke"
+    },
+    {
+      "id": "zenitsu",
+      "texto": "Zenitsu"
+    },
+    {
+      "id": "jotaro",
+      "texto": "Jotaro Kujo"
+    },
+    {
+      "id": "gon",
+      "texto": "Gon"
+    },
+    {
+      "id": "killua",
+      "texto": "Killua"
+    },
+    {
+      "id": "yuji-itadori",
+      "texto": "Yuji Itadori"
+    },
+    {
+      "id": "gojo",
+      "texto": "Satoru Gojo"
+    },
+    {
+      "id": "asta",
+      "texto": "Asta"
+    },
+    {
+      "id": "meliodas",
+      "texto": "Meliodas"
+    },
+    {
+      "id": "natsu",
+      "texto": "Natsu"
+    },
+    {
+      "id": "erza",
+      "texto": "Erza Scarlet"
+    },
+    {
+      "id": "yugi",
+      "texto": "Yugi Muto"
+    },
+    {
+      "id": "ash-ketchum",
+      "texto": "Ash Ketchum"
+    },
+    {
+      "id": "digimon",
+      "texto": "Agumon"
+    },
+    {
+      "id": "ryu",
+      "texto": "Ryu"
+    },
+    {
+      "id": "chun-li",
+      "texto": "Chun-Li"
+    },
+    {
+      "id": "sonic",
+      "texto": "Sonic"
+    },
+    {
+      "id": "tails",
+      "texto": "Tails"
+    },
+    {
+      "id": "knuckles",
+      "texto": "Knuckles"
+    },
+    {
+      "id": "link",
+      "texto": "Link"
+    },
+    {
+      "id": "samus",
+      "texto": "Samus Aran"
+    },
+    {
+      "id": "los-increibles",
+      "texto": "Los Increíbles"
+    },
+    {
+      "id": "omni-man",
+      "texto": "Omni-Man"
+    },
+    {
+      "id": "cat-noir",
+      "texto": "Cat Noir"
+    },
+    {
+      "id": "ladybug",
+      "texto": "Ladybug"
+    }
   ]
 }

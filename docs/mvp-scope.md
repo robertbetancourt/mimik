@@ -43,7 +43,7 @@ Initial MVP:
 - Sports
 - Animals
 - Food
-- Countries
+- Mundo (world geography: countries, cities, landmarks, natural wonders)
 - TV Series
 - Superheroes
 - Video Games

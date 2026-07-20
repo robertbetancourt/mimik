@@ -7,10 +7,10 @@ import famosos from "@data/categories/famosos.json";
 import games from "@data/categories/games.json";
 import logos from "@data/categories/logos.json";
 import musica from "@data/categories/musica.json";
-import paises from "@data/categories/paises.json";
 import peliculas from "@data/categories/peliculas.json";
 import superheroes from "@data/categories/superheroes.json";
 import tvSeries from "@data/categories/tv-series.json";
+import world from "@data/categories/world.json";
 
 export const categories: Category[] = [
   animales,
@@ -20,8 +20,8 @@ export const categories: Category[] = [
   games,
   logos,
   musica,
-  paises,
   peliculas,
   superheroes,
   tvSeries,
+  world,
 ];

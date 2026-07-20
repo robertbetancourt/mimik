@@ -10,8 +10,8 @@ export const categoryColors: Record<Category["id"], string> = {
   games: "#E5E0F4",
   logos: "#E6E6F0",
   musica: "#FBE1EC",
-  paises: "#DFEEE1",
   peliculas: "#F5E0DA",
   superheroes: "#DCEAF6",
   "tv-series": "#F2E5D6",
+  world: "#DFEEE1",
 };

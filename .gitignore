@@ -30,8 +30,13 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# env files (secrets, API keys)
+.env
 .env*.local
+
+# native credentials, if ever switched from EAS-managed to local
+credentials.json
+*.keystore
 
 # typescript
 *.tsbuildinfo

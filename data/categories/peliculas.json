@@ -6,157 +6,1025 @@
   "idioma": "es",
   "ilustracion": "assets/images/categories/movies.png",
   "palabras": [
-    { "id": "avatar", "texto": "Avatar" },
-    { "id": "avengers-endgame", "texto": "Avengers: Endgame" },
-    { "id": "titanic", "texto": "Titanic" },
-    { "id": "el-rey-leon", "texto": "El Rey León" },
-    { "id": "toy-story", "texto": "Toy Story" },
-    { "id": "buscando-a-nemo", "texto": "Buscando a Nemo" },
-    { "id": "intensamente", "texto": "Intensamente" },
-    { "id": "frozen", "texto": "Frozen" },
-    { "id": "encanto", "texto": "Encanto" },
-    { "id": "coco", "texto": "Coco" },
-    { "id": "up", "texto": "Up" },
-    { "id": "wall-e", "texto": "WALL·E" },
-    { "id": "cars", "texto": "Cars" },
-    { "id": "monsters-inc", "texto": "Monsters, Inc." },
-    { "id": "los-increibles", "texto": "Los Increíbles" },
-    { "id": "ratatouille", "texto": "Ratatouille" },
-    { "id": "valiente", "texto": "Valiente" },
-    { "id": "moana", "texto": "Moana" },
-    { "id": "zootopia", "texto": "Zootopia" },
-    { "id": "red", "texto": "Red" },
-    { "id": "shrek", "texto": "Shrek" },
-    { "id": "kung-fu-panda", "texto": "Kung Fu Panda" },
-    { "id": "madagascar", "texto": "Madagascar" },
-    { "id": "como-entrenar-a-tu-dragon", "texto": "Cómo Entrenar a tu Dragón" },
-    { "id": "mi-villano-favorito", "texto": "Mi Villano Favorito" },
-    { "id": "minions", "texto": "Minions" },
-    { "id": "la-era-de-hielo", "texto": "La Era de Hielo" },
-    { "id": "rio", "texto": "Río" },
-    { "id": "sing", "texto": "Sing" },
-    { "id": "la-vida-secreta-de-tus-mascotas", "texto": "La Vida Secreta de tus Mascotas" },
-    { "id": "harry-potter-y-la-piedra-filosofal", "texto": "Harry Potter y la Piedra Filosofal" },
-    { "id": "harry-potter-y-la-camara-secreta", "texto": "Harry Potter y la Cámara Secreta" },
-    { "id": "harry-potter-y-el-prisionero-de-azkaban", "texto": "Harry Potter y el Prisionero de Azkaban" },
-    { "id": "el-senor-de-los-anillos-la-comunidad-del-anillo", "texto": "El Señor de los Anillos: La Comunidad del Anillo" },
-    { "id": "el-senor-de-los-anillos-las-dos-torres", "texto": "El Señor de los Anillos: Las Dos Torres" },
-    { "id": "el-senor-de-los-anillos-el-retorno-del-rey", "texto": "El Señor de los Anillos: El Retorno del Rey" },
-    { "id": "el-hobbit-un-viaje-inesperado", "texto": "El Hobbit: Un Viaje Inesperado" },
-    { "id": "jurassic-park", "texto": "Jurassic Park" },
-    { "id": "jurassic-world", "texto": "Jurassic World" },
-    { "id": "star-wars-una-nueva-esperanza", "texto": "Star Wars: Una Nueva Esperanza" },
-    { "id": "el-imperio-contraataca", "texto": "El Imperio Contraataca" },
-    { "id": "el-despertar-de-la-fuerza", "texto": "El Despertar de la Fuerza" },
-    { "id": "rogue-one", "texto": "Rogue One" },
-    { "id": "el-desafio", "texto": "Top Gun" },
-    { "id": "top-gun-maverick", "texto": "Top Gun: Maverick" },
-    { "id": "mision-imposible", "texto": "Misión Imposible" },
-    { "id": "john-wick", "texto": "John Wick" },
-    { "id": "rapidos-y-furiosos", "texto": "Rápidos y Furiosos" },
-    { "id": "transformers", "texto": "Transformers" },
-    { "id": "piratas-del-caribe-la-maldicion-del-perla-negra", "texto": "Piratas del Caribe: La Maldición del Perla Negra" },
-    { "id": "indiana-jones-y-los-cazadores-del-arca-perdida", "texto": "Indiana Jones y los Cazadores del Arca Perdida" },
-    { "id": "gladiador", "texto": "Gladiador" },
-    { "id": "troya", "texto": "Troya" },
-    { "id": "300", "texto": "300" },
-    { "id": "braveheart", "texto": "Braveheart" },
-    { "id": "corazon-valiente", "texto": "Corazón Valiente" },
-    { "id": "matrix", "texto": "Matrix" },
-    { "id": "inception", "texto": "El Origen" },
-    { "id": "interstellar", "texto": "Interestelar" },
-    { "id": "oppenheimer", "texto": "Oppenheimer" },
-    { "id": "tenet", "texto": "Tenet" },
-    { "id": "dunkerque", "texto": "Dunkerque" },
-    { "id": "gravity", "texto": "Gravity" },
-    { "id": "the-martian", "texto": "Misión Rescate" },
-    { "id": "armageddon", "texto": "Armageddon" },
-    { "id": "el-dia-despues-de-manana", "texto": "El Día Después de Mañana" },
-    { "id": "2012", "texto": "2012" },
-    { "id": "godzilla", "texto": "Godzilla" },
-    { "id": "king-kong", "texto": "King Kong" },
-    { "id": "pacific-rim", "texto": "Titanes del Pacífico" },
-    { "id": "spider-man", "texto": "Spider-Man" },
-    { "id": "spider-man-no-way-home", "texto": "Spider-Man: No Way Home" },
-    { "id": "iron-man", "texto": "Iron Man" },
-    { "id": "capitan-america-el-primer-vengador", "texto": "Capitán América: El Primer Vengador" },
-    { "id": "thor", "texto": "Thor" },
-    { "id": "doctor-strange", "texto": "Doctor Strange" },
-    { "id": "black-panther", "texto": "Black Panther" },
-    { "id": "guardianes-de-la-galaxia", "texto": "Guardianes de la Galaxia" },
-    { "id": "ant-man", "texto": "Ant-Man" },
-    { "id": "capitana-marvel", "texto": "Capitana Marvel" },
-    { "id": "avengers", "texto": "The Avengers" },
-    { "id": "la-liga-de-la-justicia", "texto": "La Liga de la Justicia" },
-    { "id": "batman", "texto": "Batman" },
-    { "id": "the-batman", "texto": "The Batman" },
-    { "id": "superman", "texto": "Superman" },
-    { "id": "el-hombre-de-acero", "texto": "El Hombre de Acero" },
-    { "id": "mujer-maravilla", "texto": "Mujer Maravilla" },
-    { "id": "aquaman", "texto": "Aquaman" },
-    { "id": "joker", "texto": "Joker" },
-    { "id": "suicide-squad", "texto": "Suicide Squad" },
-    { "id": "la-mascara", "texto": "La Máscara" },
-    { "id": "forrest-gump", "texto": "Forrest Gump" },
-    { "id": "el-naufrago", "texto": "El Náufrago" },
-    { "id": "el-diablo-viste-a-la-moda", "texto": "El Diablo Viste a la Moda" },
-    { "id": "legalmente-rubia", "texto": "Legalmente Rubia" },
-    { "id": "mamma-mia", "texto": "Mamma Mia!" },
-    { "id": "bohemian-rhapsody", "texto": "Bohemian Rhapsody" },
-    { "id": "rocketman", "texto": "Rocketman" },
-    { "id": "el-gran-showman", "texto": "El Gran Showman" },
-    { "id": "la-la-land", "texto": "La La Land" },
-    { "id": "el-guason", "texto": "El Guasón" },
-    { "id": "parasitos", "texto": "Parásitos" },
-    { "id": "el-silencio-de-los-inocentes", "texto": "El Silencio de los Inocentes" },
-    { "id": "el-sexto-sentido", "texto": "El Sexto Sentido" },
-    { "id": "el-conjuro", "texto": "El Conjuro" },
-    { "id": "it", "texto": "IT" },
-    { "id": "annabelle", "texto": "Annabelle" },
-    { "id": "actividad-paranormal", "texto": "Actividad Paranormal" },
-    { "id": "scream", "texto": "Scream" },
-    { "id": "halloween", "texto": "Halloween" },
-    { "id": "alien", "texto": "Alien" },
-    { "id": "depredador", "texto": "Depredador" },
-    { "id": "jumanji", "texto": "Jumanji" },
-    { "id": "charlie-y-la-fabrica-de-chocolate", "texto": "Charlie y la Fábrica de Chocolate" },
-    { "id": "alicia-en-el-pais-de-las-maravillas", "texto": "Alicia en el País de las Maravillas" },
-    { "id": "la-bella-y-la-bestia", "texto": "La Bella y la Bestia" },
-    { "id": "aladdin", "texto": "Aladdín" },
-    { "id": "la-sirenita", "texto": "La Sirenita" },
-    { "id": "blancanieves", "texto": "Blancanieves" },
-    { "id": "cenicienta", "texto": "Cenicienta" },
-    { "id": "pinocho", "texto": "Pinocho" },
-    { "id": "bambi", "texto": "Bambi" },
-    { "id": "dumbo", "texto": "Dumbo" },
-    { "id": "tarzan", "texto": "Tarzán" },
-    { "id": "mulan", "texto": "Mulán" },
-    { "id": "hercules", "texto": "Hércules" },
-    { "id": "peter-pan", "texto": "Peter Pan" },
-    { "id": "el-libro-de-la-selva", "texto": "El Libro de la Selva" },
-    { "id": "101-dalmatas", "texto": "101 Dálmatas" },
-    { "id": "el-expreso-polar", "texto": "El Expreso Polar" },
-    { "id": "mi-pobre-angelito", "texto": "Mi Pobre Angelito" },
-    { "id": "elf", "texto": "Elf" },
-    { "id": "el-grinch", "texto": "El Grinch" },
-    { "id": "los-cazafantasmas", "texto": "Los Cazafantasmas" },
-    { "id": "volver-al-futuro", "texto": "Volver al Futuro" },
-    { "id": "beetlejuice", "texto": "Beetlejuice" },
-    { "id": "et", "texto": "E.T." },
-    { "id": "el-show-de-truman", "texto": "El Show de Truman" },
-    { "id": "una-mente-brillante", "texto": "Una Mente Brillante" },
-    { "id": "la-vida-es-bella", "texto": "La Vida es Bella" },
-    { "id": "milagros-inesperados", "texto": "Milagros Inesperados" },
-    { "id": "el-pianista", "texto": "El Pianista" },
-    { "id": "avatar-el-camino-del-agua", "texto": "Avatar: El Camino del Agua" },
-    { "id": "barbie", "texto": "Barbie" },
-    { "id": "super-mario-bros-la-pelicula", "texto": "Super Mario Bros. La Película" },
-    { "id": "sonic-la-pelicula", "texto": "Sonic: La Película" },
-    { "id": "detective-pikachu", "texto": "Pokémon: Detective Pikachu" },
-    { "id": "el-gato-con-botas-el-ultimo-deseo", "texto": "El Gato con Botas: El Último Deseo" },
-    { "id": "wish", "texto": "Wish" },
-    { "id": "elementos", "texto": "Elementos" },
-    { "id": "luca", "texto": "Luca" },
-    { "id": "soul", "texto": "Soul" }
+    {
+      "id": "avatar",
+      "texto": "Avatar"
+    },
+    {
+      "id": "avengers-endgame",
+      "texto": "Avengers: Endgame"
+    },
+    {
+      "id": "titanic",
+      "texto": "Titanic"
+    },
+    {
+      "id": "el-rey-leon",
+      "texto": "El Rey León"
+    },
+    {
+      "id": "toy-story",
+      "texto": "Toy Story"
+    },
+    {
+      "id": "buscando-a-nemo",
+      "texto": "Buscando a Nemo"
+    },
+    {
+      "id": "intensamente",
+      "texto": "Intensamente"
+    },
+    {
+      "id": "frozen",
+      "texto": "Frozen"
+    },
+    {
+      "id": "encanto",
+      "texto": "Encanto"
+    },
+    {
+      "id": "coco",
+      "texto": "Coco"
+    },
+    {
+      "id": "up",
+      "texto": "Up"
+    },
+    {
+      "id": "wall-e",
+      "texto": "WALL·E"
+    },
+    {
+      "id": "cars",
+      "texto": "Cars"
+    },
+    {
+      "id": "monsters-inc",
+      "texto": "Monsters, Inc."
+    },
+    {
+      "id": "los-increibles",
+      "texto": "Los Increíbles"
+    },
+    {
+      "id": "ratatouille",
+      "texto": "Ratatouille"
+    },
+    {
+      "id": "valiente",
+      "texto": "Valiente"
+    },
+    {
+      "id": "moana",
+      "texto": "Moana"
+    },
+    {
+      "id": "zootopia",
+      "texto": "Zootopia"
+    },
+    {
+      "id": "shrek",
+      "texto": "Shrek"
+    },
+    {
+      "id": "kung-fu-panda",
+      "texto": "Kung Fu Panda"
+    },
+    {
+      "id": "madagascar",
+      "texto": "Madagascar"
+    },
+    {
+      "id": "como-entrenar-a-tu-dragon",
+      "texto": "Cómo Entrenar a tu Dragón"
+    },
+    {
+      "id": "mi-villano-favorito",
+      "texto": "Mi Villano Favorito"
+    },
+    {
+      "id": "minions",
+      "texto": "Minions"
+    },
+    {
+      "id": "la-era-de-hielo",
+      "texto": "La Era de Hielo"
+    },
+    {
+      "id": "rio",
+      "texto": "Río"
+    },
+    {
+      "id": "sing",
+      "texto": "Sing"
+    },
+    {
+      "id": "la-vida-secreta-de-tus-mascotas",
+      "texto": "La Vida Secreta de tus Mascotas"
+    },
+    {
+      "id": "harry-potter-y-la-piedra-filosofal",
+      "texto": "Harry Potter y la Piedra Filosofal"
+    },
+    {
+      "id": "harry-potter-y-la-camara-secreta",
+      "texto": "Harry Potter y la Cámara Secreta"
+    },
+    {
+      "id": "harry-potter-y-el-prisionero-de-azkaban",
+      "texto": "Harry Potter y el Prisionero de Azkaban"
+    },
+    {
+      "id": "el-senor-de-los-anillos-la-comunidad-del-anillo",
+      "texto": "El Señor de los Anillos: La Comunidad del Anillo"
+    },
+    {
+      "id": "el-senor-de-los-anillos-las-dos-torres",
+      "texto": "El Señor de los Anillos: Las Dos Torres"
+    },
+    {
+      "id": "el-senor-de-los-anillos-el-retorno-del-rey",
+      "texto": "El Señor de los Anillos: El Retorno del Rey"
+    },
+    {
+      "id": "el-hobbit-un-viaje-inesperado",
+      "texto": "El Hobbit: Un Viaje Inesperado"
+    },
+    {
+      "id": "jurassic-park",
+      "texto": "Jurassic Park"
+    },
+    {
+      "id": "jurassic-world",
+      "texto": "Jurassic World"
+    },
+    {
+      "id": "star-wars-una-nueva-esperanza",
+      "texto": "Star Wars: Una Nueva Esperanza"
+    },
+    {
+      "id": "el-imperio-contraataca",
+      "texto": "El Imperio Contraataca"
+    },
+    {
+      "id": "el-despertar-de-la-fuerza",
+      "texto": "El Despertar de la Fuerza"
+    },
+    {
+      "id": "el-desafio",
+      "texto": "Top Gun"
+    },
+    {
+      "id": "top-gun-maverick",
+      "texto": "Top Gun: Maverick"
+    },
+    {
+      "id": "mision-imposible",
+      "texto": "Misión Imposible"
+    },
+    {
+      "id": "john-wick",
+      "texto": "John Wick"
+    },
+    {
+      "id": "rapidos-y-furiosos",
+      "texto": "Rápidos y Furiosos"
+    },
+    {
+      "id": "transformers",
+      "texto": "Transformers"
+    },
+    {
+      "id": "piratas-del-caribe-la-maldicion-del-perla-negra",
+      "texto": "Piratas del Caribe: La Maldición del Perla Negra"
+    },
+    {
+      "id": "indiana-jones-y-los-cazadores-del-arca-perdida",
+      "texto": "Indiana Jones y los Cazadores del Arca Perdida"
+    },
+    {
+      "id": "gladiador",
+      "texto": "Gladiador"
+    },
+    {
+      "id": "troya",
+      "texto": "Troya"
+    },
+    {
+      "id": "300",
+      "texto": "300"
+    },
+    {
+      "id": "braveheart",
+      "texto": "Braveheart"
+    },
+    {
+      "id": "matrix",
+      "texto": "Matrix"
+    },
+    {
+      "id": "inception",
+      "texto": "El Origen"
+    },
+    {
+      "id": "interstellar",
+      "texto": "Interestelar"
+    },
+    {
+      "id": "oppenheimer",
+      "texto": "Oppenheimer"
+    },
+    {
+      "id": "tenet",
+      "texto": "Tenet"
+    },
+    {
+      "id": "dunkerque",
+      "texto": "Dunkerque"
+    },
+    {
+      "id": "gravity",
+      "texto": "Gravity"
+    },
+    {
+      "id": "the-martian",
+      "texto": "Misión Rescate"
+    },
+    {
+      "id": "armageddon",
+      "texto": "Armageddon"
+    },
+    {
+      "id": "el-dia-despues-de-manana",
+      "texto": "El Día Después de Mañana"
+    },
+    {
+      "id": "2012",
+      "texto": "2012"
+    },
+    {
+      "id": "godzilla",
+      "texto": "Godzilla"
+    },
+    {
+      "id": "king-kong",
+      "texto": "King Kong"
+    },
+    {
+      "id": "pacific-rim",
+      "texto": "Titanes del Pacífico"
+    },
+    {
+      "id": "spider-man",
+      "texto": "Spider-Man"
+    },
+    {
+      "id": "spider-man-no-way-home",
+      "texto": "Spider-Man: No Way Home"
+    },
+    {
+      "id": "iron-man",
+      "texto": "Iron Man"
+    },
+    {
+      "id": "capitan-america-el-primer-vengador",
+      "texto": "Capitán América: El Primer Vengador"
+    },
+    {
+      "id": "thor",
+      "texto": "Thor"
+    },
+    {
+      "id": "doctor-strange",
+      "texto": "Doctor Strange"
+    },
+    {
+      "id": "black-panther",
+      "texto": "Black Panther"
+    },
+    {
+      "id": "guardianes-de-la-galaxia",
+      "texto": "Guardianes de la Galaxia"
+    },
+    {
+      "id": "ant-man",
+      "texto": "Ant-Man"
+    },
+    {
+      "id": "capitana-marvel",
+      "texto": "Capitana Marvel"
+    },
+    {
+      "id": "avengers",
+      "texto": "The Avengers"
+    },
+    {
+      "id": "la-liga-de-la-justicia",
+      "texto": "La Liga de la Justicia"
+    },
+    {
+      "id": "batman",
+      "texto": "Batman"
+    },
+    {
+      "id": "the-batman",
+      "texto": "The Batman"
+    },
+    {
+      "id": "superman",
+      "texto": "Superman"
+    },
+    {
+      "id": "el-hombre-de-acero",
+      "texto": "El Hombre de Acero"
+    },
+    {
+      "id": "mujer-maravilla",
+      "texto": "Mujer Maravilla"
+    },
+    {
+      "id": "aquaman",
+      "texto": "Aquaman"
+    },
+    {
+      "id": "joker",
+      "texto": "Joker"
+    },
+    {
+      "id": "suicide-squad",
+      "texto": "Suicide Squad"
+    },
+    {
+      "id": "la-mascara",
+      "texto": "La Máscara"
+    },
+    {
+      "id": "forrest-gump",
+      "texto": "Forrest Gump"
+    },
+    {
+      "id": "el-naufrago",
+      "texto": "El Náufrago"
+    },
+    {
+      "id": "el-diablo-viste-a-la-moda",
+      "texto": "El Diablo Viste a la Moda"
+    },
+    {
+      "id": "legalmente-rubia",
+      "texto": "Legalmente Rubia"
+    },
+    {
+      "id": "mamma-mia",
+      "texto": "Mamma Mia!"
+    },
+    {
+      "id": "bohemian-rhapsody",
+      "texto": "Bohemian Rhapsody"
+    },
+    {
+      "id": "el-gran-showman",
+      "texto": "El Gran Showman"
+    },
+    {
+      "id": "la-la-land",
+      "texto": "La La Land"
+    },
+    {
+      "id": "parasitos",
+      "texto": "Parásitos"
+    },
+    {
+      "id": "el-silencio-de-los-inocentes",
+      "texto": "El Silencio de los Inocentes"
+    },
+    {
+      "id": "el-sexto-sentido",
+      "texto": "El Sexto Sentido"
+    },
+    {
+      "id": "el-conjuro",
+      "texto": "El Conjuro"
+    },
+    {
+      "id": "it",
+      "texto": "IT"
+    },
+    {
+      "id": "annabelle",
+      "texto": "Annabelle"
+    },
+    {
+      "id": "actividad-paranormal",
+      "texto": "Actividad Paranormal"
+    },
+    {
+      "id": "scream",
+      "texto": "Scream"
+    },
+    {
+      "id": "halloween",
+      "texto": "Halloween"
+    },
+    {
+      "id": "alien",
+      "texto": "Alien"
+    },
+    {
+      "id": "depredador",
+      "texto": "Depredador"
+    },
+    {
+      "id": "jumanji",
+      "texto": "Jumanji"
+    },
+    {
+      "id": "charlie-y-la-fabrica-de-chocolate",
+      "texto": "Charlie y la Fábrica de Chocolate"
+    },
+    {
+      "id": "alicia-en-el-pais-de-las-maravillas",
+      "texto": "Alicia en el País de las Maravillas"
+    },
+    {
+      "id": "la-bella-y-la-bestia",
+      "texto": "La Bella y la Bestia"
+    },
+    {
+      "id": "aladdin",
+      "texto": "Aladdín"
+    },
+    {
+      "id": "la-sirenita",
+      "texto": "La Sirenita"
+    },
+    {
+      "id": "blancanieves",
+      "texto": "Blancanieves"
+    },
+    {
+      "id": "cenicienta",
+      "texto": "Cenicienta"
+    },
+    {
+      "id": "pinocho",
+      "texto": "Pinocho"
+    },
+    {
+      "id": "bambi",
+      "texto": "Bambi"
+    },
+    {
+      "id": "dumbo",
+      "texto": "Dumbo"
+    },
+    {
+      "id": "tarzan",
+      "texto": "Tarzán"
+    },
+    {
+      "id": "mulan",
+      "texto": "Mulán"
+    },
+    {
+      "id": "hercules",
+      "texto": "Hércules"
+    },
+    {
+      "id": "peter-pan",
+      "texto": "Peter Pan"
+    },
+    {
+      "id": "el-libro-de-la-selva",
+      "texto": "El Libro de la Selva"
+    },
+    {
+      "id": "101-dalmatas",
+      "texto": "101 Dálmatas"
+    },
+    {
+      "id": "el-expreso-polar",
+      "texto": "El Expreso Polar"
+    },
+    {
+      "id": "mi-pobre-angelito",
+      "texto": "Mi Pobre Angelito"
+    },
+    {
+      "id": "elf",
+      "texto": "Elf"
+    },
+    {
+      "id": "el-grinch",
+      "texto": "El Grinch"
+    },
+    {
+      "id": "los-cazafantasmas",
+      "texto": "Los Cazafantasmas"
+    },
+    {
+      "id": "volver-al-futuro",
+      "texto": "Volver al Futuro"
+    },
+    {
+      "id": "beetlejuice",
+      "texto": "Beetlejuice"
+    },
+    {
+      "id": "et",
+      "texto": "E.T."
+    },
+    {
+      "id": "el-show-de-truman",
+      "texto": "El Show de Truman"
+    },
+    {
+      "id": "una-mente-brillante",
+      "texto": "Una Mente Brillante"
+    },
+    {
+      "id": "la-vida-es-bella",
+      "texto": "La Vida es Bella"
+    },
+    {
+      "id": "milagros-inesperados",
+      "texto": "Milagros Inesperados"
+    },
+    {
+      "id": "el-pianista",
+      "texto": "El Pianista"
+    },
+    {
+      "id": "avatar-el-camino-del-agua",
+      "texto": "Avatar: El Camino del Agua"
+    },
+    {
+      "id": "barbie",
+      "texto": "Barbie"
+    },
+    {
+      "id": "super-mario-bros-la-pelicula",
+      "texto": "Super Mario Bros. La Película"
+    },
+    {
+      "id": "sonic-la-pelicula",
+      "texto": "Sonic: La Película"
+    },
+    {
+      "id": "detective-pikachu",
+      "texto": "Pokémon: Detective Pikachu"
+    },
+    {
+      "id": "el-gato-con-botas-el-ultimo-deseo",
+      "texto": "El Gato con Botas: El Último Deseo"
+    },
+    {
+      "id": "luca",
+      "texto": "Luca"
+    },
+    {
+      "id": "soul",
+      "texto": "Soul"
+    },
+    {
+      "id": "el-padrino",
+      "texto": "El Padrino"
+    },
+    {
+      "id": "rocky",
+      "texto": "Rocky"
+    },
+    {
+      "id": "buscando-a-dory",
+      "texto": "Buscando a Dory"
+    },
+    {
+      "id": "los-juegos-del-hambre",
+      "texto": "Los Juegos del Hambre"
+    },
+    {
+      "id": "deadpool",
+      "texto": "Deadpool"
+    },
+    {
+      "id": "terminator-2-el-juicio-final",
+      "texto": "Terminator 2: El Juicio Final"
+    },
+    {
+      "id": "el-conjuro-2",
+      "texto": "El Conjuro 2"
+    },
+    {
+      "id": "el-club-de-la-pelea",
+      "texto": "El Club de la Pelea"
+    },
+    {
+      "id": "titanic-2",
+      "texto": "Náufrago"
+    },
+    {
+      "id": "el-lobo-de-wall-street",
+      "texto": "El Lobo de Wall Street"
+    },
+    {
+      "id": "el-padrino-2",
+      "texto": "El Padrino II"
+    },
+    {
+      "id": "terminator",
+      "texto": "Terminator"
+    },
+    {
+      "id": "rambo",
+      "texto": "Rambo"
+    },
+    {
+      "id": "depredador-2",
+      "texto": "Predator"
+    },
+    {
+      "id": "duro-de-matar",
+      "texto": "Duro de Matar"
+    },
+    {
+      "id": "arma-mortal",
+      "texto": "Arma Mortal"
+    },
+    {
+      "id": "hombres-de-negro",
+      "texto": "Hombres de Negro"
+    },
+    {
+      "id": "independence-day",
+      "texto": "Día de la Independencia"
+    },
+    {
+      "id": "volver-al-futuro-2",
+      "texto": "Volver al Futuro II"
+    },
+    {
+      "id": "karate-kid",
+      "texto": "Karate Kid"
+    },
+    {
+      "id": "creed",
+      "texto": "Creed"
+    },
+    {
+      "id": "el-planeta-de-los-simios-el-origen",
+      "texto": "El Planeta de los Simios: (R)Evolución"
+    },
+    {
+      "id": "king-kong-2005",
+      "texto": "King Kong (2005)"
+    },
+    {
+      "id": "godzilla-minus-one",
+      "texto": "Godzilla Minus One"
+    },
+    {
+      "id": "ready-player-one",
+      "texto": "Ready Player One"
+    },
+    {
+      "id": "tron-el-legado",
+      "texto": "Tron: El Legado"
+    },
+    {
+      "id": "el-quinto-elemento",
+      "texto": "El Quinto Elemento"
+    },
+    {
+      "id": "yo-robot",
+      "texto": "Yo, Robot"
+    },
+    {
+      "id": "ia-inteligencia-artificial",
+      "texto": "Inteligencia Artificial"
+    },
+    {
+      "id": "el-gigante-de-hierro",
+      "texto": "El Gigante de Hierro"
+    },
+    {
+      "id": "space-jam",
+      "texto": "Space Jam"
+    },
+    {
+      "id": "quien-engano-a-roger-rabbit",
+      "texto": "¿Quién Engañó a Roger Rabbit?"
+    },
+    {
+      "id": "los-croods",
+      "texto": "Los Croods"
+    },
+    {
+      "id": "megamente",
+      "texto": "Megamente"
+    },
+    {
+      "id": "hotel-transylvania",
+      "texto": "Hotel Transylvania"
+    },
+    {
+      "id": "los-pinguinos-de-madagascar",
+      "texto": "Los Pingüinos de Madagascar"
+    },
+    {
+      "id": "pollitos-en-fuga",
+      "texto": "Pollitos en Fuga"
+    },
+    {
+      "id": "el-principe-de-egipto",
+      "texto": "El Príncipe de Egipto"
+    },
+    {
+      "id": "spirit",
+      "texto": "Spirit: El Corcel Indomable"
+    },
+    {
+      "id": "tarzan-2",
+      "texto": "Tarzán y Jane"
+    },
+    {
+      "id": "bolt",
+      "texto": "Bolt"
+    },
+    {
+      "id": "tierra-de-osos",
+      "texto": "Tierra de Osos"
+    },
+    {
+      "id": "el-cadaver-de-la-novia",
+      "texto": "El Cadáver de la Novia"
+    },
+    {
+      "id": "el-extraño-mundo-de-jack",
+      "texto": "El Extraño Mundo de Jack"
+    },
+    {
+      "id": "coraline",
+      "texto": "Coraline"
+    },
+    {
+      "id": "kubo",
+      "texto": "Kubo y la Búsqueda Samurai"
+    },
+    {
+      "id": "fantastic-mr-fox",
+      "texto": "Fantástico Sr. Zorro"
+    },
+    {
+      "id": "paddington",
+      "texto": "Paddington"
+    },
+    {
+      "id": "stuart-little",
+      "texto": "Stuart Little"
+    },
+    {
+      "id": "babe",
+      "texto": "Babe, el Cerdito Valiente"
+    },
+    {
+      "id": "hop",
+      "texto": "Hop: Rebelde sin Pascua"
+    },
+    {
+      "id": "eloso-yogi",
+      "texto": "El Oso Yogi"
+    },
+    {
+      "id": "tom-y-jerry",
+      "texto": "Tom y Jerry"
+    },
+    {
+      "id": "garfield",
+      "texto": "Garfield"
+    },
+    {
+      "id": "las-tortugas-ninja",
+      "texto": "Las Tortugas Ninja"
+    },
+    {
+      "id": "power-rangers",
+      "texto": "Power Rangers"
+    },
+    {
+      "id": "transformers-el-despertar-de-las-bestias",
+      "texto": "Transformers: El Despertar de las Bestias"
+    },
+    {
+      "id": "deadpool-2",
+      "texto": "Deadpool 2"
+    },
+    {
+      "id": "logan",
+      "texto": "Logan"
+    },
+    {
+      "id": "x-men",
+      "texto": "X-Men"
+    },
+    {
+      "id": "wolverine",
+      "texto": "Wolverine: Inmortal"
+    },
+    {
+      "id": "venom",
+      "texto": "Venom"
+    },
+    {
+      "id": "los-cuatro-fantasticos",
+      "texto": "Los Cuatro Fantásticos"
+    },
+    {
+      "id": "shazam",
+      "texto": "¡Shazam!"
+    },
+    {
+      "id": "flash",
+      "texto": "The Flash"
+    },
+    {
+      "id": "linterna-verde",
+      "texto": "Linterna Verde"
+    },
+    {
+      "id": "constantine",
+      "texto": "Constantine"
+    },
+    {
+      "id": "watchmen",
+      "texto": "Watchmen"
+    },
+    {
+      "id": "v-de-venganza",
+      "texto": "V de Venganza"
+    },
+    {
+      "id": "el-cuervo",
+      "texto": "El Cuervo"
+    },
+    {
+      "id": "el-laberinto-del-fauno",
+      "texto": "El Laberinto del Fauno"
+    },
+    {
+      "id": "el-gran-pez",
+      "texto": "El Gran Pez"
+    },
+    {
+      "id": "eduardo-manos-de-tijera",
+      "texto": "Edward Scissorhands"
+    },
+    {
+      "id": "charlie-y-el-elevador-de-cristal",
+      "texto": "Wonka"
+    },
+    {
+      "id": "matilda",
+      "texto": "Matilda"
+    },
+    {
+      "id": "la-huérfana",
+      "texto": "La Huérfana"
+    },
+    {
+      "id": "el-aro",
+      "texto": "El Aro"
+    },
+    {
+      "id": "la-monja",
+      "texto": "La Monja"
+    },
+    {
+      "id": "el-exorcista",
+      "texto": "El Exorcista"
+    },
+    {
+      "id": "chucky",
+      "texto": "Chucky"
+    },
+    {
+      "id": "viernes-13",
+      "texto": "Viernes 13"
+    },
+    {
+      "id": "pesadilla-en-la-calle-elm",
+      "texto": "Pesadilla en la Calle del Infierno"
+    },
+    {
+      "id": "saw",
+      "texto": "Saw"
+    },
+    {
+      "id": "rec",
+      "texto": "[REC]"
+    },
+    {
+      "id": "el-resplandor",
+      "texto": "El Resplandor"
+    },
+    {
+      "id": "el-proyecto-de-la-bruja-de-blair",
+      "texto": "El Proyecto de la Bruja de Blair"
+    },
+    {
+      "id": "zombieland",
+      "texto": "Zombieland"
+    },
+    {
+      "id": "guerra-mundial-z",
+      "texto": "Guerra Mundial Z"
+    },
+    {
+      "id": "soy-leyenda",
+      "texto": "Soy Leyenda"
+    },
+    {
+      "id": "maze-runner",
+      "texto": "Maze Runner"
+    },
+    {
+      "id": "divergente",
+      "texto": "Divergente"
+    },
+    {
+      "id": "bajo-la-misma-estrella",
+      "texto": "Bajo la Misma Estrella"
+    },
+    {
+      "id": "diario-de-una-pasion",
+      "texto": "Diario de una Pasión"
+    },
+    {
+      "id": "mujer-bonita",
+      "texto": "Mujer Bonita"
+    },
+    {
+      "id": "simplemente-no-te-quiere",
+      "texto": "Simplemente No Te Quiere"
+    },
+    {
+      "id": "se-beber",
+      "texto": "¿Qué Pasó Ayer?"
+    },
+    {
+      "id": "una-esposa-de-mentira",
+      "texto": "Una Esposa de Mentira"
+    },
+    {
+      "id": "como-si-fuera-la-primera-vez",
+      "texto": "Como Si Fuera la Primera Vez"
+    },
+    {
+      "id": "quiero-matar-a-mi-jefe",
+      "texto": "Quiero Matar a mi Jefe"
+    },
+    {
+      "id": "intensamente-2",
+      "texto": "Intensamente 2"
+    },
+    {
+      "id": "moana-2",
+      "texto": "Moana 2"
+    },
+    {
+      "id": "frozen-2",
+      "texto": "Frozen 2"
+    },
+    {
+      "id": "kung-fu-panda-2",
+      "texto": "Kung Fu Panda 2"
+    },
+    {
+      "id": "shrek-2",
+      "texto": "Shrek 2"
+    },
+    {
+      "id": "madagascar-2",
+      "texto": "Madagascar 2"
+    },
+    {
+      "id": "ice-age-2",
+      "texto": "La Era de Hielo 2"
+    },
+    {
+      "id": "cars-2",
+      "texto": "Cars 2"
+    },
+    {
+      "id": "monsters-university",
+      "texto": "Monsters University"
+    },
+    {
+      "id": "toy-story-2",
+      "texto": "Toy Story 2"
+    },
+    {
+      "id": "buscando-a-nemo-2",
+      "texto": "Buscando a Dory"
+    }
   ]
 }
