@@ -129,6 +129,23 @@ Feel free to fork the repository, explore the code and use it for educational pu
 
 ---
 
+## 📚 Documentation
+
+Project documentation can be found in the `/docs` directory.
+
+- Product Vision
+- MVP Scope
+- App Flow
+- Navigation
+- UI System
+- Motion System
+- Sound System
+- Visual Language
+- Data Structure
+- Engineering Principles
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License.
