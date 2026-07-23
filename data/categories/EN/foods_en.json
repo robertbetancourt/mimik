@@ -1,0 +1,434 @@
+{
+  "id": "food",
+  "titulo": "Food",
+  "descripcion": "Guess famous foods and drinks.",
+  "version": 2,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/food.png",
+  "palabras": [
+    {
+      "id": "pizza",
+      "texto": "Pizza"
+    },
+    {
+      "id": "hamburguesa",
+      "texto": "Hamburger"
+    },
+    {
+      "id": "hot-dog",
+      "texto": "Hot Dog"
+    },
+    {
+      "id": "papas-fritas",
+      "texto": "French Fries"
+    },
+    {
+      "id": "pollo-frito",
+      "texto": "Fried Chicken"
+    },
+    {
+      "id": "sushi",
+      "texto": "Sushi"
+    },
+    {
+      "id": "ramen",
+      "texto": "Ramen"
+    },
+    {
+      "id": "tacos",
+      "texto": "Tacos"
+    },
+    {
+      "id": "burrito",
+      "texto": "Burrito"
+    },
+    {
+      "id": "quesadilla",
+      "texto": "Quesadilla"
+    },
+    {
+      "id": "nachos",
+      "texto": "Nachos"
+    },
+    {
+      "id": "guacamole",
+      "texto": "Guacamole"
+    },
+    {
+      "id": "paella",
+      "texto": "Paella"
+    },
+    {
+      "id": "lasana",
+      "texto": "Lasagna"
+    },
+    {
+      "id": "espaguetis",
+      "texto": "Spaghetti"
+    },
+    {
+      "id": "ravioles",
+      "texto": "Ravioli"
+    },
+    {
+      "id": "macarrones-con-queso",
+      "texto": "Mac and Cheese"
+    },
+    {
+      "id": "albondigas",
+      "texto": "Meatballs"
+    },
+    {
+      "id": "salchichas",
+      "texto": "Sausages"
+    },
+    {
+      "id": "pure-de-papas",
+      "texto": "Mashed Potatoes"
+    },
+    {
+      "id": "nuggets-de-pollo",
+      "texto": "Chicken Nuggets"
+    },
+    {
+      "id": "pescado-frito",
+      "texto": "Fried Fish"
+    },
+    {
+      "id": "atun",
+      "texto": "Tuna"
+    },
+    {
+      "id": "salmon",
+      "texto": "Salmon"
+    },
+    {
+      "id": "langosta",
+      "texto": "Lobster"
+    },
+    {
+      "id": "camarones",
+      "texto": "Shrimp"
+    },
+    {
+      "id": "hot-cakes",
+      "texto": "Pancakes"
+    },
+    {
+      "id": "muffin",
+      "texto": "Muffin"
+    },
+    {
+      "id": "muffin-de-arandanos",
+      "texto": "Blueberry Muffin"
+    },
+    {
+      "id": "pie-de-manzana",
+      "texto": "Apple Pie"
+    },
+    {
+      "id": "gelatina",
+      "texto": "Jelly"
+    },
+    {
+      "id": "yogur",
+      "texto": "Yogurt"
+    },
+    {
+      "id": "miel",
+      "texto": "Honey"
+    },
+    {
+      "id": "mermelada",
+      "texto": "Jam"
+    },
+    {
+      "id": "ketchup",
+      "texto": "Ketchup"
+    },
+    {
+      "id": "mostaza",
+      "texto": "Mustard"
+    },
+    {
+      "id": "mayonesa",
+      "texto": "Mayonnaise"
+    },
+    {
+      "id": "paleta",
+      "texto": "Popsicle"
+    },
+    {
+      "id": "empanadas",
+      "texto": "Empanadas"
+    },
+    {
+      "id": "arepa",
+      "texto": "Arepa"
+    },
+    {
+      "id": "tequenos",
+      "texto": "Cheese Sticks"
+    },
+    {
+      "id": "ceviche",
+      "texto": "Ceviche"
+    },
+    {
+      "id": "asado",
+      "texto": "Barbecue"
+    },
+    {
+      "id": "costillas",
+      "texto": "BBQ Ribs"
+    },
+    {
+      "id": "pollo-asado",
+      "texto": "Roast Chicken"
+    },
+    {
+      "id": "arroz-frito",
+      "texto": "Fried Rice"
+    },
+    {
+      "id": "arroz-con-pollo",
+      "texto": "Chicken and Rice"
+    },
+    {
+      "id": "paella-mixta",
+      "texto": "Mixed Paella"
+    },
+    {
+      "id": "ensalada-cesar",
+      "texto": "Caesar Salad"
+    },
+    {
+      "id": "ensalada",
+      "texto": "Salad"
+    },
+    {
+      "id": "sopa",
+      "texto": "Soup"
+    },
+    {
+      "id": "sandwich",
+      "texto": "Sandwich"
+    },
+    {
+      "id": "panqueques",
+      "texto": "Pancakes"
+    },
+    {
+      "id": "waffles",
+      "texto": "Waffles"
+    },
+    {
+      "id": "tostadas-francesas",
+      "texto": "French Toast"
+    },
+    {
+      "id": "huevos-revueltos",
+      "texto": "Scrambled Eggs"
+    },
+    {
+      "id": "omelet",
+      "texto": "Omelet"
+    },
+    {
+      "id": "tocino",
+      "texto": "Bacon"
+    },
+    {
+      "id": "croissant",
+      "texto": "Croissant"
+    },
+    {
+      "id": "pan",
+      "texto": "Bread"
+    },
+    {
+      "id": "donas",
+      "texto": "Donuts"
+    },
+    {
+      "id": "pastel",
+      "texto": "Cake"
+    },
+    {
+      "id": "cupcake",
+      "texto": "Cupcake"
+    },
+    {
+      "id": "brownie",
+      "texto": "Brownie"
+    },
+    {
+      "id": "galletas",
+      "texto": "Cookies"
+    },
+    {
+      "id": "helado",
+      "texto": "Ice Cream"
+    },
+    {
+      "id": "chocolate",
+      "texto": "Chocolate"
+    },
+    {
+      "id": "caramelo",
+      "texto": "Candy"
+    },
+    {
+      "id": "algodon-de-azucar",
+      "texto": "Cotton Candy"
+    },
+    {
+      "id": "palomitas-de-maiz",
+      "texto": "Popcorn"
+    },
+    {
+      "id": "pretzel",
+      "texto": "Pretzel"
+    },
+    {
+      "id": "papas-chips",
+      "texto": "Potato Chips"
+    },
+    {
+      "id": "mani",
+      "texto": "Peanuts"
+    },
+    {
+      "id": "calzone",
+      "texto": "Calzone"
+    },
+    {
+      "id": "risotto",
+      "texto": "Risotto"
+    },
+    {
+      "id": "fondue",
+      "texto": "Fondue"
+    },
+    {
+      "id": "croquetas",
+      "texto": "Croquettes"
+    },
+    {
+      "id": "falafel",
+      "texto": "Falafel"
+    },
+    {
+      "id": "shawarma",
+      "texto": "Shawarma"
+    },
+    {
+      "id": "kebab",
+      "texto": "Kebab"
+    },
+    {
+      "id": "curry",
+      "texto": "Curry"
+    },
+    {
+      "id": "pollo-al-curry",
+      "texto": "Chicken Curry"
+    },
+    {
+      "id": "dumplings",
+      "texto": "Dumplings"
+    },
+    {
+      "id": "rollitos-primavera",
+      "texto": "Spring Rolls"
+    },
+    {
+      "id": "pollo-agridulce",
+      "texto": "Sweet and Sour Chicken"
+    },
+    {
+      "id": "dim-sum",
+      "texto": "Dim Sum"
+    },
+    {
+      "id": "cafe",
+      "texto": "Coffee"
+    },
+    {
+      "id": "capuchino",
+      "texto": "Cappuccino"
+    },
+    {
+      "id": "espresso",
+      "texto": "Espresso"
+    },
+    {
+      "id": "te",
+      "texto": "Tea"
+    },
+    {
+      "id": "chocolate-caliente",
+      "texto": "Hot Chocolate"
+    },
+    {
+      "id": "limonada",
+      "texto": "Lemonade"
+    },
+    {
+      "id": "jugo-de-naranja",
+      "texto": "Orange Juice"
+    },
+    {
+      "id": "malteada",
+      "texto": "Milkshake"
+    },
+    {
+      "id": "batido",
+      "texto": "Smoothie"
+    },
+    {
+      "id": "refresco",
+      "texto": "Soft Drink"
+    },
+    {
+      "id": "agua",
+      "texto": "Water"
+    },
+    {
+      "id": "coco",
+      "texto": "Coconut Water"
+    },
+    {
+      "id": "vino",
+      "texto": "Wine"
+    },
+    {
+      "id": "cerveza",
+      "texto": "Beer"
+    },
+    {
+      "id": "champana",
+      "texto": "Champagne"
+    },
+    {
+      "id": "tiramisu",
+      "texto": "Tiramisu"
+    },
+    {
+      "id": "cheesecake",
+      "texto": "Cheesecake"
+    },
+    {
+      "id": "flan",
+      "texto": "Flan"
+    },
+    {
+      "id": "arroz-con-leche",
+      "texto": "Rice Pudding"
+    },
+    {
+      "id": "churros",
+      "texto": "Churros"
+    }
+  ]
+}

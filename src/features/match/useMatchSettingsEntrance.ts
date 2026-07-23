@@ -4,11 +4,11 @@ import { Easing, useAnimatedStyle, useSharedValue, withDelay, withTiming } from 
 const HEADER_DELAY = 0;
 const SETTINGS_BASE_DELAY = 90;
 const SETTINGS_STAGGER = 45;
-const BUTTON_DELAY = 340;
+const BUTTON_DELAY = 385;
 const DURATION = 220;
 const RISE_DISTANCE = 10;
 
-// Calm, staggered one-shot entrance: header → each of the 5 setting groups
+// Calm, staggered one-shot entrance: header → each of the 6 setting groups
 // → the primary button. No springs — this screen is about confidence, not
 // playfulness, so every step eases out smoothly instead of bouncing.
 export function useMatchSettingsEntrance() {
@@ -25,6 +25,8 @@ export function useMatchSettingsEntrance() {
   const y3 = useSharedValue(RISE_DISTANCE);
   const opacity4 = useSharedValue(0);
   const y4 = useSharedValue(RISE_DISTANCE);
+  const opacity5 = useSharedValue(0);
+  const y5 = useSharedValue(RISE_DISTANCE);
 
   const buttonOpacity = useSharedValue(0);
   const buttonY = useSharedValue(RISE_DISTANCE);
@@ -42,6 +44,7 @@ export function useMatchSettingsEntrance() {
     fadeUp(opacity2, y2, SETTINGS_BASE_DELAY + 2 * SETTINGS_STAGGER);
     fadeUp(opacity3, y3, SETTINGS_BASE_DELAY + 3 * SETTINGS_STAGGER);
     fadeUp(opacity4, y4, SETTINGS_BASE_DELAY + 4 * SETTINGS_STAGGER);
+    fadeUp(opacity5, y5, SETTINGS_BASE_DELAY + 5 * SETTINGS_STAGGER);
     fadeUp(buttonOpacity, buttonY, BUTTON_DELAY);
     // Entrance is scripted to run exactly once per mount.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -71,6 +74,10 @@ export function useMatchSettingsEntrance() {
     opacity: opacity4.value,
     transform: [{ translateY: y4.value }],
   }));
+  const settingStyle5 = useAnimatedStyle(() => ({
+    opacity: opacity5.value,
+    transform: [{ translateY: y5.value }],
+  }));
   const buttonStyle = useAnimatedStyle(() => ({
     opacity: buttonOpacity.value,
     transform: [{ translateY: buttonY.value }],
@@ -78,7 +85,7 @@ export function useMatchSettingsEntrance() {
 
   return {
     headerStyle,
-    settingStyles: [settingStyle0, settingStyle1, settingStyle2, settingStyle3, settingStyle4],
+    settingStyles: [settingStyle0, settingStyle1, settingStyle2, settingStyle3, settingStyle4, settingStyle5],
     buttonStyle,
   };
 }

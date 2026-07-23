@@ -1,0 +1,614 @@
+{
+  "id": "tv-series",
+  "titulo": "TV Series",
+  "descripcion": "Guess famous TV series.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/tv-series.png",
+  "palabras": [
+    {
+      "id": "friends",
+      "texto": "Friends"
+    },
+    {
+      "id": "breaking-bad",
+      "texto": "Breaking Bad"
+    },
+    {
+      "id": "better-call-saul",
+      "texto": "Better Call Saul"
+    },
+    {
+      "id": "game-of-thrones",
+      "texto": "Game of Thrones"
+    },
+    {
+      "id": "house-of-the-dragon",
+      "texto": "House of the Dragon"
+    },
+    {
+      "id": "the-last-of-us",
+      "texto": "The Last of Us"
+    },
+    {
+      "id": "stranger-things",
+      "texto": "Stranger Things"
+    },
+    {
+      "id": "dark",
+      "texto": "Dark"
+    },
+    {
+      "id": "merlina",
+      "texto": "Wednesday"
+    },
+    {
+      "id": "the-walking-dead",
+      "texto": "The Walking Dead"
+    },
+    {
+      "id": "the-office",
+      "texto": "The Office"
+    },
+    {
+      "id": "the-big-bang-theory",
+      "texto": "The Big Bang Theory"
+    },
+    {
+      "id": "how-i-met-your-mother",
+      "texto": "How I Met Your Mother"
+    },
+    {
+      "id": "modern-family",
+      "texto": "Modern Family"
+    },
+    {
+      "id": "two-and-a-half-men",
+      "texto": "Two and a Half Men"
+    },
+    {
+      "id": "brooklyn-nine-nine",
+      "texto": "Brooklyn Nine-Nine"
+    },
+    {
+      "id": "the-simpsons",
+      "texto": "The Simpsons"
+    },
+    {
+      "id": "family-guy",
+      "texto": "Family Guy"
+    },
+    {
+      "id": "south-park",
+      "texto": "South Park"
+    },
+    {
+      "id": "futurama",
+      "texto": "Futurama"
+    },
+    {
+      "id": "rick-and-morty",
+      "texto": "Rick and Morty"
+    },
+    {
+      "id": "spongebob-squarepants",
+      "texto": "SpongeBob SquarePants"
+    },
+    {
+      "id": "adventure-time",
+      "texto": "Adventure Time"
+    },
+    {
+      "id": "regular-show",
+      "texto": "Regular Show"
+    },
+    {
+      "id": "ben-10",
+      "texto": "Ben 10"
+    },
+    {
+      "id": "phineas-and-ferb",
+      "texto": "Phineas and Ferb"
+    },
+    {
+      "id": "gravity-falls",
+      "texto": "Gravity Falls"
+    },
+    {
+      "id": "avatar-the-last-airbender",
+      "texto": "Avatar: The Last Airbender"
+    },
+    {
+      "id": "the-legend-of-korra",
+      "texto": "The Legend of Korra"
+    },
+    {
+      "id": "teen-titans",
+      "texto": "Teen Titans"
+    },
+    {
+      "id": "pokemon",
+      "texto": "Pokémon"
+    },
+    {
+      "id": "dragon-ball",
+      "texto": "Dragon Ball"
+    },
+    {
+      "id": "naruto",
+      "texto": "Naruto"
+    },
+    {
+      "id": "naruto-shippuden",
+      "texto": "Naruto Shippuden"
+    },
+    {
+      "id": "one-piece",
+      "texto": "One Piece"
+    },
+    {
+      "id": "bleach",
+      "texto": "Bleach"
+    },
+    {
+      "id": "death-note",
+      "texto": "Death Note"
+    },
+    {
+      "id": "attack-on-titan",
+      "texto": "Attack on Titan"
+    },
+    {
+      "id": "demon-slayer",
+      "texto": "Demon Slayer"
+    },
+    {
+      "id": "jujutsu-kaisen",
+      "texto": "Jujutsu Kaisen"
+    },
+    {
+      "id": "my-hero-academia",
+      "texto": "My Hero Academia"
+    },
+    {
+      "id": "one-punch-man",
+      "texto": "One Punch Man"
+    },
+    {
+      "id": "spy-x-family",
+      "texto": "Spy x Family"
+    },
+    {
+      "id": "chainsaw-man",
+      "texto": "Chainsaw Man"
+    },
+    {
+      "id": "fullmetal-alchemist-brotherhood",
+      "texto": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+      "id": "hunter-x-hunter",
+      "texto": "Hunter × Hunter"
+    },
+    {
+      "id": "cobra-kai",
+      "texto": "Cobra Kai"
+    },
+    {
+      "id": "lupin",
+      "texto": "Lupin"
+    },
+    {
+      "id": "la-casa-de-papel",
+      "texto": "Money Heist"
+    },
+    {
+      "id": "el-juego-del-calamar",
+      "texto": "Squid Game"
+    },
+    {
+      "id": "elite",
+      "texto": "Elite"
+    },
+    {
+      "id": "vikingos",
+      "texto": "Vikings"
+    },
+    {
+      "id": "peaky-blinders",
+      "texto": "Peaky Blinders"
+    },
+    {
+      "id": "chernobyl",
+      "texto": "Chernobyl"
+    },
+    {
+      "id": "lost",
+      "texto": "Lost"
+    },
+    {
+      "id": "prison-break",
+      "texto": "Prison Break"
+    },
+    {
+      "id": "dexter",
+      "texto": "Dexter"
+    },
+    {
+      "id": "house",
+      "texto": "House"
+    },
+    {
+      "id": "greys-anatomy",
+      "texto": "Grey's Anatomy"
+    },
+    {
+      "id": "the-good-doctor",
+      "texto": "The Good Doctor"
+    },
+    {
+      "id": "suits",
+      "texto": "Suits"
+    },
+    {
+      "id": "lucifer",
+      "texto": "Lucifer"
+    },
+    {
+      "id": "supernatural",
+      "texto": "Supernatural"
+    },
+    {
+      "id": "the-boys",
+      "texto": "The Boys"
+    },
+    {
+      "id": "invincible",
+      "texto": "Invincible"
+    },
+    {
+      "id": "wanda-vision",
+      "texto": "WandaVision"
+    },
+    {
+      "id": "loki",
+      "texto": "Loki"
+    },
+    {
+      "id": "moon-knight",
+      "texto": "Moon Knight"
+    },
+    {
+      "id": "daredevil",
+      "texto": "Daredevil"
+    },
+    {
+      "id": "arrow",
+      "texto": "Arrow"
+    },
+    {
+      "id": "the-flash",
+      "texto": "The Flash"
+    },
+    {
+      "id": "smallville",
+      "texto": "Smallville"
+    },
+    {
+      "id": "gotham",
+      "texto": "Gotham"
+    },
+    {
+      "id": "titans",
+      "texto": "Titans"
+    },
+    {
+      "id": "black-mirror",
+      "texto": "Black Mirror"
+    },
+    {
+      "id": "westworld",
+      "texto": "Westworld"
+    },
+    {
+      "id": "the-mandalorian",
+      "texto": "The Mandalorian"
+    },
+    {
+      "id": "star-trek",
+      "texto": "Star Trek"
+    },
+    {
+      "id": "doctor-who",
+      "texto": "Doctor Who"
+    },
+    {
+      "id": "the-x-files",
+      "texto": "The X-Files"
+    },
+    {
+      "id": "seinfeld",
+      "texto": "Seinfeld"
+    },
+    {
+      "id": "malcolm-in-the-middle",
+      "texto": "Malcolm in the Middle"
+    },
+    {
+      "id": "alf",
+      "texto": "ALF"
+    },
+    {
+      "id": "el-chavo-del-ocho",
+      "texto": "El Chavo"
+    },
+    {
+      "id": "el-chapulin-colorado",
+      "texto": "El Chapulín Colorado"
+    },
+    {
+      "id": "yo-soy-betty-la-fea",
+      "texto": "Yo Soy Betty, la Fea"
+    },
+    {
+      "id": "narcos",
+      "texto": "Narcos"
+    },
+    {
+      "id": "ozark",
+      "texto": "Ozark"
+    },
+    {
+      "id": "scooby-doo",
+      "texto": "Scooby-Doo"
+    },
+    {
+      "id": "tom-and-jerry",
+      "texto": "Tom and Jerry"
+    },
+    {
+      "id": "looney-tunes",
+      "texto": "Looney Tunes"
+    },
+    {
+      "id": "dexters-laboratory",
+      "texto": "Dexter's Laboratory"
+    },
+    {
+      "id": "the-powerpuff-girls",
+      "texto": "The Powerpuff Girls"
+    },
+    {
+      "id": "courage-the-cowardly-dog",
+      "texto": "Courage the Cowardly Dog"
+    },
+    {
+      "id": "johnny-bravo",
+      "texto": "Johnny Bravo"
+    },
+    {
+      "id": "the-flintstones",
+      "texto": "The Flintstones"
+    },
+    {
+      "id": "the-jetsons",
+      "texto": "The Jetsons"
+    },
+    {
+      "id": "csi",
+      "texto": "CSI"
+    },
+    {
+      "id": "criminal-minds",
+      "texto": "Criminal Minds"
+    },
+    {
+      "id": "macgyver",
+      "texto": "MacGyver"
+    },
+    {
+      "id": "the-sopranos",
+      "texto": "The Sopranos"
+    },
+    {
+      "id": "sailor-moon",
+      "texto": "Sailor Moon"
+    },
+    {
+      "id": "digimon",
+      "texto": "Digimon"
+    },
+    {
+      "id": "yu-gi-oh",
+      "texto": "Yu-Gi-Oh!"
+    },
+    {
+      "id": "inuyasha",
+      "texto": "Inuyasha"
+    },
+    {
+      "id": "saint-seiya",
+      "texto": "Saint Seiya"
+    },
+    {
+      "id": "shin-chan",
+      "texto": "Shin Chan"
+    },
+    {
+      "id": "doraemon",
+      "texto": "Doraemon"
+    },
+    {
+      "id": "heidi",
+      "texto": "Heidi"
+    },
+    {
+      "id": "masha-and-the-bear",
+      "texto": "Masha and the Bear"
+    },
+    {
+      "id": "paw-patrol",
+      "texto": "Paw Patrol"
+    },
+    {
+      "id": "teenage-mutant-ninja-turtles",
+      "texto": "Teenage Mutant Ninja Turtles"
+    },
+    {
+      "id": "thundercats",
+      "texto": "ThunderCats"
+    },
+    {
+      "id": "he-man",
+      "texto": "He-Man and the Masters of the Universe"
+    },
+    {
+      "id": "garfield-and-friends",
+      "texto": "Garfield and Friends"
+    },
+    {
+      "id": "the-smurfs",
+      "texto": "The Smurfs"
+    },
+    {
+      "id": "inspector-gadget",
+      "texto": "Inspector Gadget"
+    },
+    {
+      "id": "pink-panther",
+      "texto": "The Pink Panther"
+    },
+    {
+      "id": "speed-racer",
+      "texto": "Speed Racer"
+    },
+    {
+      "id": "captain-tsubasa",
+      "texto": "Captain Tsubasa"
+    },
+    {
+      "id": "digimon-adventure",
+      "texto": "Digimon Adventure"
+    },
+    {
+      "id": "married-with-children",
+      "texto": "Married... with Children"
+    },
+    {
+      "id": "fresh-prince-of-bel-air",
+      "texto": "The Fresh Prince of Bel-Air"
+    },
+    {
+      "id": "full-house",
+      "texto": "Full House"
+    },
+    {
+      "id": "saved-by-the-bell",
+      "texto": "Saved by the Bell"
+    },
+    {
+      "id": "the-nanny",
+      "texto": "The Nanny"
+    },
+    {
+      "id": "baywatch",
+      "texto": "Baywatch"
+    },
+    {
+      "id": "knight-rider",
+      "texto": "Knight Rider"
+    },
+    {
+      "id": "the-a-team",
+      "texto": "The A-Team"
+    },
+    {
+      "id": "bonanza",
+      "texto": "Bonanza"
+    },
+    {
+      "id": "columbo",
+      "texto": "Columbo"
+    },
+    {
+      "id": "monk",
+      "texto": "Monk"
+    },
+    {
+      "id": "bones",
+      "texto": "Bones"
+    },
+    {
+      "id": "the-mentalist",
+      "texto": "The Mentalist"
+    },
+    {
+      "id": "castle",
+      "texto": "Castle"
+    },
+    {
+      "id": "hawaii-five-0",
+      "texto": "Hawaii Five-0"
+    },
+    {
+      "id": "the-twilight-zone",
+      "texto": "The Twilight Zone"
+    },
+    {
+      "id": "the-addams-family",
+      "texto": "The Addams Family"
+    },
+    {
+      "id": "the-muppet-show",
+      "texto": "The Muppet Show"
+    },
+    {
+      "id": "american-horror-story",
+      "texto": "American Horror Story"
+    },
+    {
+      "id": "bridgerton",
+      "texto": "Bridgerton"
+    },
+    {
+      "id": "the-queens-gambit",
+      "texto": "The Queen's Gambit"
+    },
+    {
+      "id": "the-handmaids-tale",
+      "texto": "The Handmaid's Tale"
+    },
+    {
+      "id": "money-heist-korea",
+      "texto": "Money Heist: Korea"
+    },
+    {
+      "id": "yellowstone",
+      "texto": "Yellowstone"
+    },
+    {
+      "id": "the-bear",
+      "texto": "The Bear"
+    },
+    {
+      "id": "arcane",
+      "texto": "Arcane"
+    },
+    {
+      "id": "bluey",
+      "texto": "Bluey"
+    },
+    {
+      "id": "bojack-horseman",
+      "texto": "BoJack Horseman"
+    },
+    {
+      "id": "the-witcher",
+      "texto": "The Witcher"
+    },
+    {
+      "id": "xena-warrior-princess",
+      "texto": "Xena: Warrior Princess"
+    }
+  ]
+}

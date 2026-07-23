@@ -1,0 +1,96 @@
+{
+  "common": {
+    "accept": "Aceptar",
+    "delete": "Eliminar",
+    "playerNamePlaceholder": "Nombre del jugador",
+    "defaultPlayerName": "Jugador {{n}}",
+    "player": "Jugador"
+  },
+  "mix": {
+    "title": "Mezcla",
+    "description": "Un poco de todas las categorías."
+  },
+  "home": {
+    "greeting": "Bienvenido,",
+    "title": "elige una categoría",
+    "subtitle": "¿A qué quieren jugar hoy?",
+    "wordCount": "{{count}} palabras"
+  },
+  "gameSetup": {
+    "gameMode": "Modo de juego",
+    "individual": "Individual",
+    "teams": "Equipos",
+    "players": "Jugadores",
+    "teamHint": "Tocá el círculo de color para cambiar de equipo",
+    "turnDuration": "Duración del turno",
+    "rounds": "Número de rondas",
+    "endTurnSound": "Sonido de fin de turno",
+    "start": "Comenzar partida"
+  },
+  "countdown": {
+    "go": "¡Ya!",
+    "reposition": "Vuelve a colocar el teléfono sobre tu frente.",
+    "turnOf": "Es el turno de",
+    "placePhone": "Coloca el teléfono sobre tu frente."
+  },
+  "gameplay": {
+    "teamRed": "Equipo Rojo",
+    "teamBlue": "Equipo Azul",
+    "timeUp": "¡Tiempo!",
+    "exitTitle": "¿Salir de la partida?",
+    "exitMessage": "El progreso de la partida actual se perderá.",
+    "exitPrimary": "Seguir jugando",
+    "exitSecondary": "Salir de la partida"
+  },
+  "turnResults": {
+    "points": "puntos",
+    "correct": "Correctas",
+    "passed": "Pasadas",
+    "noneThisTime": "Ninguna esta vez.",
+    "leaderboard": "Clasificación",
+    "viewPodium": "Ver podio",
+    "nextTurnOf": "Turno de {{name}}"
+  },
+  "finalResults": {
+    "teamWins": "¡Equipo {{team}} Gana la Partida!",
+    "teamRed": "Rojo",
+    "teamBlue": "Azul",
+    "scoreLine": "🔴 Rojo: {{red}} pts · 🔵 Azul: {{blue}} pts",
+    "mvp": "🏆 MVP: {{name}}",
+    "winsMatch": "¡Gana la partida!",
+    "specialAwards": "🏆 Premios Especiales",
+    "finalRanking": "Clasificación final",
+    "rematch": "Revancha",
+    "goHome": "Ir a Inicio"
+  },
+  "awards": {
+    "speedsterTitle": "El Rayo",
+    "speedsterDesc": "Más aciertos acumulados",
+    "speedsterValue": "{{n}} aciertos",
+    "thinkerTitle": "El Pensador",
+    "thinkerDesc": "Más palabras pasadas",
+    "thinkerValue": "{{n}} pasadas",
+    "accuracyTitle": "Efectividad Pura",
+    "accuracyDesc": "Mayor % de precisión",
+    "accuracyValue": "{{n}}% precisión"
+  },
+  "feedback": {
+    "correct": "¡Correcto!",
+    "pass": "Pasar"
+  },
+  "characterCategories": {
+    "all": "Todos",
+    "faces": "Caras",
+    "warriors": "Guerreros",
+    "fantasy": "Fantasía",
+    "animals": "Animales",
+    "food": "Comida",
+    "space": "Espacio",
+    "jobs": "Oficios"
+  },
+  "endTurnSounds": {
+    "classic": "Clásico",
+    "retroArcade": "Retro Arcade",
+    "magicBubbles": "Magic Bubbles"
+  }
+}

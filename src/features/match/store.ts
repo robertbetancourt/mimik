@@ -4,6 +4,7 @@ import type { Word } from "@/types/category";
 import { DEFAULT_END_TURN_SOUND_ID } from "@/features/gameplay/endTurnSounds";
 import { pickRandomCharacterId } from "@/features/players/characters";
 import { generateId } from "@/lib/generateId";
+import i18n from "@/i18n";
 import type { Player } from "@/types/player";
 
 export interface TurnResult {
@@ -20,11 +21,20 @@ const DEFAULT_TOTAL_ROUNDS = 3;
 
 export const ROUND_STEPS: (number | "infinite")[] = [1, 2, 3, 5, "infinite"];
 
+export type GameMode = "individual" | "teams";
+
+export interface PlayerStat {
+  correct: number;
+  passed: number;
+  totalWords: number;
+}
+
 function createPlayer(index: number, excludeCharacterIds: string[]): Player {
   return {
     id: generateId("player"),
-    name: `Jugador ${index + 1}`,
+    name: i18n.t("common.defaultPlayerName", { n: index + 1 }),
     characterId: pickRandomCharacterId(excludeCharacterIds),
+    teamId: index % 2 === 0 ? "red" : "blue",
   };
 }
 
@@ -37,6 +47,9 @@ function createInitialPlayers(): Player[] {
 }
 
 interface MatchState {
+  gameMode: GameMode;
+  setGameMode: (mode: GameMode) => void;
+
   selectedCategoryId: string | null;
   selectCategory: (categoryId: string) => void;
 
@@ -46,6 +59,7 @@ interface MatchState {
   removePlayer: (playerId: string) => void;
   renamePlayer: (playerId: string, name: string) => void;
   setPlayerCharacter: (playerId: string, characterId: string) => void;
+  togglePlayerTeam: (playerId: string) => void;
 
   currentPlayerIndex: number;
   currentRound: number;
@@ -63,6 +77,9 @@ interface MatchState {
 
   playerScores: Record<string, number>;
   addTurnScore: (playerId: string, points: number) => void;
+
+  playerStats: Record<string, PlayerStat>;
+  recordTurnStats: (playerId: string, correctCount: number, passedCount: number) => void;
 
   roundDurationSeconds: number;
   setRoundDurationSeconds: (seconds: number) => void;
@@ -83,6 +100,9 @@ interface MatchState {
 }
 
 export const useMatchStore = create<MatchState>((set, get) => ({
+  gameMode: "individual",
+  setGameMode: (gameMode) => set({ gameMode }),
+
   selectedCategoryId: null,
   // Picking a category from Home always starts a fresh match creation flow
   // — everything configured for a previous match resets here. Navigating
@@ -92,10 +112,12 @@ export const useMatchStore = create<MatchState>((set, get) => ({
     set({
       selectedCategoryId: categoryId,
       players: createInitialPlayers(),
+      gameMode: "individual",
       currentPlayerIndex: 0,
       currentRound: 1,
       lastTurnResult: null,
       playerScores: {},
+      playerStats: {},
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,
@@ -123,6 +145,22 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   addTurnScore: (playerId, points) => {
     const { playerScores } = get();
     set({ playerScores: { ...playerScores, [playerId]: (playerScores[playerId] ?? 0) + points } });
+  },
+
+  playerStats: {},
+  recordTurnStats: (playerId, correctCount, passedCount) => {
+    const { playerStats } = get();
+    const current = playerStats[playerId] ?? { correct: 0, passed: 0, totalWords: 0 };
+    set({
+      playerStats: {
+        ...playerStats,
+        [playerId]: {
+          correct: current.correct + correctCount,
+          passed: current.passed + passedCount,
+          totalWords: current.totalWords + correctCount + passedCount,
+        },
+      },
+    });
   },
 
   addPlayer: () => {
@@ -154,6 +192,12 @@ export const useMatchStore = create<MatchState>((set, get) => ({
         player.id === playerId ? { ...player, characterId } : player,
       ),
     }),
+  togglePlayerTeam: (playerId) =>
+    set({
+      players: get().players.map((player) =>
+        player.id === playerId ? { ...player, teamId: player.teamId === "red" ? "blue" : "red" } : player,
+      ),
+    }),
 
   roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
   setRoundDurationSeconds: (seconds) => set({ roundDurationSeconds: seconds }),
@@ -172,6 +216,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       currentPlayerIndex: 0,
       currentRound: 1,
       playerScores: {},
+      playerStats: {},
       lastTurnResult: null,
     }),
 
@@ -179,10 +224,12 @@ export const useMatchStore = create<MatchState>((set, get) => ({
     set({
       selectedCategoryId: null,
       players: createInitialPlayers(),
+      gameMode: "individual",
       currentPlayerIndex: 0,
       currentRound: 1,
       lastTurnResult: null,
       playerScores: {},
+      playerStats: {},
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,

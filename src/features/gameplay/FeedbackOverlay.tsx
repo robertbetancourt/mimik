@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Text } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring, withTiming } from "react-native-reanimated";
 
@@ -10,12 +11,13 @@ interface FeedbackOverlayProps {
   feedback: FeedbackType | null;
 }
 
-const FEEDBACK_CONTENT: Record<FeedbackType, { label: string; color: string; Icon: typeof TickCircleIcon }> = {
-  correct: { label: "¡Correcto!", color: "#3DBE6C", Icon: TickCircleIcon },
-  pass: { label: "Pasar", color: "#E85C4A", Icon: CloseCircleIcon },
+const FEEDBACK_COLORS: Record<FeedbackType, { color: string; Icon: typeof TickCircleIcon }> = {
+  correct: { color: "#3DBE6C", Icon: TickCircleIcon },
+  pass: { color: "#E85C4A", Icon: CloseCircleIcon },
 };
 
 export function FeedbackOverlay({ feedback }: FeedbackOverlayProps) {
+  const { t } = useTranslation();
   const opacity = useSharedValue(0);
   const contentScale = useSharedValue(0.6);
 
@@ -40,7 +42,8 @@ export function FeedbackOverlay({ feedback }: FeedbackOverlayProps) {
 
   if (!feedback) return null;
 
-  const { label, color, Icon } = FEEDBACK_CONTENT[feedback];
+  const { color, Icon } = FEEDBACK_COLORS[feedback];
+  const label = t(`feedback.${feedback}`);
 
   return (
     <Animated.View

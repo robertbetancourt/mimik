@@ -1,3 +1,5 @@
+import i18n from "@/i18n";
+
 export interface EndTurnSoundOption {
   id: string;
   label: string;
@@ -8,17 +10,17 @@ export interface EndTurnSoundOption {
 export const endTurnSounds: EndTurnSoundOption[] = [
   {
     id: "classic",
-    label: "Clásico",
+    label: i18n.t("endTurnSounds.classic"),
     file: require("../../../assets/sounds/game-finish/end-correct.mp3"),
   },
   {
     id: "retro-arcade",
-    label: "Retro Arcade",
+    label: i18n.t("endTurnSounds.retroArcade"),
     file: require("../../../assets/sounds/game-finish/arcade-retro-game-over.wav"),
   },
   {
     id: "magic-bubbles",
-    label: "Magic Bubbles",
+    label: i18n.t("endTurnSounds.magicBubbles"),
     file: require("../../../assets/sounds/game-finish/magic-bubbles-spell.wav"),
   },
 ];

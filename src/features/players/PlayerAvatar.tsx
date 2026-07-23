@@ -12,6 +12,7 @@ import Animated, {
   ZoomOut,
 } from "react-native-reanimated";
 
+import { useMatchStore } from "@/features/match/store";
 import { getCharacterById } from "@/features/players/characters";
 import type { Player } from "@/types/player";
 
@@ -19,6 +20,8 @@ interface PlayerAvatarProps {
   player: Player;
   onPress: () => void;
 }
+
+const TEAM_COLORS = { red: "#FF3B30", blue: "#5B8DEF" } as const;
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const PRESS_SPRING = { damping: 14, stiffness: 260 };
@@ -30,6 +33,8 @@ const ENTER_DELAY = 130;
 
 export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
   const character = getCharacterById(player.characterId);
+  const gameMode = useMatchStore((state) => state.gameMode);
+  const togglePlayerTeam = useMatchStore((state) => state.togglePlayerTeam);
   const pressScale = useSharedValue(1);
 
   const enterOpacity = useSharedValue(0);
@@ -51,6 +56,9 @@ export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
     opacity: enterOpacity.value,
     transform: [{ translateY: enterY.value }, { scale: enterScale.value }],
   }));
+
+  const isRed = (player.teamId ?? "red") === "red";
+  const teamColor = isRed ? TEAM_COLORS.red : TEAM_COLORS.blue;
 
   return (
     <Animated.View
@@ -74,9 +82,27 @@ export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
         style={pressStyle}
         className="items-center"
       >
-        <View className="h-16 w-16 items-center justify-center rounded-full bg-surface">
+        <View
+          style={gameMode === "teams" ? { borderWidth: 2, borderColor: teamColor } : undefined}
+          className="h-16 w-16 items-center justify-center rounded-full bg-surface"
+        >
           {character ? (
             <Image source={character.illustration} resizeMode="contain" style={{ width: 44, height: 44 }} />
+          ) : null}
+          {gameMode === "teams" ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Cambiar al equipo ${isRed ? "azul" : "rojo"}`}
+              onPress={(event) => {
+                event.stopPropagation();
+                Haptics.selectionAsync();
+                togglePlayerTeam(player.id);
+              }}
+              style={{ backgroundColor: teamColor }}
+              className="absolute -right-1 -top-1 h-5 w-5 items-center justify-center rounded-full"
+            >
+              <Text className="text-[10px] font-sans-bold text-white">{isRed ? "R" : "A"}</Text>
+            </Pressable>
           ) : null}
         </View>
         <Text className="mt-1 font-sans-bold text-xs text-ink" numberOfLines={1}>

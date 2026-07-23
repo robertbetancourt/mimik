@@ -1,6 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import * as Haptics from "expo-haptics";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Image, Pressable, Text, View } from "react-native";
 import Animated, {
   useAnimatedStyle,
@@ -64,6 +65,7 @@ export function CategoryCardContent({
   backgroundColor,
   variant = "default",
 }: CategoryCardContentProps) {
+  const { t } = useTranslation();
   const size = SIZES[variant];
   const isHero = variant === "hero";
 
@@ -96,7 +98,7 @@ export function CategoryCardContent({
           <Text className="mt-1 font-sans text-sm text-ink/70">{description}</Text>
         ) : null}
         <Text className={`mt-0.5 font-sans text-ink/60 ${isHero ? "text-base" : "text-sm"}`}>
-          {formatWordCount(wordCount)} palabras
+          {t("home.wordCount", { count: formatWordCount(wordCount) })}
         </Text>
       </View>
     </View>

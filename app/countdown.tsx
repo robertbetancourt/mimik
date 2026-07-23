@@ -3,6 +3,7 @@ import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { BackHandler, Image, Pressable, Text } from "react-native";
 import Animated, {
   Easing,
@@ -23,12 +24,16 @@ import { getCharacterById } from "@/features/players/characters";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 import { cardShadow } from "@/theme/shadow";
 
-const COUNTDOWN_STEPS = ["3", "2", "1", "¡Ya!"];
+// Only the final "Go!" step needs translation — digits read the same in
+// every supported language, so the array itself stays static and the
+// translated label is swapped in at render time.
+const COUNTDOWN_STEPS = ["3", "2", "1", "go"];
 const STEP_DURATION_MS = 700;
 const FINAL_STEP_INDEX = COUNTDOWN_STEPS.length - 1;
 
 export default function Countdown() {
   const router = useRouter();
+  const { t } = useTranslation();
   const isOriented = useForeheadOrientation();
   const players = useMatchStore((state) => state.players);
   const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
@@ -157,7 +162,7 @@ export default function Countdown() {
           <Text
             className={`font-sans-bold text-ink ${isFinalDisplay ? "text-9xl text-primary" : "text-8xl"}`}
           >
-            {COUNTDOWN_STEPS[displayIndex]}
+            {isFinalDisplay ? t("countdown.go") : COUNTDOWN_STEPS[displayIndex]}
           </Text>
         </Animated.View>
       ) : isInterrupted ? (
@@ -165,7 +170,7 @@ export default function Countdown() {
           entering={FadeIn.duration(200)}
           className="text-center font-sans-bold text-4xl text-ink"
         >
-          Vuelve a colocar el teléfono sobre tu frente.
+          {t("countdown.reposition")}
         </Animated.Text>
       ) : (
         <Animated.View className="items-center gap-2">
@@ -179,14 +184,14 @@ export default function Countdown() {
             </Animated.View>
           ) : null}
           <Animated.View entering={FadeIn.delay(70).duration(200)} className="items-center">
-            <Text className="text-center font-sans text-base text-ink/60">Es el turno de</Text>
+            <Text className="text-center font-sans text-base text-ink/60">{t("countdown.turnOf")}</Text>
             <Text className="text-center font-sans-bold text-4xl text-ink">{currentPlayer?.name}</Text>
           </Animated.View>
           <Animated.Text
             entering={FadeIn.delay(140).duration(200)}
             className="mt-3 text-center font-sans-bold text-lg text-ink/70"
           >
-            Coloca el teléfono sobre tu frente.
+            {t("countdown.placePhone")}
           </Animated.Text>
         </Animated.View>
       )}

@@ -1,0 +1,826 @@
+{
+  "id": "logos",
+  "titulo": "Logos",
+  "descripcion": "Guess logos of famous brands.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/logos.png",
+  "palabras": [
+    {
+      "id": "apple",
+      "texto": "Apple"
+    },
+    {
+      "id": "google",
+      "texto": "Google"
+    },
+    {
+      "id": "microsoft",
+      "texto": "Microsoft"
+    },
+    {
+      "id": "amazon",
+      "texto": "Amazon"
+    },
+    {
+      "id": "netflix",
+      "texto": "Netflix"
+    },
+    {
+      "id": "youtube",
+      "texto": "YouTube"
+    },
+    {
+      "id": "spotify",
+      "texto": "Spotify"
+    },
+    {
+      "id": "instagram",
+      "texto": "Instagram"
+    },
+    {
+      "id": "facebook",
+      "texto": "Facebook"
+    },
+    {
+      "id": "x",
+      "texto": "X"
+    },
+    {
+      "id": "tiktok",
+      "texto": "TikTok"
+    },
+    {
+      "id": "whatsapp",
+      "texto": "WhatsApp"
+    },
+    {
+      "id": "telegram",
+      "texto": "Telegram"
+    },
+    {
+      "id": "discord",
+      "texto": "Discord"
+    },
+    {
+      "id": "reddit",
+      "texto": "Reddit"
+    },
+    {
+      "id": "twitch",
+      "texto": "Twitch"
+    },
+    {
+      "id": "linkedin",
+      "texto": "LinkedIn"
+    },
+    {
+      "id": "snapchat",
+      "texto": "Snapchat"
+    },
+    {
+      "id": "pinterest",
+      "texto": "Pinterest"
+    },
+    {
+      "id": "playstation",
+      "texto": "PlayStation"
+    },
+    {
+      "id": "xbox",
+      "texto": "Xbox"
+    },
+    {
+      "id": "nintendo",
+      "texto": "Nintendo"
+    },
+    {
+      "id": "steam",
+      "texto": "Steam"
+    },
+    {
+      "id": "epic-games",
+      "texto": "Epic Games"
+    },
+    {
+      "id": "riot-games",
+      "texto": "Riot Games"
+    },
+    {
+      "id": "ea-sports",
+      "texto": "EA Sports"
+    },
+    {
+      "id": "ubisoft",
+      "texto": "Ubisoft"
+    },
+    {
+      "id": "rockstar-games",
+      "texto": "Rockstar Games"
+    },
+    {
+      "id": "minecraft",
+      "texto": "Minecraft"
+    },
+    {
+      "id": "disney",
+      "texto": "Disney"
+    },
+    {
+      "id": "pixar",
+      "texto": "Pixar"
+    },
+    {
+      "id": "marvel",
+      "texto": "Marvel"
+    },
+    {
+      "id": "dc",
+      "texto": "DC"
+    },
+    {
+      "id": "warner-bros",
+      "texto": "Warner Bros."
+    },
+    {
+      "id": "universal",
+      "texto": "Universal"
+    },
+    {
+      "id": "paramount",
+      "texto": "Paramount"
+    },
+    {
+      "id": "dreamworks",
+      "texto": "DreamWorks"
+    },
+    {
+      "id": "nickelodeon",
+      "texto": "Nickelodeon"
+    },
+    {
+      "id": "cartoon-network",
+      "texto": "Cartoon Network"
+    },
+    {
+      "id": "nike",
+      "texto": "Nike"
+    },
+    {
+      "id": "adidas",
+      "texto": "Adidas"
+    },
+    {
+      "id": "puma",
+      "texto": "Puma"
+    },
+    {
+      "id": "reebok",
+      "texto": "Reebok"
+    },
+    {
+      "id": "under-armour",
+      "texto": "Under Armour"
+    },
+    {
+      "id": "new-balance",
+      "texto": "New Balance"
+    },
+    {
+      "id": "converse",
+      "texto": "Converse"
+    },
+    {
+      "id": "vans",
+      "texto": "Vans"
+    },
+    {
+      "id": "fila",
+      "texto": "Fila"
+    },
+    {
+      "id": "lacoste",
+      "texto": "Lacoste"
+    },
+    {
+      "id": "coca-cola",
+      "texto": "Coca-Cola"
+    },
+    {
+      "id": "pepsi",
+      "texto": "Pepsi"
+    },
+    {
+      "id": "mcdonalds",
+      "texto": "McDonald's"
+    },
+    {
+      "id": "burger-king",
+      "texto": "Burger King"
+    },
+    {
+      "id": "kfc",
+      "texto": "KFC"
+    },
+    {
+      "id": "starbucks",
+      "texto": "Starbucks"
+    },
+    {
+      "id": "subway",
+      "texto": "Subway"
+    },
+    {
+      "id": "dominos",
+      "texto": "Domino's"
+    },
+    {
+      "id": "pizza-hut",
+      "texto": "Pizza Hut"
+    },
+    {
+      "id": "taco-bell",
+      "texto": "Taco Bell"
+    },
+    {
+      "id": "wendys",
+      "texto": "Wendy's"
+    },
+    {
+      "id": "tesla",
+      "texto": "Tesla"
+    },
+    {
+      "id": "ferrari",
+      "texto": "Ferrari"
+    },
+    {
+      "id": "lamborghini",
+      "texto": "Lamborghini"
+    },
+    {
+      "id": "bmw",
+      "texto": "BMW"
+    },
+    {
+      "id": "mercedes-benz",
+      "texto": "Mercedes-Benz"
+    },
+    {
+      "id": "audi",
+      "texto": "Audi"
+    },
+    {
+      "id": "toyota",
+      "texto": "Toyota"
+    },
+    {
+      "id": "honda",
+      "texto": "Honda"
+    },
+    {
+      "id": "ford",
+      "texto": "Ford"
+    },
+    {
+      "id": "chevrolet",
+      "texto": "Chevrolet"
+    },
+    {
+      "id": "hyundai",
+      "texto": "Hyundai"
+    },
+    {
+      "id": "kia",
+      "texto": "Kia"
+    },
+    {
+      "id": "mazda",
+      "texto": "Mazda"
+    },
+    {
+      "id": "volkswagen",
+      "texto": "Volkswagen"
+    },
+    {
+      "id": "volvo",
+      "texto": "Volvo"
+    },
+    {
+      "id": "porsche",
+      "texto": "Porsche"
+    },
+    {
+      "id": "bugatti",
+      "texto": "Bugatti"
+    },
+    {
+      "id": "shell",
+      "texto": "Shell"
+    },
+    {
+      "id": "lego",
+      "texto": "LEGO"
+    },
+    {
+      "id": "barbie",
+      "texto": "Barbie"
+    },
+    {
+      "id": "nerf",
+      "texto": "NERF"
+    },
+    {
+      "id": "hasbro",
+      "texto": "Hasbro"
+    },
+    {
+      "id": "mattel",
+      "texto": "Mattel"
+    },
+    {
+      "id": "gucci",
+      "texto": "Gucci"
+    },
+    {
+      "id": "louis-vuitton",
+      "texto": "Louis Vuitton"
+    },
+    {
+      "id": "chanel",
+      "texto": "Chanel"
+    },
+    {
+      "id": "prada",
+      "texto": "Prada"
+    },
+    {
+      "id": "zara",
+      "texto": "Zara"
+    },
+    {
+      "id": "hm",
+      "texto": "H&M"
+    },
+    {
+      "id": "ikea",
+      "texto": "IKEA"
+    },
+    {
+      "id": "paypal",
+      "texto": "PayPal"
+    },
+    {
+      "id": "visa",
+      "texto": "Visa"
+    },
+    {
+      "id": "mastercard",
+      "texto": "Mastercard"
+    },
+    {
+      "id": "openai",
+      "texto": "OpenAI"
+    },
+    {
+      "id": "chatgpt",
+      "texto": "ChatGPT"
+    },
+    {
+      "id": "airbnb",
+      "texto": "Airbnb"
+    },
+    {
+      "id": "uber",
+      "texto": "Uber"
+    },
+    {
+      "id": "canva",
+      "texto": "Canva"
+    },
+    {
+      "id": "github",
+      "texto": "GitHub"
+    },
+    {
+      "id": "intel",
+      "texto": "Intel"
+    },
+    {
+      "id": "firefox",
+      "texto": "Firefox"
+    },
+    {
+      "id": "nokia",
+      "texto": "Nokia"
+    },
+    {
+      "id": "samsung",
+      "texto": "Samsung"
+    },
+    {
+      "id": "sony",
+      "texto": "Sony"
+    },
+    {
+      "id": "lg",
+      "texto": "LG"
+    },
+    {
+      "id": "panasonic",
+      "texto": "Panasonic"
+    },
+    {
+      "id": "toshiba",
+      "texto": "Toshiba"
+    },
+    {
+      "id": "sharp",
+      "texto": "Sharp"
+    },
+    {
+      "id": "acer",
+      "texto": "Acer"
+    },
+    {
+      "id": "asus",
+      "texto": "ASUS"
+    },
+    {
+      "id": "lenovo",
+      "texto": "Lenovo"
+    },
+    {
+      "id": "msi",
+      "texto": "MSI"
+    },
+    {
+      "id": "alienware",
+      "texto": "Alienware"
+    },
+    {
+      "id": "razer",
+      "texto": "Razer"
+    },
+    {
+      "id": "logitech",
+      "texto": "Logitech"
+    },
+    {
+      "id": "philips",
+      "texto": "Philips"
+    },
+    {
+      "id": "bosch",
+      "texto": "Bosch"
+    },
+    {
+      "id": "siemens",
+      "texto": "Siemens"
+    },
+    {
+      "id": "canon",
+      "texto": "Canon"
+    },
+    {
+      "id": "nikon",
+      "texto": "Nikon"
+    },
+    {
+      "id": "kodak",
+      "texto": "Kodak"
+    },
+    {
+      "id": "gopro",
+      "texto": "GoPro"
+    },
+    {
+      "id": "dji",
+      "texto": "DJI"
+    },
+    {
+      "id": "xiaomi",
+      "texto": "Xiaomi"
+    },
+    {
+      "id": "huawei",
+      "texto": "Huawei"
+    },
+    {
+      "id": "oneplus",
+      "texto": "OnePlus"
+    },
+    {
+      "id": "oppo",
+      "texto": "OPPO"
+    },
+    {
+      "id": "vivo",
+      "texto": "vivo"
+    },
+    {
+      "id": "motorola",
+      "texto": "Motorola"
+    },
+    {
+      "id": "blackberry",
+      "texto": "BlackBerry"
+    },
+    {
+      "id": "oracle",
+      "texto": "Oracle"
+    },
+    {
+      "id": "ibm",
+      "texto": "IBM"
+    },
+    {
+      "id": "intel-core",
+      "texto": "Intel Core"
+    },
+    {
+      "id": "amd",
+      "texto": "AMD"
+    },
+    {
+      "id": "nvidia",
+      "texto": "NVIDIA"
+    },
+    {
+      "id": "qualcomm",
+      "texto": "Qualcomm"
+    },
+    {
+      "id": "arm",
+      "texto": "ARM"
+    },
+    {
+      "id": "cloudflare",
+      "texto": "Cloudflare"
+    },
+    {
+      "id": "slack",
+      "texto": "Slack"
+    },
+    {
+      "id": "zoom",
+      "texto": "Zoom"
+    },
+    {
+      "id": "skype",
+      "texto": "Skype"
+    },
+    {
+      "id": "duolingo",
+      "texto": "Duolingo"
+    },
+    {
+      "id": "capcut",
+      "texto": "CapCut"
+    },
+    {
+      "id": "adobe",
+      "texto": "Adobe"
+    },
+    {
+      "id": "photoshop",
+      "texto": "Photoshop"
+    },
+    {
+      "id": "illustrator",
+      "texto": "Illustrator"
+    },
+    {
+      "id": "premiere",
+      "texto": "Premiere Pro"
+    },
+    {
+      "id": "figma",
+      "texto": "Figma"
+    },
+    {
+      "id": "notion",
+      "texto": "Notion"
+    },
+    {
+      "id": "trello",
+      "texto": "Trello"
+    },
+    {
+      "id": "jira",
+      "texto": "Jira"
+    },
+    {
+      "id": "google-drive",
+      "texto": "Google Drive"
+    },
+    {
+      "id": "gmail",
+      "texto": "Gmail"
+    },
+    {
+      "id": "chrome",
+      "texto": "Google Chrome"
+    },
+    {
+      "id": "firefox-browser",
+      "texto": "Firefox Browser"
+    },
+    {
+      "id": "edge",
+      "texto": "Microsoft Edge"
+    },
+    {
+      "id": "safari",
+      "texto": "Safari"
+    },
+    {
+      "id": "opera",
+      "texto": "Opera"
+    },
+    {
+      "id": "bing",
+      "texto": "Bing"
+    },
+    {
+      "id": "yahoo",
+      "texto": "Yahoo!"
+    },
+    {
+      "id": "wikipedia",
+      "texto": "Wikipedia"
+    },
+    {
+      "id": "ebay",
+      "texto": "eBay"
+    },
+    {
+      "id": "etsy",
+      "texto": "Etsy"
+    },
+    {
+      "id": "booking",
+      "texto": "Booking.com"
+    },
+    {
+      "id": "expedia",
+      "texto": "Expedia"
+    },
+    {
+      "id": "tripadvisor",
+      "texto": "Tripadvisor"
+    },
+    {
+      "id": "fedex",
+      "texto": "FedEx"
+    },
+    {
+      "id": "ups",
+      "texto": "UPS"
+    },
+    {
+      "id": "dhl",
+      "texto": "DHL"
+    },
+    {
+      "id": "red-bull",
+      "texto": "Red Bull"
+    },
+    {
+      "id": "monster-energy",
+      "texto": "Monster Energy"
+    },
+    {
+      "id": "fanta",
+      "texto": "Fanta"
+    },
+    {
+      "id": "sprite",
+      "texto": "Sprite"
+    },
+    {
+      "id": "7up",
+      "texto": "7UP"
+    },
+    {
+      "id": "oreo",
+      "texto": "Oreo"
+    },
+    {
+      "id": "nutella",
+      "texto": "Nutella"
+    },
+    {
+      "id": "pringles",
+      "texto": "Pringles"
+    },
+    {
+      "id": "lays",
+      "texto": "Lay's"
+    },
+    {
+      "id": "doritos",
+      "texto": "Doritos"
+    },
+    {
+      "id": "cheetos",
+      "texto": "Cheetos"
+    },
+    {
+      "id": "kitkat",
+      "texto": "KitKat"
+    },
+    {
+      "id": "mms",
+      "texto": "M&M's"
+    },
+    {
+      "id": "snickers",
+      "texto": "Snickers"
+    },
+    {
+      "id": "haribo",
+      "texto": "Haribo"
+    },
+    {
+      "id": "kinder",
+      "texto": "Kinder"
+    },
+    {
+      "id": "heinz",
+      "texto": "Heinz"
+    },
+    {
+      "id": "nesquik",
+      "texto": "Nesquik"
+    },
+    {
+      "id": "nescafe",
+      "texto": "Nescafe"
+    },
+    {
+      "id": "pringles-mr-p",
+      "texto": "Pringles Mr. P"
+    },
+    {
+      "id": "ferrero-rocher",
+      "texto": "Ferrero Rocher"
+    },
+    {
+      "id": "bic",
+      "texto": "BIC"
+    },
+    {
+      "id": "crayola",
+      "texto": "Crayola"
+    },
+    {
+      "id": "fisher-price",
+      "texto": "Fisher-Price"
+    },
+    {
+      "id": "hot-wheels",
+      "texto": "Hot Wheels"
+    },
+    {
+      "id": "playmobil",
+      "texto": "Playmobil"
+    },
+    {
+      "id": "disney-plus",
+      "texto": "Disney+"
+    },
+    {
+      "id": "hbo-max",
+      "texto": "HBO Max"
+    },
+    {
+      "id": "prime-video",
+      "texto": "Prime Video"
+    },
+    {
+      "id": "hulu",
+      "texto": "Hulu"
+    },
+    {
+      "id": "spotify-premium",
+      "texto": "Spotify Premium"
+    },
+    {
+      "id": "formula-1",
+      "texto": "Formula 1"
+    },
+    {
+      "id": "fifa",
+      "texto": "FIFA"
+    },
+    {
+      "id": "uefa",
+      "texto": "UEFA"
+    },
+    {
+      "id": "olympics",
+      "texto": "Olympic Rings"
+    }
+  ]
+}

@@ -3,7 +3,8 @@ import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { ChevronLeft } from "lucide-react-native";
 import { useState } from "react";
-import { Pressable, ScrollView, View } from "react-native";
+import { useTranslation } from "react-i18next";
+import { Pressable, ScrollView, Text, View } from "react-native";
 import Animated from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -47,11 +48,14 @@ function formatRoundsStep(index: number): string {
 export default function GameSetup() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const { t } = useTranslation();
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
   const { headerStyle, settingStyles, buttonStyle } = useMatchSettingsEntrance();
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
+  const gameMode = useMatchStore((state) => state.gameMode);
+  const setGameMode = useMatchStore((state) => state.setGameMode);
   const players = useMatchStore((state) => state.players);
   const addPlayer = useMatchStore((state) => state.addPlayer);
   const removeLastPlayer = useMatchStore((state) => state.removeLastPlayer);
@@ -115,8 +119,20 @@ export default function GameSetup() {
 
         <View className="mt-6 gap-3">
           <Animated.View style={settingStyles[0]}>
+            <ChipSelector
+              label={t("gameSetup.gameMode")}
+              options={[
+                { label: t("gameSetup.individual"), value: "individual" },
+                { label: t("gameSetup.teams"), value: "teams" },
+              ]}
+              value={gameMode}
+              onChange={(mode) => setGameMode(mode as "individual" | "teams")}
+            />
+          </Animated.View>
+
+          <Animated.View style={settingStyles[1]}>
             <Stepper
-              label="Jugadores"
+              label={t("gameSetup.players")}
               value={players.length}
               min={MIN_PLAYERS}
               max={MAX_PLAYERS}
@@ -124,22 +140,25 @@ export default function GameSetup() {
             />
           </Animated.View>
 
-          <Animated.View style={[cardShadow, settingStyles[1]]} className="rounded-3xl bg-surface px-5 py-4">
+          <Animated.View style={[cardShadow, settingStyles[2]]} className="rounded-3xl bg-surface px-5 py-4">
+            {gameMode === "teams" ? (
+              <Text className="mb-3 font-sans text-xs text-ink/50">{t("gameSetup.teamHint")}</Text>
+            ) : null}
             <PlayerGrid players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
           </Animated.View>
 
-          <Animated.View style={settingStyles[2]}>
+          <Animated.View style={settingStyles[3]}>
             <ChipSelector
-              label="Duración del turno"
+              label={t("gameSetup.turnDuration")}
               options={roundDurationOptions}
               value={roundDurationSeconds}
               onChange={setRoundDurationSeconds}
             />
           </Animated.View>
 
-          <Animated.View style={settingStyles[3]}>
+          <Animated.View style={settingStyles[4]}>
             <Stepper
-              label="Número de rondas"
+              label={t("gameSetup.rounds")}
               value={roundsIndex}
               min={0}
               max={ROUND_STEPS.length - 1}
@@ -148,9 +167,9 @@ export default function GameSetup() {
             />
           </Animated.View>
 
-          <Animated.View style={settingStyles[4]}>
+          <Animated.View style={settingStyles[5]}>
             <SoundSelector
-              label="Sonido de fin de turno"
+              label={t("gameSetup.endTurnSound")}
               options={endTurnSounds}
               selectedId={endTurnSoundId}
               onChange={setEndTurnSoundId}
@@ -164,7 +183,7 @@ export default function GameSetup() {
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
         style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
       >
-        <PrimaryButton label="Comenzar partida" onPress={() => router.push("/countdown")} />
+        <PrimaryButton label={t("gameSetup.start")} onPress={() => router.push("/countdown")} />
       </Animated.View>
 
       <PlayerEditorSheet player={editingPlayer} onClose={() => setEditingPlayerId(null)} />

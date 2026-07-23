@@ -1,0 +1,338 @@
+{
+  "id": "deportes",
+  "titulo": "Sports",
+  "descripcion": "Guess famous sports.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/sports.png",
+  "palabras": [
+    {
+      "id": "futbol",
+      "texto": "Soccer"
+    },
+    {
+      "id": "baloncesto",
+      "texto": "Basketball"
+    },
+    {
+      "id": "beisbol",
+      "texto": "Baseball"
+    },
+    {
+      "id": "tenis",
+      "texto": "Tennis"
+    },
+    {
+      "id": "voleibol",
+      "texto": "Volleyball"
+    },
+    {
+      "id": "futbol-americano",
+      "texto": "American Football"
+    },
+    {
+      "id": "rugby",
+      "texto": "Rugby"
+    },
+    {
+      "id": "golf",
+      "texto": "Golf"
+    },
+    {
+      "id": "hockey-sobre-hielo",
+      "texto": "Ice Hockey"
+    },
+    {
+      "id": "hockey-sobre-cesped",
+      "texto": "Field Hockey"
+    },
+    {
+      "id": "cricket",
+      "texto": "Cricket"
+    },
+    {
+      "id": "badminton",
+      "texto": "Badminton"
+    },
+    {
+      "id": "tenis-de-mesa",
+      "texto": "Table Tennis"
+    },
+    {
+      "id": "squash",
+      "texto": "Squash"
+    },
+    {
+      "id": "padel",
+      "texto": "Padel"
+    },
+    {
+      "id": "boxeo",
+      "texto": "Boxing"
+    },
+    {
+      "id": "karate",
+      "texto": "Karate"
+    },
+    {
+      "id": "judo",
+      "texto": "Judo"
+    },
+    {
+      "id": "taekwondo",
+      "texto": "Taekwondo"
+    },
+    {
+      "id": "kung-fu",
+      "texto": "Kung Fu"
+    },
+    {
+      "id": "esgrima",
+      "texto": "Fencing"
+    },
+    {
+      "id": "lucha-libre",
+      "texto": "Wrestling"
+    },
+    {
+      "id": "jiu-jitsu",
+      "texto": "Jiu-Jitsu"
+    },
+    {
+      "id": "mma",
+      "texto": "MMA"
+    },
+    {
+      "id": "natacion",
+      "texto": "Swimming"
+    },
+    {
+      "id": "clavados",
+      "texto": "Diving"
+    },
+    {
+      "id": "waterpolo",
+      "texto": "Water Polo"
+    },
+    {
+      "id": "natacion-artistica",
+      "texto": "Artistic Swimming"
+    },
+    {
+      "id": "surf",
+      "texto": "Surf"
+    },
+    {
+      "id": "vela",
+      "texto": "Sailing"
+    },
+    {
+      "id": "esqui",
+      "texto": "Skiing"
+    },
+    {
+      "id": "snowboard",
+      "texto": "Snowboard"
+    },
+    {
+      "id": "patinaje-artistico",
+      "texto": "Figure Skating"
+    },
+    {
+      "id": "atletismo",
+      "texto": "Track and Field"
+    },
+    {
+      "id": "maraton",
+      "texto": "Marathon"
+    },
+    {
+      "id": "ciclismo",
+      "texto": "Cycling"
+    },
+    {
+      "id": "ciclismo-de-montana",
+      "texto": "Mountain Biking"
+    },
+    {
+      "id": "bmx",
+      "texto": "BMX"
+    },
+    {
+      "id": "motocross",
+      "texto": "Motocross"
+    },
+    {
+      "id": "motociclismo",
+      "texto": "Motorcycling"
+    },
+    {
+      "id": "formula-1",
+      "texto": "Formula 1"
+    },
+    {
+      "id": "rally",
+      "texto": "Rally"
+    },
+    {
+      "id": "karting",
+      "texto": "Karting"
+    },
+    {
+      "id": "automovilismo",
+      "texto": "Motorsport"
+    },
+    {
+      "id": "gimnasia-artistica",
+      "texto": "Artistic Gymnastics"
+    },
+    {
+      "id": "gimnasia-ritmica",
+      "texto": "Rhythmic Gymnastics"
+    },
+    {
+      "id": "halterofilia",
+      "texto": "Weightlifting"
+    },
+    {
+      "id": "crossfit",
+      "texto": "CrossFit"
+    },
+    {
+      "id": "fisicoculturismo",
+      "texto": "Bodybuilding"
+    },
+    {
+      "id": "escalada",
+      "texto": "Climbing"
+    },
+    {
+      "id": "senderismo",
+      "texto": "Hiking"
+    },
+    {
+      "id": "paracaidismo",
+      "texto": "Skydiving"
+    },
+    {
+      "id": "parapente",
+      "texto": "Paragliding"
+    },
+    {
+      "id": "buceo",
+      "texto": "Scuba Diving"
+    },
+    {
+      "id": "pesca-deportiva",
+      "texto": "Sport Fishing"
+    },
+    {
+      "id": "tiro-con-arco",
+      "texto": "Archery"
+    },
+    {
+      "id": "equitacion",
+      "texto": "Equestrian"
+    },
+    {
+      "id": "bolos",
+      "texto": "Bowling"
+    },
+    {
+      "id": "billar",
+      "texto": "Billiards"
+    },
+    {
+      "id": "dardos",
+      "texto": "Darts"
+    },
+    {
+      "id": "ajedrez",
+      "texto": "Chess"
+    },
+    {
+      "id": "balonmano",
+      "texto": "Handball"
+    },
+    {
+      "id": "futsal",
+      "texto": "Futsal"
+    },
+    {
+      "id": "triatlon",
+      "texto": "Triathlon"
+    },
+    {
+      "id": "parkour",
+      "texto": "Parkour"
+    },
+    {
+      "id": "breakdance",
+      "texto": "Breakdance"
+    },
+    {
+      "id": "patinaje-en-linea",
+      "texto": "Inline Skating"
+    },
+    {
+      "id": "skateboarding",
+      "texto": "Skateboarding"
+    },
+    {
+      "id": "kickboxing",
+      "texto": "Kickboxing"
+    },
+    {
+      "id": "yoga",
+      "texto": "Yoga"
+    },
+    {
+      "id": "capoeira",
+      "texto": "Capoeira"
+    },
+    {
+      "id": "patinaje-sobre-hielo",
+      "texto": "Ice Skating"
+    },
+    {
+      "id": "patinaje-sobre-ruedas",
+      "texto": "Roller Skating"
+    },
+    {
+      "id": "cheerleading",
+      "texto": "Cheerleading"
+    },
+    {
+      "id": "balon-prisionero",
+      "texto": "Dodgeball"
+    },
+    {
+      "id": "saltar-la-cuerda",
+      "texto": "Jump Rope"
+    },
+    {
+      "id": "carrera-de-sacos",
+      "texto": "Sack Race"
+    },
+    {
+      "id": "tira-y-afloja",
+      "texto": "Tug of War"
+    },
+    {
+      "id": "frisbee",
+      "texto": "Frisbee"
+    },
+    {
+      "id": "rafting",
+      "texto": "Rafting"
+    },
+    {
+      "id": "zumba",
+      "texto": "Zumba"
+    },
+    {
+      "id": "ironman",
+      "texto": "Ironman"
+    }
+  ]
+}

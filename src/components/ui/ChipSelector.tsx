@@ -29,7 +29,7 @@ const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 const SURFACE_COLOR = "#FFF7ED";
 const PRIMARY_COLOR = "#FF7A45";
 const BORDER_IDLE = "rgba(43, 33, 24, 0)";
-const BORDER_SELECTED = "#F0632C";
+const BORDER_SELECTED = PRIMARY_COLOR;
 
 function Chip({
   label,

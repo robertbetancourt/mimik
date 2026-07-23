@@ -1,0 +1,96 @@
+{
+  "common": {
+    "accept": "Accept",
+    "delete": "Delete",
+    "playerNamePlaceholder": "Player name",
+    "defaultPlayerName": "Player {{n}}",
+    "player": "Player"
+  },
+  "mix": {
+    "title": "Mix",
+    "description": "A bit of every category."
+  },
+  "home": {
+    "greeting": "Welcome,",
+    "title": "choose a category",
+    "subtitle": "What do you want to play today?",
+    "wordCount": "{{count}} words"
+  },
+  "gameSetup": {
+    "gameMode": "Game mode",
+    "individual": "Individual",
+    "teams": "Teams",
+    "players": "Players",
+    "teamHint": "Tap the colored circle to switch teams",
+    "turnDuration": "Turn duration",
+    "rounds": "Number of rounds",
+    "endTurnSound": "End-of-turn sound",
+    "start": "Start match"
+  },
+  "countdown": {
+    "go": "Go!",
+    "reposition": "Place the phone back on your forehead.",
+    "turnOf": "Turn:",
+    "placePhone": "Place the phone on your forehead."
+  },
+  "gameplay": {
+    "teamRed": "Red Team",
+    "teamBlue": "Blue Team",
+    "timeUp": "Time's up!",
+    "exitTitle": "Exit match?",
+    "exitMessage": "Your current match progress will be lost.",
+    "exitPrimary": "Keep playing",
+    "exitSecondary": "Exit match"
+  },
+  "turnResults": {
+    "points": "points",
+    "correct": "Correct",
+    "passed": "Passed",
+    "noneThisTime": "None this time.",
+    "leaderboard": "Leaderboard",
+    "viewPodium": "View podium",
+    "nextTurnOf": "{{name}}'s turn"
+  },
+  "finalResults": {
+    "teamWins": "{{team}} Team Wins the Match!",
+    "teamRed": "Red",
+    "teamBlue": "Blue",
+    "scoreLine": "🔴 Red: {{red}} pts · 🔵 Blue: {{blue}} pts",
+    "mvp": "🏆 MVP: {{name}}",
+    "winsMatch": "Wins the match!",
+    "specialAwards": "🏆 Special Awards",
+    "finalRanking": "Final ranking",
+    "rematch": "Rematch",
+    "goHome": "Go Home"
+  },
+  "awards": {
+    "speedsterTitle": "The Speedster",
+    "speedsterDesc": "Most correct answers",
+    "speedsterValue": "{{n}} correct",
+    "thinkerTitle": "The Thinker",
+    "thinkerDesc": "Most passed words",
+    "thinkerValue": "{{n}} passed",
+    "accuracyTitle": "Pure Accuracy",
+    "accuracyDesc": "Highest accuracy",
+    "accuracyValue": "{{n}}% accuracy"
+  },
+  "feedback": {
+    "correct": "Correct!",
+    "pass": "Pass"
+  },
+  "characterCategories": {
+    "all": "All",
+    "faces": "Faces",
+    "warriors": "Warriors",
+    "fantasy": "Fantasy",
+    "animals": "Animals",
+    "food": "Food",
+    "space": "Space",
+    "jobs": "Jobs"
+  },
+  "endTurnSounds": {
+    "classic": "Classic",
+    "retroArcade": "Retro Arcade",
+    "magicBubbles": "Magic Bubbles"
+  }
+}

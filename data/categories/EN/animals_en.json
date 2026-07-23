@@ -1,0 +1,810 @@
+{
+  "id": "animales",
+  "titulo": "Animals",
+  "descripcion": "Guess animals from around the world.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/animals.png",
+  "palabras": [
+    {
+      "id": "perro",
+      "texto": "Dog"
+    },
+    {
+      "id": "gato",
+      "texto": "Cat"
+    },
+    {
+      "id": "conejo",
+      "texto": "Rabbit"
+    },
+    {
+      "id": "hamster",
+      "texto": "Hamster"
+    },
+    {
+      "id": "conejillo-de-indias",
+      "texto": "Guinea Pig"
+    },
+    {
+      "id": "caballo",
+      "texto": "Horse"
+    },
+    {
+      "id": "vaca",
+      "texto": "Cow"
+    },
+    {
+      "id": "toro",
+      "texto": "Bull"
+    },
+    {
+      "id": "cerdo",
+      "texto": "Pig"
+    },
+    {
+      "id": "oveja",
+      "texto": "Sheep"
+    },
+    {
+      "id": "cabra",
+      "texto": "Goat"
+    },
+    {
+      "id": "burro",
+      "texto": "Donkey"
+    },
+    {
+      "id": "gallina",
+      "texto": "Hen"
+    },
+    {
+      "id": "gallo",
+      "texto": "Rooster"
+    },
+    {
+      "id": "pato",
+      "texto": "Duck"
+    },
+    {
+      "id": "ganso",
+      "texto": "Goose"
+    },
+    {
+      "id": "pavo",
+      "texto": "Turkey"
+    },
+    {
+      "id": "paloma",
+      "texto": "Pigeon"
+    },
+    {
+      "id": "canario",
+      "texto": "Canary"
+    },
+    {
+      "id": "loro",
+      "texto": "Parrot"
+    },
+    {
+      "id": "aguila",
+      "texto": "Eagle"
+    },
+    {
+      "id": "halcon",
+      "texto": "Falcon"
+    },
+    {
+      "id": "buho",
+      "texto": "Owl"
+    },
+    {
+      "id": "flamenco",
+      "texto": "Flamingo"
+    },
+    {
+      "id": "pelicano",
+      "texto": "Pelican"
+    },
+    {
+      "id": "pinguino",
+      "texto": "Penguin"
+    },
+    {
+      "id": "avestruz",
+      "texto": "Ostrich"
+    },
+    {
+      "id": "cisne",
+      "texto": "Swan"
+    },
+    {
+      "id": "colibri",
+      "texto": "Hummingbird"
+    },
+    {
+      "id": "murcielago",
+      "texto": "Bat"
+    },
+    {
+      "id": "leon",
+      "texto": "Lion"
+    },
+    {
+      "id": "tigre",
+      "texto": "Tiger"
+    },
+    {
+      "id": "leopardo",
+      "texto": "Leopard"
+    },
+    {
+      "id": "guepardo",
+      "texto": "Cheetah"
+    },
+    {
+      "id": "jaguar",
+      "texto": "Jaguar"
+    },
+    {
+      "id": "puma",
+      "texto": "Puma"
+    },
+    {
+      "id": "lobo",
+      "texto": "Wolf"
+    },
+    {
+      "id": "zorro",
+      "texto": "Fox"
+    },
+    {
+      "id": "oso",
+      "texto": "Bear"
+    },
+    {
+      "id": "oso-polar",
+      "texto": "Polar Bear"
+    },
+    {
+      "id": "oso-panda",
+      "texto": "Giant Panda"
+    },
+    {
+      "id": "koala",
+      "texto": "Koala"
+    },
+    {
+      "id": "canguro",
+      "texto": "Kangaroo"
+    },
+    {
+      "id": "chimpance",
+      "texto": "Chimpanzee"
+    },
+    {
+      "id": "gorila",
+      "texto": "Gorilla"
+    },
+    {
+      "id": "orangutan",
+      "texto": "Orangutan"
+    },
+    {
+      "id": "mono",
+      "texto": "Monkey"
+    },
+    {
+      "id": "perezoso",
+      "texto": "Sloth"
+    },
+    {
+      "id": "mapache",
+      "texto": "Raccoon"
+    },
+    {
+      "id": "ardilla",
+      "texto": "Squirrel"
+    },
+    {
+      "id": "castor",
+      "texto": "Beaver"
+    },
+    {
+      "id": "nutria",
+      "texto": "Otter"
+    },
+    {
+      "id": "erizo",
+      "texto": "Hedgehog"
+    },
+    {
+      "id": "mofeta",
+      "texto": "Skunk"
+    },
+    {
+      "id": "elefante",
+      "texto": "Elephant"
+    },
+    {
+      "id": "jirafa",
+      "texto": "Giraffe"
+    },
+    {
+      "id": "cebra",
+      "texto": "Zebra"
+    },
+    {
+      "id": "rinoceronte",
+      "texto": "Rhinoceros"
+    },
+    {
+      "id": "hipopotamo",
+      "texto": "Hippopotamus"
+    },
+    {
+      "id": "bufalo",
+      "texto": "Buffalo"
+    },
+    {
+      "id": "bisonte",
+      "texto": "Bison"
+    },
+    {
+      "id": "camello",
+      "texto": "Camel"
+    },
+    {
+      "id": "dromedario",
+      "texto": "Dromedary"
+    },
+    {
+      "id": "llama",
+      "texto": "Llama"
+    },
+    {
+      "id": "alpaca",
+      "texto": "Alpaca"
+    },
+    {
+      "id": "venado",
+      "texto": "Deer"
+    },
+    {
+      "id": "alce",
+      "texto": "Moose"
+    },
+    {
+      "id": "reno",
+      "texto": "Reindeer"
+    },
+    {
+      "id": "jabali",
+      "texto": "Wild Boar"
+    },
+    {
+      "id": "cocodrilo",
+      "texto": "Crocodile"
+    },
+    {
+      "id": "tortuga",
+      "texto": "Turtle"
+    },
+    {
+      "id": "iguana",
+      "texto": "Iguana"
+    },
+    {
+      "id": "camaleon",
+      "texto": "Chameleon"
+    },
+    {
+      "id": "lagarto",
+      "texto": "Lizard"
+    },
+    {
+      "id": "serpiente",
+      "texto": "Snake"
+    },
+    {
+      "id": "cobra",
+      "texto": "Cobra"
+    },
+    {
+      "id": "piton",
+      "texto": "Python"
+    },
+    {
+      "id": "anaconda",
+      "texto": "Anaconda"
+    },
+    {
+      "id": "rana",
+      "texto": "Frog"
+    },
+    {
+      "id": "sapo",
+      "texto": "Toad"
+    },
+    {
+      "id": "pez-payaso",
+      "texto": "Clownfish"
+    },
+    {
+      "id": "foca",
+      "texto": "Seal"
+    },
+    {
+      "id": "tiburon",
+      "texto": "Shark"
+    },
+    {
+      "id": "ballena",
+      "texto": "Whale"
+    },
+    {
+      "id": "delfin",
+      "texto": "Dolphin"
+    },
+    {
+      "id": "orca",
+      "texto": "Orca"
+    },
+    {
+      "id": "pulpo",
+      "texto": "Octopus"
+    },
+    {
+      "id": "calamar",
+      "texto": "Squid"
+    },
+    {
+      "id": "medusa",
+      "texto": "Jellyfish"
+    },
+    {
+      "id": "caballito-de-mar",
+      "texto": "Seahorse"
+    },
+    {
+      "id": "estrella-de-mar",
+      "texto": "Starfish"
+    },
+    {
+      "id": "cangrejo",
+      "texto": "Crab"
+    },
+    {
+      "id": "camaron",
+      "texto": "Shrimp"
+    },
+    {
+      "id": "mariposa",
+      "texto": "Butterfly"
+    },
+    {
+      "id": "abeja",
+      "texto": "Bee"
+    },
+    {
+      "id": "avispa",
+      "texto": "Wasp"
+    },
+    {
+      "id": "hormiga",
+      "texto": "Ant"
+    },
+    {
+      "id": "arana",
+      "texto": "Spider"
+    },
+    {
+      "id": "escorpion",
+      "texto": "Scorpion"
+    },
+    {
+      "id": "caracol",
+      "texto": "Snail"
+    },
+    {
+      "id": "foca-leopardo",
+      "texto": "Leopard Seal"
+    },
+    {
+      "id": "morsa",
+      "texto": "Walrus"
+    },
+    {
+      "id": "manati",
+      "texto": "Manatee"
+    },
+    {
+      "id": "dugongo",
+      "texto": "Dugong"
+    },
+    {
+      "id": "morsa",
+      "texto": "Walrus"
+    },
+    {
+      "id": "beluga",
+      "texto": "Beluga Whale"
+    },
+    {
+      "id": "narval",
+      "texto": "Narwhal"
+    },
+    {
+      "id": "cachalote",
+      "texto": "Sperm Whale"
+    },
+    {
+      "id": "mantarraya",
+      "texto": "Manta Ray"
+    },
+    {
+      "id": "raya",
+      "texto": "Stingray"
+    },
+    {
+      "id": "anguila",
+      "texto": "Eel"
+    },
+    {
+      "id": "morena",
+      "texto": "Moray Eel"
+    },
+    {
+      "id": "atun",
+      "texto": "Tuna"
+    },
+    {
+      "id": "salmon",
+      "texto": "Salmon"
+    },
+    {
+      "id": "pez-espada",
+      "texto": "Swordfish"
+    },
+    {
+      "id": "pez-globo",
+      "texto": "Pufferfish"
+    },
+    {
+      "id": "pez-luna",
+      "texto": "Sunfish"
+    },
+    {
+      "id": "pez-volador",
+      "texto": "Flying Fish"
+    },
+    {
+      "id": "pez-sierra",
+      "texto": "Sawfish"
+    },
+    {
+      "id": "pez-electrico",
+      "texto": "Electric Eel"
+    },
+    {
+      "id": "piraña",
+      "texto": "Piranha"
+    },
+    {
+      "id": "trucha",
+      "texto": "Trout"
+    },
+    {
+      "id": "bacalao",
+      "texto": "Cod"
+    },
+    {
+      "id": "mero",
+      "texto": "Grouper"
+    },
+    {
+      "id": "mejillon",
+      "texto": "Mussel"
+    },
+    {
+      "id": "ostra",
+      "texto": "Oyster"
+    },
+    {
+      "id": "almeja",
+      "texto": "Clam"
+    },
+    {
+      "id": "erizo-de-mar",
+      "texto": "Sea Urchin"
+    },
+    {
+      "id": "babosa",
+      "texto": "Slug"
+    },
+    {
+      "id": "lombriz",
+      "texto": "Earthworm"
+    },
+    {
+      "id": "ciempies",
+      "texto": "Centipede"
+    },
+    {
+      "id": "milpies",
+      "texto": "Millipede"
+    },
+    {
+      "id": "libelula",
+      "texto": "Dragonfly"
+    },
+    {
+      "id": "mantis",
+      "texto": "Praying Mantis"
+    },
+    {
+      "id": "saltamontes",
+      "texto": "Grasshopper"
+    },
+    {
+      "id": "grillo",
+      "texto": "Cricket"
+    },
+    {
+      "id": "mariquita",
+      "texto": "Ladybug"
+    },
+    {
+      "id": "escarabajo",
+      "texto": "Beetle"
+    },
+    {
+      "id": "mosca",
+      "texto": "Fly"
+    },
+    {
+      "id": "mosquito",
+      "texto": "Mosquito"
+    },
+    {
+      "id": "cigarra",
+      "texto": "Cicada"
+    },
+    {
+      "id": "polilla",
+      "texto": "Moth"
+    },
+    {
+      "id": "termita",
+      "texto": "Termite"
+    },
+    {
+      "id": "garrapata",
+      "texto": "Tick"
+    },
+    {
+      "id": "cochinilla",
+      "texto": "Woodlouse"
+    },
+    {
+      "id": "avispon",
+      "texto": "Hornet"
+    },
+    {
+      "id": "cuervo",
+      "texto": "Crow"
+    },
+    {
+      "id": "cuervo",
+      "texto": "Crow"
+    },
+    {
+      "id": "golondrina",
+      "texto": "Swallow"
+    },
+    {
+      "id": "gorrion",
+      "texto": "Sparrow"
+    },
+    {
+      "id": "tucan",
+      "texto": "Toucan"
+    },
+    {
+      "id": "pavo-real",
+      "texto": "Peacock"
+    },
+    {
+      "id": "kiwi",
+      "texto": "Kiwi"
+    },
+    {
+      "id": "cacatua",
+      "texto": "Cockatoo"
+    },
+    {
+      "id": "cacatua-negra",
+      "texto": "Black Cockatoo"
+    },
+    {
+      "id": "golondrina",
+      "texto": "Swallow"
+    },
+    {
+      "id": "faisan",
+      "texto": "Pheasant"
+    },
+    {
+      "id": "codorniz",
+      "texto": "Quail"
+    },
+    {
+      "id": "perdiz",
+      "texto": "Partridge"
+    },
+    {
+      "id": "garza",
+      "texto": "Heron"
+    },
+    {
+      "id": "cigueña",
+      "texto": "Stork"
+    },
+    {
+      "id": "papagayo",
+      "texto": "Macaw"
+    },
+    {
+      "id": "suricata",
+      "texto": "Meerkat"
+    },
+    {
+      "id": "hiena",
+      "texto": "Hyena"
+    },
+    {
+      "id": "tapir",
+      "texto": "Tapir"
+    },
+    {
+      "id": "okapi",
+      "texto": "Okapi"
+    },
+    {
+      "id": "wombat",
+      "texto": "Wombat"
+    },
+    {
+      "id": "equidna",
+      "texto": "Echidna"
+    },
+    {
+      "id": "ornitorrinco",
+      "texto": "Platypus"
+    },
+    {
+      "id": "diablo-de-tasmania",
+      "texto": "Tasmanian Devil"
+    },
+    {
+      "id": "pangolin",
+      "texto": "Pangolin"
+    },
+    {
+      "id": "armadillo",
+      "texto": "Armadillo"
+    },
+    {
+      "id": "tejon",
+      "texto": "Badger"
+    },
+    {
+      "id": "huron",
+      "texto": "Ferret"
+    },
+    {
+      "id": "comadreja",
+      "texto": "Weasel"
+    },
+    {
+      "id": "vison",
+      "texto": "Mink"
+    },
+    {
+      "id": "lince",
+      "texto": "Lynx"
+    },
+    {
+      "id": "carnero",
+      "texto": "Ram"
+    },
+    {
+      "id": "antilope",
+      "texto": "Antelope"
+    },
+    {
+      "id": "gacela",
+      "texto": "Gazelle"
+    },
+    {
+      "id": "impala",
+      "texto": "Impala"
+    },
+    {
+      "id": "yak",
+      "texto": "Yak"
+    },
+    {
+      "id": "ñu",
+      "texto": "Wildebeest"
+    },
+    {
+      "id": "cebu",
+      "texto": "Zebu"
+    },
+    {
+      "id": "mula",
+      "texto": "Mule"
+    },
+    {
+      "id": "cecilia",
+      "texto": "Caecilian"
+    },
+    {
+      "id": "geco",
+      "texto": "Gecko"
+    },
+    {
+      "id": "dragon-de-komodo",
+      "texto": "Komodo Dragon"
+    },
+    {
+      "id": "boa",
+      "texto": "Boa"
+    },
+    {
+      "id": "vibora",
+      "texto": "Viper"
+    },
+    {
+      "id": "cascabel",
+      "texto": "Rattlesnake"
+    },
+    {
+      "id": "triton",
+      "texto": "Newt"
+    },
+    {
+      "id": "ajolote",
+      "texto": "Axolotl"
+    },
+    {
+      "id": "renacuajo",
+      "texto": "Tadpole"
+    },
+    {
+      "id": "cisne-negro",
+      "texto": "Black Swan"
+    },
+    {
+      "id": "gaviota",
+      "texto": "Seagull"
+    },
+    {
+      "id": "petirrojo",
+      "texto": "Robin"
+    },
+    {
+      "id": "carbonero",
+      "texto": "Tit"
+    },
+    {
+      "id": "abejorro",
+      "texto": "Bumblebee"
+    },
+    {
+      "id": "camaron-pistola",
+      "texto": "Pistol Shrimp"
+    }
+  ]
+}

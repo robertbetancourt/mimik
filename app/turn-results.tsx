@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
+import { useTranslation } from "react-i18next";
 import { Image, ScrollView, Text, View } from "react-native";
 import Animated from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
@@ -19,6 +20,7 @@ import { cardShadow } from "@/theme/shadow";
 export default function TurnResults() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const { t } = useTranslation();
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
   const { characterStyle, scoreStyle, decorationStyle, countersStyle, leaderboardStyle, buttonStyle } =
     useTurnResultsEntrance();
@@ -90,20 +92,20 @@ export default function TurnResults() {
         <Animated.Text
           style={[{ marginTop: -4, fontFamily: "Urbanist_400Regular", fontSize: 16, color: "#2B211899" }, scoreStyle]}
         >
-          puntos
+          {t("turnResults.points")}
         </Animated.Text>
 
         <Animated.View style={countersStyle} className="mt-8 w-full gap-3">
           <View style={cardShadow} className="rounded-3xl bg-surface p-4">
             <View className="flex-row items-center gap-2">
               <TickCircleIcon size={20} color="#3DBE6C" />
-              <Text className="font-sans-bold text-base text-ink">Correctas</Text>
+              <Text className="font-sans-bold text-base text-ink">{t("turnResults.correct")}</Text>
               <Text className="font-sans-bold text-base text-ink/40">
                 · <AnimatedCounter value={correctWords.length} duration={500} style={{ fontSize: 16, fontFamily: "Urbanist_700Bold", color: "#2B211866" }} />
               </Text>
             </View>
             {correctWords.length === 0 ? (
-              <Text className="mt-2 font-sans text-sm text-ink/50">Ninguna esta vez.</Text>
+              <Text className="mt-2 font-sans text-sm text-ink/50">{t("turnResults.noneThisTime")}</Text>
             ) : (
               <View className="mt-2 flex-row flex-wrap gap-1.5">
                 {correctWords.map((word) => (
@@ -118,13 +120,13 @@ export default function TurnResults() {
           <View style={cardShadow} className="rounded-3xl bg-surface p-4">
             <View className="flex-row items-center gap-2">
               <CloseCircleIcon size={20} color="#E85C4A" />
-              <Text className="font-sans-bold text-base text-ink">Pasadas</Text>
+              <Text className="font-sans-bold text-base text-ink">{t("turnResults.passed")}</Text>
               <Text className="font-sans-bold text-base text-ink/40">
                 · <AnimatedCounter value={passedWords.length} duration={500} style={{ fontSize: 16, fontFamily: "Urbanist_700Bold", color: "#2B211866" }} />
               </Text>
             </View>
             {passedWords.length === 0 ? (
-              <Text className="mt-2 font-sans text-sm text-ink/50">Ninguna esta vez.</Text>
+              <Text className="mt-2 font-sans text-sm text-ink/50">{t("turnResults.noneThisTime")}</Text>
             ) : (
               <View className="mt-2 flex-row flex-wrap gap-1.5">
                 {passedWords.map((word) => (
@@ -138,7 +140,7 @@ export default function TurnResults() {
         </Animated.View>
 
         <Animated.View style={leaderboardStyle} className="mt-6 w-full">
-          <Text className="mb-3 font-sans-bold text-base text-ink">Clasificación</Text>
+          <Text className="mb-3 font-sans-bold text-base text-ink">{t("turnResults.leaderboard")}</Text>
           <View className="gap-2">
             {ranked.map(({ player, rank, score }) => (
               <PlayerRankRow key={player.id} rank={rank} player={player} score={score} />
@@ -152,7 +154,7 @@ export default function TurnResults() {
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
       >
         {isMatchWillFinish ? (
-          <PrimaryButton label="🏆 Ver podio" onPress={handleContinue} />
+          <PrimaryButton label={`🏆 ${t("turnResults.viewPodium")}`} onPress={handleContinue} />
         ) : (
           <NextPlayerButton
             playerName={nextPlayer?.name ?? ""}

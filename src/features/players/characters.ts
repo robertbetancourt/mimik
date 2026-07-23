@@ -1,3 +1,5 @@
+import i18n from "@/i18n";
+
 export interface CharacterCategory {
   id: string;
   emoji: string;
@@ -13,14 +15,14 @@ export interface Character {
 export const ALL_CHARACTERS_CATEGORY_ID = "all";
 
 export const characterCategories: CharacterCategory[] = [
-  { id: ALL_CHARACTERS_CATEGORY_ID, emoji: "✨", label: "Todos" },
-  { id: "faces", emoji: "😊", label: "Caras" },
-  { id: "warriors", emoji: "⚔️", label: "Guerreros" },
-  { id: "fantasy", emoji: "🪄", label: "Fantasía" },
-  { id: "animals", emoji: "🐻", label: "Animales" },
-  { id: "food", emoji: "🍔", label: "Comida" },
-  { id: "space", emoji: "🚀", label: "Espacio" },
-  { id: "jobs", emoji: "💼", label: "Oficios" },
+  { id: ALL_CHARACTERS_CATEGORY_ID, emoji: "✨", label: i18n.t("characterCategories.all") },
+  { id: "faces", emoji: "😊", label: i18n.t("characterCategories.faces") },
+  { id: "warriors", emoji: "⚔️", label: i18n.t("characterCategories.warriors") },
+  { id: "fantasy", emoji: "🪄", label: i18n.t("characterCategories.fantasy") },
+  { id: "animals", emoji: "🐻", label: i18n.t("characterCategories.animals") },
+  { id: "food", emoji: "🍔", label: i18n.t("characterCategories.food") },
+  { id: "space", emoji: "🚀", label: i18n.t("characterCategories.space") },
+  { id: "jobs", emoji: "💼", label: i18n.t("characterCategories.jobs") },
 ];
 
 // Metro requires static, literal require() calls, so every file is listed

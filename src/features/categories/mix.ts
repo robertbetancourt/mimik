@@ -1,4 +1,5 @@
 import type { Category, Word } from "@/types/category";
+import i18n from "@/i18n";
 
 import { categories } from "./registry";
 
@@ -15,10 +16,10 @@ function buildMixWords(): Word[] {
 
 export const mixCategory: Category = {
   id: MIX_CATEGORY_ID,
-  titulo: "Mezcla",
-  descripcion: "Un poco de todas las categorías.",
+  titulo: i18n.t("mix.title"),
+  descripcion: i18n.t("mix.description"),
   version: 1,
-  idioma: "es",
+  idioma: i18n.language,
   ilustracion: "assets/images/categories/mix.png",
   palabras: buildMixWords(),
 };

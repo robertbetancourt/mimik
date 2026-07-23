@@ -1,0 +1,590 @@
+{
+  "id": "games",
+  "titulo": "Games",
+  "descripcion": "Guess famous video games.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/games.png",
+  "palabras": [
+    {
+      "id": "minecraft",
+      "texto": "Minecraft"
+    },
+    {
+      "id": "fortnite",
+      "texto": "Fortnite"
+    },
+    {
+      "id": "roblox",
+      "texto": "Roblox"
+    },
+    {
+      "id": "among-us",
+      "texto": "Among Us"
+    },
+    {
+      "id": "fall-guys",
+      "texto": "Fall Guys"
+    },
+    {
+      "id": "rocket-league",
+      "texto": "Rocket League"
+    },
+    {
+      "id": "league-of-legends",
+      "texto": "League of Legends"
+    },
+    {
+      "id": "valorant",
+      "texto": "Valorant"
+    },
+    {
+      "id": "counter-strike",
+      "texto": "Counter-Strike"
+    },
+    {
+      "id": "apex-legends",
+      "texto": "Apex Legends"
+    },
+    {
+      "id": "call-of-duty",
+      "texto": "Call of Duty"
+    },
+    {
+      "id": "halo",
+      "texto": "Halo"
+    },
+    {
+      "id": "battlefield",
+      "texto": "Battlefield"
+    },
+    {
+      "id": "doom",
+      "texto": "DOOM"
+    },
+    {
+      "id": "overwatch",
+      "texto": "Overwatch"
+    },
+    {
+      "id": "rainbow-six-siege",
+      "texto": "Rainbow Six Siege"
+    },
+    {
+      "id": "pubg",
+      "texto": "PUBG"
+    },
+    {
+      "id": "half-life",
+      "texto": "Half-Life"
+    },
+    {
+      "id": "left-4-dead",
+      "texto": "Left 4 Dead"
+    },
+    {
+      "id": "team-fortress",
+      "texto": "Team Fortress"
+    },
+    {
+      "id": "bioshock",
+      "texto": "BioShock"
+    },
+    {
+      "id": "borderlands",
+      "texto": "Borderlands"
+    },
+    {
+      "id": "xcom",
+      "texto": "XCOM"
+    },
+    {
+      "id": "wolfenstein",
+      "texto": "Wolfenstein"
+    },
+    {
+      "id": "mafia",
+      "texto": "Mafia"
+    },
+    {
+      "id": "max-payne",
+      "texto": "Max Payne"
+    },
+    {
+      "id": "alan-wake",
+      "texto": "Alan Wake"
+    },
+    {
+      "id": "control",
+      "texto": "Control"
+    },
+    {
+      "id": "just-cause",
+      "texto": "Just Cause"
+    },
+    {
+      "id": "saints-row",
+      "texto": "Saints Row"
+    },
+    {
+      "id": "payday",
+      "texto": "PAYDAY"
+    },
+    {
+      "id": "littlebigplanet",
+      "texto": "LittleBigPlanet"
+    },
+    {
+      "id": "journey",
+      "texto": "Journey"
+    },
+    {
+      "id": "worms",
+      "texto": "Worms"
+    },
+    {
+      "id": "goat-simulator",
+      "texto": "Goat Simulator"
+    },
+    {
+      "id": "surgeon-simulator",
+      "texto": "Surgeon Simulator"
+    },
+    {
+      "id": "human-fall-flat",
+      "texto": "Human: Fall Flat"
+    },
+    {
+      "id": "gang-beasts",
+      "texto": "Gang Beasts"
+    },
+    {
+      "id": "overcooked",
+      "texto": "Overcooked!"
+    },
+    {
+      "id": "moving-out",
+      "texto": "Moving Out"
+    },
+    {
+      "id": "it-takes-two",
+      "texto": "It Takes Two"
+    },
+    {
+      "id": "a-way-out",
+      "texto": "A Way Out"
+    },
+    {
+      "id": "phasmophobia",
+      "texto": "Phasmophobia"
+    },
+    {
+      "id": "ark",
+      "texto": "ARK"
+    },
+    {
+      "id": "rust",
+      "texto": "Rust"
+    },
+    {
+      "id": "palworld",
+      "texto": "Palworld"
+    },
+    {
+      "id": "sea-of-thieves",
+      "texto": "Sea of Thieves"
+    },
+    {
+      "id": "no-mans-sky",
+      "texto": "No Man's Sky"
+    },
+    {
+      "id": "destiny",
+      "texto": "Destiny"
+    },
+    {
+      "id": "marvel-rivals",
+      "texto": "Marvel Rivals"
+    },
+    {
+      "id": "osu",
+      "texto": "osu!"
+    },
+    {
+      "id": "beat-saber",
+      "texto": "Beat Saber"
+    },
+    {
+      "id": "guitar-hero",
+      "texto": "Guitar Hero"
+    },
+    {
+      "id": "rock-band",
+      "texto": "Rock Band"
+    },
+    {
+      "id": "dance-dance-revolution",
+      "texto": "Dance Dance Revolution"
+    },
+    {
+      "id": "just-dance",
+      "texto": "Just Dance"
+    },
+    {
+      "id": "skate",
+      "texto": "Skate"
+    },
+    {
+      "id": "ssx",
+      "texto": "SSX"
+    },
+    {
+      "id": "medal-of-honor",
+      "texto": "Medal of Honor"
+    },
+    {
+      "id": "command-and-conquer",
+      "texto": "Command & Conquer"
+    },
+    {
+      "id": "star-wars-battlefront",
+      "texto": "Star Wars Battlefront"
+    },
+    {
+      "id": "free-fire",
+      "texto": "Free Fire"
+    },
+    {
+      "id": "clash-royale",
+      "texto": "Clash Royale"
+    },
+    {
+      "id": "clash-of-clans",
+      "texto": "Clash of Clans"
+    },
+    {
+      "id": "brawl-stars",
+      "texto": "Brawl Stars"
+    },
+    {
+      "id": "pokemon-go",
+      "texto": "Pokémon GO"
+    },
+    {
+      "id": "candy-crush-saga",
+      "texto": "Candy Crush Saga"
+    },
+    {
+      "id": "subway-surfers",
+      "texto": "Subway Surfers"
+    },
+    {
+      "id": "temple-run",
+      "texto": "Temple Run"
+    },
+    {
+      "id": "angry-birds",
+      "texto": "Angry Birds"
+    },
+    {
+      "id": "geometry-dash",
+      "texto": "Geometry Dash"
+    },
+    {
+      "id": "plants-vs-zombies",
+      "texto": "Plants vs. Zombies"
+    },
+    {
+      "id": "super-mario-bros",
+      "texto": "Super Mario Bros."
+    },
+    {
+      "id": "mario-kart",
+      "texto": "Mario Kart"
+    },
+    {
+      "id": "mario-party",
+      "texto": "Mario Party"
+    },
+    {
+      "id": "super-smash-bros",
+      "texto": "Super Smash Bros."
+    },
+    {
+      "id": "zelda",
+      "texto": "Zelda"
+    },
+    {
+      "id": "animal-crossing",
+      "texto": "Animal Crossing"
+    },
+    {
+      "id": "kirby",
+      "texto": "Kirby"
+    },
+    {
+      "id": "metroid",
+      "texto": "Metroid"
+    },
+    {
+      "id": "donkey-kong",
+      "texto": "Donkey Kong"
+    },
+    {
+      "id": "pokemon",
+      "texto": "Pokémon"
+    },
+    {
+      "id": "sonic-the-hedgehog",
+      "texto": "Sonic the Hedgehog"
+    },
+    {
+      "id": "crash-bandicoot",
+      "texto": "Crash Bandicoot"
+    },
+    {
+      "id": "spyro",
+      "texto": "Spyro"
+    },
+    {
+      "id": "pac-man",
+      "texto": "Pac-Man"
+    },
+    {
+      "id": "tetris",
+      "texto": "Tetris"
+    },
+    {
+      "id": "street-fighter",
+      "texto": "Street Fighter"
+    },
+    {
+      "id": "mortal-kombat",
+      "texto": "Mortal Kombat"
+    },
+    {
+      "id": "tekken",
+      "texto": "Tekken"
+    },
+    {
+      "id": "fifa",
+      "texto": "FIFA"
+    },
+    {
+      "id": "nba-2k",
+      "texto": "NBA 2K"
+    },
+    {
+      "id": "wwe-2k",
+      "texto": "WWE 2K"
+    },
+    {
+      "id": "gran-turismo",
+      "texto": "Gran Turismo"
+    },
+    {
+      "id": "forza-horizon",
+      "texto": "Forza Horizon"
+    },
+    {
+      "id": "need-for-speed",
+      "texto": "Need for Speed"
+    },
+    {
+      "id": "the-sims",
+      "texto": "The Sims"
+    },
+    {
+      "id": "simcity",
+      "texto": "SimCity"
+    },
+    {
+      "id": "civilization",
+      "texto": "Civilization"
+    },
+    {
+      "id": "age-of-empires",
+      "texto": "Age of Empires"
+    },
+    {
+      "id": "starcraft",
+      "texto": "StarCraft"
+    },
+    {
+      "id": "world-of-warcraft",
+      "texto": "World of Warcraft"
+    },
+    {
+      "id": "diablo",
+      "texto": "Diablo"
+    },
+    {
+      "id": "fallout",
+      "texto": "Fallout"
+    },
+    {
+      "id": "the-witcher-3",
+      "texto": "The Witcher 3"
+    },
+    {
+      "id": "cyberpunk-2077",
+      "texto": "Cyberpunk 2077"
+    },
+    {
+      "id": "red-dead-redemption-2",
+      "texto": "Red Dead Redemption 2"
+    },
+    {
+      "id": "grand-theft-auto-v",
+      "texto": "GTA V"
+    },
+    {
+      "id": "assassins-creed",
+      "texto": "Assassin's Creed"
+    },
+    {
+      "id": "far-cry",
+      "texto": "Far Cry"
+    },
+    {
+      "id": "hitman",
+      "texto": "Hitman"
+    },
+    {
+      "id": "metal-gear-solid",
+      "texto": "Metal Gear Solid"
+    },
+    {
+      "id": "resident-evil",
+      "texto": "Resident Evil"
+    },
+    {
+      "id": "silent-hill",
+      "texto": "Silent Hill"
+    },
+    {
+      "id": "dead-space",
+      "texto": "Dead Space"
+    },
+    {
+      "id": "outlast",
+      "texto": "Outlast"
+    },
+    {
+      "id": "five-nights-at-freddys",
+      "texto": "Five Nights at Freddy's"
+    },
+    {
+      "id": "little-nightmares",
+      "texto": "Little Nightmares"
+    },
+    {
+      "id": "elden-ring",
+      "texto": "Elden Ring"
+    },
+    {
+      "id": "dark-souls",
+      "texto": "Dark Souls"
+    },
+    {
+      "id": "sekiro",
+      "texto": "Sekiro"
+    },
+    {
+      "id": "hollow-knight",
+      "texto": "Hollow Knight"
+    },
+    {
+      "id": "cuphead",
+      "texto": "Cuphead"
+    },
+    {
+      "id": "portal",
+      "texto": "Portal"
+    },
+    {
+      "id": "final-fantasy",
+      "texto": "Final Fantasy"
+    },
+    {
+      "id": "mega-man",
+      "texto": "Mega Man"
+    },
+    {
+      "id": "castlevania",
+      "texto": "Castlevania"
+    },
+    {
+      "id": "prince-of-persia",
+      "texto": "Prince of Persia"
+    },
+    {
+      "id": "rayman",
+      "texto": "Rayman"
+    },
+    {
+      "id": "banjo-kazooie",
+      "texto": "Banjo-Kazooie"
+    },
+    {
+      "id": "terraria",
+      "texto": "Terraria"
+    },
+    {
+      "id": "genshin-impact",
+      "texto": "Genshin Impact"
+    },
+    {
+      "id": "the-last-of-us",
+      "texto": "The Last of Us"
+    },
+    {
+      "id": "god-of-war",
+      "texto": "God of War"
+    },
+    {
+      "id": "uncharted",
+      "texto": "Uncharted"
+    },
+    {
+      "id": "ratchet-and-clank",
+      "texto": "Ratchet & Clank"
+    },
+    {
+      "id": "splatoon",
+      "texto": "Splatoon"
+    },
+    {
+      "id": "pikmin",
+      "texto": "Pikmin"
+    },
+    {
+      "id": "ghost-of-tsushima",
+      "texto": "Ghost of Tsushima"
+    },
+    {
+      "id": "monster-hunter",
+      "texto": "Monster Hunter"
+    },
+    {
+      "id": "persona",
+      "texto": "Persona"
+    },
+    {
+      "id": "dead-by-daylight",
+      "texto": "Dead by Daylight"
+    },
+    {
+      "id": "dragon-ball",
+      "texto": "Dragon Ball"
+    },
+    {
+      "id": "the-elder-scrolls",
+      "texto": "The Elder Scrolls"
+    },
+    {
+      "id": "metal-slug",
+      "texto": "Metal Slug"
+    }
+  ]
+}

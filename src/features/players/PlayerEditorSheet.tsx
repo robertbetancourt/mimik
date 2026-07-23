@@ -1,5 +1,6 @@
 import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Image, Pressable, Text, TextInput, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
@@ -21,6 +22,7 @@ interface PlayerEditorSheetProps {
 }
 
 export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
+  const { t } = useTranslation();
   const renamePlayer = useMatchStore((state) => state.renamePlayer);
   const setPlayerCharacter = useMatchStore((state) => state.setPlayerCharacter);
   const removePlayer = useMatchStore((state) => state.removePlayer);
@@ -60,7 +62,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
   // the sheet's swipe-to-dismiss / backdrop-tap paths, not just Aceptar.
   function handleClose() {
     if (player && player.name.trim() === "") {
-      renamePlayer(player.id, "Jugador");
+      renamePlayer(player.id, t("common.player"));
     }
     onClose();
   }
@@ -83,7 +85,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
                 onPress={handleRemove}
                 className="flex-1 items-center justify-center rounded-full bg-error/10 py-3.5"
               >
-                <Text className="font-sans-bold text-base text-error">Eliminar</Text>
+                <Text className="font-sans-bold text-base text-error">{t("common.delete")}</Text>
               </Pressable>
             ) : null}
             <Pressable
@@ -91,7 +93,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
               onPress={handleAccept}
               className="flex-1 items-center justify-center rounded-full bg-primary py-3.5"
             >
-              <Text className="font-sans-bold text-base text-white">Aceptar</Text>
+              <Text className="font-sans-bold text-base text-white">{t("common.accept")}</Text>
             </Pressable>
           </View>
         ) : null
@@ -113,8 +115,8 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
           <TextInput
             value={player.name}
             onChangeText={(text) => renamePlayer(player.id, text)}
-            placeholder="Nombre del jugador"
-            accessibilityLabel="Nombre del jugador"
+            placeholder={t("common.playerNamePlaceholder")}
+            accessibilityLabel={t("common.playerNamePlaceholder")}
             maxLength={20}
             returnKeyType="done"
             className="rounded-2xl bg-surface px-4 py-3 text-center font-sans-bold text-lg text-ink"

@@ -19,11 +19,15 @@ interface UsePodiumEntranceOptions {
 const SOFT_SPRING = { damping: 14, stiffness: 140 };
 const STRONG_SPRING = { damping: 11, stiffness: 170 };
 
-const TROPHY_DELAY = 120;
-const PODIUM_DELAY = 380;
-const THIRD_DELAY = 620;
-const SECOND_DELAY = 760;
-const WINNER_DELAY = 900;
+const TROPHY_DELAY = 90;
+const PODIUM_DELAY = 280;
+const THIRD_DELAY = 460;
+const SECOND_DELAY = 560;
+const WINNER_DELAY = 650;
+// The CTA is available from the start, not gated behind the celebration —
+// a player who wants to move on immediately shouldn't have to wait for the
+// winner's jump to finish landing.
+const BUTTON_DELAY = 200;
 
 // Scripted, one-shot entrance: fade → trophy drops → podium rises → 3rd →
 // 2nd → winner (strongest entrance, then a single joyful jump). Everything
@@ -32,6 +36,10 @@ const WINNER_DELAY = 900;
 // jump actually settles.
 export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: UsePodiumEntranceOptions) {
   const [entranceDone, setEntranceDone] = useState(false);
+  // Fires at the landing impact, one beat before entranceDone (which waits
+  // for the full settle) — confetti bursts the instant the winner lands
+  // instead of after everything has already calmed back down.
+  const [celebrationPeak, setCelebrationPeak] = useState(false);
 
   const screenOpacity = useSharedValue(0);
   const trophyY = useSharedValue(-80);
@@ -49,6 +57,9 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
   useEffect(() => {
     screenOpacity.value = withTiming(1, { duration: 300 });
     trophyY.value = withDelay(TROPHY_DELAY, withSpring(0, SOFT_SPRING));
+
+    buttonOpacity.value = withDelay(BUTTON_DELAY, withTiming(1, { duration: 260 }));
+    buttonY.value = withDelay(BUTTON_DELAY, withTiming(0, { duration: 260 }));
 
     podiumOpacity.value = withDelay(PODIUM_DELAY, withTiming(1, { duration: 250 }));
     podiumY.value = withDelay(PODIUM_DELAY, withSpring(0, SOFT_SPRING));
@@ -75,14 +86,10 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
             if (!jumpFinished) return;
             runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Heavy);
             runOnJS(onWinnerRevealed)();
+            runOnJS(setCelebrationPeak)(true);
           }),
           withTiming(0, { duration: 120 }, (settleFinished) => {
-            if (!settleFinished) return;
-            runOnJS(setEntranceDone)(true);
-            // Sync point: CTA only appears once the celebration is over —
-            // small fade + lift, no pulsing.
-            buttonOpacity.value = withTiming(1, { duration: 260 });
-            buttonY.value = withTiming(0, { duration: 260 });
+            if (settleFinished) runOnJS(setEntranceDone)(true);
           }),
         );
         winnerSquashY.value = withSequence(
@@ -134,6 +141,7 @@ export function usePodiumEntrance({ hasSecond, hasThird, onWinnerRevealed }: Use
 
   return {
     entranceDone,
+    celebrationPeak,
     screenStyle,
     trophyStyle,
     podiumStyle,

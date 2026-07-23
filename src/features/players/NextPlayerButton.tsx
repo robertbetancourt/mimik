@@ -1,5 +1,6 @@
 import * as Haptics from "expo-haptics";
 import { ArrowRight } from "lucide-react-native";
+import { useTranslation } from "react-i18next";
 import { Image, Pressable, Text } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
@@ -15,6 +16,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
 export function NextPlayerButton({ playerName, characterIllustration, onPress }: NextPlayerButtonProps) {
+  const { t } = useTranslation();
   const scale = useSharedValue(1);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -40,7 +42,7 @@ export function NextPlayerButton({ playerName, characterIllustration, onPress }:
       {characterIllustration ? (
         <Image source={characterIllustration} resizeMode="contain" style={{ width: 28, height: 28 }} />
       ) : null}
-      <Text className="font-sans-bold text-base text-white">Turno de {playerName}</Text>
+      <Text className="font-sans-bold text-base text-white">{t("turnResults.nextTurnOf", { name: playerName })}</Text>
       <ArrowRight size={20} color="white" />
     </AnimatedPressable>
   );
