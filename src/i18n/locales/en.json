@@ -92,5 +92,22 @@
     "classic": "Classic",
     "retroArcade": "Retro Arcade",
     "magicBubbles": "Magic Bubbles"
+  },
+  "onboarding": {
+    "next": "Next",
+    "previous": "Previous",
+    "letsPlay": "Let's Play!",
+    "page1": {
+      "title": "Welcome to Mimik!",
+      "description": "Act, guess and have fun with family and friends."
+    },
+    "page2": {
+      "title": "Place the phone on your forehead",
+      "description": "Keep the phone facing the other players. They'll see the word and you'll have to guess it."
+    },
+    "page3": {
+      "passText": "Tilt the phone up to pass a word.",
+      "correctText": "Tilt the phone down when you get it right."
+    }
   }
 }

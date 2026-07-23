@@ -11,6 +11,8 @@ import { allCategories } from "@/features/categories";
 import { CategoryGrid } from "@/features/categories/CategoryGrid";
 import { useHomeEntrance } from "@/features/categories/useHomeEntrance";
 import { useMatchStore } from "@/features/match/store";
+import { OnboardingSheet } from "@/features/onboarding/OnboardingSheet";
+import { useOnboarding } from "@/features/onboarding/useOnboarding";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 
 export default function CategorySelection() {
@@ -18,6 +20,7 @@ export default function CategorySelection() {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
   const selectCategory = useMatchStore((state) => state.selectCategory);
+  const { shouldShow: showOnboarding, markCompleted: completeOnboarding } = useOnboarding();
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
   const { mimikStyle, titleStyle } = useHomeEntrance();
@@ -52,6 +55,8 @@ export default function CategorySelection() {
           <CategoryGrid categories={allCategories} onSelect={handleSelect} />
         </View>
       </ScrollView>
+
+      <OnboardingSheet visible={showOnboarding} onComplete={completeOnboarding} />
     </SafeAreaView>
   );
 }

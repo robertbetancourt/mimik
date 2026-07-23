@@ -92,5 +92,22 @@
     "classic": "Clásico",
     "retroArcade": "Retro Arcade",
     "magicBubbles": "Magic Bubbles"
+  },
+  "onboarding": {
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "letsPlay": "¡A Jugar!",
+    "page1": {
+      "title": "¡Bienvenido a Mimik!",
+      "description": "Actúa, adivina y diviértete con familiares y amigos."
+    },
+    "page2": {
+      "title": "Coloca el teléfono en tu frente",
+      "description": "Mantén el teléfono mirando hacia los demás jugadores. Ellos verán la palabra y tú tendrás que adivinarla."
+    },
+    "page3": {
+      "passText": "Inclina el teléfono hacia arriba para pasar una palabra.",
+      "correctText": "Inclina el teléfono hacia abajo cuando aciertes."
+    }
   }
 }
