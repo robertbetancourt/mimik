@@ -45,8 +45,9 @@ export function useGameplaySession(words: Word[], roundDurationSeconds: number) 
 
   useTiltSensor({
     mode: sensorMode,
-    onTiltDown: () => dispatch({ type: "CORRECT" }),
-    onTiltUp: () => dispatch({ type: "PASS" }),
+    // Matches the onboarding tutorial: tilt down = correct, tilt up = pass.
+    onTiltDown: () => dispatch({ type: "PASS" }),
+    onTiltUp: () => dispatch({ type: "CORRECT" }),
     onCentered: () => dispatch({ type: "CENTERED" }),
   });
 
