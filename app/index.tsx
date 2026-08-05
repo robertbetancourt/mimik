@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { useTranslation } from "react-i18next";
-import { ScrollView, Text, View } from "react-native";
+import { Pressable, ScrollView, Text, View } from "react-native";
 import Animated from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -10,7 +10,9 @@ import { Sparkle } from "@/components/effects/Sparkle";
 import { allCategories } from "@/features/categories";
 import { CategoryGrid } from "@/features/categories/CategoryGrid";
 import { useHomeEntrance } from "@/features/categories/useHomeEntrance";
+import { MIX_CATEGORY_ID } from "@/features/categories/mix";
 import { useMatchStore } from "@/features/match/store";
+import { usePresetStore } from "@/features/players/presetStore";
 import { OnboardingSheet } from "@/features/onboarding/OnboardingSheet";
 import { useOnboarding } from "@/features/onboarding/useOnboarding";
 import { useLockOrientation } from "@/lib/useLockOrientation";
@@ -20,6 +22,9 @@ export default function CategorySelection() {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
   const selectCategory = useMatchStore((state) => state.selectCategory);
+  const loadPreset = useMatchStore((state) => state.loadPreset);
+  const lastPlayers = usePresetStore((state) => state.lastPlayers);
+  const lastCategoryId = usePresetStore((state) => state.lastCategoryId);
   const { shouldShow: showOnboarding, markCompleted: completeOnboarding } = useOnboarding();
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
@@ -52,6 +57,27 @@ export default function CategorySelection() {
         </View>
 
         <View className="mt-6">
+          {lastPlayers && lastPlayers.length > 0 ? (
+            <View className="mb-6">
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  loadPreset(lastPlayers, lastCategoryId || MIX_CATEGORY_ID);
+                  router.push("/game-setup");
+                }}
+                className="flex-row items-center justify-center rounded-2xl bg-surface px-4 py-4"
+                style={{
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 4 },
+                  shadowOpacity: 0.05,
+                  shadowRadius: 12,
+                  elevation: 2,
+                }}
+              >
+                <Text className="font-sans-bold text-base text-ink">{t("home.playWithLastGroup")}</Text>
+              </Pressable>
+            </View>
+          ) : null}
           <CategoryGrid categories={allCategories} onSelect={handleSelect} />
         </View>
       </ScrollView>

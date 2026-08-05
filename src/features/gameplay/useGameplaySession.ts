@@ -9,7 +9,7 @@ import { useTiltSensor, type TiltSensorMode } from "./useTiltSensor";
 const READY_DURATION_MS = 200;
 const FEEDBACK_DURATION_MS = 400;
 
-export function useGameplaySession(words: Word[], roundDurationSeconds: number) {
+export function useGameplaySession(words: Word[], roundDurationSeconds: number, timeBonusSeconds: number = 0) {
   const shuffledWords = useMemo(() => shuffle(words), [words]);
 
   const [state, dispatch] = useReducer(
@@ -47,7 +47,7 @@ export function useGameplaySession(words: Word[], roundDurationSeconds: number) 
     mode: sensorMode,
     // Matches the onboarding tutorial: tilt down = correct, tilt up = pass.
     onTiltDown: () => dispatch({ type: "PASS" }),
-    onTiltUp: () => dispatch({ type: "CORRECT" }),
+    onTiltUp: () => dispatch({ type: "CORRECT", timeBonus: timeBonusSeconds }),
     onCentered: () => dispatch({ type: "CENTERED" }),
   });
 

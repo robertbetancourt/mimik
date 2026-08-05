@@ -26,6 +26,7 @@ import {
 import { useMatchSettingsEntrance } from "@/features/match/useMatchSettingsEntrance";
 import { PlayerEditorSheet } from "@/features/players/PlayerEditorSheet";
 import { PlayerGrid } from "@/features/players/PlayerGrid";
+import { usePresetStore } from "@/features/players/presetStore";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 import { cardShadow } from "@/theme/shadow";
 
@@ -65,8 +66,13 @@ export default function GameSetup() {
   const setTotalRounds = useMatchStore((state) => state.setTotalRounds);
   const infiniteMode = useMatchStore((state) => state.infiniteMode);
   const setInfiniteMode = useMatchStore((state) => state.setInfiniteMode);
+  const timeBonusEnabled = useMatchStore((state) => state.timeBonusEnabled);
+  const setTimeBonusEnabled = useMatchStore((state) => state.setTimeBonusEnabled);
+  const timeBonusSeconds = useMatchStore((state) => state.timeBonusSeconds);
+  const setTimeBonusSeconds = useMatchStore((state) => state.setTimeBonusSeconds);
   const endTurnSoundId = useMatchStore((state) => state.endTurnSoundId);
   const setEndTurnSoundId = useMatchStore((state) => state.setEndTurnSoundId);
+  const saveLastMatch = usePresetStore((state) => state.saveLastMatch);
 
   const { play: previewSound } = useSoundPreview();
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
@@ -168,6 +174,28 @@ export default function GameSetup() {
           </Animated.View>
 
           <Animated.View style={settingStyles[5]}>
+            <ChipSelector
+              label={t("gameSetup.timeBonus")}
+              options={[
+                { label: t("gameSetup.timeBonusOff"), value: 0 },
+                { label: "+1s", value: 1 },
+                { label: "+2s", value: 2 },
+                { label: "+3s", value: 3 },
+                { label: "+5s", value: 5 },
+              ]}
+              value={timeBonusEnabled ? timeBonusSeconds : 0}
+              onChange={(val) => {
+                if (val === 0) {
+                  setTimeBonusEnabled(false);
+                } else {
+                  setTimeBonusEnabled(true);
+                  setTimeBonusSeconds(val as number);
+                }
+              }}
+            />
+          </Animated.View>
+
+          <Animated.View style={settingStyles[5]}>
             <SoundSelector
               label={t("gameSetup.endTurnSound")}
               options={endTurnSounds}
@@ -183,7 +211,10 @@ export default function GameSetup() {
         className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
         style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
       >
-        <PrimaryButton label={t("gameSetup.start")} onPress={() => router.push("/countdown")} />
+        <PrimaryButton label={t("gameSetup.start")} onPress={() => {
+          saveLastMatch(players, selectedCategoryId);
+          router.push("/countdown");
+        }} />
       </Animated.View>
 
       <PlayerEditorSheet player={editingPlayer} onClose={() => setEditingPlayerId(null)} />

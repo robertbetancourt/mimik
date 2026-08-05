@@ -15,7 +15,7 @@ export interface GameplayState {
 
 export type GameplayAction =
   | { type: "READY_DONE" }
-  | { type: "CORRECT" }
+  | { type: "CORRECT"; timeBonus: number }
   | { type: "PASS" }
   | { type: "FEEDBACK_DONE" }
   | { type: "CENTERED" }
@@ -47,6 +47,7 @@ export function gameplayReducer(state: GameplayState, action: GameplayAction): G
         status: "feedback",
         lastFeedback: "correct",
         correctWords: [...state.correctWords, word],
+        timeRemaining: state.timeRemaining + action.timeBonus,
       };
     }
 

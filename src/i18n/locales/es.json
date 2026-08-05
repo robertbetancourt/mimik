@@ -13,8 +13,9 @@
   "home": {
     "greeting": "Bienvenido,",
     "title": "elige una categoría",
-    "subtitle": "¿A qué quieren jugar hoy?",
-    "wordCount": "{{count}} palabras"
+    "subtitle": "¿Qué te apetece jugar hoy?",
+    "wordCount": "{{count}} palabras",
+    "playWithLastGroup": "Jugar con el último grupo"
   },
   "gameSetup": {
     "gameMode": "Modo de juego",
@@ -25,6 +26,8 @@
     "turnDuration": "Duración del turno",
     "rounds": "Número de rondas",
     "endTurnSound": "Sonido de fin de turno",
+    "timeBonus": "Tiempo extra",
+    "timeBonusOff": "No",
     "start": "Comenzar partida"
   },
   "countdown": {

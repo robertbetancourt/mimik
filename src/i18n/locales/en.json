@@ -14,7 +14,8 @@
     "greeting": "Welcome,",
     "title": "choose a category",
     "subtitle": "What do you want to play today?",
-    "wordCount": "{{count}} words"
+    "wordCount": "{{count}} words",
+    "playWithLastGroup": "Play with last group"
   },
   "gameSetup": {
     "gameMode": "Game mode",
@@ -25,6 +26,8 @@
     "turnDuration": "Turn duration",
     "rounds": "Number of rounds",
     "endTurnSound": "End-of-turn sound",
+    "timeBonus": "Time bonus",
+    "timeBonusOff": "Off",
     "start": "Start match"
   },
   "countdown": {

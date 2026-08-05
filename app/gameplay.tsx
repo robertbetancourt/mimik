@@ -27,11 +27,20 @@ export default function Gameplay() {
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
   const roundDurationSeconds = useMatchStore((state) => state.roundDurationSeconds);
+  const timeBonusEnabled = useMatchStore((state) => state.timeBonusEnabled);
+  const timeBonusSeconds = useMatchStore((state) => state.timeBonusSeconds);
+  const playedWordsByRound = useMatchStore((state) => state.playedWordsByRound);
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
 
+  const playedWordsIds = playedWordsByRound.map((pw) => pw.wordId);
+  const allCategoryWords = category?.palabras ?? [];
+  const unplayedWords = allCategoryWords.filter((w) => !playedWordsIds.includes(w.id));
+  const availableWords = unplayedWords.length >= 15 ? unplayedWords : allCategoryWords;
+
   const { status, lastFeedback, currentWord, timeRemaining, correctWords, passedWords } = useGameplaySession(
-    category?.palabras ?? [],
+    availableWords,
     roundDurationSeconds,
+    timeBonusEnabled ? timeBonusSeconds : 0
   );
 
   const setLastTurnResult = useMatchStore((state) => state.setLastTurnResult);
@@ -142,6 +151,15 @@ export default function Gameplay() {
               blank gap between the countdown and gameplay. */}
           {(status === "playing" || status === "ready") && currentWord ? (
             <WordCard word={currentWord.texto} />
+          ) : null}
+
+          {status === "feedback" && lastFeedback === "correct" && timeBonusEnabled && timeBonusSeconds > 0 ? (
+            <Animated.View
+              entering={FadeIn.duration(200)}
+              style={{ position: "absolute", top: "10%", right: 20 }}
+            >
+              <Text className="font-sans-bold text-2xl text-[#FF7A45]">+{timeBonusSeconds}s</Text>
+            </Animated.View>
           ) : null}
 
           {status === "waitingForCenter" ? (

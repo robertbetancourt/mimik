@@ -81,6 +81,8 @@ interface MatchState {
   playerStats: Record<string, PlayerStat>;
   recordTurnStats: (playerId: string, correctCount: number, passedCount: number) => void;
 
+  playedWordsByRound: { round: number; wordId: string }[];
+
   roundDurationSeconds: number;
   setRoundDurationSeconds: (seconds: number) => void;
 
@@ -90,6 +92,11 @@ interface MatchState {
   infiniteMode: boolean;
   setInfiniteMode: (infinite: boolean) => void;
 
+  timeBonusEnabled: boolean;
+  setTimeBonusEnabled: (enabled: boolean) => void;
+  timeBonusSeconds: number;
+  setTimeBonusSeconds: (seconds: number) => void;
+
   endTurnSoundId: string;
   setEndTurnSoundId: (soundId: string) => void;
 
@@ -97,6 +104,8 @@ interface MatchState {
   startRematch: () => void;
   /** Full reset, as if the app just launched. */
   resetMatch: () => void;
+  /** Load a preset of players and category. */
+  loadPreset: (players: Player[], categoryId: string | null) => void;
 }
 
 export const useMatchStore = create<MatchState>((set, get) => ({
@@ -118,9 +127,12 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       lastTurnResult: null,
       playerScores: {},
       playerStats: {},
+      playedWordsByRound: [],
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,
+      timeBonusEnabled: false,
+      timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
     }),
 
@@ -128,18 +140,29 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   currentPlayerIndex: 0,
   currentRound: 1,
   advanceTurn: () => {
-    const { players, currentPlayerIndex, currentRound, totalRounds, infiniteMode } = get();
+    const { players, currentPlayerIndex, currentRound, totalRounds, infiniteMode, playedWordsByRound } = get();
     const nextIndex = (currentPlayerIndex + 1) % players.length;
     const roundJustCompleted = nextIndex === 0;
     const nextRound = roundJustCompleted ? currentRound + 1 : currentRound;
     const matchFinished = !infiniteMode && roundJustCompleted && nextRound > totalRounds;
 
-    set({ currentPlayerIndex: nextIndex, currentRound: nextRound });
+    set({
+      currentPlayerIndex: nextIndex,
+      currentRound: nextRound,
+      playedWordsByRound: playedWordsByRound.filter((pw) => pw.round >= nextRound - 2),
+    });
     return matchFinished;
   },
 
   lastTurnResult: null,
-  setLastTurnResult: (result) => set({ lastTurnResult: result }),
+  setLastTurnResult: (result) => {
+    const { currentRound, playedWordsByRound } = get();
+    const newPlayedWords = [...result.correctWords, ...result.passedWords].map(word => ({ round: currentRound, wordId: word.id }));
+    set({
+      lastTurnResult: result,
+      playedWordsByRound: [...playedWordsByRound, ...newPlayedWords],
+    });
+  },
 
   playerScores: {},
   addTurnScore: (playerId, points) => {
@@ -208,6 +231,11 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   infiniteMode: false,
   setInfiniteMode: (infinite) => set({ infiniteMode: infinite }),
 
+  timeBonusEnabled: false,
+  setTimeBonusEnabled: (enabled) => set({ timeBonusEnabled: enabled }),
+  timeBonusSeconds: 2,
+  setTimeBonusSeconds: (seconds) => set({ timeBonusSeconds: seconds }),
+
   endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
   setEndTurnSoundId: (soundId) => set({ endTurnSoundId: soundId }),
 
@@ -217,6 +245,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       currentRound: 1,
       playerScores: {},
       playerStats: {},
+      playedWordsByRound: [],
       lastTurnResult: null,
     }),
 
@@ -230,9 +259,25 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       lastTurnResult: null,
       playerScores: {},
       playerStats: {},
+      playedWordsByRound: [],
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,
+      timeBonusEnabled: false,
+      timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
+    }),
+
+  loadPreset: (players, categoryId) =>
+    set({
+      selectedCategoryId: categoryId,
+      players,
+      gameMode: "individual",
+      currentPlayerIndex: 0,
+      currentRound: 1,
+      lastTurnResult: null,
+      playerScores: {},
+      playerStats: {},
+      playedWordsByRound: [],
     }),
 }));
