@@ -12,6 +12,7 @@ import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 import { getCategoryById } from "@/features/categories";
 import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
 import { FeedbackOverlay } from "@/features/gameplay/FeedbackOverlay";
+import { usePlayedWordsStore } from "@/features/gameplay/playedWordsStore";
 import { TimerBar } from "@/features/gameplay/TimerBar";
 import { useGameplaySession } from "@/features/gameplay/useGameplaySession";
 import { useGameplaySounds } from "@/features/gameplay/useGameplaySounds";
@@ -29,13 +30,23 @@ export default function Gameplay() {
   const roundDurationSeconds = useMatchStore((state) => state.roundDurationSeconds);
   const timeBonusEnabled = useMatchStore((state) => state.timeBonusEnabled);
   const timeBonusSeconds = useMatchStore((state) => state.timeBonusSeconds);
-  const playedWordsByRound = useMatchStore((state) => state.playedWordsByRound);
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
 
-  const playedWordsIds = playedWordsByRound.map((pw) => pw.wordId);
+  const playedWordIdsRaw = usePlayedWordsStore((state) => (selectedCategoryId ? state.playedWordIds[selectedCategoryId] : undefined));
+  const playedWordIds = playedWordIdsRaw || [];
+  const addPlayedWords = usePlayedWordsStore((state) => state.addPlayedWords);
+  const clearCategory = usePlayedWordsStore((state) => state.clearCategory);
+
   const allCategoryWords = category?.palabras ?? [];
-  const unplayedWords = allCategoryWords.filter((w) => !playedWordsIds.includes(w.id));
+  const unplayedWords = allCategoryWords.filter((w) => !playedWordIds.includes(w.id));
+  
   const availableWords = unplayedWords.length >= 15 ? unplayedWords : allCategoryWords;
+
+  useEffect(() => {
+    if (unplayedWords.length < 15 && allCategoryWords.length >= 15 && selectedCategoryId) {
+      clearCategory(selectedCategoryId);
+    }
+  }, [unplayedWords.length, allCategoryWords.length, selectedCategoryId, clearCategory]);
 
   const { status, lastFeedback, currentWord, timeRemaining, correctWords, passedWords } = useGameplaySession(
     availableWords,
@@ -102,6 +113,13 @@ export default function Gameplay() {
     if (status !== "turnFinished") return;
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     setLastTurnResult({ correctWords, passedWords });
+    
+    // Save played words to persistent store
+    if (selectedCategoryId) {
+      const turnPlayedWordIds = [...correctWords, ...passedWords].map(w => w.id);
+      addPlayedWords(selectedCategoryId, turnPlayedWordIds);
+    }
+
     if (currentPlayer) {
       addTurnScore(currentPlayer.id, correctWords.length);
       recordTurnStats(currentPlayer.id, correctWords.length, passedWords.length);

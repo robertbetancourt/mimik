@@ -81,7 +81,7 @@ interface MatchState {
   playerStats: Record<string, PlayerStat>;
   recordTurnStats: (playerId: string, correctCount: number, passedCount: number) => void;
 
-  playedWordsByRound: { round: number; wordId: string }[];
+
 
   roundDurationSeconds: number;
   setRoundDurationSeconds: (seconds: number) => void;
@@ -127,7 +127,6 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       lastTurnResult: null,
       playerScores: {},
       playerStats: {},
-      playedWordsByRound: [],
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,
@@ -140,7 +139,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   currentPlayerIndex: 0,
   currentRound: 1,
   advanceTurn: () => {
-    const { players, currentPlayerIndex, currentRound, totalRounds, infiniteMode, playedWordsByRound } = get();
+    const { players, currentPlayerIndex, currentRound, totalRounds, infiniteMode } = get();
     const nextIndex = (currentPlayerIndex + 1) % players.length;
     const roundJustCompleted = nextIndex === 0;
     const nextRound = roundJustCompleted ? currentRound + 1 : currentRound;
@@ -149,18 +148,14 @@ export const useMatchStore = create<MatchState>((set, get) => ({
     set({
       currentPlayerIndex: nextIndex,
       currentRound: nextRound,
-      playedWordsByRound: playedWordsByRound.filter((pw) => pw.round >= nextRound - 2),
     });
     return matchFinished;
   },
 
   lastTurnResult: null,
   setLastTurnResult: (result) => {
-    const { currentRound, playedWordsByRound } = get();
-    const newPlayedWords = [...result.correctWords, ...result.passedWords].map(word => ({ round: currentRound, wordId: word.id }));
     set({
       lastTurnResult: result,
-      playedWordsByRound: [...playedWordsByRound, ...newPlayedWords],
     });
   },
 
@@ -245,7 +240,6 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       currentRound: 1,
       playerScores: {},
       playerStats: {},
-      playedWordsByRound: [],
       lastTurnResult: null,
     }),
 
@@ -259,7 +253,6 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       lastTurnResult: null,
       playerScores: {},
       playerStats: {},
-      playedWordsByRound: [],
       roundDurationSeconds: DEFAULT_ROUND_DURATION_SECONDS,
       totalRounds: DEFAULT_TOTAL_ROUNDS,
       infiniteMode: false,
@@ -278,6 +271,5 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       lastTurnResult: null,
       playerScores: {},
       playerStats: {},
-      playedWordsByRound: [],
     }),
 }));
