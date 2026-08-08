@@ -11,7 +11,10 @@
     "facil": "Easy",
     "normal": "Normal",
     "dificil": "Hard",
-    "description": "Only applies during this player's turn"
+    "description": "Only applies during this player's turn",
+    "tooltipTitle": "Why choose a difficulty?",
+    "tooltipMessage": "Mimik is designed so everyone can play together. By lowering the difficulty for players with less vocabulary (like children), they get easier words while the rest of the group can still play normally!",
+    "tooltipGotIt": "Got it"
   },
   "mix": {
     "title": "Mix",

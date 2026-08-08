@@ -11,7 +11,10 @@
     "facil": "Fácil",
     "normal": "Normal",
     "dificil": "Difícil",
-    "description": "Solo aplica en el turno de este jugador"
+    "description": "Solo aplica en el turno de este jugador",
+    "tooltipTitle": "¿Por qué elegir dificultad?",
+    "tooltipMessage": "Mimik está diseñado para que todos puedan jugar juntos. Al bajar la dificultad para personas con menos vocabulario (como los niños), ¡ellos recibirán palabras más fáciles mientras el resto del grupo puede jugar de forma normal!",
+    "tooltipGotIt": "Entendido"
   },
   "mix": {
     "title": "Mezcla",

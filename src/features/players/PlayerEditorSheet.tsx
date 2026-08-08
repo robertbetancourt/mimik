@@ -6,6 +6,7 @@ import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-na
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
 import { ChipSelector } from "@/components/ui/ChipSelector";
+import { InfoDialog } from "@/components/ui/InfoDialog";
 import { CharacterCategoryTabs } from "@/features/players/CharacterCategoryTabs";
 import { CharacterGrid } from "@/features/players/CharacterGrid";
 import {
@@ -24,6 +25,8 @@ interface PlayerEditorSheetProps {
 
 export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
   const { t } = useTranslation();
+  const insets = useSafeAreaInsets();
+  const [showInfo, setShowInfo] = useState(false);
   const renamePlayer = useMatchStore((state) => state.renamePlayer);
   const setPlayerCharacter = useMatchStore((state) => state.setPlayerCharacter);
   const setPlayerDifficulty = useMatchStore((state) => state.setPlayerDifficulty);
@@ -75,85 +78,98 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
   }
 
   return (
-    <BottomSheet
-      visible={player !== null}
-      onClose={handleClose}
-      footer={
-        player ? (
-          <View className="flex-row gap-3">
-            {playerCount > MIN_PLAYERS ? (
+    <>
+      <BottomSheet
+        visible={player !== null}
+        onClose={handleClose}
+        footer={
+          player ? (
+            <View className="flex-row gap-3">
+              {playerCount > MIN_PLAYERS ? (
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={handleRemove}
+                  className="flex-1 items-center justify-center rounded-full bg-error/10 py-3.5"
+                >
+                  <Text className="font-sans-bold text-base text-error">{t("common.delete")}</Text>
+                </Pressable>
+              ) : null}
               <Pressable
                 accessibilityRole="button"
-                onPress={handleRemove}
-                className="flex-1 items-center justify-center rounded-full bg-error/10 py-3.5"
+                onPress={handleAccept}
+                className="flex-1 items-center justify-center rounded-full bg-ink py-3.5"
               >
-                <Text className="font-sans-bold text-base text-error">{t("common.delete")}</Text>
+                <Text className="font-sans-bold text-base text-white">{t("common.accept")}</Text>
               </Pressable>
-            ) : null}
-            <Pressable
-              accessibilityRole="button"
-              onPress={handleAccept}
-              className="flex-1 items-center justify-center rounded-full bg-ink py-3.5"
-            >
-              <Text className="font-sans-bold text-base text-white">{t("common.accept")}</Text>
-            </Pressable>
+            </View>
+          ) : null
+        }
+      >
+        {player ? (
+          <View className="gap-4">
+            <View className="items-center">
+              <Animated.View
+                style={previewStyle}
+                className="h-28 w-28 items-center justify-center rounded-full bg-surface"
+              >
+                {character ? (
+                  <Image source={character.illustration} resizeMode="contain" style={{ width: 80, height: 80 }} />
+                ) : null}
+              </Animated.View>
+            </View>
+
+            <TextInput
+              value={player.name}
+              onChangeText={(text) => renamePlayer(player.id, text)}
+              placeholder={t("common.playerNamePlaceholder")}
+              accessibilityLabel={t("common.playerNamePlaceholder")}
+              maxLength={20}
+              returnKeyType="done"
+              className="rounded-2xl bg-white/70 border border-white px-4 py-3 text-center font-sans-bold text-lg text-ink"
+            />
+
+            <View className="gap-2">
+              <ChipSelector
+                label={t("difficulty.label")}
+                onInfoPress={() => setShowInfo(true)}
+                options={[
+                  { label: t("difficulty.facil"), value: "facil" },
+                  { label: t("difficulty.normal"), value: "normal" },
+                  { label: t("difficulty.dificil"), value: "dificil" },
+                ]}
+                value={player.dificultad ?? "normal"}
+                onChange={(val) => setPlayerDifficulty(player.id, val as DifficultyLevel)}
+              />
+              <Text className="text-center font-sans-medium text-xs text-ink/50 px-4">
+                {t("difficulty.description")}
+              </Text>
+            </View>
+
+            <CharacterCategoryTabs
+              categories={characterCategories}
+              selectedId={categoryId}
+              onChange={setCategoryId}
+            />
+
+            <CharacterGrid
+              categoryId={categoryId}
+              characters={categoryCharacters}
+              selectedId={player.characterId}
+              onSelect={(characterId) => setPlayerCharacter(player.id, characterId)}
+            />
           </View>
-        ) : null
-      }
-    >
-      {player ? (
-        <View className="gap-4">
-          <View className="items-center">
-            <Animated.View
-              style={previewStyle}
-              className="h-28 w-28 items-center justify-center rounded-full bg-surface"
-            >
-              {character ? (
-                <Image source={character.illustration} resizeMode="contain" style={{ width: 80, height: 80 }} />
-              ) : null}
-            </Animated.View>
-          </View>
+        ) : (
+          <Text> </Text>
+        )}
+      </BottomSheet>
 
-          <TextInput
-            value={player.name}
-            onChangeText={(text) => renamePlayer(player.id, text)}
-            placeholder={t("common.playerNamePlaceholder")}
-            accessibilityLabel={t("common.playerNamePlaceholder")}
-            maxLength={20}
-            returnKeyType="done"
-            className="rounded-2xl bg-white/70 border border-white px-4 py-3 text-center font-sans-bold text-lg text-ink"
-          />
-
-          <ChipSelector
-            label={t("difficulty.label")}
-            onInfoPress={() => {
-              Alert.alert(t("difficulty.label"), t("difficulty.description"));
-            }}
-            options={[
-              { label: t("difficulty.facil"), value: "facil" },
-              { label: t("difficulty.normal"), value: "normal" },
-              { label: t("difficulty.dificil"), value: "dificil" },
-            ]}
-            value={player.dificultad ?? "normal"}
-            onChange={(val) => setPlayerDifficulty(player.id, val as DifficultyLevel)}
-          />
-
-          <CharacterCategoryTabs
-            categories={characterCategories}
-            selectedId={categoryId}
-            onChange={setCategoryId}
-          />
-
-          <CharacterGrid
-            categoryId={categoryId}
-            characters={categoryCharacters}
-            selectedId={player.characterId}
-            onSelect={(characterId) => setPlayerCharacter(player.id, characterId)}
-          />
-        </View>
-      ) : (
-        <Text> </Text>
-      )}
-    </BottomSheet>
+      <InfoDialog
+        visible={showInfo}
+        title={t("difficulty.tooltipTitle")}
+        message={t("difficulty.tooltipMessage")}
+        buttonLabel={t("difficulty.tooltipGotIt")}
+        onClose={() => setShowInfo(false)}
+      />
+    </>
   );
 }
