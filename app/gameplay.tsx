@@ -46,16 +46,30 @@ export default function Gameplay() {
   const addPlayedWords = usePlayedWordsStore((state) => state.addPlayedWords);
   const clearCategory = usePlayedWordsStore((state) => state.clearCategory);
 
+  const players = useMatchStore((state) => state.players);
+  const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
+  const currentPlayer = players[currentPlayerIndex];
+
   const allCategoryWords = category?.palabras ?? [];
-  const unplayedWords = allCategoryWords.filter((w) => !playedWordIds.includes(w.id));
-  
-  const availableWords = unplayedWords.length >= 15 ? unplayedWords : allCategoryWords;
+
+  // Filter words by the current player's difficulty level.
+  // Words without a "dificultad" field are treated as "normal".
+  // If fewer than 15 words exist at the player's level, fall back to the
+  // full pool so the game never breaks on sparsely-tagged categories.
+  const playerDifficulty = currentPlayer?.dificultad ?? "normal";
+  const difficultyPool = allCategoryWords.filter(
+    (w) => (w.dificultad ?? "normal") === playerDifficulty,
+  );
+  const wordPool = difficultyPool.length >= 15 ? difficultyPool : allCategoryWords;
+
+  const unplayedWords = wordPool.filter((w) => !playedWordIds.includes(w.id));
+  const availableWords = unplayedWords.length >= 15 ? unplayedWords : wordPool;
 
   useEffect(() => {
-    if (unplayedWords.length < 15 && allCategoryWords.length >= 15 && selectedCategoryId) {
+    if (unplayedWords.length < 15 && wordPool.length >= 15 && selectedCategoryId) {
       clearCategory(selectedCategoryId);
     }
-  }, [unplayedWords.length, allCategoryWords.length, selectedCategoryId, clearCategory]);
+  }, [unplayedWords.length, wordPool.length, selectedCategoryId, clearCategory]);
 
   const { status, lastFeedback, currentWord, timeRemaining, correctWords, passedWords } = useGameplaySession(
     availableWords,
@@ -67,15 +81,11 @@ export default function Gameplay() {
   const addTurnScore = useMatchStore((state) => state.addTurnScore);
   const recordTurnStats = useMatchStore((state) => state.recordTurnStats);
   const gameMode = useMatchStore((state) => state.gameMode);
-  const players = useMatchStore((state) => state.players);
-  const currentPlayerIndex = useMatchStore((state) => state.currentPlayerIndex);
   const endTurnSoundId = useMatchStore((state) => state.endTurnSoundId);
   const { playCorrect, playPass, playCountdownTick, playCountdownUrgent } = useGameplaySounds();
   const { play: playEndTurnSound } = useSoundPreview();
   const previousStatus = useRef(status);
   const [exitDialogVisible, setExitDialogVisible] = useState(false);
-
-  const currentPlayer = players[currentPlayerIndex];
 
   // Without this, Android's hardware back button pops the navigation stack
   // directly and silently drops the turn in progress — the same exit needs

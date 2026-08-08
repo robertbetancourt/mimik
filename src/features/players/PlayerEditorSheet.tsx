@@ -5,6 +5,7 @@ import { Image, Pressable, Text, TextInput, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
+import { ChipSelector } from "@/components/ui/ChipSelector";
 import { CharacterCategoryTabs } from "@/features/players/CharacterCategoryTabs";
 import { CharacterGrid } from "@/features/players/CharacterGrid";
 import {
@@ -14,7 +15,7 @@ import {
   getCharacterById,
 } from "@/features/players/characters";
 import { MIN_PLAYERS, useMatchStore } from "@/features/match/store";
-import type { Player } from "@/types/player";
+import type { DifficultyLevel, Player } from "@/types/player";
 
 interface PlayerEditorSheetProps {
   player: Player | null;
@@ -25,6 +26,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
   const { t } = useTranslation();
   const renamePlayer = useMatchStore((state) => state.renamePlayer);
   const setPlayerCharacter = useMatchStore((state) => state.setPlayerCharacter);
+  const setPlayerDifficulty = useMatchStore((state) => state.setPlayerDifficulty);
   const removePlayer = useMatchStore((state) => state.removePlayer);
   const playerCount = useMatchStore((state) => state.players.length);
 
@@ -120,6 +122,17 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
             maxLength={20}
             returnKeyType="done"
             className="rounded-2xl bg-white/70 border border-white px-4 py-3 text-center font-sans-bold text-lg text-ink"
+          />
+
+          <ChipSelector
+            label={t("difficulty.label")}
+            options={[
+              { label: `🟢 ${t("difficulty.facil")}`, value: "facil" },
+              { label: `🎯 ${t("difficulty.normal")}`, value: "normal" },
+              { label: `🔴 ${t("difficulty.dificil")}`, value: "dificil" },
+            ]}
+            value={player.dificultad ?? "normal"}
+            onChange={(val) => setPlayerDifficulty(player.id, val as DifficultyLevel)}
           />
 
           <CharacterCategoryTabs

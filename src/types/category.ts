@@ -1,6 +1,7 @@
 export interface Word {
   id: string;
   texto: string;
+  dificultad?: "facil" | "normal" | "dificil";
 }
 
 export interface Category {

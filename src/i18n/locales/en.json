@@ -6,6 +6,12 @@
     "defaultPlayerName": "Player {{n}}",
     "player": "Player"
   },
+  "difficulty": {
+    "label": "Word difficulty",
+    "facil": "Easy",
+    "normal": "Normal",
+    "dificil": "Hard"
+  },
   "mix": {
     "title": "Mix",
     "description": "A bit of every category."

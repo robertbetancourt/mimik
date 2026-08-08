@@ -6,6 +6,12 @@
     "defaultPlayerName": "Jugador {{n}}",
     "player": "Jugador"
   },
+  "difficulty": {
+    "label": "Dificultad de palabras",
+    "facil": "Fácil",
+    "normal": "Normal",
+    "dificil": "Difícil"
+  },
   "mix": {
     "title": "Mezcla",
     "description": "Un poco de todas las categorías."

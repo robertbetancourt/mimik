@@ -6,6 +6,7 @@ import { pickRandomCharacterId } from "@/features/players/characters";
 import { generateId } from "@/lib/generateId";
 import i18n from "@/i18n";
 import type { Player } from "@/types/player";
+import type { DifficultyLevel } from "@/types/player";
 
 export interface TurnResult {
   correctWords: Word[];
@@ -60,6 +61,7 @@ interface MatchState {
   renamePlayer: (playerId: string, name: string) => void;
   setPlayerCharacter: (playerId: string, characterId: string) => void;
   togglePlayerTeam: (playerId: string) => void;
+  setPlayerDifficulty: (playerId: string, level: DifficultyLevel) => void;
 
   currentPlayerIndex: number;
   currentRound: number;
@@ -224,6 +226,12 @@ export const useMatchStore = create<MatchState>((set, get) => ({
     set({
       players: get().players.map((player) =>
         player.id === playerId ? { ...player, teamId: player.teamId === "red" ? "blue" : "red" } : player,
+      ),
+    }),
+  setPlayerDifficulty: (playerId, level) =>
+    set({
+      players: get().players.map((player) =>
+        player.id === playerId ? { ...player, dificultad: level } : player,
       ),
     }),
 
