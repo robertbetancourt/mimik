@@ -43,7 +43,7 @@ export function PrimaryButton({ label, icon: Icon, disabled, onPress }: PrimaryB
     >
       <View className="overflow-hidden rounded-full">
         <LinearGradient
-          colors={["#FF9A6B", "#FF7A45", "#F0632C"]}
+          colors={["#3D2F23", "#2B2118", "#1A140F"]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           className="flex-row items-center justify-center gap-2 py-4"

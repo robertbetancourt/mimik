@@ -2,7 +2,7 @@
   "expo": {
     "name": "Mimik",
     "slug": "mimik",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scheme": "mimik",
     "orientation": "default",
     "icon": "./assets/app-icons/icon.png",

@@ -100,6 +100,15 @@ interface MatchState {
   endTurnSoundId: string;
   setEndTurnSoundId: (soundId: string) => void;
 
+  /**
+   * Survival Mode: the timer starts at 15 s and each correct answer adds 5 s.
+   * When enabled, roundDurationSeconds and timeBonusSeconds are overridden
+   * at the gameplay level — they stay in the store at their user-configured
+   * values so that switching back to Classic preserves those settings.
+   */
+  survivalMode: boolean;
+  setSurvivalMode: (enabled: boolean) => void;
+
   /** Same players, characters, names, category and settings — fresh scores and round progress. */
   startRematch: () => void;
   /** Full reset, as if the app just launched. */
@@ -133,6 +142,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       timeBonusEnabled: false,
       timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
+      survivalMode: false,
     }),
 
   players: createInitialPlayers(),
@@ -234,6 +244,9 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
   setEndTurnSoundId: (soundId) => set({ endTurnSoundId: soundId }),
 
+  survivalMode: false,
+  setSurvivalMode: (survivalMode) => set({ survivalMode }),
+
   startRematch: () =>
     set({
       currentPlayerIndex: 0,
@@ -259,6 +272,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       timeBonusEnabled: false,
       timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
+      survivalMode: false,
     }),
 
   loadPreset: (players, categoryId) =>

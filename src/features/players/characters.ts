@@ -16,7 +16,6 @@ export const ALL_CHARACTERS_CATEGORY_ID = "all";
 
 export const characterCategories: CharacterCategory[] = [
   { id: ALL_CHARACTERS_CATEGORY_ID, emoji: "✨", label: i18n.t("characterCategories.all") },
-  { id: "faces", emoji: "😊", label: i18n.t("characterCategories.faces") },
   { id: "warriors", emoji: "⚔️", label: i18n.t("characterCategories.warriors") },
   { id: "fantasy", emoji: "🪄", label: i18n.t("characterCategories.fantasy") },
   { id: "animals", emoji: "🐻", label: i18n.t("characterCategories.animals") },

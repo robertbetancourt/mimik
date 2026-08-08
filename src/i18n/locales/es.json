@@ -28,7 +28,11 @@
     "endTurnSound": "Sonido de fin de turno",
     "timeBonus": "Tiempo extra",
     "timeBonusOff": "No",
-    "start": "Comenzar partida"
+    "start": "Comenzar partida",
+    "matchMode": "Modo de partida",
+    "classicMode": "Clásico",
+    "survivalMode": "Supervivencia",
+    "survivalHint": "15 s iniciales · +5 s por cada acierto"
   },
   "countdown": {
     "go": "¡Ya!",
@@ -112,5 +116,18 @@
       "passText": "Inclina el teléfono hacia arriba para pasar una palabra.",
       "correctText": "Inclina el teléfono hacia abajo cuando aciertes."
     }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "controls": "Controles",
+    "tiltSensitivity": "Sensibilidad de inclinación",
+    "sensitivityLow": "Suave",
+    "sensitivityMedium": "Normal",
+    "sensitivityHigh": "Preciso",
+    "performance": "Rendimiento",
+    "roadtripMode": "Modo Roadtrip",
+    "roadtripModeDesc": "Reduce las animaciones para ahorrar batería",
+    "about": "Acerca de",
+    "version": "Versión"
   }
 }

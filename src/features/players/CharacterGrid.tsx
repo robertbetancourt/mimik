@@ -23,9 +23,9 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
 const SURFACE_COLOR = "#FFFBF4";
-const SELECTED_BG = "#FF7A4526";
+const SELECTED_BG = "rgba(43, 33, 24, 0.15)";
 const BORDER_IDLE = "rgba(43, 33, 24, 0)";
-const BORDER_SELECTED = "#FF7A45";
+const BORDER_SELECTED = "#2B2118";
 
 function CharacterOption({
   character,

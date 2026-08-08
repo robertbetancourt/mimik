@@ -2,6 +2,7 @@ import { useEffect, useMemo, useReducer } from "react";
 
 import type { Word } from "@/types/category";
 import { shuffle } from "@/lib/shuffle";
+import { TILT_THRESHOLDS, useSettingsStore } from "@/features/settings/settingsStore";
 
 import { createInitialGameplayState, gameplayReducer } from "./gameplayReducer";
 import { useTiltSensor, type TiltSensorMode } from "./useTiltSensor";
@@ -11,6 +12,8 @@ const FEEDBACK_DURATION_MS = 400;
 
 export function useGameplaySession(words: Word[], roundDurationSeconds: number, timeBonusSeconds: number = 0) {
   const shuffledWords = useMemo(() => shuffle(words), [words]);
+  const tiltSensitivity = useSettingsStore((s) => s.tiltSensitivity);
+  const tiltThreshold = TILT_THRESHOLDS[tiltSensitivity];
 
   const [state, dispatch] = useReducer(
     gameplayReducer,
@@ -49,6 +52,7 @@ export function useGameplaySession(words: Word[], roundDurationSeconds: number, 
     onTiltDown: () => dispatch({ type: "PASS" }),
     onTiltUp: () => dispatch({ type: "CORRECT", timeBonus: timeBonusSeconds }),
     onCentered: () => dispatch({ type: "CENTERED" }),
+    threshold: tiltThreshold,
   });
 
   return {

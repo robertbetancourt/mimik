@@ -27,7 +27,7 @@ interface ConfirmDialogProps {
 }
 
 const TIMING = { duration: 180, easing: Easing.out(Easing.cubic) };
-const PRIMARY_GRADIENT = ["#FF9A6B", "#FF7A45", "#F0632C"] as const;
+const PRIMARY_GRADIENT = ["#3D2F23", "#2B2118", "#1A140F"] as const;
 const DESTRUCTIVE_GRADIENT = ["#F0806F", "#E85C4A", "#D6482F"] as const;
 
 export function ConfirmDialog({

@@ -4,7 +4,6 @@ import { Text, View } from "react-native";
 import Animated, { runOnJS, useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 
 import { IconButton } from "@/components/ui/IconButton";
-import { cardShadow } from "@/theme/shadow";
 
 interface StepperProps {
   label: string;
@@ -39,14 +38,14 @@ export function Stepper({ label, value, min, max, step = 1, onChange, formatValu
   const valueStyle = useAnimatedStyle(() => ({ opacity: opacity.value }));
 
   return (
-    <View style={cardShadow} className="flex-row items-center justify-between rounded-3xl bg-surface px-5 py-4">
+    <View className="flex-row items-center justify-between rounded-3xl border border-white/70 bg-white/70 px-5 py-4">
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
       <View className="flex-row items-center gap-4">
         <IconButton
           disabled={!canDecrease}
           onPress={() => onChange(value - step)}
-          className="h-11 w-11 bg-background"
+          className="h-11 w-11 bg-white"
         >
           <Minus size={20} color="#2B2118" />
         </IconButton>
@@ -60,7 +59,7 @@ export function Stepper({ label, value, min, max, step = 1, onChange, formatValu
         <IconButton
           disabled={!canIncrease}
           onPress={() => onChange(value + step)}
-          className="h-11 w-11 bg-background"
+          className="h-11 w-11 bg-white"
         >
           <Plus size={20} color="#2B2118" />
         </IconButton>

@@ -9,8 +9,6 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
-import { cardShadow } from "@/theme/shadow";
-
 interface ChipOption<T extends string | number> {
   label: string;
   value: T;
@@ -26,8 +24,8 @@ interface ChipSelectorProps<T extends string | number> {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
-const SURFACE_COLOR = "#FFF7ED";
-const PRIMARY_COLOR = "#FF7A45";
+const SURFACE_COLOR = "#FFFFFF";
+const PRIMARY_COLOR = "#2B2118";
 const BORDER_IDLE = "rgba(43, 33, 24, 0)";
 const BORDER_SELECTED = PRIMARY_COLOR;
 
@@ -54,7 +52,7 @@ function Chip({
   }));
 
   const textStyle = useAnimatedStyle(() => ({
-    color: interpolateColor(selectedProgress.value, [0, 1], ["#2B211899", "#FFFFFF"]),
+    color: interpolateColor(selectedProgress.value, [0, 1], ["#2B2118", "#FFFFFF"]),
   }));
 
   return (
@@ -90,7 +88,7 @@ export function ChipSelector<T extends string | number>({
   onChange,
 }: ChipSelectorProps<T>) {
   return (
-    <View style={cardShadow} className="rounded-3xl bg-surface px-5 py-4">
+    <View className="rounded-3xl border border-white/70 bg-white/70 px-5 py-4">
       <Text className="font-sans-bold text-base text-ink">{label}</Text>
 
       <View className="mt-3 flex-row gap-2">

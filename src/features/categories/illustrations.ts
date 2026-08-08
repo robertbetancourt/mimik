@@ -2,7 +2,7 @@ import type { Category } from "@/types/category";
 
 // Metro requires static, literal require() calls, so illustrations are mapped
 // explicitly instead of built from the `ilustracion` field in the JSON data.
-export const categoryIllustrations: Record<Category["id"], number> = {
+export const categoryIllustrations: Record<string, number> = {
   animales: require("../../../assets/images/categories/animals.png"),
   food: require("../../../assets/images/categories/food.png"),
   deportes: require("../../../assets/images/categories/sports.png"),

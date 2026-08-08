@@ -2,7 +2,7 @@ import { Accelerometer } from "expo-sensors";
 import { useEffect, useRef } from "react";
 
 const UPDATE_INTERVAL_MS = 100;
-const TILT_THRESHOLD = 0.6;
+const DEFAULT_TILT_THRESHOLD = 0.6;
 const NEUTRAL_THRESHOLD = 0.3;
 const COOLDOWN_MS = 700;
 // Small pause once the phone is back at neutral before the next word shows —
@@ -16,6 +16,8 @@ interface UseTiltSensorOptions {
   onTiltDown: () => void;
   onTiltUp: () => void;
   onCentered: () => void;
+  /** Accelerometer z-axis threshold to register a tilt. Default: 0.6 */
+  threshold?: number;
 }
 
 // One sensor subscription, two behaviors depending on the gameplay state:
@@ -25,7 +27,7 @@ interface UseTiltSensorOptions {
 //   angle — used to leave WAITING_FOR_CENTER without a fixed timer.
 // - "off": no subscription at all. Every non-PLAYING, non-WAITING_FOR_CENTER
 //   state ignores the sensor completely.
-export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered }: UseTiltSensorOptions) {
+export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered, threshold = DEFAULT_TILT_THRESHOLD }: UseTiltSensorOptions) {
   const armedRef = useRef(true);
   const lastTriggerRef = useRef(0);
   const neutralSinceRef = useRef<number | null>(null);
@@ -73,11 +75,11 @@ export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered }: UseTil
       const now = Date.now();
       if (now - lastTriggerRef.current < COOLDOWN_MS) return;
 
-      if (z > TILT_THRESHOLD) {
+      if (z > threshold) {
         armedRef.current = false;
         lastTriggerRef.current = now;
         callbacksRef.current.onTiltDown();
-      } else if (z < -TILT_THRESHOLD) {
+      } else if (z < -threshold) {
         armedRef.current = false;
         lastTriggerRef.current = now;
         callbacksRef.current.onTiltUp();

@@ -1,5 +1,7 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
+import { Settings } from "lucide-react-native";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import Animated from "react-native-reanimated";
@@ -15,6 +17,7 @@ import { useMatchStore } from "@/features/match/store";
 import { usePresetStore } from "@/features/players/presetStore";
 import { OnboardingSheet } from "@/features/onboarding/OnboardingSheet";
 import { useOnboarding } from "@/features/onboarding/useOnboarding";
+import { SettingsSheet } from "@/features/settings/SettingsSheet";
 import { useLockOrientation } from "@/lib/useLockOrientation";
 
 export default function CategorySelection() {
@@ -26,6 +29,7 @@ export default function CategorySelection() {
   const lastPlayers = usePresetStore((state) => state.lastPlayers);
   const lastCategoryId = usePresetStore((state) => state.lastCategoryId);
   const { shouldShow: showOnboarding, markCompleted: completeOnboarding } = useOnboarding();
+  const [settingsVisible, setSettingsVisible] = useState(false);
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
   const { mimikStyle, titleStyle } = useHomeEntrance();
@@ -50,10 +54,19 @@ export default function CategorySelection() {
             <Text className="mt-1 font-sans text-base text-ink/60">{t("home.subtitle")}</Text>
           </Animated.View>
 
-          <Animated.View style={[mimikStyle, { marginLeft: -16 }]}>
-            <Sparkle animated size={11} style={{ position: "absolute", right: 18, top: 8, zIndex: 1 }} />
-            <MimikIdle source={require("../branding/mimik/celebration.png")} size={150} />
-          </Animated.View>
+        <Animated.View style={[mimikStyle, { marginLeft: -16, alignItems: "flex-end" }]}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Ajustes"
+              onPress={() => setSettingsVisible(true)}
+              className="mb-2 h-9 w-9 items-center justify-center rounded-full bg-ink/8"
+              style={{ zIndex: 2 }}
+            >
+              <Settings size={18} color="rgba(43,33,24,0.45)" />
+            </Pressable>
+          <Sparkle animated size={11} style={{ position: "absolute", right: 18, top: 8, zIndex: 1 }} />
+          <MimikIdle source={require("../branding/mimik/celebration.png")} size={150} />
+        </Animated.View>
         </View>
 
         <View className="mt-6">
@@ -65,16 +78,10 @@ export default function CategorySelection() {
                   loadPreset(lastPlayers, lastCategoryId || MIX_CATEGORY_ID);
                   router.push("/game-setup");
                 }}
-                className="flex-row items-center justify-center rounded-2xl bg-surface px-4 py-4"
-                style={{
-                  shadowColor: "#000",
-                  shadowOffset: { width: 0, height: 4 },
-                  shadowOpacity: 0.05,
-                  shadowRadius: 12,
-                  elevation: 2,
-                }}
+                className="flex-row items-center justify-center gap-2 rounded-3xl bg-ink px-4 py-4"
               >
-                <Text className="font-sans-bold text-base text-ink">{t("home.playWithLastGroup")}</Text>
+                <Sparkle size={14} color="white" />
+                <Text className="font-sans-bold text-base text-white">{t("home.playWithLastGroup")}</Text>
               </Pressable>
             </View>
           ) : null}
@@ -83,6 +90,7 @@ export default function CategorySelection() {
       </ScrollView>
 
       <OnboardingSheet visible={showOnboarding} onComplete={completeOnboarding} />
+      <SettingsSheet visible={settingsVisible} onClose={() => setSettingsVisible(false)} />
     </SafeAreaView>
   );
 }

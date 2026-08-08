@@ -19,7 +19,7 @@ interface CharacterCategoryTabsProps {
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SURFACE_COLOR = "#FFF7ED";
-const PRIMARY_COLOR = "#FF7A45";
+const PRIMARY_COLOR = "#2B2118";
 
 function Tab({
   category,

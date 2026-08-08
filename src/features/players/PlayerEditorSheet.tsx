@@ -91,7 +91,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
             <Pressable
               accessibilityRole="button"
               onPress={handleAccept}
-              className="flex-1 items-center justify-center rounded-full bg-primary py-3.5"
+              className="flex-1 items-center justify-center rounded-full bg-ink py-3.5"
             >
               <Text className="font-sans-bold text-base text-white">{t("common.accept")}</Text>
             </Pressable>
@@ -119,7 +119,7 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
             accessibilityLabel={t("common.playerNamePlaceholder")}
             maxLength={20}
             returnKeyType="done"
-            className="rounded-2xl bg-surface px-4 py-3 text-center font-sans-bold text-lg text-ink"
+            className="rounded-2xl bg-white/70 border border-white px-4 py-3 text-center font-sans-bold text-lg text-ink"
           />
 
           <CharacterCategoryTabs

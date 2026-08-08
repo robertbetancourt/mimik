@@ -13,6 +13,7 @@ import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SoundSelector } from "@/components/ui/SoundSelector";
 import { Stepper } from "@/components/ui/Stepper";
 import { getCategoryById } from "@/features/categories";
+import { categoryColors } from "@/features/categories/colors";
 import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
 import { useSoundPreview } from "@/features/gameplay/useSoundPreview";
 import { SelectedCategoryHero } from "@/features/match/SelectedCategoryHero";
@@ -72,6 +73,8 @@ export default function GameSetup() {
   const setTimeBonusSeconds = useMatchStore((state) => state.setTimeBonusSeconds);
   const endTurnSoundId = useMatchStore((state) => state.endTurnSoundId);
   const setEndTurnSoundId = useMatchStore((state) => state.setEndTurnSoundId);
+  const survivalMode = useMatchStore((state) => state.survivalMode);
+  const setSurvivalMode = useMatchStore((state) => state.setSurvivalMode);
   const saveLastMatch = usePresetStore((state) => state.saveLastMatch);
 
   const { play: previewSound } = useSoundPreview();
@@ -105,7 +108,11 @@ export default function GameSetup() {
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
+    <SafeAreaView 
+      className="flex-1" 
+      edges={["top"]}
+      style={{ backgroundColor: selectedCategoryId && categoryColors[selectedCategoryId] ? categoryColors[selectedCategoryId] : "#FDFDF5" }}
+    >
       <ScrollView contentContainerClassName="px-4 pb-44 pt-4" showsVerticalScrollIndicator={false}>
         <Animated.View style={headerStyle}>
           <Pressable
@@ -114,8 +121,7 @@ export default function GameSetup() {
               Haptics.selectionAsync();
               router.back();
             }}
-            style={cardShadow}
-            className="h-11 w-11 items-center justify-center rounded-full bg-surface"
+            className="h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/70"
           >
             <ChevronLeft size={22} color="#2B2118" />
           </Pressable>
@@ -146,21 +152,42 @@ export default function GameSetup() {
             />
           </Animated.View>
 
-          <Animated.View style={[cardShadow, settingStyles[2]]} className="rounded-3xl bg-surface px-5 py-4">
+          <Animated.View style={settingStyles[2]} className="rounded-3xl border border-white/70 bg-white/70 px-5 py-4">
             {gameMode === "teams" ? (
               <Text className="mb-3 font-sans text-xs text-ink/50">{t("gameSetup.teamHint")}</Text>
             ) : null}
             <PlayerGrid players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
           </Animated.View>
 
+          {/* Match mode: Classic vs Survival */}
           <Animated.View style={settingStyles[3]}>
             <ChipSelector
-              label={t("gameSetup.turnDuration")}
-              options={roundDurationOptions}
-              value={roundDurationSeconds}
-              onChange={setRoundDurationSeconds}
+              label={t("gameSetup.matchMode")}
+              options={[
+                { label: t("gameSetup.classicMode"), value: "classic" },
+                { label: t("gameSetup.survivalMode"), value: "survival" },
+              ]}
+              value={survivalMode ? "survival" : "classic"}
+              onChange={(val) => setSurvivalMode(val === "survival")}
             />
+            {survivalMode ? (
+              <Text className="mt-2 px-1 font-sans text-xs text-ink/50">
+                {t("gameSetup.survivalHint")}
+              </Text>
+            ) : null}
           </Animated.View>
+
+          {/* Turn duration — hidden in Survival mode */}
+          {!survivalMode ? (
+            <Animated.View style={settingStyles[4]}>
+              <ChipSelector
+                label={t("gameSetup.turnDuration")}
+                options={roundDurationOptions}
+                value={roundDurationSeconds}
+                onChange={setRoundDurationSeconds}
+              />
+            </Animated.View>
+          ) : null}
 
           <Animated.View style={settingStyles[4]}>
             <Stepper
@@ -173,27 +200,30 @@ export default function GameSetup() {
             />
           </Animated.View>
 
-          <Animated.View style={settingStyles[5]}>
-            <ChipSelector
-              label={t("gameSetup.timeBonus")}
-              options={[
-                { label: t("gameSetup.timeBonusOff"), value: 0 },
-                { label: "+1s", value: 1 },
-                { label: "+2s", value: 2 },
-                { label: "+3s", value: 3 },
-                { label: "+5s", value: 5 },
-              ]}
-              value={timeBonusEnabled ? timeBonusSeconds : 0}
-              onChange={(val) => {
-                if (val === 0) {
-                  setTimeBonusEnabled(false);
-                } else {
-                  setTimeBonusEnabled(true);
-                  setTimeBonusSeconds(val as number);
-                }
-              }}
-            />
-          </Animated.View>
+          {/* Time bonus — hidden in Survival mode */}
+          {!survivalMode ? (
+            <Animated.View style={settingStyles[5]}>
+              <ChipSelector
+                label={t("gameSetup.timeBonus")}
+                options={[
+                  { label: t("gameSetup.timeBonusOff"), value: 0 },
+                  { label: "+1s", value: 1 },
+                  { label: "+2s", value: 2 },
+                  { label: "+3s", value: 3 },
+                  { label: "+5s", value: 5 },
+                ]}
+                value={timeBonusEnabled ? timeBonusSeconds : 0}
+                onChange={(val) => {
+                  if (val === 0) {
+                    setTimeBonusEnabled(false);
+                  } else {
+                    setTimeBonusEnabled(true);
+                    setTimeBonusSeconds(val as number);
+                  }
+                }}
+              />
+            </Animated.View>
+          ) : null}
 
           <Animated.View style={settingStyles[5]}>
             <SoundSelector

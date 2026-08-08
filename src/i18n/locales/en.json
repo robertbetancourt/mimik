@@ -28,7 +28,11 @@
     "endTurnSound": "End-of-turn sound",
     "timeBonus": "Time bonus",
     "timeBonusOff": "Off",
-    "start": "Start match"
+    "start": "Start match",
+    "matchMode": "Match mode",
+    "classicMode": "Classic",
+    "survivalMode": "Survival",
+    "survivalHint": "15 s start · +5 s per correct answer"
   },
   "countdown": {
     "go": "Go!",
@@ -112,5 +116,18 @@
       "passText": "Tilt the phone up to pass a word.",
       "correctText": "Tilt the phone down when you get it right."
     }
+  },
+  "settings": {
+    "title": "Settings",
+    "controls": "Controls",
+    "tiltSensitivity": "Tilt sensitivity",
+    "sensitivityLow": "Gentle",
+    "sensitivityMedium": "Normal",
+    "sensitivityHigh": "Precise",
+    "performance": "Performance",
+    "roadtripMode": "Roadtrip Mode",
+    "roadtripModeDesc": "Reduces animations to save battery",
+    "about": "About",
+    "version": "Version"
   }
 }

@@ -10,6 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 import { getCategoryById } from "@/features/categories";
+import { categoryColors } from "@/features/categories/colors";
 import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
 import { FeedbackOverlay } from "@/features/gameplay/FeedbackOverlay";
 import { usePlayedWordsStore } from "@/features/gameplay/playedWordsStore";
@@ -30,7 +31,15 @@ export default function Gameplay() {
   const roundDurationSeconds = useMatchStore((state) => state.roundDurationSeconds);
   const timeBonusEnabled = useMatchStore((state) => state.timeBonusEnabled);
   const timeBonusSeconds = useMatchStore((state) => state.timeBonusSeconds);
+  const survivalMode = useMatchStore((state) => state.survivalMode);
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
+
+  // In Survival Mode the turn always starts at 15 s and each correct
+  // answer adds 5 s — these values override the configured store settings.
+  const SURVIVAL_START_SECONDS = 15;
+  const SURVIVAL_BONUS_SECONDS = 5;
+  const effectiveDuration = survivalMode ? SURVIVAL_START_SECONDS : roundDurationSeconds;
+  const effectiveBonus = survivalMode ? SURVIVAL_BONUS_SECONDS : (timeBonusEnabled ? timeBonusSeconds : 0);
 
   const playedWordIdsRaw = usePlayedWordsStore((state) => (selectedCategoryId ? state.playedWordIds[selectedCategoryId] : undefined));
   const playedWordIds = playedWordIdsRaw || [];
@@ -50,8 +59,8 @@ export default function Gameplay() {
 
   const { status, lastFeedback, currentWord, timeRemaining, correctWords, passedWords } = useGameplaySession(
     availableWords,
-    roundDurationSeconds,
-    timeBonusEnabled ? timeBonusSeconds : 0
+    effectiveDuration,
+    effectiveBonus,
   );
 
   const setLastTurnResult = useMatchStore((state) => state.setLastTurnResult);
@@ -133,11 +142,29 @@ export default function Gameplay() {
 
   return (
     <SafeAreaView className="flex-1 bg-[#111111] px-8 py-4">
+      {/* Contextual category tint — very subtle, just enough to set the
+          mood for the active category without hurting word legibility. */}
+      {selectedCategoryId && categoryColors[selectedCategoryId] ? (
+        <View
+          pointerEvents="none"
+          style={{
+            position: "absolute",
+            top: 0, left: 0, right: 0, bottom: 0,
+            backgroundColor: categoryColors[selectedCategoryId],
+            opacity: 0.07,
+          }}
+        />
+      ) : null}
       <FeedbackOverlay feedback={status === "feedback" ? lastFeedback : null} />
 
       <View className="flex-row items-center justify-between">
         <View className="flex-row items-center gap-2">
           <Text className="font-sans-bold text-lg text-white/70">{category?.titulo}</Text>
+          {survivalMode ? (
+            <View className="rounded-full bg-[#FF7A45]/20 px-2.5 py-0.5">
+              <Text className="font-sans-bold text-xs text-[#FF7A45]">⚡ Supervivencia</Text>
+            </View>
+          ) : null}
           {gameMode === "teams" && currentPlayer ? (
             <View
               style={{ backgroundColor: currentPlayer.teamId === "blue" ? "#5B8DEF" : "#FF3B30" }}
@@ -163,12 +190,14 @@ export default function Gameplay() {
 
       <View className="flex-1 flex-row">
         <View className="flex-1 items-center justify-center" style={{ marginTop: -16 }}>
-          {/* Also true during the brief "ready" beat right after the
-              countdown's GO — the word is already known, so showing it
-              immediately (its own entrance animation still plays) avoids a
-              blank gap between the countdown and gameplay. */}
-          {(status === "playing" || status === "ready") && currentWord ? (
-            <WordCard word={currentWord.texto} />
+          {/* Show WordCard during "playing", "ready" AND "feedback" so the
+              exit animation (fly up / drop down) has time to play before
+              the next word is revealed. Word stays the same during feedback. */}
+          {(status === "playing" || status === "ready" || status === "feedback") && currentWord ? (
+            <WordCard
+              word={currentWord.texto}
+              feedback={status === "feedback" ? lastFeedback : null}
+            />
           ) : null}
 
           {status === "feedback" && lastFeedback === "correct" && timeBonusEnabled && timeBonusSeconds > 0 ? (
@@ -195,7 +224,7 @@ export default function Gameplay() {
         </View>
 
         <View className="justify-center pl-4">
-          <TimerBar timeRemaining={timeRemaining} totalSeconds={roundDurationSeconds} />
+          <TimerBar timeRemaining={timeRemaining} totalSeconds={effectiveDuration} />
         </View>
       </View>
 
