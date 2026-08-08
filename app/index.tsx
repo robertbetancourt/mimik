@@ -52,18 +52,19 @@ export default function CategorySelection() {
             <Text className="font-sans-bold text-4xl italic text-ink">{t("home.greeting")}</Text>
             <Text className="font-sans-bold text-4xl text-ink">{t("home.title")}</Text>
             <Text className="mt-1 font-sans text-base text-ink/60">{t("home.subtitle")}</Text>
-          </Animated.View>
-
-        <Animated.View style={[mimikStyle, { marginLeft: -16, alignItems: "flex-end" }]}>
+            
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Ajustes"
               onPress={() => setSettingsVisible(true)}
-              className="mb-2 h-9 w-9 items-center justify-center rounded-full bg-ink/8"
-              style={{ zIndex: 2 }}
+              className="mt-4 self-start flex-row items-center gap-1.5 rounded-full bg-ink/5 px-3.5 py-1.5 active:bg-ink/10"
             >
-              <Settings size={18} color="rgba(43,33,24,0.45)" />
+              <Settings size={14} color="rgba(43,33,24,0.6)" />
+              <Text className="font-sans-medium text-sm text-ink/60">{t("settings.title")}</Text>
             </Pressable>
+          </Animated.View>
+
+        <Animated.View style={[mimikStyle, { marginLeft: -16, alignItems: "flex-end" }]}>
           <Sparkle animated size={11} style={{ position: "absolute", right: 18, top: 8, zIndex: 1 }} />
           <MimikIdle source={require("../branding/mimik/celebration.png")} size={150} />
         </Animated.View>
