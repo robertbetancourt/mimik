@@ -56,7 +56,7 @@ export default function CategorySelection() {
 
         <Animated.View style={[mimikStyle, { marginLeft: -16, alignItems: "flex-end" }]}>
           <Sparkle animated size={11} style={{ position: "absolute", right: 18, top: 8, zIndex: 1 }} />
-          <MimikIdle source={require("../branding/mimik/celebration.png")} size={150} />
+          <MimikIdle source={require("../branding/mimik/popcorn.png")} size={150} />
         </Animated.View>
         </View>
 
