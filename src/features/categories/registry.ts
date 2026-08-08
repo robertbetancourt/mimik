@@ -38,7 +38,7 @@ const categoriesEs: Category[] = [
   superheroesEs,
   tvSeriesEs,
   worldEs,
-];
+] as unknown as Category[];
 
 const categoriesEn: Category[] = [
   animalesEn,
@@ -52,7 +52,7 @@ const categoriesEn: Category[] = [
   superheroesEn,
   tvSeriesEn,
   worldEn,
-];
+] as unknown as Category[];
 
 // Only Spanish and English content exists today — any other device language
 // falls back to Spanish rather than guessing at a partial translation.
