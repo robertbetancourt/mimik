@@ -1,7 +1,8 @@
 import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Alert, Image, Pressable, Text, TextInput, View } from "react-native";
+import { Image, Pressable, Text, TextInput, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
