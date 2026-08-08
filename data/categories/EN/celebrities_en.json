@@ -8,811 +8,1013 @@
   "palabras": [
     {
       "id": "lionel-messi",
-      "texto": "Lionel Messi"
+      "texto": "Lionel Messi",
+      "dificultad": "facil"
     },
     {
       "id": "cristiano-ronaldo",
-      "texto": "Cristiano Ronaldo"
+      "texto": "Cristiano Ronaldo",
+      "dificultad": "facil"
     },
     {
       "id": "neymar",
-      "texto": "Neymar"
+      "texto": "Neymar",
+      "dificultad": "facil"
     },
     {
       "id": "kylian-mbappe",
-      "texto": "Kylian Mbappé"
+      "texto": "Kylian Mbappé",
+      "dificultad": "facil"
     },
     {
       "id": "pele",
-      "texto": "Pelé"
+      "texto": "Pelé",
+      "dificultad": "facil"
     },
     {
       "id": "diego-maradona",
-      "texto": "Diego Maradona"
+      "texto": "Diego Maradona",
+      "dificultad": "facil"
     },
     {
       "id": "michael-jordan",
-      "texto": "Michael Jordan"
+      "texto": "Michael Jordan",
+      "dificultad": "facil"
     },
     {
       "id": "lebron-james",
-      "texto": "LeBron James"
+      "texto": "LeBron James",
+      "dificultad": "facil"
     },
     {
       "id": "stephen-curry",
-      "texto": "Stephen Curry"
+      "texto": "Stephen Curry",
+      "dificultad": "facil"
     },
     {
       "id": "kobe-bryant",
-      "texto": "Kobe Bryant"
+      "texto": "Kobe Bryant",
+      "dificultad": "facil"
     },
     {
       "id": "usain-bolt",
-      "texto": "Usain Bolt"
+      "texto": "Usain Bolt",
+      "dificultad": "facil"
     },
     {
       "id": "muhammad-ali",
-      "texto": "Muhammad Ali"
+      "texto": "Muhammad Ali",
+      "dificultad": "facil"
     },
     {
       "id": "mike-tyson",
-      "texto": "Mike Tyson"
+      "texto": "Mike Tyson",
+      "dificultad": "facil"
     },
     {
       "id": "rafael-nadal",
-      "texto": "Rafael Nadal"
+      "texto": "Rafael Nadal",
+      "dificultad": "facil"
     },
     {
       "id": "novak-djokovic",
-      "texto": "Novak Djokovic"
+      "texto": "Novak Djokovic",
+      "dificultad": "facil"
     },
     {
       "id": "roger-federer",
-      "texto": "Roger Federer"
+      "texto": "Roger Federer",
+      "dificultad": "facil"
     },
     {
       "id": "fernando-alonso",
-      "texto": "Fernando Alonso"
+      "texto": "Fernando Alonso",
+      "dificultad": "facil"
     },
     {
       "id": "lewis-hamilton",
-      "texto": "Lewis Hamilton"
+      "texto": "Lewis Hamilton",
+      "dificultad": "facil"
     },
     {
       "id": "max-verstappen",
-      "texto": "Max Verstappen"
+      "texto": "Max Verstappen",
+      "dificultad": "facil"
     },
     {
       "id": "michael-jackson",
-      "texto": "Michael Jackson"
+      "texto": "Michael Jackson",
+      "dificultad": "facil"
     },
     {
       "id": "elvis-presley",
-      "texto": "Elvis Presley"
+      "texto": "Elvis Presley",
+      "dificultad": "dificil"
     },
     {
       "id": "freddie-mercury",
-      "texto": "Freddie Mercury"
+      "texto": "Freddie Mercury",
+      "dificultad": "facil"
     },
     {
       "id": "madonna",
-      "texto": "Madonna"
+      "texto": "Madonna",
+      "dificultad": "facil"
     },
     {
       "id": "shakira",
-      "texto": "Shakira"
+      "texto": "Shakira",
+      "dificultad": "facil"
     },
     {
       "id": "bad-bunny",
-      "texto": "Bad Bunny"
+      "texto": "Bad Bunny",
+      "dificultad": "facil"
     },
     {
       "id": "karol-g",
-      "texto": "Karol G"
+      "texto": "Karol G",
+      "dificultad": "facil"
     },
     {
       "id": "luis-miguel",
-      "texto": "Luis Miguel"
+      "texto": "Luis Miguel",
+      "dificultad": "facil"
     },
     {
       "id": "ricardo-arjona",
-      "texto": "Ricardo Arjona"
+      "texto": "Ricardo Arjona",
+      "dificultad": "facil"
     },
     {
       "id": "juan-gabriel",
-      "texto": "Juan Gabriel"
+      "texto": "Juan Gabriel",
+      "dificultad": "facil"
     },
     {
       "id": "taylor-swift",
-      "texto": "Taylor Swift"
+      "texto": "Taylor Swift",
+      "dificultad": "facil"
     },
     {
       "id": "adele",
-      "texto": "Adele"
+      "texto": "Adele",
+      "dificultad": "facil"
     },
     {
       "id": "bruno-mars",
-      "texto": "Bruno Mars"
+      "texto": "Bruno Mars",
+      "dificultad": "facil"
     },
     {
       "id": "ed-sheeran",
-      "texto": "Ed Sheeran"
+      "texto": "Ed Sheeran",
+      "dificultad": "facil"
     },
     {
       "id": "dua-lipa",
-      "texto": "Dua Lipa"
+      "texto": "Dua Lipa",
+      "dificultad": "facil"
     },
     {
       "id": "billie-eilish",
-      "texto": "Billie Eilish"
+      "texto": "Billie Eilish",
+      "dificultad": "facil"
     },
     {
       "id": "rihanna",
-      "texto": "Rihanna"
+      "texto": "Rihanna",
+      "dificultad": "facil"
     },
     {
       "id": "beyonce",
-      "texto": "Beyoncé"
+      "texto": "Beyoncé",
+      "dificultad": "facil"
     },
     {
       "id": "justin-bieber",
-      "texto": "Justin Bieber"
+      "texto": "Justin Bieber",
+      "dificultad": "facil"
     },
     {
       "id": "selena-gomez",
-      "texto": "Selena Gomez"
+      "texto": "Selena Gomez",
+      "dificultad": "facil"
     },
     {
       "id": "robert-downey-jr",
-      "texto": "Robert Downey Jr."
+      "texto": "Robert Downey Jr.",
+      "dificultad": "facil"
     },
     {
       "id": "tom-cruise",
-      "texto": "Tom Cruise"
+      "texto": "Tom Cruise",
+      "dificultad": "facil"
     },
     {
       "id": "leonardo-dicaprio",
-      "texto": "Leonardo DiCaprio"
+      "texto": "Leonardo DiCaprio",
+      "dificultad": "facil"
     },
     {
       "id": "brad-pitt",
-      "texto": "Brad Pitt"
+      "texto": "Brad Pitt",
+      "dificultad": "facil"
     },
     {
       "id": "johnny-depp",
-      "texto": "Johnny Depp"
+      "texto": "Johnny Depp",
+      "dificultad": "facil"
     },
     {
       "id": "keanu-reeves",
-      "texto": "Keanu Reeves"
+      "texto": "Keanu Reeves",
+      "dificultad": "facil"
     },
     {
       "id": "will-smith",
-      "texto": "Will Smith"
+      "texto": "Will Smith",
+      "dificultad": "facil"
     },
     {
       "id": "dwayne-johnson",
-      "texto": "Dwayne Johnson"
+      "texto": "Dwayne Johnson",
+      "dificultad": "facil"
     },
     {
       "id": "arnold-schwarzenegger",
-      "texto": "Arnold Schwarzenegger"
+      "texto": "Arnold Schwarzenegger",
+      "dificultad": "facil"
     },
     {
       "id": "sylvester-stallone",
-      "texto": "Sylvester Stallone"
+      "texto": "Sylvester Stallone",
+      "dificultad": "facil"
     },
     {
       "id": "jackie-chan",
-      "texto": "Jackie Chan"
+      "texto": "Jackie Chan",
+      "dificultad": "facil"
     },
     {
       "id": "jim-carrey",
-      "texto": "Jim Carrey"
+      "texto": "Jim Carrey",
+      "dificultad": "facil"
     },
     {
       "id": "ryan-reynolds",
-      "texto": "Ryan Reynolds"
+      "texto": "Ryan Reynolds",
+      "dificultad": "facil"
     },
     {
       "id": "chris-hemsworth",
-      "texto": "Chris Hemsworth"
+      "texto": "Chris Hemsworth",
+      "dificultad": "facil"
     },
     {
       "id": "scarlett-johansson",
-      "texto": "Scarlett Johansson"
+      "texto": "Scarlett Johansson",
+      "dificultad": "facil"
     },
     {
       "id": "emma-watson",
-      "texto": "Emma Watson"
+      "texto": "Emma Watson",
+      "dificultad": "facil"
     },
     {
       "id": "jennifer-lawrence",
-      "texto": "Jennifer Lawrence"
+      "texto": "Jennifer Lawrence",
+      "dificultad": "facil"
     },
     {
       "id": "margot-robbie",
-      "texto": "Margot Robbie"
+      "texto": "Margot Robbie",
+      "dificultad": "facil"
     },
     {
       "id": "angelina-jolie",
-      "texto": "Angelina Jolie"
+      "texto": "Angelina Jolie",
+      "dificultad": "facil"
     },
     {
       "id": "gal-gadot",
-      "texto": "Gal Gadot"
+      "texto": "Gal Gadot",
+      "dificultad": "facil"
     },
     {
       "id": "jenna-ortega",
-      "texto": "Jenna Ortega"
+      "texto": "Jenna Ortega",
+      "dificultad": "facil"
     },
     {
       "id": "stan-lee",
-      "texto": "Stan Lee"
+      "texto": "Stan Lee",
+      "dificultad": "facil"
     },
     {
       "id": "walt-disney",
-      "texto": "Walt Disney"
+      "texto": "Walt Disney",
+      "dificultad": "facil"
     },
     {
       "id": "steven-spielberg",
-      "texto": "Steven Spielberg"
+      "texto": "Steven Spielberg",
+      "dificultad": "facil"
     },
     {
       "id": "james-cameron",
-      "texto": "James Cameron"
+      "texto": "James Cameron",
+      "dificultad": "facil"
     },
     {
       "id": "quentin-tarantino",
-      "texto": "Quentin Tarantino"
+      "texto": "Quentin Tarantino",
+      "dificultad": "facil"
     },
     {
       "id": "christopher-nolan",
-      "texto": "Christopher Nolan"
+      "texto": "Christopher Nolan",
+      "dificultad": "facil"
     },
     {
       "id": "albert-einstein",
-      "texto": "Albert Einstein"
+      "texto": "Albert Einstein",
+      "dificultad": "facil"
     },
     {
       "id": "isaac-newton",
-      "texto": "Isaac Newton"
+      "texto": "Isaac Newton",
+      "dificultad": "facil"
     },
     {
       "id": "nikola-tesla",
-      "texto": "Nikola Tesla"
+      "texto": "Nikola Tesla",
+      "dificultad": "facil"
     },
     {
       "id": "marie-curie",
-      "texto": "Marie Curie"
+      "texto": "Marie Curie",
+      "dificultad": "facil"
     },
     {
       "id": "charles-darwin",
-      "texto": "Charles Darwin"
+      "texto": "Charles Darwin",
+      "dificultad": "facil"
     },
     {
       "id": "stephen-hawking",
-      "texto": "Stephen Hawking"
+      "texto": "Stephen Hawking",
+      "dificultad": "normal"
     },
     {
       "id": "elon-musk",
-      "texto": "Elon Musk"
+      "texto": "Elon Musk",
+      "dificultad": "normal"
     },
     {
       "id": "bill-gates",
-      "texto": "Bill Gates"
+      "texto": "Bill Gates",
+      "dificultad": "normal"
     },
     {
       "id": "steve-jobs",
-      "texto": "Steve Jobs"
+      "texto": "Steve Jobs",
+      "dificultad": "normal"
     },
     {
       "id": "mark-zuckerberg",
-      "texto": "Mark Zuckerberg"
+      "texto": "Mark Zuckerberg",
+      "dificultad": "normal"
     },
     {
       "id": "jeff-bezos",
-      "texto": "Jeff Bezos"
+      "texto": "Jeff Bezos",
+      "dificultad": "normal"
     },
     {
       "id": "morgan-freeman",
-      "texto": "Morgan Freeman"
+      "texto": "Morgan Freeman",
+      "dificultad": "normal"
     },
     {
       "id": "mrbeast",
-      "texto": "MrBeast"
+      "texto": "MrBeast",
+      "dificultad": "normal"
     },
     {
       "id": "barack-obama",
-      "texto": "Barack Obama"
+      "texto": "Barack Obama",
+      "dificultad": "normal"
     },
     {
       "id": "donald-trump",
-      "texto": "Donald Trump"
+      "texto": "Donald Trump",
+      "dificultad": "normal"
     },
     {
       "id": "joe-biden",
-      "texto": "Joe Biden"
+      "texto": "Joe Biden",
+      "dificultad": "normal"
     },
     {
       "id": "nelson-mandela",
-      "texto": "Nelson Mandela"
+      "texto": "Nelson Mandela",
+      "dificultad": "normal"
     },
     {
       "id": "mahatma-gandhi",
-      "texto": "Mahatma Gandhi"
+      "texto": "Mahatma Gandhi",
+      "dificultad": "normal"
     },
     {
       "id": "martin-luther-king-jr",
-      "texto": "Martin Luther King Jr."
+      "texto": "Martin Luther King Jr.",
+      "dificultad": "normal"
     },
     {
       "id": "papa-francisco",
-      "texto": "Pope Francis"
+      "texto": "Pope Francis",
+      "dificultad": "normal"
     },
     {
       "id": "reina-isabel-ii",
-      "texto": "Queen Elizabeth II"
+      "texto": "Queen Elizabeth II",
+      "dificultad": "normal"
     },
     {
       "id": "princesa-diana",
-      "texto": "Princess Diana"
+      "texto": "Princess Diana",
+      "dificultad": "normal"
     },
     {
       "id": "cleopatra",
-      "texto": "Cleopatra"
+      "texto": "Cleopatra",
+      "dificultad": "normal"
     },
     {
       "id": "julio-cesar",
-      "texto": "Julius Caesar"
+      "texto": "Julius Caesar",
+      "dificultad": "normal"
     },
     {
       "id": "napoleon-bonaparte",
-      "texto": "Napoleon Bonaparte"
+      "texto": "Napoleon Bonaparte",
+      "dificultad": "facil"
     },
     {
       "id": "cristobal-colon",
-      "texto": "Christopher Columbus"
+      "texto": "Christopher Columbus",
+      "dificultad": "normal"
     },
     {
       "id": "leonardo-da-vinci",
-      "texto": "Leonardo da Vinci"
+      "texto": "Leonardo da Vinci",
+      "dificultad": "facil"
     },
     {
       "id": "miguel-angel",
-      "texto": "Michelangelo"
+      "texto": "Michelangelo",
+      "dificultad": "normal"
     },
     {
       "id": "pablo-picasso",
-      "texto": "Pablo Picasso"
+      "texto": "Pablo Picasso",
+      "dificultad": "normal"
     },
     {
       "id": "frida-kahlo",
-      "texto": "Frida Kahlo"
+      "texto": "Frida Kahlo",
+      "dificultad": "normal"
     },
     {
       "id": "vincent-van-gogh",
-      "texto": "Vincent van Gogh"
+      "texto": "Vincent van Gogh",
+      "dificultad": "normal"
     },
     {
       "id": "salvador-dali",
-      "texto": "Salvador Dalí"
+      "texto": "Salvador Dalí",
+      "dificultad": "normal"
     },
     {
       "id": "pablo-escobar",
-      "texto": "Pablo Escobar"
+      "texto": "Pablo Escobar",
+      "dificultad": "normal"
     },
     {
       "id": "che-guevara",
-      "texto": "Che Guevara"
+      "texto": "Che Guevara",
+      "dificultad": "normal"
     },
     {
       "id": "benedict-cumberbatch",
-      "texto": "Benedict Cumberbatch"
+      "texto": "Benedict Cumberbatch",
+      "dificultad": "normal"
     },
     {
       "id": "daniel-radcliffe",
-      "texto": "Daniel Radcliffe"
+      "texto": "Daniel Radcliffe",
+      "dificultad": "normal"
     },
     {
       "id": "rupert-grint",
-      "texto": "Rupert Grint"
+      "texto": "Rupert Grint",
+      "dificultad": "normal"
     },
     {
       "id": "tom-felton",
-      "texto": "Tom Felton"
+      "texto": "Tom Felton",
+      "dificultad": "normal"
     },
     {
       "id": "daniel-craig",
-      "texto": "Daniel Craig"
+      "texto": "Daniel Craig",
+      "dificultad": "normal"
     },
     {
       "id": "pierce-brosnan",
-      "texto": "Pierce Brosnan"
+      "texto": "Pierce Brosnan",
+      "dificultad": "normal"
     },
     {
       "id": "harrison-ford",
-      "texto": "Harrison Ford"
+      "texto": "Harrison Ford",
+      "dificultad": "normal"
     },
     {
       "id": "samuel-l-jackson",
-      "texto": "Samuel L. Jackson"
+      "texto": "Samuel L. Jackson",
+      "dificultad": "normal"
     },
     {
       "id": "al-pacino",
-      "texto": "Al Pacino"
+      "texto": "Al Pacino",
+      "dificultad": "normal"
     },
     {
       "id": "robert-de-niro",
-      "texto": "Robert De Niro"
+      "texto": "Robert De Niro",
+      "dificultad": "normal"
     },
     {
       "id": "marlon-brando",
-      "texto": "Marlon Brando"
+      "texto": "Marlon Brando",
+      "dificultad": "dificil"
     },
     {
       "id": "matt-damon",
-      "texto": "Matt Damon"
+      "texto": "Matt Damon",
+      "dificultad": "normal"
     },
     {
       "id": "ben-affleck",
-      "texto": "Ben Affleck"
+      "texto": "Ben Affleck",
+      "dificultad": "normal"
     },
     {
       "id": "george-clooney",
-      "texto": "George Clooney"
+      "texto": "George Clooney",
+      "dificultad": "normal"
     },
     {
       "id": "hugh-jackman",
-      "texto": "Hugh Jackman"
+      "texto": "Hugh Jackman",
+      "dificultad": "normal"
     },
     {
       "id": "chris-evans",
-      "texto": "Chris Evans"
+      "texto": "Chris Evans",
+      "dificultad": "normal"
     },
     {
       "id": "chris-pratt",
-      "texto": "Chris Pratt"
+      "texto": "Chris Pratt",
+      "dificultad": "normal"
     },
     {
       "id": "mark-ruffalo",
-      "texto": "Mark Ruffalo"
+      "texto": "Mark Ruffalo",
+      "dificultad": "normal"
     },
     {
       "id": "vin-diesel",
-      "texto": "Vin Diesel"
+      "texto": "Vin Diesel",
+      "dificultad": "normal"
     },
     {
       "id": "paul-walker",
-      "texto": "Paul Walker"
+      "texto": "Paul Walker",
+      "dificultad": "normal"
     },
     {
       "id": "jason-statham",
-      "texto": "Jason Statham"
+      "texto": "Jason Statham",
+      "dificultad": "normal"
     },
     {
       "id": "bruce-willis",
-      "texto": "Bruce Willis"
+      "texto": "Bruce Willis",
+      "dificultad": "normal"
     },
     {
       "id": "clint-eastwood",
-      "texto": "Clint Eastwood"
+      "texto": "Clint Eastwood",
+      "dificultad": "normal"
     },
     {
       "id": "owen-wilson",
-      "texto": "Owen Wilson"
+      "texto": "Owen Wilson",
+      "dificultad": "normal"
     },
     {
       "id": "adam-sandler",
-      "texto": "Adam Sandler"
+      "texto": "Adam Sandler",
+      "dificultad": "normal"
     },
     {
       "id": "steve-carell",
-      "texto": "Steve Carell"
+      "texto": "Steve Carell",
+      "dificultad": "normal"
     },
     {
       "id": "rowan-atkinson",
-      "texto": "Rowan Atkinson"
+      "texto": "Rowan Atkinson",
+      "dificultad": "normal"
     },
     {
       "id": "charlie-chaplin",
-      "texto": "Charlie Chaplin"
+      "texto": "Charlie Chaplin",
+      "dificultad": "dificil"
     },
     {
       "id": "marilyn-monroe",
-      "texto": "Marilyn Monroe"
+      "texto": "Marilyn Monroe",
+      "dificultad": "dificil"
     },
     {
       "id": "meryl-streep",
-      "texto": "Meryl Streep"
+      "texto": "Meryl Streep",
+      "dificultad": "normal"
     },
     {
       "id": "julia-roberts",
-      "texto": "Julia Roberts"
+      "texto": "Julia Roberts",
+      "dificultad": "normal"
     },
     {
       "id": "sandra-bullock",
-      "texto": "Sandra Bullock"
+      "texto": "Sandra Bullock",
+      "dificultad": "normal"
     },
     {
       "id": "natalie-portman",
-      "texto": "Natalie Portman"
+      "texto": "Natalie Portman",
+      "dificultad": "normal"
     },
     {
       "id": "anne-hathaway",
-      "texto": "Anne Hathaway"
+      "texto": "Anne Hathaway",
+      "dificultad": "normal"
     },
     {
       "id": "zendaya",
-      "texto": "Zendaya"
+      "texto": "Zendaya",
+      "dificultad": "normal"
     },
     {
       "id": "lady-gaga",
-      "texto": "Lady Gaga"
+      "texto": "Lady Gaga",
+      "dificultad": "normal"
     },
     {
       "id": "katy-perry",
-      "texto": "Katy Perry"
+      "texto": "Katy Perry",
+      "dificultad": "normal"
     },
     {
       "id": "britney-spears",
-      "texto": "Britney Spears"
+      "texto": "Britney Spears",
+      "dificultad": "normal"
     },
     {
       "id": "miley-cyrus",
-      "texto": "Miley Cyrus"
+      "texto": "Miley Cyrus",
+      "dificultad": "normal"
     },
     {
       "id": "ariana-grande",
-      "texto": "Ariana Grande"
+      "texto": "Ariana Grande",
+      "dificultad": "normal"
     },
     {
       "id": "jennifer-lopez",
-      "texto": "Jennifer Lopez"
+      "texto": "Jennifer Lopez",
+      "dificultad": "normal"
     },
     {
       "id": "celine-dion",
-      "texto": "Céline Dion"
+      "texto": "Céline Dion",
+      "dificultad": "normal"
     },
     {
       "id": "whitney-houston",
-      "texto": "Whitney Houston"
+      "texto": "Whitney Houston",
+      "dificultad": "normal"
     },
     {
       "id": "bob-marley",
-      "texto": "Bob Marley"
+      "texto": "Bob Marley",
+      "dificultad": "normal"
     },
     {
       "id": "tupac-shakur",
-      "texto": "Tupac Shakur"
+      "texto": "Tupac Shakur",
+      "dificultad": "normal"
     },
     {
       "id": "eminem",
-      "texto": "Eminem"
+      "texto": "Eminem",
+      "dificultad": "normal"
     },
     {
       "id": "snoop-dogg",
-      "texto": "Snoop Dogg"
+      "texto": "Snoop Dogg",
+      "dificultad": "facil"
     },
     {
       "id": "dr-dre",
-      "texto": "Dr. Dre"
+      "texto": "Dr. Dre",
+      "dificultad": "normal"
     },
     {
       "id": "kanye-west",
-      "texto": "Kanye West"
+      "texto": "Kanye West",
+      "dificultad": "normal"
     },
     {
       "id": "post-malone",
-      "texto": "Post Malone"
+      "texto": "Post Malone",
+      "dificultad": "normal"
     },
     {
       "id": "the-weeknd",
-      "texto": "The Weeknd"
+      "texto": "The Weeknd",
+      "dificultad": "normal"
     },
     {
       "id": "harry-styles",
-      "texto": "Harry Styles"
+      "texto": "Harry Styles",
+      "dificultad": "normal"
     },
     {
       "id": "one-direction",
-      "texto": "One Direction"
+      "texto": "One Direction",
+      "dificultad": "dificil"
     },
     {
       "id": "bts",
-      "texto": "BTS"
+      "texto": "BTS",
+      "dificultad": "dificil"
     },
     {
       "id": "lady-di",
-      "texto": "Lady Di"
+      "texto": "Lady Di",
+      "dificultad": "dificil"
     },
     {
       "id": "king-charles-iii",
-      "texto": "King Charles III"
+      "texto": "King Charles III",
+      "dificultad": "dificil"
     },
     {
       "id": "vladimir-putin",
-      "texto": "Vladimir Putin"
+      "texto": "Vladimir Putin",
+      "dificultad": "dificil"
     },
     {
       "id": "volodymyr-zelenskyy",
-      "texto": "Volodymyr Zelenskyy"
+      "texto": "Volodymyr Zelenskyy",
+      "dificultad": "dificil"
     },
     {
       "id": "xi-jinping",
-      "texto": "Xi Jinping"
+      "texto": "Xi Jinping",
+      "dificultad": "dificil"
     },
     {
       "id": "kim-jong-un",
-      "texto": "Kim Jong-un"
+      "texto": "Kim Jong-un",
+      "dificultad": "dificil"
     },
     {
       "id": "dalai-lama",
-      "texto": "Dalai Lama"
+      "texto": "Dalai Lama",
+      "dificultad": "dificil"
     },
     {
       "id": "mother-teresa",
-      "texto": "Mother Teresa"
+      "texto": "Mother Teresa",
+      "dificultad": "dificil"
     },
     {
       "id": "william-shakespeare",
-      "texto": "William Shakespeare"
+      "texto": "William Shakespeare",
+      "dificultad": "dificil"
     },
     {
       "id": "j-k-rowling",
-      "texto": "J. K. Rowling"
+      "texto": "J. K. Rowling",
+      "dificultad": "dificil"
     },
     {
       "id": "agatha-christie",
-      "texto": "Agatha Christie"
+      "texto": "Agatha Christie",
+      "dificultad": "dificil"
     },
     {
       "id": "sigmund-freud",
-      "texto": "Sigmund Freud"
+      "texto": "Sigmund Freud",
+      "dificultad": "dificil"
     },
     {
       "id": "galileo-galilei",
-      "texto": "Galileo Galilei"
+      "texto": "Galileo Galilei",
+      "dificultad": "dificil"
     },
     {
       "id": "thomas-edison",
-      "texto": "Thomas Edison"
+      "texto": "Thomas Edison",
+      "dificultad": "dificil"
     },
     {
       "id": "alexander-graham-bell",
-      "texto": "Alexander Graham Bell"
+      "texto": "Alexander Graham Bell",
+      "dificultad": "dificil"
     },
     {
       "id": "neil-armstrong",
-      "texto": "Neil Armstrong"
+      "texto": "Neil Armstrong",
+      "dificultad": "dificil"
     },
     {
       "id": "yuri-gagarin",
-      "texto": "Yuri Gagarin"
+      "texto": "Yuri Gagarin",
+      "dificultad": "dificil"
     },
     {
       "id": "amelia-earhart",
-      "texto": "Amelia Earhart"
+      "texto": "Amelia Earhart",
+      "dificultad": "dificil"
     },
     {
       "id": "winston-churchill",
-      "texto": "Winston Churchill"
+      "texto": "Winston Churchill",
+      "dificultad": "dificil"
     },
     {
       "id": "abraham-lincoln",
-      "texto": "Abraham Lincoln"
+      "texto": "Abraham Lincoln",
+      "dificultad": "dificil"
     },
     {
       "id": "john-f-kennedy",
-      "texto": "John F. Kennedy"
+      "texto": "John F. Kennedy",
+      "dificultad": "dificil"
     },
     {
       "id": "queen-victoria",
-      "texto": "Queen Victoria"
+      "texto": "Queen Victoria",
+      "dificultad": "dificil"
     },
     {
       "id": "henry-viii",
-      "texto": "Henry VIII"
+      "texto": "Henry VIII",
+      "dificultad": "dificil"
     },
     {
       "id": "mozart",
-      "texto": "Wolfgang Amadeus Mozart"
+      "texto": "Wolfgang Amadeus Mozart",
+      "dificultad": "dificil"
     },
     {
       "id": "ludwig-van-beethoven",
-      "texto": "Ludwig van Beethoven"
+      "texto": "Ludwig van Beethoven",
+      "dificultad": "dificil"
     },
     {
       "id": "johann-sebastian-bach",
-      "texto": "Johann Sebastian Bach"
+      "texto": "Johann Sebastian Bach",
+      "dificultad": "dificil"
     },
     {
       "id": "andy-warhol",
-      "texto": "Andy Warhol"
+      "texto": "Andy Warhol",
+      "dificultad": "dificil"
     },
     {
       "id": "claude-monet",
-      "texto": "Claude Monet"
+      "texto": "Claude Monet",
+      "dificultad": "dificil"
     },
     {
       "id": "rembrandt",
-      "texto": "Rembrandt"
+      "texto": "Rembrandt",
+      "dificultad": "dificil"
     },
     {
       "id": "diego-velazquez",
-      "texto": "Diego Velázquez"
+      "texto": "Diego Velázquez",
+      "dificultad": "dificil"
     },
     {
       "id": "andres-iniesta",
-      "texto": "Andrés Iniesta"
+      "texto": "Andrés Iniesta",
+      "dificultad": "dificil"
     },
     {
       "id": "zinedine-zidane",
-      "texto": "Zinedine Zidane"
+      "texto": "Zinedine Zidane",
+      "dificultad": "dificil"
     },
     {
       "id": "ronaldinho",
-      "texto": "Ronaldinho"
+      "texto": "Ronaldinho",
+      "dificultad": "dificil"
     },
     {
       "id": "ronaldo-nazario",
-      "texto": "Ronaldo Nazário"
+      "texto": "Ronaldo Nazário",
+      "dificultad": "dificil"
     },
     {
       "id": "david-beckham",
-      "texto": "David Beckham"
+      "texto": "David Beckham",
+      "dificultad": "dificil"
     },
     {
       "id": "zlatan-ibrahimovic",
-      "texto": "Zlatan Ibrahimović"
+      "texto": "Zlatan Ibrahimović",
+      "dificultad": "dificil"
     },
     {
       "id": "serena-williams",
-      "texto": "Serena Williams"
+      "texto": "Serena Williams",
+      "dificultad": "dificil"
     },
     {
       "id": "venus-williams",
-      "texto": "Venus Williams"
+      "texto": "Venus Williams",
+      "dificultad": "dificil"
     },
     {
       "id": "simone-biles",
-      "texto": "Simone Biles"
+      "texto": "Simone Biles",
+      "dificultad": "dificil"
     },
     {
       "id": "michael-phelps",
-      "texto": "Michael Phelps"
+      "texto": "Michael Phelps",
+      "dificultad": "dificil"
     },
     {
       "id": "shaquille-oneal",
-      "texto": "Shaquille O'Neal"
+      "texto": "Shaquille O'Neal",
+      "dificultad": "dificil"
     },
     {
       "id": "magic-johnson",
-      "texto": "Magic Johnson"
+      "texto": "Magic Johnson",
+      "dificultad": "dificil"
     },
     {
       "id": "conor-mcgregor",
-      "texto": "Conor McGregor"
+      "texto": "Conor McGregor",
+      "dificultad": "dificil"
     },
     {
       "id": "john-cena",
-      "texto": "John Cena"
+      "texto": "John Cena",
+      "dificultad": "dificil"
     },
     {
       "id": "the-undertaker",
-      "texto": "The Undertaker"
+      "texto": "The Undertaker",
+      "dificultad": "dificil"
     },
     {
       "id": "hulk-hogan",
-      "texto": "Hulk Hogan"
+      "texto": "Hulk Hogan",
+      "dificultad": "dificil"
     },
     {
       "id": "gordon-ramsay",
-      "texto": "Gordon Ramsay"
+      "texto": "Gordon Ramsay",
+      "dificultad": "dificil"
     },
     {
       "id": "bear-grylls",
-      "texto": "Bear Grylls"
+      "texto": "Bear Grylls",
+      "dificultad": "facil"
     }
   ]
 }

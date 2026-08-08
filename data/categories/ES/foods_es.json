@@ -8,427 +8,533 @@
   "palabras": [
     {
       "id": "pizza",
-      "texto": "Pizza"
+      "texto": "Pizza",
+      "dificultad": "facil"
     },
     {
       "id": "hamburguesa",
-      "texto": "Hamburguesa"
+      "texto": "Hamburguesa",
+      "dificultad": "facil"
     },
     {
       "id": "hot-dog",
-      "texto": "Hot Dog"
+      "texto": "Hot Dog",
+      "dificultad": "facil"
     },
     {
       "id": "papas-fritas",
-      "texto": "Papas Fritas"
+      "texto": "Papas Fritas",
+      "dificultad": "facil"
     },
     {
       "id": "pollo-frito",
-      "texto": "Pollo Frito"
+      "texto": "Pollo Frito",
+      "dificultad": "facil"
     },
     {
       "id": "sushi",
-      "texto": "Sushi"
+      "texto": "Sushi",
+      "dificultad": "facil"
     },
     {
       "id": "ramen",
-      "texto": "Ramen"
+      "texto": "Ramen",
+      "dificultad": "facil"
     },
     {
       "id": "tacos",
-      "texto": "Tacos"
+      "texto": "Tacos",
+      "dificultad": "facil"
     },
     {
       "id": "burrito",
-      "texto": "Burrito"
+      "texto": "Burrito",
+      "dificultad": "facil"
     },
     {
       "id": "quesadilla",
-      "texto": "Quesadilla"
+      "texto": "Quesadilla",
+      "dificultad": "facil"
     },
     {
       "id": "nachos",
-      "texto": "Nachos"
+      "texto": "Nachos",
+      "dificultad": "facil"
     },
     {
       "id": "guacamole",
-      "texto": "Guacamole"
+      "texto": "Guacamole",
+      "dificultad": "facil"
     },
     {
       "id": "paella",
-      "texto": "Paella"
+      "texto": "Paella",
+      "dificultad": "facil"
     },
     {
       "id": "lasana",
-      "texto": "Lasaña"
+      "texto": "Lasaña",
+      "dificultad": "facil"
     },
     {
       "id": "espaguetis",
-      "texto": "Espaguetis"
+      "texto": "Espaguetis",
+      "dificultad": "facil"
     },
     {
       "id": "ravioles",
-      "texto": "Ravioles"
+      "texto": "Ravioles",
+      "dificultad": "facil"
     },
     {
       "id": "macarrones-con-queso",
-      "texto": "Macarrones con Queso"
+      "texto": "Macarrones con Queso",
+      "dificultad": "facil"
     },
     {
       "id": "albondigas",
-      "texto": "Albóndigas"
+      "texto": "Albóndigas",
+      "dificultad": "facil"
     },
     {
       "id": "salchichas",
-      "texto": "Salchichas"
+      "texto": "Salchichas",
+      "dificultad": "facil"
     },
     {
       "id": "pure-de-papas",
-      "texto": "Puré de Papas"
+      "texto": "Puré de Papas",
+      "dificultad": "facil"
     },
     {
       "id": "nuggets-de-pollo",
-      "texto": "Nuggets de Pollo"
+      "texto": "Nuggets de Pollo",
+      "dificultad": "facil"
     },
     {
       "id": "pescado-frito",
-      "texto": "Pescado Frito"
+      "texto": "Pescado Frito",
+      "dificultad": "facil"
     },
     {
       "id": "atun",
-      "texto": "Atún"
+      "texto": "Atún",
+      "dificultad": "facil"
     },
     {
       "id": "salmon",
-      "texto": "Salmón"
+      "texto": "Salmón",
+      "dificultad": "facil"
     },
     {
       "id": "langosta",
-      "texto": "Langosta"
+      "texto": "Langosta",
+      "dificultad": "facil"
     },
     {
       "id": "camarones",
-      "texto": "Camarones"
+      "texto": "Camarones",
+      "dificultad": "facil"
     },
     {
       "id": "hot-cakes",
-      "texto": "Hot Cakes"
+      "texto": "Hot Cakes",
+      "dificultad": "facil"
     },
     {
       "id": "muffin",
-      "texto": "Muffin"
+      "texto": "Muffin",
+      "dificultad": "facil"
     },
     {
       "id": "muffin-de-arandanos",
-      "texto": "Muffin de Arándanos"
+      "texto": "Muffin de Arándanos",
+      "dificultad": "facil"
     },
     {
       "id": "pie-de-manzana",
-      "texto": "Pie de Manzana"
+      "texto": "Pie de Manzana",
+      "dificultad": "facil"
     },
     {
       "id": "gelatina",
-      "texto": "Gelatina"
+      "texto": "Gelatina",
+      "dificultad": "facil"
     },
     {
       "id": "yogur",
-      "texto": "Yogur"
+      "texto": "Yogur",
+      "dificultad": "facil"
     },
     {
       "id": "miel",
-      "texto": "Miel"
+      "texto": "Miel",
+      "dificultad": "facil"
     },
     {
       "id": "mermelada",
-      "texto": "Mermelada"
+      "texto": "Mermelada",
+      "dificultad": "facil"
     },
     {
       "id": "ketchup",
-      "texto": "Kétchup"
+      "texto": "Kétchup",
+      "dificultad": "facil"
     },
     {
       "id": "mostaza",
-      "texto": "Mostaza"
+      "texto": "Mostaza",
+      "dificultad": "facil"
     },
     {
       "id": "mayonesa",
-      "texto": "Mayonesa"
+      "texto": "Mayonesa",
+      "dificultad": "facil"
     },
     {
       "id": "paleta",
-      "texto": "Paleta Helada"
+      "texto": "Paleta Helada",
+      "dificultad": "facil"
     },
     {
       "id": "empanadas",
-      "texto": "Empanadas"
+      "texto": "Empanadas",
+      "dificultad": "facil"
     },
     {
       "id": "arepa",
-      "texto": "Arepa"
+      "texto": "Arepa",
+      "dificultad": "normal"
     },
     {
       "id": "tequenos",
-      "texto": "Tequeños"
+      "texto": "Tequeños",
+      "dificultad": "normal"
     },
     {
       "id": "ceviche",
-      "texto": "Ceviche"
+      "texto": "Ceviche",
+      "dificultad": "normal"
     },
     {
       "id": "asado",
-      "texto": "Asado"
+      "texto": "Asado",
+      "dificultad": "normal"
     },
     {
       "id": "costillas",
-      "texto": "Costillas BBQ"
+      "texto": "Costillas BBQ",
+      "dificultad": "normal"
     },
     {
       "id": "pollo-asado",
-      "texto": "Pollo Asado"
+      "texto": "Pollo Asado",
+      "dificultad": "normal"
     },
     {
       "id": "arroz-frito",
-      "texto": "Arroz Frito"
+      "texto": "Arroz Frito",
+      "dificultad": "normal"
     },
     {
       "id": "arroz-con-pollo",
-      "texto": "Arroz con Pollo"
+      "texto": "Arroz con Pollo",
+      "dificultad": "normal"
     },
     {
       "id": "paella-mixta",
-      "texto": "Paella Mixta"
+      "texto": "Paella Mixta",
+      "dificultad": "normal"
     },
     {
       "id": "ensalada-cesar",
-      "texto": "Ensalada César"
+      "texto": "Ensalada César",
+      "dificultad": "normal"
     },
     {
       "id": "ensalada",
-      "texto": "Ensalada"
+      "texto": "Ensalada",
+      "dificultad": "normal"
     },
     {
       "id": "sopa",
-      "texto": "Sopa"
+      "texto": "Sopa",
+      "dificultad": "normal"
     },
     {
       "id": "sandwich",
-      "texto": "Sándwich"
+      "texto": "Sándwich",
+      "dificultad": "normal"
     },
     {
       "id": "panqueques",
-      "texto": "Panqueques"
+      "texto": "Panqueques",
+      "dificultad": "facil"
     },
     {
       "id": "waffles",
-      "texto": "Waffles"
+      "texto": "Waffles",
+      "dificultad": "normal"
     },
     {
       "id": "tostadas-francesas",
-      "texto": "Tostadas Francesas"
+      "texto": "Tostadas Francesas",
+      "dificultad": "normal"
     },
     {
       "id": "huevos-revueltos",
-      "texto": "Huevos Revueltos"
+      "texto": "Huevos Revueltos",
+      "dificultad": "normal"
     },
     {
       "id": "omelet",
-      "texto": "Omelet"
+      "texto": "Omelet",
+      "dificultad": "normal"
     },
     {
       "id": "tocino",
-      "texto": "Tocino"
+      "texto": "Tocino",
+      "dificultad": "normal"
     },
     {
       "id": "croissant",
-      "texto": "Croissant"
+      "texto": "Croissant",
+      "dificultad": "normal"
     },
     {
       "id": "pan",
-      "texto": "Pan"
+      "texto": "Pan",
+      "dificultad": "facil"
     },
     {
       "id": "donas",
-      "texto": "Donas"
+      "texto": "Donas",
+      "dificultad": "normal"
     },
     {
       "id": "pastel",
-      "texto": "Pastel"
+      "texto": "Pastel",
+      "dificultad": "normal"
     },
     {
       "id": "cupcake",
-      "texto": "Cupcake"
+      "texto": "Cupcake",
+      "dificultad": "normal"
     },
     {
       "id": "brownie",
-      "texto": "Brownie"
+      "texto": "Brownie",
+      "dificultad": "normal"
     },
     {
       "id": "galletas",
-      "texto": "Galletas"
+      "texto": "Galletas",
+      "dificultad": "normal"
     },
     {
       "id": "helado",
-      "texto": "Helado"
+      "texto": "Helado",
+      "dificultad": "normal"
     },
     {
       "id": "chocolate",
-      "texto": "Chocolate"
+      "texto": "Chocolate",
+      "dificultad": "normal"
     },
     {
       "id": "caramelo",
-      "texto": "Caramelo"
+      "texto": "Caramelo",
+      "dificultad": "normal"
     },
     {
       "id": "algodon-de-azucar",
-      "texto": "Algodón de Azúcar"
+      "texto": "Algodón de Azúcar",
+      "dificultad": "normal"
     },
     {
       "id": "palomitas-de-maiz",
-      "texto": "Palomitas de Maíz"
+      "texto": "Palomitas de Maíz",
+      "dificultad": "normal"
     },
     {
       "id": "pretzel",
-      "texto": "Pretzel"
+      "texto": "Pretzel",
+      "dificultad": "normal"
     },
     {
       "id": "papas-chips",
-      "texto": "Papas Chips"
+      "texto": "Papas Chips",
+      "dificultad": "normal"
     },
     {
       "id": "mani",
-      "texto": "Maní"
+      "texto": "Maní",
+      "dificultad": "normal"
     },
     {
       "id": "calzone",
-      "texto": "Calzone"
+      "texto": "Calzone",
+      "dificultad": "normal"
     },
     {
       "id": "risotto",
-      "texto": "Risotto"
+      "texto": "Risotto",
+      "dificultad": "normal"
     },
     {
       "id": "fondue",
-      "texto": "Fondue"
+      "texto": "Fondue",
+      "dificultad": "normal"
     },
     {
       "id": "croquetas",
-      "texto": "Croquetas"
+      "texto": "Croquetas",
+      "dificultad": "normal"
     },
     {
       "id": "falafel",
-      "texto": "Falafel"
+      "texto": "Falafel",
+      "dificultad": "normal"
     },
     {
       "id": "shawarma",
-      "texto": "Shawarma"
+      "texto": "Shawarma",
+      "dificultad": "normal"
     },
     {
       "id": "kebab",
-      "texto": "Kebab"
+      "texto": "Kebab",
+      "dificultad": "normal"
     },
     {
       "id": "curry",
-      "texto": "Curry"
+      "texto": "Curry",
+      "dificultad": "dificil"
     },
     {
       "id": "pollo-al-curry",
-      "texto": "Pollo al Curry"
+      "texto": "Pollo al Curry",
+      "dificultad": "dificil"
     },
     {
       "id": "dumplings",
-      "texto": "Dumplings"
+      "texto": "Dumplings",
+      "dificultad": "dificil"
     },
     {
       "id": "rollitos-primavera",
-      "texto": "Rollitos Primavera"
+      "texto": "Rollitos Primavera",
+      "dificultad": "dificil"
     },
     {
       "id": "pollo-agridulce",
-      "texto": "Pollo Agridulce"
+      "texto": "Pollo Agridulce",
+      "dificultad": "dificil"
     },
     {
       "id": "dim-sum",
-      "texto": "Dim Sum"
+      "texto": "Dim Sum",
+      "dificultad": "dificil"
     },
     {
       "id": "cafe",
-      "texto": "Café"
+      "texto": "Café",
+      "dificultad": "dificil"
     },
     {
       "id": "capuchino",
-      "texto": "Capuchino"
+      "texto": "Capuchino",
+      "dificultad": "dificil"
     },
     {
       "id": "espresso",
-      "texto": "Espresso"
+      "texto": "Espresso",
+      "dificultad": "dificil"
     },
     {
       "id": "te",
-      "texto": "Té"
+      "texto": "Té",
+      "dificultad": "dificil"
     },
     {
       "id": "chocolate-caliente",
-      "texto": "Chocolate Caliente"
+      "texto": "Chocolate Caliente",
+      "dificultad": "dificil"
     },
     {
       "id": "limonada",
-      "texto": "Limonada"
+      "texto": "Limonada",
+      "dificultad": "dificil"
     },
     {
       "id": "jugo-de-naranja",
-      "texto": "Jugo de Naranja"
+      "texto": "Jugo de Naranja",
+      "dificultad": "dificil"
     },
     {
       "id": "malteada",
-      "texto": "Malteada"
+      "texto": "Malteada",
+      "dificultad": "dificil"
     },
     {
       "id": "batido",
-      "texto": "Batido"
+      "texto": "Batido",
+      "dificultad": "dificil"
     },
     {
       "id": "refresco",
-      "texto": "Refresco"
+      "texto": "Refresco",
+      "dificultad": "dificil"
     },
     {
       "id": "agua",
-      "texto": "Agua"
+      "texto": "Agua",
+      "dificultad": "facil"
     },
     {
       "id": "coco",
-      "texto": "Agua de Coco"
+      "texto": "Agua de Coco",
+      "dificultad": "facil"
     },
     {
       "id": "vino",
-      "texto": "Vino"
+      "texto": "Vino",
+      "dificultad": "dificil"
     },
     {
       "id": "cerveza",
-      "texto": "Cerveza"
+      "texto": "Cerveza",
+      "dificultad": "dificil"
     },
     {
       "id": "champana",
-      "texto": "Champaña"
+      "texto": "Champaña",
+      "dificultad": "dificil"
     },
     {
       "id": "tiramisu",
-      "texto": "Tiramisú"
+      "texto": "Tiramisú",
+      "dificultad": "dificil"
     },
     {
       "id": "cheesecake",
-      "texto": "Cheesecake"
+      "texto": "Cheesecake",
+      "dificultad": "facil"
     },
     {
       "id": "flan",
-      "texto": "Flan"
+      "texto": "Flan",
+      "dificultad": "dificil"
     },
     {
       "id": "arroz-con-leche",
-      "texto": "Arroz con Leche"
+      "texto": "Arroz con Leche",
+      "dificultad": "facil"
     },
     {
       "id": "churros",
-      "texto": "Churros"
+      "texto": "Churros",
+      "dificultad": "dificil"
     }
   ]
 }

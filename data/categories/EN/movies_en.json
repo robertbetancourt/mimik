@@ -8,1023 +8,1278 @@
   "palabras": [
     {
       "id": "avatar",
-      "texto": "Avatar"
+      "texto": "Avatar",
+      "dificultad": "facil"
     },
     {
       "id": "avengers-endgame",
-      "texto": "Avengers: Endgame"
+      "texto": "Avengers: Endgame",
+      "dificultad": "facil"
     },
     {
       "id": "titanic",
-      "texto": "Titanic"
+      "texto": "Titanic",
+      "dificultad": "facil"
     },
     {
       "id": "el-rey-leon",
-      "texto": "The Lion King"
+      "texto": "The Lion King",
+      "dificultad": "facil"
     },
     {
       "id": "toy-story",
-      "texto": "Toy Story"
+      "texto": "Toy Story",
+      "dificultad": "facil"
     },
     {
       "id": "buscando-a-nemo",
-      "texto": "Finding Nemo"
+      "texto": "Finding Nemo",
+      "dificultad": "facil"
     },
     {
       "id": "intensamente",
-      "texto": "Inside Out"
+      "texto": "Inside Out",
+      "dificultad": "facil"
     },
     {
       "id": "frozen",
-      "texto": "Frozen"
+      "texto": "Frozen",
+      "dificultad": "facil"
     },
     {
       "id": "encanto",
-      "texto": "Encanto"
+      "texto": "Encanto",
+      "dificultad": "facil"
     },
     {
       "id": "coco",
-      "texto": "Coco"
+      "texto": "Coco",
+      "dificultad": "facil"
     },
     {
       "id": "up",
-      "texto": "Up"
+      "texto": "Up",
+      "dificultad": "facil"
     },
     {
       "id": "wall-e",
-      "texto": "WALL·E"
+      "texto": "WALL·E",
+      "dificultad": "facil"
     },
     {
       "id": "cars",
-      "texto": "Cars"
+      "texto": "Cars",
+      "dificultad": "facil"
     },
     {
       "id": "monsters-inc",
-      "texto": "Monsters, Inc."
+      "texto": "Monsters, Inc.",
+      "dificultad": "facil"
     },
     {
       "id": "los-increibles",
-      "texto": "The Incredibles"
+      "texto": "The Incredibles",
+      "dificultad": "facil"
     },
     {
       "id": "ratatouille",
-      "texto": "Ratatouille"
+      "texto": "Ratatouille",
+      "dificultad": "facil"
     },
     {
       "id": "valiente",
-      "texto": "Brave"
+      "texto": "Brave",
+      "dificultad": "facil"
     },
     {
       "id": "moana",
-      "texto": "Moana"
+      "texto": "Moana",
+      "dificultad": "facil"
     },
     {
       "id": "zootopia",
-      "texto": "Zootopia"
+      "texto": "Zootopia",
+      "dificultad": "facil"
     },
     {
       "id": "shrek",
-      "texto": "Shrek"
+      "texto": "Shrek",
+      "dificultad": "facil"
     },
     {
       "id": "kung-fu-panda",
-      "texto": "Kung Fu Panda"
+      "texto": "Kung Fu Panda",
+      "dificultad": "facil"
     },
     {
       "id": "madagascar",
-      "texto": "Madagascar"
+      "texto": "Madagascar",
+      "dificultad": "facil"
     },
     {
       "id": "como-entrenar-a-tu-dragon",
-      "texto": "How to Train Your Dragon"
+      "texto": "How to Train Your Dragon",
+      "dificultad": "facil"
     },
     {
       "id": "mi-villano-favorito",
-      "texto": "Despicable Me"
+      "texto": "Despicable Me",
+      "dificultad": "facil"
     },
     {
       "id": "minions",
-      "texto": "Minions"
+      "texto": "Minions",
+      "dificultad": "facil"
     },
     {
       "id": "la-era-de-hielo",
-      "texto": "Ice Age"
+      "texto": "Ice Age",
+      "dificultad": "facil"
     },
     {
       "id": "rio",
-      "texto": "Rio"
+      "texto": "Rio",
+      "dificultad": "facil"
     },
     {
       "id": "sing",
-      "texto": "Sing"
+      "texto": "Sing",
+      "dificultad": "facil"
     },
     {
       "id": "la-vida-secreta-de-tus-mascotas",
-      "texto": "The Secret Life of Pets"
+      "texto": "The Secret Life of Pets",
+      "dificultad": "facil"
     },
     {
       "id": "harry-potter-y-la-piedra-filosofal",
-      "texto": "Harry Potter and the Sorcerer's Stone"
+      "texto": "Harry Potter and the Sorcerer's Stone",
+      "dificultad": "facil"
     },
     {
       "id": "harry-potter-y-la-camara-secreta",
-      "texto": "Harry Potter and the Chamber of Secrets"
+      "texto": "Harry Potter and the Chamber of Secrets",
+      "dificultad": "facil"
     },
     {
       "id": "harry-potter-y-el-prisionero-de-azkaban",
-      "texto": "Harry Potter and the Prisoner of Azkaban"
+      "texto": "Harry Potter and the Prisoner of Azkaban",
+      "dificultad": "facil"
     },
     {
       "id": "el-senor-de-los-anillos-la-comunidad-del-anillo",
-      "texto": "The Lord of the Rings: The Fellowship of the Ring"
+      "texto": "The Lord of the Rings: The Fellowship of the Ring",
+      "dificultad": "facil"
     },
     {
       "id": "el-senor-de-los-anillos-las-dos-torres",
-      "texto": "The Lord of the Rings: The Two Towers"
+      "texto": "The Lord of the Rings: The Two Towers",
+      "dificultad": "facil"
     },
     {
       "id": "el-senor-de-los-anillos-el-retorno-del-rey",
-      "texto": "The Lord of the Rings: The Return of the King"
+      "texto": "The Lord of the Rings: The Return of the King",
+      "dificultad": "facil"
     },
     {
       "id": "el-hobbit-un-viaje-inesperado",
-      "texto": "The Hobbit: An Unexpected Journey"
+      "texto": "The Hobbit: An Unexpected Journey",
+      "dificultad": "facil"
     },
     {
       "id": "jurassic-park",
-      "texto": "Jurassic Park"
+      "texto": "Jurassic Park",
+      "dificultad": "facil"
     },
     {
       "id": "jurassic-world",
-      "texto": "Jurassic World"
+      "texto": "Jurassic World",
+      "dificultad": "facil"
     },
     {
       "id": "star-wars-una-nueva-esperanza",
-      "texto": "Star Wars: A New Hope"
+      "texto": "Star Wars: A New Hope",
+      "dificultad": "facil"
     },
     {
       "id": "el-imperio-contraataca",
-      "texto": "Star Wars: The Empire Strikes Back"
+      "texto": "Star Wars: The Empire Strikes Back",
+      "dificultad": "facil"
     },
     {
       "id": "el-despertar-de-la-fuerza",
-      "texto": "Star Wars: The Force Awakens"
+      "texto": "Star Wars: The Force Awakens",
+      "dificultad": "facil"
     },
     {
       "id": "el-desafio",
-      "texto": "Top Gun"
+      "texto": "Top Gun",
+      "dificultad": "facil"
     },
     {
       "id": "top-gun-maverick",
-      "texto": "Top Gun: Maverick"
+      "texto": "Top Gun: Maverick",
+      "dificultad": "facil"
     },
     {
       "id": "mision-imposible",
-      "texto": "Mission: Impossible"
+      "texto": "Mission: Impossible",
+      "dificultad": "facil"
     },
     {
       "id": "john-wick",
-      "texto": "John Wick"
+      "texto": "John Wick",
+      "dificultad": "facil"
     },
     {
       "id": "rapidos-y-furiosos",
-      "texto": "The Fast and the Furious"
+      "texto": "The Fast and the Furious",
+      "dificultad": "facil"
     },
     {
       "id": "transformers",
-      "texto": "Transformers"
+      "texto": "Transformers",
+      "dificultad": "facil"
     },
     {
       "id": "piratas-del-caribe-la-maldicion-del-perla-negra",
-      "texto": "Pirates of the Caribbean: The Curse of the Black Pearl"
+      "texto": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "dificultad": "facil"
     },
     {
       "id": "indiana-jones-y-los-cazadores-del-arca-perdida",
-      "texto": "Raiders of the Lost Ark"
+      "texto": "Raiders of the Lost Ark",
+      "dificultad": "facil"
     },
     {
       "id": "gladiador",
-      "texto": "Gladiator"
+      "texto": "Gladiator",
+      "dificultad": "facil"
     },
     {
       "id": "troya",
-      "texto": "Troy"
+      "texto": "Troy",
+      "dificultad": "facil"
     },
     {
       "id": "300",
-      "texto": "300"
+      "texto": "300",
+      "dificultad": "facil"
     },
     {
       "id": "braveheart",
-      "texto": "Braveheart"
+      "texto": "Braveheart",
+      "dificultad": "facil"
     },
     {
       "id": "matrix",
-      "texto": "Matrix"
+      "texto": "Matrix",
+      "dificultad": "dificil"
     },
     {
       "id": "inception",
-      "texto": "Inception"
+      "texto": "Inception",
+      "dificultad": "facil"
     },
     {
       "id": "interstellar",
-      "texto": "Interstellar"
+      "texto": "Interstellar",
+      "dificultad": "facil"
     },
     {
       "id": "oppenheimer",
-      "texto": "Oppenheimer"
+      "texto": "Oppenheimer",
+      "dificultad": "facil"
     },
     {
       "id": "tenet",
-      "texto": "Tenet"
+      "texto": "Tenet",
+      "dificultad": "facil"
     },
     {
       "id": "dunkerque",
-      "texto": "Dunkirk"
+      "texto": "Dunkirk",
+      "dificultad": "facil"
     },
     {
       "id": "gravity",
-      "texto": "Gravity"
+      "texto": "Gravity",
+      "dificultad": "facil"
     },
     {
       "id": "the-martian",
-      "texto": "The Martian"
+      "texto": "The Martian",
+      "dificultad": "facil"
     },
     {
       "id": "armageddon",
-      "texto": "Armageddon"
+      "texto": "Armageddon",
+      "dificultad": "facil"
     },
     {
       "id": "el-dia-despues-de-manana",
-      "texto": "The Day After Tomorrow"
+      "texto": "The Day After Tomorrow",
+      "dificultad": "facil"
     },
     {
       "id": "2012",
-      "texto": "2012"
+      "texto": "2012",
+      "dificultad": "facil"
     },
     {
       "id": "godzilla",
-      "texto": "Godzilla"
+      "texto": "Godzilla",
+      "dificultad": "facil"
     },
     {
       "id": "king-kong",
-      "texto": "King Kong"
+      "texto": "King Kong",
+      "dificultad": "facil"
     },
     {
       "id": "pacific-rim",
-      "texto": "Pacific Rim"
+      "texto": "Pacific Rim",
+      "dificultad": "facil"
     },
     {
       "id": "spider-man",
-      "texto": "Spider-Man"
+      "texto": "Spider-Man",
+      "dificultad": "facil"
     },
     {
       "id": "spider-man-no-way-home",
-      "texto": "Spider-Man: No Way Home"
+      "texto": "Spider-Man: No Way Home",
+      "dificultad": "facil"
     },
     {
       "id": "iron-man",
-      "texto": "Iron Man"
+      "texto": "Iron Man",
+      "dificultad": "facil"
     },
     {
       "id": "capitan-america-el-primer-vengador",
-      "texto": "Captain America: The First Avenger"
+      "texto": "Captain America: The First Avenger",
+      "dificultad": "facil"
     },
     {
       "id": "thor",
-      "texto": "Thor"
+      "texto": "Thor",
+      "dificultad": "facil"
     },
     {
       "id": "doctor-strange",
-      "texto": "Doctor Strange"
+      "texto": "Doctor Strange",
+      "dificultad": "facil"
     },
     {
       "id": "black-panther",
-      "texto": "Black Panther"
+      "texto": "Black Panther",
+      "dificultad": "facil"
     },
     {
       "id": "guardianes-de-la-galaxia",
-      "texto": "Guardians of the Galaxy"
+      "texto": "Guardians of the Galaxy",
+      "dificultad": "facil"
     },
     {
       "id": "ant-man",
-      "texto": "Ant-Man"
+      "texto": "Ant-Man",
+      "dificultad": "facil"
     },
     {
       "id": "capitana-marvel",
-      "texto": "Captain Marvel"
+      "texto": "Captain Marvel",
+      "dificultad": "facil"
     },
     {
       "id": "avengers",
-      "texto": "The Avengers"
+      "texto": "The Avengers",
+      "dificultad": "facil"
     },
     {
       "id": "la-liga-de-la-justicia",
-      "texto": "Justice League"
+      "texto": "Justice League",
+      "dificultad": "facil"
     },
     {
       "id": "batman",
-      "texto": "Batman"
+      "texto": "Batman",
+      "dificultad": "facil"
     },
     {
       "id": "the-batman",
-      "texto": "The Batman"
+      "texto": "The Batman",
+      "dificultad": "facil"
     },
     {
       "id": "superman",
-      "texto": "Superman"
+      "texto": "Superman",
+      "dificultad": "facil"
     },
     {
       "id": "el-hombre-de-acero",
-      "texto": "Man of Steel"
+      "texto": "Man of Steel",
+      "dificultad": "facil"
     },
     {
       "id": "mujer-maravilla",
-      "texto": "Wonder Woman"
+      "texto": "Wonder Woman",
+      "dificultad": "facil"
     },
     {
       "id": "aquaman",
-      "texto": "Aquaman"
+      "texto": "Aquaman",
+      "dificultad": "facil"
     },
     {
       "id": "joker",
-      "texto": "Joker"
+      "texto": "Joker",
+      "dificultad": "facil"
     },
     {
       "id": "suicide-squad",
-      "texto": "Suicide Squad"
+      "texto": "Suicide Squad",
+      "dificultad": "facil"
     },
     {
       "id": "la-mascara",
-      "texto": "The Mask"
+      "texto": "The Mask",
+      "dificultad": "facil"
     },
     {
       "id": "forrest-gump",
-      "texto": "Forrest Gump"
+      "texto": "Forrest Gump",
+      "dificultad": "facil"
     },
     {
       "id": "el-naufrago",
-      "texto": "Cast Away"
+      "texto": "Cast Away",
+      "dificultad": "facil"
     },
     {
       "id": "el-diablo-viste-a-la-moda",
-      "texto": "The Devil Wears Prada"
+      "texto": "The Devil Wears Prada",
+      "dificultad": "normal"
     },
     {
       "id": "legalmente-rubia",
-      "texto": "Legally Blonde"
+      "texto": "Legally Blonde",
+      "dificultad": "normal"
     },
     {
       "id": "mamma-mia",
-      "texto": "Mamma Mia!"
+      "texto": "Mamma Mia!",
+      "dificultad": "normal"
     },
     {
       "id": "bohemian-rhapsody",
-      "texto": "Bohemian Rhapsody"
+      "texto": "Bohemian Rhapsody",
+      "dificultad": "normal"
     },
     {
       "id": "el-gran-showman",
-      "texto": "The Greatest Showman"
+      "texto": "The Greatest Showman",
+      "dificultad": "normal"
     },
     {
       "id": "la-la-land",
-      "texto": "La La Land"
+      "texto": "La La Land",
+      "dificultad": "normal"
     },
     {
       "id": "parasitos",
-      "texto": "Parasite"
+      "texto": "Parasite",
+      "dificultad": "normal"
     },
     {
       "id": "el-silencio-de-los-inocentes",
-      "texto": "The Silence of the Lambs"
+      "texto": "The Silence of the Lambs",
+      "dificultad": "normal"
     },
     {
       "id": "el-sexto-sentido",
-      "texto": "The Sixth Sense"
+      "texto": "The Sixth Sense",
+      "dificultad": "normal"
     },
     {
       "id": "el-conjuro",
-      "texto": "The Conjuring"
+      "texto": "The Conjuring",
+      "dificultad": "normal"
     },
     {
       "id": "it",
-      "texto": "IT"
+      "texto": "IT",
+      "dificultad": "normal"
     },
     {
       "id": "annabelle",
-      "texto": "Annabelle"
+      "texto": "Annabelle",
+      "dificultad": "normal"
     },
     {
       "id": "actividad-paranormal",
-      "texto": "Paranormal Activity"
+      "texto": "Paranormal Activity",
+      "dificultad": "normal"
     },
     {
       "id": "scream",
-      "texto": "Scream"
+      "texto": "Scream",
+      "dificultad": "normal"
     },
     {
       "id": "halloween",
-      "texto": "Halloween"
+      "texto": "Halloween",
+      "dificultad": "normal"
     },
     {
       "id": "alien",
-      "texto": "Alien"
+      "texto": "Alien",
+      "dificultad": "normal"
     },
     {
       "id": "depredador",
-      "texto": "Predator"
+      "texto": "Predator",
+      "dificultad": "facil"
     },
     {
       "id": "jumanji",
-      "texto": "Jumanji"
+      "texto": "Jumanji",
+      "dificultad": "normal"
     },
     {
       "id": "charlie-y-la-fabrica-de-chocolate",
-      "texto": "Charlie and the Chocolate Factory"
+      "texto": "Charlie and the Chocolate Factory",
+      "dificultad": "normal"
     },
     {
       "id": "alicia-en-el-pais-de-las-maravillas",
-      "texto": "Alice in Wonderland"
+      "texto": "Alice in Wonderland",
+      "dificultad": "normal"
     },
     {
       "id": "la-bella-y-la-bestia",
-      "texto": "Beauty and the Beast"
+      "texto": "Beauty and the Beast",
+      "dificultad": "normal"
     },
     {
       "id": "aladdin",
-      "texto": "Aladdin"
+      "texto": "Aladdin",
+      "dificultad": "normal"
     },
     {
       "id": "la-sirenita",
-      "texto": "The Little Mermaid"
+      "texto": "The Little Mermaid",
+      "dificultad": "normal"
     },
     {
       "id": "blancanieves",
-      "texto": "Snow White"
+      "texto": "Snow White",
+      "dificultad": "normal"
     },
     {
       "id": "cenicienta",
-      "texto": "Cinderella"
+      "texto": "Cinderella",
+      "dificultad": "normal"
     },
     {
       "id": "pinocho",
-      "texto": "Pinocchio"
+      "texto": "Pinocchio",
+      "dificultad": "normal"
     },
     {
       "id": "bambi",
-      "texto": "Bambi"
+      "texto": "Bambi",
+      "dificultad": "normal"
     },
     {
       "id": "dumbo",
-      "texto": "Dumbo"
+      "texto": "Dumbo",
+      "dificultad": "normal"
     },
     {
       "id": "tarzan",
-      "texto": "Tarzan"
+      "texto": "Tarzan",
+      "dificultad": "normal"
     },
     {
       "id": "mulan",
-      "texto": "Mulan"
+      "texto": "Mulan",
+      "dificultad": "normal"
     },
     {
       "id": "hercules",
-      "texto": "Hercules"
+      "texto": "Hercules",
+      "dificultad": "normal"
     },
     {
       "id": "peter-pan",
-      "texto": "Peter Pan"
+      "texto": "Peter Pan",
+      "dificultad": "facil"
     },
     {
       "id": "el-libro-de-la-selva",
-      "texto": "The Jungle Book"
+      "texto": "The Jungle Book",
+      "dificultad": "normal"
     },
     {
       "id": "101-dalmatas",
-      "texto": "101 Dalmatians"
+      "texto": "101 Dalmatians",
+      "dificultad": "normal"
     },
     {
       "id": "el-expreso-polar",
-      "texto": "The Polar Express"
+      "texto": "The Polar Express",
+      "dificultad": "normal"
     },
     {
       "id": "mi-pobre-angelito",
-      "texto": "Home Alone"
+      "texto": "Home Alone",
+      "dificultad": "normal"
     },
     {
       "id": "elf",
-      "texto": "Elf"
+      "texto": "Elf",
+      "dificultad": "normal"
     },
     {
       "id": "el-grinch",
-      "texto": "How the Grinch Stole Christmas"
+      "texto": "How the Grinch Stole Christmas",
+      "dificultad": "normal"
     },
     {
       "id": "los-cazafantasmas",
-      "texto": "Ghostbusters"
+      "texto": "Ghostbusters",
+      "dificultad": "normal"
     },
     {
       "id": "volver-al-futuro",
-      "texto": "Back to the Future"
+      "texto": "Back to the Future",
+      "dificultad": "normal"
     },
     {
       "id": "beetlejuice",
-      "texto": "Beetlejuice"
+      "texto": "Beetlejuice",
+      "dificultad": "normal"
     },
     {
       "id": "et",
-      "texto": "E.T."
+      "texto": "E.T.",
+      "dificultad": "normal"
     },
     {
       "id": "el-show-de-truman",
-      "texto": "The Truman Show"
+      "texto": "The Truman Show",
+      "dificultad": "normal"
     },
     {
       "id": "una-mente-brillante",
-      "texto": "A Beautiful Mind"
+      "texto": "A Beautiful Mind",
+      "dificultad": "normal"
     },
     {
       "id": "la-vida-es-bella",
-      "texto": "Life Is Beautiful"
+      "texto": "Life Is Beautiful",
+      "dificultad": "normal"
     },
     {
       "id": "milagros-inesperados",
-      "texto": "The Green Mile"
+      "texto": "The Green Mile",
+      "dificultad": "facil"
     },
     {
       "id": "el-pianista",
-      "texto": "The Pianist"
+      "texto": "The Pianist",
+      "dificultad": "normal"
     },
     {
       "id": "avatar-el-camino-del-agua",
-      "texto": "Avatar: The Way of Water"
+      "texto": "Avatar: The Way of Water",
+      "dificultad": "facil"
     },
     {
       "id": "barbie",
-      "texto": "Barbie"
+      "texto": "Barbie",
+      "dificultad": "normal"
     },
     {
       "id": "super-mario-bros-la-pelicula",
-      "texto": "The Super Mario Bros. Movie"
+      "texto": "The Super Mario Bros. Movie",
+      "dificultad": "facil"
     },
     {
       "id": "sonic-la-pelicula",
-      "texto": "Sonic the Hedgehog"
+      "texto": "Sonic the Hedgehog",
+      "dificultad": "facil"
     },
     {
       "id": "detective-pikachu",
-      "texto": "Pokémon: Detective Pikachu"
+      "texto": "Pokémon: Detective Pikachu",
+      "dificultad": "facil"
     },
     {
       "id": "el-gato-con-botas-el-ultimo-deseo",
-      "texto": "Puss in Boots: The Last Wish"
+      "texto": "Puss in Boots: The Last Wish",
+      "dificultad": "normal"
     },
     {
       "id": "luca",
-      "texto": "Luca"
+      "texto": "Luca",
+      "dificultad": "normal"
     },
     {
       "id": "soul",
-      "texto": "Soul"
+      "texto": "Soul",
+      "dificultad": "normal"
     },
     {
       "id": "el-padrino",
-      "texto": "The Godfather"
+      "texto": "The Godfather",
+      "dificultad": "dificil"
     },
     {
       "id": "rocky",
-      "texto": "Rocky"
+      "texto": "Rocky",
+      "dificultad": "normal"
     },
     {
       "id": "buscando-a-dory",
-      "texto": "Finding Dory"
+      "texto": "Finding Dory",
+      "dificultad": "normal"
     },
     {
       "id": "los-juegos-del-hambre",
-      "texto": "The Hunger Games"
+      "texto": "The Hunger Games",
+      "dificultad": "normal"
     },
     {
       "id": "deadpool",
-      "texto": "Deadpool"
+      "texto": "Deadpool",
+      "dificultad": "normal"
     },
     {
       "id": "terminator-2-el-juicio-final",
-      "texto": "Terminator 2: Judgment Day"
+      "texto": "Terminator 2: Judgment Day",
+      "dificultad": "normal"
     },
     {
       "id": "el-conjuro-2",
-      "texto": "The Conjuring 2"
+      "texto": "The Conjuring 2",
+      "dificultad": "normal"
     },
     {
       "id": "el-club-de-la-pelea",
-      "texto": "Fight Club"
+      "texto": "Fight Club",
+      "dificultad": "normal"
     },
     {
       "id": "titanic-2",
-      "texto": "Náufrago"
+      "texto": "Náufrago",
+      "dificultad": "normal"
     },
     {
       "id": "el-lobo-de-wall-street",
-      "texto": "The Wolf of Wall Street"
+      "texto": "The Wolf of Wall Street",
+      "dificultad": "normal"
     },
     {
       "id": "el-padrino-2",
-      "texto": "The Godfather Part II"
+      "texto": "The Godfather Part II",
+      "dificultad": "dificil"
     },
     {
       "id": "terminator",
-      "texto": "Terminator"
+      "texto": "Terminator",
+      "dificultad": "normal"
     },
     {
       "id": "rambo",
-      "texto": "Rambo"
+      "texto": "Rambo",
+      "dificultad": "normal"
     },
     {
       "id": "depredador-2",
-      "texto": "Predator"
+      "texto": "Predator",
+      "dificultad": "facil"
     },
     {
       "id": "duro-de-matar",
-      "texto": "Duro de Matar"
+      "texto": "Duro de Matar",
+      "dificultad": "normal"
     },
     {
       "id": "arma-mortal",
-      "texto": "Lethal Weapon"
+      "texto": "Lethal Weapon",
+      "dificultad": "normal"
     },
     {
       "id": "hombres-de-negro",
-      "texto": "Men in Black"
+      "texto": "Men in Black",
+      "dificultad": "normal"
     },
     {
       "id": "independence-day",
-      "texto": "Independence Day"
+      "texto": "Independence Day",
+      "dificultad": "normal"
     },
     {
       "id": "volver-al-futuro-2",
-      "texto": "Back to the Future Part II"
+      "texto": "Back to the Future Part II",
+      "dificultad": "normal"
     },
     {
       "id": "karate-kid",
-      "texto": "Karate Kid"
+      "texto": "Karate Kid",
+      "dificultad": "normal"
     },
     {
       "id": "creed",
-      "texto": "Creed"
+      "texto": "Creed",
+      "dificultad": "normal"
     },
     {
       "id": "el-planeta-de-los-simios-el-origen",
-      "texto": "Rise of the Planet of the Apes"
+      "texto": "Rise of the Planet of the Apes",
+      "dificultad": "normal"
     },
     {
       "id": "king-kong-2005",
-      "texto": "King Kong (2005)"
+      "texto": "King Kong (2005)",
+      "dificultad": "normal"
     },
     {
       "id": "godzilla-minus-one",
-      "texto": "Godzilla Minus One"
+      "texto": "Godzilla Minus One",
+      "dificultad": "normal"
     },
     {
       "id": "ready-player-one",
-      "texto": "Ready Player One"
+      "texto": "Ready Player One",
+      "dificultad": "normal"
     },
     {
       "id": "tron-el-legado",
-      "texto": "TRON: Legacy"
+      "texto": "TRON: Legacy",
+      "dificultad": "normal"
     },
     {
       "id": "el-quinto-elemento",
-      "texto": "The Fifth Element"
+      "texto": "The Fifth Element",
+      "dificultad": "normal"
     },
     {
       "id": "yo-robot",
-      "texto": "I, Robot"
+      "texto": "I, Robot",
+      "dificultad": "normal"
     },
     {
       "id": "ia-inteligencia-artificial",
-      "texto": "A.I. Artificial Intelligence"
+      "texto": "A.I. Artificial Intelligence",
+      "dificultad": "normal"
     },
     {
       "id": "el-gigante-de-hierro",
-      "texto": "The Iron Giant"
+      "texto": "The Iron Giant",
+      "dificultad": "normal"
     },
     {
       "id": "space-jam",
-      "texto": "Space Jam"
+      "texto": "Space Jam",
+      "dificultad": "normal"
     },
     {
       "id": "quien-engano-a-roger-rabbit",
-      "texto": "Who Framed Roger Rabbit"
+      "texto": "Who Framed Roger Rabbit",
+      "dificultad": "facil"
     },
     {
       "id": "los-croods",
-      "texto": "The Croods"
+      "texto": "The Croods",
+      "dificultad": "normal"
     },
     {
       "id": "megamente",
-      "texto": "Megamind"
+      "texto": "Megamind",
+      "dificultad": "normal"
     },
     {
       "id": "hotel-transylvania",
-      "texto": "Hotel Transylvania"
+      "texto": "Hotel Transylvania",
+      "dificultad": "normal"
     },
     {
       "id": "los-pinguinos-de-madagascar",
-      "texto": "Penguins of Madagascar"
+      "texto": "Penguins of Madagascar",
+      "dificultad": "normal"
     },
     {
       "id": "pollitos-en-fuga",
-      "texto": "Chicken Run"
+      "texto": "Chicken Run",
+      "dificultad": "normal"
     },
     {
       "id": "el-principe-de-egipto",
-      "texto": "The Prince of Egypt"
+      "texto": "The Prince of Egypt",
+      "dificultad": "normal"
     },
     {
       "id": "spirit",
-      "texto": "Spirit: Stallion of the Cimarron"
+      "texto": "Spirit: Stallion of the Cimarron",
+      "dificultad": "facil"
     },
     {
       "id": "tarzan-2",
-      "texto": "Tarzan & Jane"
+      "texto": "Tarzan & Jane",
+      "dificultad": "normal"
     },
     {
       "id": "bolt",
-      "texto": "Bolt"
+      "texto": "Bolt",
+      "dificultad": "normal"
     },
     {
       "id": "tierra-de-osos",
-      "texto": "Brother Bear"
+      "texto": "Brother Bear",
+      "dificultad": "facil"
     },
     {
       "id": "el-cadaver-de-la-novia",
-      "texto": "Corpse Bride"
+      "texto": "Corpse Bride",
+      "dificultad": "normal"
     },
     {
       "id": "el-extraño-mundo-de-jack",
-      "texto": "The Nightmare Before Christmas"
+      "texto": "The Nightmare Before Christmas",
+      "dificultad": "normal"
     },
     {
       "id": "coraline",
-      "texto": "Coraline"
+      "texto": "Coraline",
+      "dificultad": "normal"
     },
     {
       "id": "kubo",
-      "texto": "Kubo and the Two Strings"
+      "texto": "Kubo and the Two Strings",
+      "dificultad": "normal"
     },
     {
       "id": "fantastic-mr-fox",
-      "texto": "Fantastic Mr. Fox"
+      "texto": "Fantastic Mr. Fox",
+      "dificultad": "normal"
     },
     {
       "id": "paddington",
-      "texto": "Paddington"
+      "texto": "Paddington",
+      "dificultad": "dificil"
     },
     {
       "id": "stuart-little",
-      "texto": "Stuart Little"
+      "texto": "Stuart Little",
+      "dificultad": "dificil"
     },
     {
       "id": "babe",
-      "texto": "Babe"
+      "texto": "Babe",
+      "dificultad": "dificil"
     },
     {
       "id": "hop",
-      "texto": "Hop"
+      "texto": "Hop",
+      "dificultad": "dificil"
     },
     {
       "id": "eloso-yogi",
-      "texto": "Yogi Bear"
+      "texto": "Yogi Bear",
+      "dificultad": "facil"
     },
     {
       "id": "tom-y-jerry",
-      "texto": "Tom and Jerry"
+      "texto": "Tom and Jerry",
+      "dificultad": "dificil"
     },
     {
       "id": "garfield",
-      "texto": "Garfield"
+      "texto": "Garfield",
+      "dificultad": "dificil"
     },
     {
       "id": "las-tortugas-ninja",
-      "texto": "Teenage Mutant Ninja Turtles"
+      "texto": "Teenage Mutant Ninja Turtles",
+      "dificultad": "dificil"
     },
     {
       "id": "power-rangers",
-      "texto": "Power Rangers"
+      "texto": "Power Rangers",
+      "dificultad": "dificil"
     },
     {
       "id": "transformers-el-despertar-de-las-bestias",
-      "texto": "Transformers: Rise of the Beasts"
+      "texto": "Transformers: Rise of the Beasts",
+      "dificultad": "dificil"
     },
     {
       "id": "deadpool-2",
-      "texto": "Deadpool 2"
+      "texto": "Deadpool 2",
+      "dificultad": "dificil"
     },
     {
       "id": "logan",
-      "texto": "Logan"
+      "texto": "Logan",
+      "dificultad": "dificil"
     },
     {
       "id": "x-men",
-      "texto": "X-Men"
+      "texto": "X-Men",
+      "dificultad": "dificil"
     },
     {
       "id": "wolverine",
-      "texto": "The Wolverine"
+      "texto": "The Wolverine",
+      "dificultad": "dificil"
     },
     {
       "id": "venom",
-      "texto": "Venom"
+      "texto": "Venom",
+      "dificultad": "dificil"
     },
     {
       "id": "los-cuatro-fantasticos",
-      "texto": "Fantastic Four"
+      "texto": "Fantastic Four",
+      "dificultad": "dificil"
     },
     {
       "id": "shazam",
-      "texto": "¡Shazam!"
+      "texto": "¡Shazam!",
+      "dificultad": "dificil"
     },
     {
       "id": "flash",
-      "texto": "The Flash"
+      "texto": "The Flash",
+      "dificultad": "dificil"
     },
     {
       "id": "linterna-verde",
-      "texto": "Green Lantern"
+      "texto": "Green Lantern",
+      "dificultad": "facil"
     },
     {
       "id": "constantine",
-      "texto": "Constantine"
+      "texto": "Constantine",
+      "dificultad": "dificil"
     },
     {
       "id": "watchmen",
-      "texto": "Watchmen"
+      "texto": "Watchmen",
+      "dificultad": "dificil"
     },
     {
       "id": "v-de-venganza",
-      "texto": "V for Vendetta"
+      "texto": "V for Vendetta",
+      "dificultad": "dificil"
     },
     {
       "id": "el-cuervo",
-      "texto": "The Crow"
+      "texto": "The Crow",
+      "dificultad": "dificil"
     },
     {
       "id": "el-laberinto-del-fauno",
-      "texto": "Pan's Labyrinth"
+      "texto": "Pan's Labyrinth",
+      "dificultad": "facil"
     },
     {
       "id": "el-gran-pez",
-      "texto": "Big Fish"
+      "texto": "Big Fish",
+      "dificultad": "dificil"
     },
     {
       "id": "eduardo-manos-de-tijera",
-      "texto": "Edward Scissorhands"
+      "texto": "Edward Scissorhands",
+      "dificultad": "dificil"
     },
     {
       "id": "charlie-y-el-elevador-de-cristal",
-      "texto": "Wonka"
+      "texto": "Wonka",
+      "dificultad": "dificil"
     },
     {
       "id": "matilda",
-      "texto": "Matilda"
+      "texto": "Matilda",
+      "dificultad": "dificil"
     },
     {
       "id": "la-huérfana",
-      "texto": "Orphan"
+      "texto": "Orphan",
+      "dificultad": "dificil"
     },
     {
       "id": "el-aro",
-      "texto": "The Ring"
+      "texto": "The Ring",
+      "dificultad": "dificil"
     },
     {
       "id": "la-monja",
-      "texto": "The Nun"
+      "texto": "The Nun",
+      "dificultad": "dificil"
     },
     {
       "id": "el-exorcista",
-      "texto": "The Exorcist"
+      "texto": "The Exorcist",
+      "dificultad": "dificil"
     },
     {
       "id": "chucky",
-      "texto": "Chucky"
+      "texto": "Chucky",
+      "dificultad": "dificil"
     },
     {
       "id": "viernes-13",
-      "texto": "Friday the 13th"
+      "texto": "Friday the 13th",
+      "dificultad": "dificil"
     },
     {
       "id": "pesadilla-en-la-calle-elm",
-      "texto": "A Nightmare on Elm Street"
+      "texto": "A Nightmare on Elm Street",
+      "dificultad": "dificil"
     },
     {
       "id": "saw",
-      "texto": "Saw"
+      "texto": "Saw",
+      "dificultad": "dificil"
     },
     {
       "id": "rec",
-      "texto": "[REC]"
+      "texto": "[REC]",
+      "dificultad": "dificil"
     },
     {
       "id": "el-resplandor",
-      "texto": "The Shining"
+      "texto": "The Shining",
+      "dificultad": "dificil"
     },
     {
       "id": "el-proyecto-de-la-bruja-de-blair",
-      "texto": "The Blair Witch Project"
+      "texto": "The Blair Witch Project",
+      "dificultad": "dificil"
     },
     {
       "id": "zombieland",
-      "texto": "Zombieland"
+      "texto": "Zombieland",
+      "dificultad": "dificil"
     },
     {
       "id": "guerra-mundial-z",
-      "texto": "World War Z"
+      "texto": "World War Z",
+      "dificultad": "dificil"
     },
     {
       "id": "soy-leyenda",
-      "texto": "I Am Legend"
+      "texto": "I Am Legend",
+      "dificultad": "dificil"
     },
     {
       "id": "maze-runner",
-      "texto": "Maze Runner"
+      "texto": "Maze Runner",
+      "dificultad": "dificil"
     },
     {
       "id": "divergente",
-      "texto": "Divergent"
+      "texto": "Divergent",
+      "dificultad": "dificil"
     },
     {
       "id": "bajo-la-misma-estrella",
-      "texto": "The Fault in Our Stars"
+      "texto": "The Fault in Our Stars",
+      "dificultad": "dificil"
     },
     {
       "id": "diario-de-una-pasion",
-      "texto": "The Notebook"
+      "texto": "The Notebook",
+      "dificultad": "dificil"
     },
     {
       "id": "mujer-bonita",
-      "texto": "Pretty Woman"
+      "texto": "Pretty Woman",
+      "dificultad": "dificil"
     },
     {
       "id": "simplemente-no-te-quiere",
-      "texto": "He's Just Not That Into You"
+      "texto": "He's Just Not That Into You",
+      "dificultad": "dificil"
     },
     {
       "id": "se-beber",
-      "texto": "The Hangover"
+      "texto": "The Hangover",
+      "dificultad": "dificil"
     },
     {
       "id": "una-esposa-de-mentira",
-      "texto": "Just Go with It"
+      "texto": "Just Go with It",
+      "dificultad": "dificil"
     },
     {
       "id": "como-si-fuera-la-primera-vez",
-      "texto": "50 First Dates"
+      "texto": "50 First Dates",
+      "dificultad": "dificil"
     },
     {
       "id": "quiero-matar-a-mi-jefe",
-      "texto": "Horrible Bosses"
+      "texto": "Horrible Bosses",
+      "dificultad": "dificil"
     },
     {
       "id": "intensamente-2",
-      "texto": "Inside Out 2"
+      "texto": "Inside Out 2",
+      "dificultad": "dificil"
     },
     {
       "id": "moana-2",
-      "texto": "Moana 2"
+      "texto": "Moana 2",
+      "dificultad": "dificil"
     },
     {
       "id": "frozen-2",
-      "texto": "Frozen 2"
+      "texto": "Frozen 2",
+      "dificultad": "facil"
     },
     {
       "id": "kung-fu-panda-2",
-      "texto": "Kung Fu Panda 2"
+      "texto": "Kung Fu Panda 2",
+      "dificultad": "facil"
     },
     {
       "id": "shrek-2",
-      "texto": "Shrek 2"
+      "texto": "Shrek 2",
+      "dificultad": "facil"
     },
     {
       "id": "madagascar-2",
-      "texto": "Madagascar 2"
+      "texto": "Madagascar 2",
+      "dificultad": "dificil"
     },
     {
       "id": "ice-age-2",
-      "texto": "Ice Age: The Meltdown"
+      "texto": "Ice Age: The Meltdown",
+      "dificultad": "dificil"
     },
     {
       "id": "cars-2",
-      "texto": "Cars 2"
+      "texto": "Cars 2",
+      "dificultad": "dificil"
     },
     {
       "id": "monsters-university",
-      "texto": "Monsters University"
+      "texto": "Monsters University",
+      "dificultad": "dificil"
     },
     {
       "id": "toy-story-2",
-      "texto": "Toy Story 2"
+      "texto": "Toy Story 2",
+      "dificultad": "facil"
     },
     {
       "id": "buscando-a-nemo-2",
-      "texto": "Finding Dory"
+      "texto": "Finding Dory",
+      "dificultad": "dificil"
     }
   ]
 }

@@ -8,583 +8,728 @@
   "palabras": [
     {
       "id": "minecraft",
-      "texto": "Minecraft"
+      "texto": "Minecraft",
+      "dificultad": "facil"
     },
     {
       "id": "fortnite",
-      "texto": "Fortnite"
+      "texto": "Fortnite",
+      "dificultad": "facil"
     },
     {
       "id": "roblox",
-      "texto": "Roblox"
+      "texto": "Roblox",
+      "dificultad": "facil"
     },
     {
       "id": "among-us",
-      "texto": "Among Us"
+      "texto": "Among Us",
+      "dificultad": "facil"
     },
     {
       "id": "fall-guys",
-      "texto": "Fall Guys"
+      "texto": "Fall Guys",
+      "dificultad": "facil"
     },
     {
       "id": "rocket-league",
-      "texto": "Rocket League"
+      "texto": "Rocket League",
+      "dificultad": "facil"
     },
     {
       "id": "league-of-legends",
-      "texto": "League of Legends"
+      "texto": "League of Legends",
+      "dificultad": "facil"
     },
     {
       "id": "valorant",
-      "texto": "Valorant"
+      "texto": "Valorant",
+      "dificultad": "facil"
     },
     {
       "id": "counter-strike",
-      "texto": "Counter-Strike"
+      "texto": "Counter-Strike",
+      "dificultad": "facil"
     },
     {
       "id": "apex-legends",
-      "texto": "Apex Legends"
+      "texto": "Apex Legends",
+      "dificultad": "facil"
     },
     {
       "id": "call-of-duty",
-      "texto": "Call of Duty"
+      "texto": "Call of Duty",
+      "dificultad": "facil"
     },
     {
       "id": "halo",
-      "texto": "Halo"
+      "texto": "Halo",
+      "dificultad": "facil"
     },
     {
       "id": "battlefield",
-      "texto": "Battlefield"
+      "texto": "Battlefield",
+      "dificultad": "facil"
     },
     {
       "id": "doom",
-      "texto": "DOOM"
+      "texto": "DOOM",
+      "dificultad": "facil"
     },
     {
       "id": "overwatch",
-      "texto": "Overwatch"
+      "texto": "Overwatch",
+      "dificultad": "facil"
     },
     {
       "id": "rainbow-six-siege",
-      "texto": "Rainbow Six Siege"
+      "texto": "Rainbow Six Siege",
+      "dificultad": "facil"
     },
     {
       "id": "pubg",
-      "texto": "PUBG"
+      "texto": "PUBG",
+      "dificultad": "facil"
     },
     {
       "id": "half-life",
-      "texto": "Half-Life"
+      "texto": "Half-Life",
+      "dificultad": "facil"
     },
     {
       "id": "left-4-dead",
-      "texto": "Left 4 Dead"
+      "texto": "Left 4 Dead",
+      "dificultad": "facil"
     },
     {
       "id": "team-fortress",
-      "texto": "Team Fortress"
+      "texto": "Team Fortress",
+      "dificultad": "facil"
     },
     {
       "id": "bioshock",
-      "texto": "BioShock"
+      "texto": "BioShock",
+      "dificultad": "facil"
     },
     {
       "id": "borderlands",
-      "texto": "Borderlands"
+      "texto": "Borderlands",
+      "dificultad": "facil"
     },
     {
       "id": "xcom",
-      "texto": "XCOM"
+      "texto": "XCOM",
+      "dificultad": "facil"
     },
     {
       "id": "wolfenstein",
-      "texto": "Wolfenstein"
+      "texto": "Wolfenstein",
+      "dificultad": "facil"
     },
     {
       "id": "mafia",
-      "texto": "Mafia"
+      "texto": "Mafia",
+      "dificultad": "facil"
     },
     {
       "id": "max-payne",
-      "texto": "Max Payne"
+      "texto": "Max Payne",
+      "dificultad": "facil"
     },
     {
       "id": "alan-wake",
-      "texto": "Alan Wake"
+      "texto": "Alan Wake",
+      "dificultad": "facil"
     },
     {
       "id": "control",
-      "texto": "Control"
+      "texto": "Control",
+      "dificultad": "facil"
     },
     {
       "id": "just-cause",
-      "texto": "Just Cause"
+      "texto": "Just Cause",
+      "dificultad": "facil"
     },
     {
       "id": "saints-row",
-      "texto": "Saints Row"
+      "texto": "Saints Row",
+      "dificultad": "facil"
     },
     {
       "id": "payday",
-      "texto": "PAYDAY"
+      "texto": "PAYDAY",
+      "dificultad": "facil"
     },
     {
       "id": "littlebigplanet",
-      "texto": "LittleBigPlanet"
+      "texto": "LittleBigPlanet",
+      "dificultad": "facil"
     },
     {
       "id": "journey",
-      "texto": "Journey"
+      "texto": "Journey",
+      "dificultad": "facil"
     },
     {
       "id": "worms",
-      "texto": "Worms"
+      "texto": "Worms",
+      "dificultad": "facil"
     },
     {
       "id": "goat-simulator",
-      "texto": "Goat Simulator"
+      "texto": "Goat Simulator",
+      "dificultad": "facil"
     },
     {
       "id": "surgeon-simulator",
-      "texto": "Surgeon Simulator"
+      "texto": "Surgeon Simulator",
+      "dificultad": "facil"
     },
     {
       "id": "human-fall-flat",
-      "texto": "Human: Fall Flat"
+      "texto": "Human: Fall Flat",
+      "dificultad": "facil"
     },
     {
       "id": "gang-beasts",
-      "texto": "Gang Beasts"
+      "texto": "Gang Beasts",
+      "dificultad": "facil"
     },
     {
       "id": "overcooked",
-      "texto": "Overcooked!"
+      "texto": "Overcooked!",
+      "dificultad": "facil"
     },
     {
       "id": "moving-out",
-      "texto": "Moving Out"
+      "texto": "Moving Out",
+      "dificultad": "facil"
     },
     {
       "id": "it-takes-two",
-      "texto": "It Takes Two"
+      "texto": "It Takes Two",
+      "dificultad": "facil"
     },
     {
       "id": "a-way-out",
-      "texto": "A Way Out"
+      "texto": "A Way Out",
+      "dificultad": "facil"
     },
     {
       "id": "phasmophobia",
-      "texto": "Phasmophobia"
+      "texto": "Phasmophobia",
+      "dificultad": "facil"
     },
     {
       "id": "ark",
-      "texto": "ARK"
+      "texto": "ARK",
+      "dificultad": "facil"
     },
     {
       "id": "rust",
-      "texto": "Rust"
+      "texto": "Rust",
+      "dificultad": "facil"
     },
     {
       "id": "palworld",
-      "texto": "Palworld"
+      "texto": "Palworld",
+      "dificultad": "facil"
     },
     {
       "id": "sea-of-thieves",
-      "texto": "Sea of Thieves"
+      "texto": "Sea of Thieves",
+      "dificultad": "facil"
     },
     {
       "id": "no-mans-sky",
-      "texto": "No Man's Sky"
+      "texto": "No Man's Sky",
+      "dificultad": "facil"
     },
     {
       "id": "destiny",
-      "texto": "Destiny"
+      "texto": "Destiny",
+      "dificultad": "facil"
     },
     {
       "id": "marvel-rivals",
-      "texto": "Marvel Rivals"
+      "texto": "Marvel Rivals",
+      "dificultad": "facil"
     },
     {
       "id": "osu",
-      "texto": "osu!"
+      "texto": "osu!",
+      "dificultad": "facil"
     },
     {
       "id": "beat-saber",
-      "texto": "Beat Saber"
+      "texto": "Beat Saber",
+      "dificultad": "normal"
     },
     {
       "id": "guitar-hero",
-      "texto": "Guitar Hero"
+      "texto": "Guitar Hero",
+      "dificultad": "normal"
     },
     {
       "id": "rock-band",
-      "texto": "Rock Band"
+      "texto": "Rock Band",
+      "dificultad": "normal"
     },
     {
       "id": "dance-dance-revolution",
-      "texto": "Dance Dance Revolution"
+      "texto": "Dance Dance Revolution",
+      "dificultad": "normal"
     },
     {
       "id": "just-dance",
-      "texto": "Just Dance"
+      "texto": "Just Dance",
+      "dificultad": "normal"
     },
     {
       "id": "skate",
-      "texto": "Skate"
+      "texto": "Skate",
+      "dificultad": "normal"
     },
     {
       "id": "ssx",
-      "texto": "SSX"
+      "texto": "SSX",
+      "dificultad": "normal"
     },
     {
       "id": "medal-of-honor",
-      "texto": "Medal of Honor"
+      "texto": "Medal of Honor",
+      "dificultad": "normal"
     },
     {
       "id": "command-and-conquer",
-      "texto": "Command & Conquer"
+      "texto": "Command & Conquer",
+      "dificultad": "normal"
     },
     {
       "id": "star-wars-battlefront",
-      "texto": "Star Wars Battlefront"
+      "texto": "Star Wars Battlefront",
+      "dificultad": "normal"
     },
     {
       "id": "free-fire",
-      "texto": "Free Fire"
+      "texto": "Free Fire",
+      "dificultad": "normal"
     },
     {
       "id": "clash-royale",
-      "texto": "Clash Royale"
+      "texto": "Clash Royale",
+      "dificultad": "normal"
     },
     {
       "id": "clash-of-clans",
-      "texto": "Clash of Clans"
+      "texto": "Clash of Clans",
+      "dificultad": "normal"
     },
     {
       "id": "brawl-stars",
-      "texto": "Brawl Stars"
+      "texto": "Brawl Stars",
+      "dificultad": "normal"
     },
     {
       "id": "pokemon-go",
-      "texto": "Pokémon GO"
+      "texto": "Pokémon GO",
+      "dificultad": "normal"
     },
     {
       "id": "candy-crush-saga",
-      "texto": "Candy Crush Saga"
+      "texto": "Candy Crush Saga",
+      "dificultad": "normal"
     },
     {
       "id": "subway-surfers",
-      "texto": "Subway Surfers"
+      "texto": "Subway Surfers",
+      "dificultad": "normal"
     },
     {
       "id": "temple-run",
-      "texto": "Temple Run"
+      "texto": "Temple Run",
+      "dificultad": "normal"
     },
     {
       "id": "angry-birds",
-      "texto": "Angry Birds"
+      "texto": "Angry Birds",
+      "dificultad": "normal"
     },
     {
       "id": "geometry-dash",
-      "texto": "Geometry Dash"
+      "texto": "Geometry Dash",
+      "dificultad": "normal"
     },
     {
       "id": "plants-vs-zombies",
-      "texto": "Plants vs. Zombies"
+      "texto": "Plants vs. Zombies",
+      "dificultad": "normal"
     },
     {
       "id": "super-mario-bros",
-      "texto": "Super Mario Bros."
+      "texto": "Super Mario Bros.",
+      "dificultad": "facil"
     },
     {
       "id": "mario-kart",
-      "texto": "Mario Kart"
+      "texto": "Mario Kart",
+      "dificultad": "facil"
     },
     {
       "id": "mario-party",
-      "texto": "Mario Party"
+      "texto": "Mario Party",
+      "dificultad": "facil"
     },
     {
       "id": "super-smash-bros",
-      "texto": "Super Smash Bros."
+      "texto": "Super Smash Bros.",
+      "dificultad": "normal"
     },
     {
       "id": "zelda",
-      "texto": "Zelda"
+      "texto": "Zelda",
+      "dificultad": "normal"
     },
     {
       "id": "animal-crossing",
-      "texto": "Animal Crossing"
+      "texto": "Animal Crossing",
+      "dificultad": "normal"
     },
     {
       "id": "kirby",
-      "texto": "Kirby"
+      "texto": "Kirby",
+      "dificultad": "normal"
     },
     {
       "id": "metroid",
-      "texto": "Metroid"
+      "texto": "Metroid",
+      "dificultad": "normal"
     },
     {
       "id": "donkey-kong",
-      "texto": "Donkey Kong"
+      "texto": "Donkey Kong",
+      "dificultad": "normal"
     },
     {
       "id": "pokemon",
-      "texto": "Pokémon"
+      "texto": "Pokémon",
+      "dificultad": "normal"
     },
     {
       "id": "sonic-the-hedgehog",
-      "texto": "Sonic the Hedgehog"
+      "texto": "Sonic the Hedgehog",
+      "dificultad": "facil"
     },
     {
       "id": "crash-bandicoot",
-      "texto": "Crash Bandicoot"
+      "texto": "Crash Bandicoot",
+      "dificultad": "normal"
     },
     {
       "id": "spyro",
-      "texto": "Spyro"
+      "texto": "Spyro",
+      "dificultad": "normal"
     },
     {
       "id": "pac-man",
-      "texto": "Pac-Man"
+      "texto": "Pac-Man",
+      "dificultad": "normal"
     },
     {
       "id": "tetris",
-      "texto": "Tetris"
+      "texto": "Tetris",
+      "dificultad": "normal"
     },
     {
       "id": "street-fighter",
-      "texto": "Street Fighter"
+      "texto": "Street Fighter",
+      "dificultad": "normal"
     },
     {
       "id": "mortal-kombat",
-      "texto": "Mortal Kombat"
+      "texto": "Mortal Kombat",
+      "dificultad": "normal"
     },
     {
       "id": "tekken",
-      "texto": "Tekken"
+      "texto": "Tekken",
+      "dificultad": "normal"
     },
     {
       "id": "fifa",
-      "texto": "FIFA"
+      "texto": "FIFA",
+      "dificultad": "normal"
     },
     {
       "id": "nba-2k",
-      "texto": "NBA 2K"
+      "texto": "NBA 2K",
+      "dificultad": "normal"
     },
     {
       "id": "wwe-2k",
-      "texto": "WWE 2K"
+      "texto": "WWE 2K",
+      "dificultad": "normal"
     },
     {
       "id": "gran-turismo",
-      "texto": "Gran Turismo"
+      "texto": "Gran Turismo",
+      "dificultad": "normal"
     },
     {
       "id": "forza-horizon",
-      "texto": "Forza Horizon"
+      "texto": "Forza Horizon",
+      "dificultad": "normal"
     },
     {
       "id": "need-for-speed",
-      "texto": "Need for Speed"
+      "texto": "Need for Speed",
+      "dificultad": "normal"
     },
     {
       "id": "the-sims",
-      "texto": "The Sims"
+      "texto": "The Sims",
+      "dificultad": "normal"
     },
     {
       "id": "simcity",
-      "texto": "SimCity"
+      "texto": "SimCity",
+      "dificultad": "normal"
     },
     {
       "id": "civilization",
-      "texto": "Civilization"
+      "texto": "Civilization",
+      "dificultad": "normal"
     },
     {
       "id": "age-of-empires",
-      "texto": "Age of Empires"
+      "texto": "Age of Empires",
+      "dificultad": "normal"
     },
     {
       "id": "starcraft",
-      "texto": "StarCraft"
+      "texto": "StarCraft",
+      "dificultad": "normal"
     },
     {
       "id": "world-of-warcraft",
-      "texto": "World of Warcraft"
+      "texto": "World of Warcraft",
+      "dificultad": "normal"
     },
     {
       "id": "diablo",
-      "texto": "Diablo"
+      "texto": "Diablo",
+      "dificultad": "normal"
     },
     {
       "id": "fallout",
-      "texto": "Fallout"
+      "texto": "Fallout",
+      "dificultad": "normal"
     },
     {
       "id": "the-witcher-3",
-      "texto": "The Witcher 3"
+      "texto": "The Witcher 3",
+      "dificultad": "normal"
     },
     {
       "id": "cyberpunk-2077",
-      "texto": "Cyberpunk 2077"
+      "texto": "Cyberpunk 2077",
+      "dificultad": "normal"
     },
     {
       "id": "red-dead-redemption-2",
-      "texto": "Red Dead Redemption 2"
+      "texto": "Red Dead Redemption 2",
+      "dificultad": "facil"
     },
     {
       "id": "grand-theft-auto-v",
-      "texto": "GTA V"
+      "texto": "GTA V",
+      "dificultad": "normal"
     },
     {
       "id": "assassins-creed",
-      "texto": "Assassin's Creed"
+      "texto": "Assassin's Creed",
+      "dificultad": "normal"
     },
     {
       "id": "far-cry",
-      "texto": "Far Cry"
+      "texto": "Far Cry",
+      "dificultad": "dificil"
     },
     {
       "id": "hitman",
-      "texto": "Hitman"
+      "texto": "Hitman",
+      "dificultad": "dificil"
     },
     {
       "id": "metal-gear-solid",
-      "texto": "Metal Gear Solid"
+      "texto": "Metal Gear Solid",
+      "dificultad": "dificil"
     },
     {
       "id": "resident-evil",
-      "texto": "Resident Evil"
+      "texto": "Resident Evil",
+      "dificultad": "dificil"
     },
     {
       "id": "silent-hill",
-      "texto": "Silent Hill"
+      "texto": "Silent Hill",
+      "dificultad": "dificil"
     },
     {
       "id": "dead-space",
-      "texto": "Dead Space"
+      "texto": "Dead Space",
+      "dificultad": "dificil"
     },
     {
       "id": "outlast",
-      "texto": "Outlast"
+      "texto": "Outlast",
+      "dificultad": "dificil"
     },
     {
       "id": "five-nights-at-freddys",
-      "texto": "Five Nights at Freddy's"
+      "texto": "Five Nights at Freddy's",
+      "dificultad": "facil"
     },
     {
       "id": "little-nightmares",
-      "texto": "Little Nightmares"
+      "texto": "Little Nightmares",
+      "dificultad": "dificil"
     },
     {
       "id": "elden-ring",
-      "texto": "Elden Ring"
+      "texto": "Elden Ring",
+      "dificultad": "dificil"
     },
     {
       "id": "dark-souls",
-      "texto": "Dark Souls"
+      "texto": "Dark Souls",
+      "dificultad": "dificil"
     },
     {
       "id": "sekiro",
-      "texto": "Sekiro"
+      "texto": "Sekiro",
+      "dificultad": "dificil"
     },
     {
       "id": "hollow-knight",
-      "texto": "Hollow Knight"
+      "texto": "Hollow Knight",
+      "dificultad": "dificil"
     },
     {
       "id": "cuphead",
-      "texto": "Cuphead"
+      "texto": "Cuphead",
+      "dificultad": "dificil"
     },
     {
       "id": "portal",
-      "texto": "Portal"
+      "texto": "Portal",
+      "dificultad": "dificil"
     },
     {
       "id": "final-fantasy",
-      "texto": "Final Fantasy"
+      "texto": "Final Fantasy",
+      "dificultad": "dificil"
     },
     {
       "id": "mega-man",
-      "texto": "Mega Man"
+      "texto": "Mega Man",
+      "dificultad": "dificil"
     },
     {
       "id": "castlevania",
-      "texto": "Castlevania"
+      "texto": "Castlevania",
+      "dificultad": "dificil"
     },
     {
       "id": "prince-of-persia",
-      "texto": "Prince of Persia"
+      "texto": "Prince of Persia",
+      "dificultad": "dificil"
     },
     {
       "id": "rayman",
-      "texto": "Rayman"
+      "texto": "Rayman",
+      "dificultad": "dificil"
     },
     {
       "id": "banjo-kazooie",
-      "texto": "Banjo-Kazooie"
+      "texto": "Banjo-Kazooie",
+      "dificultad": "dificil"
     },
     {
       "id": "terraria",
-      "texto": "Terraria"
+      "texto": "Terraria",
+      "dificultad": "dificil"
     },
     {
       "id": "genshin-impact",
-      "texto": "Genshin Impact"
+      "texto": "Genshin Impact",
+      "dificultad": "dificil"
     },
     {
       "id": "the-last-of-us",
-      "texto": "The Last of Us"
+      "texto": "The Last of Us",
+      "dificultad": "dificil"
     },
     {
       "id": "god-of-war",
-      "texto": "God of War"
+      "texto": "God of War",
+      "dificultad": "dificil"
     },
     {
       "id": "uncharted",
-      "texto": "Uncharted"
+      "texto": "Uncharted",
+      "dificultad": "dificil"
     },
     {
       "id": "ratchet-and-clank",
-      "texto": "Ratchet & Clank"
+      "texto": "Ratchet & Clank",
+      "dificultad": "dificil"
     },
     {
       "id": "splatoon",
-      "texto": "Splatoon"
+      "texto": "Splatoon",
+      "dificultad": "dificil"
     },
     {
       "id": "pikmin",
-      "texto": "Pikmin"
+      "texto": "Pikmin",
+      "dificultad": "dificil"
     },
     {
       "id": "ghost-of-tsushima",
-      "texto": "Ghost of Tsushima"
+      "texto": "Ghost of Tsushima",
+      "dificultad": "dificil"
     },
     {
       "id": "monster-hunter",
-      "texto": "Monster Hunter"
+      "texto": "Monster Hunter",
+      "dificultad": "dificil"
     },
     {
       "id": "persona",
-      "texto": "Persona"
+      "texto": "Persona",
+      "dificultad": "dificil"
     },
     {
       "id": "dead-by-daylight",
-      "texto": "Dead by Daylight"
+      "texto": "Dead by Daylight",
+      "dificultad": "dificil"
     },
     {
       "id": "dragon-ball",
-      "texto": "Dragon Ball"
+      "texto": "Dragon Ball",
+      "dificultad": "dificil"
     },
     {
       "id": "the-elder-scrolls",
-      "texto": "The Elder Scrolls"
+      "texto": "The Elder Scrolls",
+      "dificultad": "dificil"
     },
     {
       "id": "metal-slug",
-      "texto": "Metal Slug"
+      "texto": "Metal Slug",
+      "dificultad": "dificil"
     }
   ]
 }

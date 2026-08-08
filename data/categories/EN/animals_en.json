@@ -8,803 +8,1003 @@
   "palabras": [
     {
       "id": "perro",
-      "texto": "Dog"
+      "texto": "Dog",
+      "dificultad": "facil"
     },
     {
       "id": "gato",
-      "texto": "Cat"
+      "texto": "Cat",
+      "dificultad": "facil"
     },
     {
       "id": "conejo",
-      "texto": "Rabbit"
+      "texto": "Rabbit",
+      "dificultad": "facil"
     },
     {
       "id": "hamster",
-      "texto": "Hamster"
+      "texto": "Hamster",
+      "dificultad": "facil"
     },
     {
       "id": "conejillo-de-indias",
-      "texto": "Guinea Pig"
+      "texto": "Guinea Pig",
+      "dificultad": "facil"
     },
     {
       "id": "caballo",
-      "texto": "Horse"
+      "texto": "Horse",
+      "dificultad": "facil"
     },
     {
       "id": "vaca",
-      "texto": "Cow"
+      "texto": "Cow",
+      "dificultad": "facil"
     },
     {
       "id": "toro",
-      "texto": "Bull"
+      "texto": "Bull",
+      "dificultad": "facil"
     },
     {
       "id": "cerdo",
-      "texto": "Pig"
+      "texto": "Pig",
+      "dificultad": "facil"
     },
     {
       "id": "oveja",
-      "texto": "Sheep"
+      "texto": "Sheep",
+      "dificultad": "facil"
     },
     {
       "id": "cabra",
-      "texto": "Goat"
+      "texto": "Goat",
+      "dificultad": "facil"
     },
     {
       "id": "burro",
-      "texto": "Donkey"
+      "texto": "Donkey",
+      "dificultad": "facil"
     },
     {
       "id": "gallina",
-      "texto": "Hen"
+      "texto": "Hen",
+      "dificultad": "facil"
     },
     {
       "id": "gallo",
-      "texto": "Rooster"
+      "texto": "Rooster",
+      "dificultad": "facil"
     },
     {
       "id": "pato",
-      "texto": "Duck"
+      "texto": "Duck",
+      "dificultad": "facil"
     },
     {
       "id": "ganso",
-      "texto": "Goose"
+      "texto": "Goose",
+      "dificultad": "facil"
     },
     {
       "id": "pavo",
-      "texto": "Turkey"
+      "texto": "Turkey",
+      "dificultad": "facil"
     },
     {
       "id": "paloma",
-      "texto": "Pigeon"
+      "texto": "Pigeon",
+      "dificultad": "facil"
     },
     {
       "id": "canario",
-      "texto": "Canary"
+      "texto": "Canary",
+      "dificultad": "facil"
     },
     {
       "id": "loro",
-      "texto": "Parrot"
+      "texto": "Parrot",
+      "dificultad": "facil"
     },
     {
       "id": "aguila",
-      "texto": "Eagle"
+      "texto": "Eagle",
+      "dificultad": "facil"
     },
     {
       "id": "halcon",
-      "texto": "Falcon"
+      "texto": "Falcon",
+      "dificultad": "facil"
     },
     {
       "id": "buho",
-      "texto": "Owl"
+      "texto": "Owl",
+      "dificultad": "facil"
     },
     {
       "id": "flamenco",
-      "texto": "Flamingo"
+      "texto": "Flamingo",
+      "dificultad": "facil"
     },
     {
       "id": "pelicano",
-      "texto": "Pelican"
+      "texto": "Pelican",
+      "dificultad": "facil"
     },
     {
       "id": "pinguino",
-      "texto": "Penguin"
+      "texto": "Penguin",
+      "dificultad": "facil"
     },
     {
       "id": "avestruz",
-      "texto": "Ostrich"
+      "texto": "Ostrich",
+      "dificultad": "facil"
     },
     {
       "id": "cisne",
-      "texto": "Swan"
+      "texto": "Swan",
+      "dificultad": "facil"
     },
     {
       "id": "colibri",
-      "texto": "Hummingbird"
+      "texto": "Hummingbird",
+      "dificultad": "facil"
     },
     {
       "id": "murcielago",
-      "texto": "Bat"
+      "texto": "Bat",
+      "dificultad": "facil"
     },
     {
       "id": "leon",
-      "texto": "Lion"
+      "texto": "Lion",
+      "dificultad": "facil"
     },
     {
       "id": "tigre",
-      "texto": "Tiger"
+      "texto": "Tiger",
+      "dificultad": "facil"
     },
     {
       "id": "leopardo",
-      "texto": "Leopard"
+      "texto": "Leopard",
+      "dificultad": "facil"
     },
     {
       "id": "guepardo",
-      "texto": "Cheetah"
+      "texto": "Cheetah",
+      "dificultad": "facil"
     },
     {
       "id": "jaguar",
-      "texto": "Jaguar"
+      "texto": "Jaguar",
+      "dificultad": "facil"
     },
     {
       "id": "puma",
-      "texto": "Puma"
+      "texto": "Puma",
+      "dificultad": "facil"
     },
     {
       "id": "lobo",
-      "texto": "Wolf"
+      "texto": "Wolf",
+      "dificultad": "facil"
     },
     {
       "id": "zorro",
-      "texto": "Fox"
+      "texto": "Fox",
+      "dificultad": "facil"
     },
     {
       "id": "oso",
-      "texto": "Bear"
+      "texto": "Bear",
+      "dificultad": "facil"
     },
     {
       "id": "oso-polar",
-      "texto": "Polar Bear"
+      "texto": "Polar Bear",
+      "dificultad": "facil"
     },
     {
       "id": "oso-panda",
-      "texto": "Giant Panda"
+      "texto": "Giant Panda",
+      "dificultad": "facil"
     },
     {
       "id": "koala",
-      "texto": "Koala"
+      "texto": "Koala",
+      "dificultad": "facil"
     },
     {
       "id": "canguro",
-      "texto": "Kangaroo"
+      "texto": "Kangaroo",
+      "dificultad": "facil"
     },
     {
       "id": "chimpance",
-      "texto": "Chimpanzee"
+      "texto": "Chimpanzee",
+      "dificultad": "facil"
     },
     {
       "id": "gorila",
-      "texto": "Gorilla"
+      "texto": "Gorilla",
+      "dificultad": "facil"
     },
     {
       "id": "orangutan",
-      "texto": "Orangutan"
+      "texto": "Orangutan",
+      "dificultad": "facil"
     },
     {
       "id": "mono",
-      "texto": "Monkey"
+      "texto": "Monkey",
+      "dificultad": "facil"
     },
     {
       "id": "perezoso",
-      "texto": "Sloth"
+      "texto": "Sloth",
+      "dificultad": "facil"
     },
     {
       "id": "mapache",
-      "texto": "Raccoon"
+      "texto": "Raccoon",
+      "dificultad": "facil"
     },
     {
       "id": "ardilla",
-      "texto": "Squirrel"
+      "texto": "Squirrel",
+      "dificultad": "facil"
     },
     {
       "id": "castor",
-      "texto": "Beaver"
+      "texto": "Beaver",
+      "dificultad": "facil"
     },
     {
       "id": "nutria",
-      "texto": "Otter"
+      "texto": "Otter",
+      "dificultad": "facil"
     },
     {
       "id": "erizo",
-      "texto": "Hedgehog"
+      "texto": "Hedgehog",
+      "dificultad": "facil"
     },
     {
       "id": "mofeta",
-      "texto": "Skunk"
+      "texto": "Skunk",
+      "dificultad": "facil"
     },
     {
       "id": "elefante",
-      "texto": "Elephant"
+      "texto": "Elephant",
+      "dificultad": "facil"
     },
     {
       "id": "jirafa",
-      "texto": "Giraffe"
+      "texto": "Giraffe",
+      "dificultad": "facil"
     },
     {
       "id": "cebra",
-      "texto": "Zebra"
+      "texto": "Zebra",
+      "dificultad": "facil"
     },
     {
       "id": "rinoceronte",
-      "texto": "Rhinoceros"
+      "texto": "Rhinoceros",
+      "dificultad": "facil"
     },
     {
       "id": "hipopotamo",
-      "texto": "Hippopotamus"
+      "texto": "Hippopotamus",
+      "dificultad": "facil"
     },
     {
       "id": "bufalo",
-      "texto": "Buffalo"
+      "texto": "Buffalo",
+      "dificultad": "facil"
     },
     {
       "id": "bisonte",
-      "texto": "Bison"
+      "texto": "Bison",
+      "dificultad": "facil"
     },
     {
       "id": "camello",
-      "texto": "Camel"
+      "texto": "Camel",
+      "dificultad": "facil"
     },
     {
       "id": "dromedario",
-      "texto": "Dromedary"
+      "texto": "Dromedary",
+      "dificultad": "facil"
     },
     {
       "id": "llama",
-      "texto": "Llama"
+      "texto": "Llama",
+      "dificultad": "facil"
     },
     {
       "id": "alpaca",
-      "texto": "Alpaca"
+      "texto": "Alpaca",
+      "dificultad": "facil"
     },
     {
       "id": "venado",
-      "texto": "Deer"
+      "texto": "Deer",
+      "dificultad": "facil"
     },
     {
       "id": "alce",
-      "texto": "Moose"
+      "texto": "Moose",
+      "dificultad": "facil"
     },
     {
       "id": "reno",
-      "texto": "Reindeer"
+      "texto": "Reindeer",
+      "dificultad": "facil"
     },
     {
       "id": "jabali",
-      "texto": "Wild Boar"
+      "texto": "Wild Boar",
+      "dificultad": "facil"
     },
     {
       "id": "cocodrilo",
-      "texto": "Crocodile"
+      "texto": "Crocodile",
+      "dificultad": "facil"
     },
     {
       "id": "tortuga",
-      "texto": "Turtle"
+      "texto": "Turtle",
+      "dificultad": "normal"
     },
     {
       "id": "iguana",
-      "texto": "Iguana"
+      "texto": "Iguana",
+      "dificultad": "normal"
     },
     {
       "id": "camaleon",
-      "texto": "Chameleon"
+      "texto": "Chameleon",
+      "dificultad": "facil"
     },
     {
       "id": "lagarto",
-      "texto": "Lizard"
+      "texto": "Lizard",
+      "dificultad": "normal"
     },
     {
       "id": "serpiente",
-      "texto": "Snake"
+      "texto": "Snake",
+      "dificultad": "normal"
     },
     {
       "id": "cobra",
-      "texto": "Cobra"
+      "texto": "Cobra",
+      "dificultad": "normal"
     },
     {
       "id": "piton",
-      "texto": "Python"
+      "texto": "Python",
+      "dificultad": "normal"
     },
     {
       "id": "anaconda",
-      "texto": "Anaconda"
+      "texto": "Anaconda",
+      "dificultad": "normal"
     },
     {
       "id": "rana",
-      "texto": "Frog"
+      "texto": "Frog",
+      "dificultad": "normal"
     },
     {
       "id": "sapo",
-      "texto": "Toad"
+      "texto": "Toad",
+      "dificultad": "normal"
     },
     {
       "id": "pez-payaso",
-      "texto": "Clownfish"
+      "texto": "Clownfish",
+      "dificultad": "normal"
     },
     {
       "id": "foca",
-      "texto": "Seal"
+      "texto": "Seal",
+      "dificultad": "normal"
     },
     {
       "id": "tiburon",
-      "texto": "Shark"
+      "texto": "Shark",
+      "dificultad": "normal"
     },
     {
       "id": "ballena",
-      "texto": "Whale"
+      "texto": "Whale",
+      "dificultad": "normal"
     },
     {
       "id": "delfin",
-      "texto": "Dolphin"
+      "texto": "Dolphin",
+      "dificultad": "normal"
     },
     {
       "id": "orca",
-      "texto": "Orca"
+      "texto": "Orca",
+      "dificultad": "normal"
     },
     {
       "id": "pulpo",
-      "texto": "Octopus"
+      "texto": "Octopus",
+      "dificultad": "normal"
     },
     {
       "id": "calamar",
-      "texto": "Squid"
+      "texto": "Squid",
+      "dificultad": "normal"
     },
     {
       "id": "medusa",
-      "texto": "Jellyfish"
+      "texto": "Jellyfish",
+      "dificultad": "normal"
     },
     {
       "id": "caballito-de-mar",
-      "texto": "Seahorse"
+      "texto": "Seahorse",
+      "dificultad": "facil"
     },
     {
       "id": "estrella-de-mar",
-      "texto": "Starfish"
+      "texto": "Starfish",
+      "dificultad": "normal"
     },
     {
       "id": "cangrejo",
-      "texto": "Crab"
+      "texto": "Crab",
+      "dificultad": "normal"
     },
     {
       "id": "camaron",
-      "texto": "Shrimp"
+      "texto": "Shrimp",
+      "dificultad": "normal"
     },
     {
       "id": "mariposa",
-      "texto": "Butterfly"
+      "texto": "Butterfly",
+      "dificultad": "normal"
     },
     {
       "id": "abeja",
-      "texto": "Bee"
+      "texto": "Bee",
+      "dificultad": "normal"
     },
     {
       "id": "avispa",
-      "texto": "Wasp"
+      "texto": "Wasp",
+      "dificultad": "normal"
     },
     {
       "id": "hormiga",
-      "texto": "Ant"
+      "texto": "Ant",
+      "dificultad": "normal"
     },
     {
       "id": "arana",
-      "texto": "Spider"
+      "texto": "Spider",
+      "dificultad": "normal"
     },
     {
       "id": "escorpion",
-      "texto": "Scorpion"
+      "texto": "Scorpion",
+      "dificultad": "normal"
     },
     {
       "id": "caracol",
-      "texto": "Snail"
+      "texto": "Snail",
+      "dificultad": "normal"
     },
     {
       "id": "foca-leopardo",
-      "texto": "Leopard Seal"
+      "texto": "Leopard Seal",
+      "dificultad": "normal"
     },
     {
       "id": "morsa",
-      "texto": "Walrus"
+      "texto": "Walrus",
+      "dificultad": "normal"
     },
     {
       "id": "manati",
-      "texto": "Manatee"
+      "texto": "Manatee",
+      "dificultad": "normal"
     },
     {
       "id": "dugongo",
-      "texto": "Dugong"
+      "texto": "Dugong",
+      "dificultad": "normal"
     },
     {
       "id": "morsa",
-      "texto": "Walrus"
+      "texto": "Walrus",
+      "dificultad": "normal"
     },
     {
       "id": "beluga",
-      "texto": "Beluga Whale"
+      "texto": "Beluga Whale",
+      "dificultad": "normal"
     },
     {
       "id": "narval",
-      "texto": "Narwhal"
+      "texto": "Narwhal",
+      "dificultad": "normal"
     },
     {
       "id": "cachalote",
-      "texto": "Sperm Whale"
+      "texto": "Sperm Whale",
+      "dificultad": "normal"
     },
     {
       "id": "mantarraya",
-      "texto": "Manta Ray"
+      "texto": "Manta Ray",
+      "dificultad": "normal"
     },
     {
       "id": "raya",
-      "texto": "Stingray"
+      "texto": "Stingray",
+      "dificultad": "normal"
     },
     {
       "id": "anguila",
-      "texto": "Eel"
+      "texto": "Eel",
+      "dificultad": "normal"
     },
     {
       "id": "morena",
-      "texto": "Moray Eel"
+      "texto": "Moray Eel",
+      "dificultad": "normal"
     },
     {
       "id": "atun",
-      "texto": "Tuna"
+      "texto": "Tuna",
+      "dificultad": "normal"
     },
     {
       "id": "salmon",
-      "texto": "Salmon"
+      "texto": "Salmon",
+      "dificultad": "normal"
     },
     {
       "id": "pez-espada",
-      "texto": "Swordfish"
+      "texto": "Swordfish",
+      "dificultad": "normal"
     },
     {
       "id": "pez-globo",
-      "texto": "Pufferfish"
+      "texto": "Pufferfish",
+      "dificultad": "normal"
     },
     {
       "id": "pez-luna",
-      "texto": "Sunfish"
+      "texto": "Sunfish",
+      "dificultad": "normal"
     },
     {
       "id": "pez-volador",
-      "texto": "Flying Fish"
+      "texto": "Flying Fish",
+      "dificultad": "normal"
     },
     {
       "id": "pez-sierra",
-      "texto": "Sawfish"
+      "texto": "Sawfish",
+      "dificultad": "normal"
     },
     {
       "id": "pez-electrico",
-      "texto": "Electric Eel"
+      "texto": "Electric Eel",
+      "dificultad": "normal"
     },
     {
       "id": "piraña",
-      "texto": "Piranha"
+      "texto": "Piranha",
+      "dificultad": "normal"
     },
     {
       "id": "trucha",
-      "texto": "Trout"
+      "texto": "Trout",
+      "dificultad": "normal"
     },
     {
       "id": "bacalao",
-      "texto": "Cod"
+      "texto": "Cod",
+      "dificultad": "normal"
     },
     {
       "id": "mero",
-      "texto": "Grouper"
+      "texto": "Grouper",
+      "dificultad": "normal"
     },
     {
       "id": "mejillon",
-      "texto": "Mussel"
+      "texto": "Mussel",
+      "dificultad": "normal"
     },
     {
       "id": "ostra",
-      "texto": "Oyster"
+      "texto": "Oyster",
+      "dificultad": "normal"
     },
     {
       "id": "almeja",
-      "texto": "Clam"
+      "texto": "Clam",
+      "dificultad": "normal"
     },
     {
       "id": "erizo-de-mar",
-      "texto": "Sea Urchin"
+      "texto": "Sea Urchin",
+      "dificultad": "normal"
     },
     {
       "id": "babosa",
-      "texto": "Slug"
+      "texto": "Slug",
+      "dificultad": "normal"
     },
     {
       "id": "lombriz",
-      "texto": "Earthworm"
+      "texto": "Earthworm",
+      "dificultad": "normal"
     },
     {
       "id": "ciempies",
-      "texto": "Centipede"
+      "texto": "Centipede",
+      "dificultad": "normal"
     },
     {
       "id": "milpies",
-      "texto": "Millipede"
+      "texto": "Millipede",
+      "dificultad": "normal"
     },
     {
       "id": "libelula",
-      "texto": "Dragonfly"
+      "texto": "Dragonfly",
+      "dificultad": "normal"
     },
     {
       "id": "mantis",
-      "texto": "Praying Mantis"
+      "texto": "Praying Mantis",
+      "dificultad": "normal"
     },
     {
       "id": "saltamontes",
-      "texto": "Grasshopper"
+      "texto": "Grasshopper",
+      "dificultad": "normal"
     },
     {
       "id": "grillo",
-      "texto": "Cricket"
+      "texto": "Cricket",
+      "dificultad": "normal"
     },
     {
       "id": "mariquita",
-      "texto": "Ladybug"
+      "texto": "Ladybug",
+      "dificultad": "normal"
     },
     {
       "id": "escarabajo",
-      "texto": "Beetle"
+      "texto": "Beetle",
+      "dificultad": "normal"
     },
     {
       "id": "mosca",
-      "texto": "Fly"
+      "texto": "Fly",
+      "dificultad": "normal"
     },
     {
       "id": "mosquito",
-      "texto": "Mosquito"
+      "texto": "Mosquito",
+      "dificultad": "normal"
     },
     {
       "id": "cigarra",
-      "texto": "Cicada"
+      "texto": "Cicada",
+      "dificultad": "normal"
     },
     {
       "id": "polilla",
-      "texto": "Moth"
+      "texto": "Moth",
+      "dificultad": "normal"
     },
     {
       "id": "termita",
-      "texto": "Termite"
+      "texto": "Termite",
+      "dificultad": "normal"
     },
     {
       "id": "garrapata",
-      "texto": "Tick"
+      "texto": "Tick",
+      "dificultad": "normal"
     },
     {
       "id": "cochinilla",
-      "texto": "Woodlouse"
+      "texto": "Woodlouse",
+      "dificultad": "normal"
     },
     {
       "id": "avispon",
-      "texto": "Hornet"
+      "texto": "Hornet",
+      "dificultad": "normal"
     },
     {
       "id": "cuervo",
-      "texto": "Crow"
+      "texto": "Crow",
+      "dificultad": "normal"
     },
     {
       "id": "cuervo",
-      "texto": "Crow"
+      "texto": "Crow",
+      "dificultad": "normal"
     },
     {
       "id": "golondrina",
-      "texto": "Swallow"
+      "texto": "Swallow",
+      "dificultad": "normal"
     },
     {
       "id": "gorrion",
-      "texto": "Sparrow"
+      "texto": "Sparrow",
+      "dificultad": "normal"
     },
     {
       "id": "tucan",
-      "texto": "Toucan"
+      "texto": "Toucan",
+      "dificultad": "normal"
     },
     {
       "id": "pavo-real",
-      "texto": "Peacock"
+      "texto": "Peacock",
+      "dificultad": "dificil"
     },
     {
       "id": "kiwi",
-      "texto": "Kiwi"
+      "texto": "Kiwi",
+      "dificultad": "dificil"
     },
     {
       "id": "cacatua",
-      "texto": "Cockatoo"
+      "texto": "Cockatoo",
+      "dificultad": "dificil"
     },
     {
       "id": "cacatua-negra",
-      "texto": "Black Cockatoo"
+      "texto": "Black Cockatoo",
+      "dificultad": "dificil"
     },
     {
       "id": "golondrina",
-      "texto": "Swallow"
+      "texto": "Swallow",
+      "dificultad": "dificil"
     },
     {
       "id": "faisan",
-      "texto": "Pheasant"
+      "texto": "Pheasant",
+      "dificultad": "dificil"
     },
     {
       "id": "codorniz",
-      "texto": "Quail"
+      "texto": "Quail",
+      "dificultad": "dificil"
     },
     {
       "id": "perdiz",
-      "texto": "Partridge"
+      "texto": "Partridge",
+      "dificultad": "dificil"
     },
     {
       "id": "garza",
-      "texto": "Heron"
+      "texto": "Heron",
+      "dificultad": "dificil"
     },
     {
       "id": "cigueña",
-      "texto": "Stork"
+      "texto": "Stork",
+      "dificultad": "dificil"
     },
     {
       "id": "papagayo",
-      "texto": "Macaw"
+      "texto": "Macaw",
+      "dificultad": "dificil"
     },
     {
       "id": "suricata",
-      "texto": "Meerkat"
+      "texto": "Meerkat",
+      "dificultad": "dificil"
     },
     {
       "id": "hiena",
-      "texto": "Hyena"
+      "texto": "Hyena",
+      "dificultad": "dificil"
     },
     {
       "id": "tapir",
-      "texto": "Tapir"
+      "texto": "Tapir",
+      "dificultad": "dificil"
     },
     {
       "id": "okapi",
-      "texto": "Okapi"
+      "texto": "Okapi",
+      "dificultad": "dificil"
     },
     {
       "id": "wombat",
-      "texto": "Wombat"
+      "texto": "Wombat",
+      "dificultad": "dificil"
     },
     {
       "id": "equidna",
-      "texto": "Echidna"
+      "texto": "Echidna",
+      "dificultad": "dificil"
     },
     {
       "id": "ornitorrinco",
-      "texto": "Platypus"
+      "texto": "Platypus",
+      "dificultad": "dificil"
     },
     {
       "id": "diablo-de-tasmania",
-      "texto": "Tasmanian Devil"
+      "texto": "Tasmanian Devil",
+      "dificultad": "dificil"
     },
     {
       "id": "pangolin",
-      "texto": "Pangolin"
+      "texto": "Pangolin",
+      "dificultad": "facil"
     },
     {
       "id": "armadillo",
-      "texto": "Armadillo"
+      "texto": "Armadillo",
+      "dificultad": "dificil"
     },
     {
       "id": "tejon",
-      "texto": "Badger"
+      "texto": "Badger",
+      "dificultad": "dificil"
     },
     {
       "id": "huron",
-      "texto": "Ferret"
+      "texto": "Ferret",
+      "dificultad": "dificil"
     },
     {
       "id": "comadreja",
-      "texto": "Weasel"
+      "texto": "Weasel",
+      "dificultad": "dificil"
     },
     {
       "id": "vison",
-      "texto": "Mink"
+      "texto": "Mink",
+      "dificultad": "dificil"
     },
     {
       "id": "lince",
-      "texto": "Lynx"
+      "texto": "Lynx",
+      "dificultad": "dificil"
     },
     {
       "id": "carnero",
-      "texto": "Ram"
+      "texto": "Ram",
+      "dificultad": "dificil"
     },
     {
       "id": "antilope",
-      "texto": "Antelope"
+      "texto": "Antelope",
+      "dificultad": "dificil"
     },
     {
       "id": "gacela",
-      "texto": "Gazelle"
+      "texto": "Gazelle",
+      "dificultad": "dificil"
     },
     {
       "id": "impala",
-      "texto": "Impala"
+      "texto": "Impala",
+      "dificultad": "dificil"
     },
     {
       "id": "yak",
-      "texto": "Yak"
+      "texto": "Yak",
+      "dificultad": "dificil"
     },
     {
       "id": "ñu",
-      "texto": "Wildebeest"
+      "texto": "Wildebeest",
+      "dificultad": "dificil"
     },
     {
       "id": "cebu",
-      "texto": "Zebu"
+      "texto": "Zebu",
+      "dificultad": "dificil"
     },
     {
       "id": "mula",
-      "texto": "Mule"
+      "texto": "Mule",
+      "dificultad": "dificil"
     },
     {
       "id": "cecilia",
-      "texto": "Caecilian"
+      "texto": "Caecilian",
+      "dificultad": "dificil"
     },
     {
       "id": "geco",
-      "texto": "Gecko"
+      "texto": "Gecko",
+      "dificultad": "dificil"
     },
     {
       "id": "dragon-de-komodo",
-      "texto": "Komodo Dragon"
+      "texto": "Komodo Dragon",
+      "dificultad": "dificil"
     },
     {
       "id": "boa",
-      "texto": "Boa"
+      "texto": "Boa",
+      "dificultad": "dificil"
     },
     {
       "id": "vibora",
-      "texto": "Viper"
+      "texto": "Viper",
+      "dificultad": "dificil"
     },
     {
       "id": "cascabel",
-      "texto": "Rattlesnake"
+      "texto": "Rattlesnake",
+      "dificultad": "dificil"
     },
     {
       "id": "triton",
-      "texto": "Newt"
+      "texto": "Newt",
+      "dificultad": "dificil"
     },
     {
       "id": "ajolote",
-      "texto": "Axolotl"
+      "texto": "Axolotl",
+      "dificultad": "dificil"
     },
     {
       "id": "renacuajo",
-      "texto": "Tadpole"
+      "texto": "Tadpole",
+      "dificultad": "dificil"
     },
     {
       "id": "cisne-negro",
-      "texto": "Black Swan"
+      "texto": "Black Swan",
+      "dificultad": "dificil"
     },
     {
       "id": "gaviota",
-      "texto": "Seagull"
+      "texto": "Seagull",
+      "dificultad": "dificil"
     },
     {
       "id": "petirrojo",
-      "texto": "Robin"
+      "texto": "Robin",
+      "dificultad": "dificil"
     },
     {
       "id": "carbonero",
-      "texto": "Tit"
+      "texto": "Tit",
+      "dificultad": "dificil"
     },
     {
       "id": "abejorro",
-      "texto": "Bumblebee"
+      "texto": "Bumblebee",
+      "dificultad": "dificil"
     },
     {
       "id": "camaron-pistola",
-      "texto": "Pistol Shrimp"
+      "texto": "Pistol Shrimp",
+      "dificultad": "dificil"
     }
   ]
 }

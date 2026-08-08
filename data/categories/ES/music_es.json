@@ -8,599 +8,748 @@
   "palabras": [
     {
       "id": "michael-jackson",
-      "texto": "Michael Jackson"
+      "texto": "Michael Jackson",
+      "dificultad": "facil"
     },
     {
       "id": "elvis-presley",
-      "texto": "Elvis Presley"
+      "texto": "Elvis Presley",
+      "dificultad": "dificil"
     },
     {
       "id": "madonna",
-      "texto": "Madonna"
+      "texto": "Madonna",
+      "dificultad": "facil"
     },
     {
       "id": "queen",
-      "texto": "Queen"
+      "texto": "Queen",
+      "dificultad": "facil"
     },
     {
       "id": "freddie-mercury",
-      "texto": "Freddie Mercury"
+      "texto": "Freddie Mercury",
+      "dificultad": "facil"
     },
     {
       "id": "the-beatles",
-      "texto": "The Beatles"
+      "texto": "The Beatles",
+      "dificultad": "dificil"
     },
     {
       "id": "john-lennon",
-      "texto": "John Lennon"
+      "texto": "John Lennon",
+      "dificultad": "facil"
     },
     {
       "id": "paul-mccartney",
-      "texto": "Paul McCartney"
+      "texto": "Paul McCartney",
+      "dificultad": "facil"
     },
     {
       "id": "the-rolling-stones",
-      "texto": "The Rolling Stones"
+      "texto": "The Rolling Stones",
+      "dificultad": "facil"
     },
     {
       "id": "mick-jagger",
-      "texto": "Mick Jagger"
+      "texto": "Mick Jagger",
+      "dificultad": "facil"
     },
     {
       "id": "u2",
-      "texto": "U2"
+      "texto": "U2",
+      "dificultad": "facil"
     },
     {
       "id": "bono",
-      "texto": "Bono"
+      "texto": "Bono",
+      "dificultad": "facil"
     },
     {
       "id": "coldplay",
-      "texto": "Coldplay"
+      "texto": "Coldplay",
+      "dificultad": "facil"
     },
     {
       "id": "chris-martin",
-      "texto": "Chris Martin"
+      "texto": "Chris Martin",
+      "dificultad": "facil"
     },
     {
       "id": "linkin-park",
-      "texto": "Linkin Park"
+      "texto": "Linkin Park",
+      "dificultad": "facil"
     },
     {
       "id": "chester-bennington",
-      "texto": "Chester Bennington"
+      "texto": "Chester Bennington",
+      "dificultad": "facil"
     },
     {
       "id": "metallica",
-      "texto": "Metallica"
+      "texto": "Metallica",
+      "dificultad": "facil"
     },
     {
       "id": "guns-n-roses",
-      "texto": "Guns N' Roses"
+      "texto": "Guns N' Roses",
+      "dificultad": "facil"
     },
     {
       "id": "nirvana",
-      "texto": "Nirvana"
+      "texto": "Nirvana",
+      "dificultad": "facil"
     },
     {
       "id": "foo-fighters",
-      "texto": "Foo Fighters"
+      "texto": "Foo Fighters",
+      "dificultad": "facil"
     },
     {
       "id": "acdc",
-      "texto": "AC/DC"
+      "texto": "AC/DC",
+      "dificultad": "facil"
     },
     {
       "id": "red-hot-chili-peppers",
-      "texto": "Red Hot Chili Peppers"
+      "texto": "Red Hot Chili Peppers",
+      "dificultad": "facil"
     },
     {
       "id": "green-day",
-      "texto": "Green Day"
+      "texto": "Green Day",
+      "dificultad": "facil"
     },
     {
       "id": "blink-182",
-      "texto": "Blink-182"
+      "texto": "Blink-182",
+      "dificultad": "facil"
     },
     {
       "id": "bon-jovi",
-      "texto": "Bon Jovi"
+      "texto": "Bon Jovi",
+      "dificultad": "facil"
     },
     {
       "id": "aerosmith",
-      "texto": "Aerosmith"
+      "texto": "Aerosmith",
+      "dificultad": "facil"
     },
     {
       "id": "imagine-dragons",
-      "texto": "Imagine Dragons"
+      "texto": "Imagine Dragons",
+      "dificultad": "facil"
     },
     {
       "id": "maroon-5",
-      "texto": "Maroon 5"
+      "texto": "Maroon 5",
+      "dificultad": "facil"
     },
     {
       "id": "bruno-mars",
-      "texto": "Bruno Mars"
+      "texto": "Bruno Mars",
+      "dificultad": "facil"
     },
     {
       "id": "ed-sheeran",
-      "texto": "Ed Sheeran"
+      "texto": "Ed Sheeran",
+      "dificultad": "facil"
     },
     {
       "id": "adele",
-      "texto": "Adele"
+      "texto": "Adele",
+      "dificultad": "facil"
     },
     {
       "id": "taylor-swift",
-      "texto": "Taylor Swift"
+      "texto": "Taylor Swift",
+      "dificultad": "facil"
     },
     {
       "id": "billie-eilish",
-      "texto": "Billie Eilish"
+      "texto": "Billie Eilish",
+      "dificultad": "facil"
     },
     {
       "id": "dua-lipa",
-      "texto": "Dua Lipa"
+      "texto": "Dua Lipa",
+      "dificultad": "facil"
     },
     {
       "id": "lady-gaga",
-      "texto": "Lady Gaga"
+      "texto": "Lady Gaga",
+      "dificultad": "facil"
     },
     {
       "id": "katy-perry",
-      "texto": "Katy Perry"
+      "texto": "Katy Perry",
+      "dificultad": "facil"
     },
     {
       "id": "rihanna",
-      "texto": "Rihanna"
+      "texto": "Rihanna",
+      "dificultad": "facil"
     },
     {
       "id": "beyonce",
-      "texto": "Beyoncé"
+      "texto": "Beyoncé",
+      "dificultad": "facil"
     },
     {
       "id": "justin-bieber",
-      "texto": "Justin Bieber"
+      "texto": "Justin Bieber",
+      "dificultad": "facil"
     },
     {
       "id": "selena-gomez",
-      "texto": "Selena Gomez"
+      "texto": "Selena Gomez",
+      "dificultad": "facil"
     },
     {
       "id": "shakira",
-      "texto": "Shakira"
+      "texto": "Shakira",
+      "dificultad": "facil"
     },
     {
       "id": "enrique-iglesias",
-      "texto": "Enrique Iglesias"
+      "texto": "Enrique Iglesias",
+      "dificultad": "facil"
     },
     {
       "id": "julio-iglesias",
-      "texto": "Julio Iglesias"
+      "texto": "Julio Iglesias",
+      "dificultad": "facil"
     },
     {
       "id": "luis-miguel",
-      "texto": "Luis Miguel"
+      "texto": "Luis Miguel",
+      "dificultad": "facil"
     },
     {
       "id": "juan-gabriel",
-      "texto": "Juan Gabriel"
+      "texto": "Juan Gabriel",
+      "dificultad": "facil"
     },
     {
       "id": "vicente-fernandez",
-      "texto": "Vicente Fernández"
+      "texto": "Vicente Fernández",
+      "dificultad": "facil"
     },
     {
       "id": "marco-antonio-solis",
-      "texto": "Marco Antonio Solís"
+      "texto": "Marco Antonio Solís",
+      "dificultad": "facil"
     },
     {
       "id": "ricardo-arjona",
-      "texto": "Ricardo Arjona"
+      "texto": "Ricardo Arjona",
+      "dificultad": "facil"
     },
     {
       "id": "alejandro-sanz",
-      "texto": "Alejandro Sanz"
+      "texto": "Alejandro Sanz",
+      "dificultad": "facil"
     },
     {
       "id": "camilo",
-      "texto": "Camilo"
+      "texto": "Camilo",
+      "dificultad": "facil"
     },
     {
       "id": "karol-g",
-      "texto": "Karol G"
+      "texto": "Karol G",
+      "dificultad": "facil"
     },
     {
       "id": "maluma",
-      "texto": "Maluma"
+      "texto": "Maluma",
+      "dificultad": "facil"
     },
     {
       "id": "j-balvin",
-      "texto": "J Balvin"
+      "texto": "J Balvin",
+      "dificultad": "facil"
     },
     {
       "id": "bad-bunny",
-      "texto": "Bad Bunny"
+      "texto": "Bad Bunny",
+      "dificultad": "normal"
     },
     {
       "id": "ozuna",
-      "texto": "Ozuna"
+      "texto": "Ozuna",
+      "dificultad": "normal"
     },
     {
       "id": "feid",
-      "texto": "Feid"
+      "texto": "Feid",
+      "dificultad": "normal"
     },
     {
       "id": "anuel-aa",
-      "texto": "Anuel AA"
+      "texto": "Anuel AA",
+      "dificultad": "normal"
     },
     {
       "id": "raw-alejandro",
-      "texto": "Rauw Alejandro"
+      "texto": "Rauw Alejandro",
+      "dificultad": "normal"
     },
     {
       "id": "daddy-yankee",
-      "texto": "Daddy Yankee"
+      "texto": "Daddy Yankee",
+      "dificultad": "normal"
     },
     {
       "id": "don-omar",
-      "texto": "Don Omar"
+      "texto": "Don Omar",
+      "dificultad": "normal"
     },
     {
       "id": "wisin-y-yandel",
-      "texto": "Wisin & Yandel"
+      "texto": "Wisin & Yandel",
+      "dificultad": "normal"
     },
     {
       "id": "romeo-santos",
-      "texto": "Romeo Santos"
+      "texto": "Romeo Santos",
+      "dificultad": "normal"
     },
     {
       "id": "aventura",
-      "texto": "Aventura"
+      "texto": "Aventura",
+      "dificultad": "normal"
     },
     {
       "id": "prince-royce",
-      "texto": "Prince Royce"
+      "texto": "Prince Royce",
+      "dificultad": "normal"
     },
     {
       "id": "mana",
-      "texto": "Maná"
+      "texto": "Maná",
+      "dificultad": "normal"
     },
     {
       "id": "soda-stereo",
-      "texto": "Soda Stereo"
+      "texto": "Soda Stereo",
+      "dificultad": "normal"
     },
     {
       "id": "gustavo-cerati",
-      "texto": "Gustavo Cerati"
+      "texto": "Gustavo Cerati",
+      "dificultad": "normal"
     },
     {
       "id": "heroes-del-silencio",
-      "texto": "Héroes del Silencio"
+      "texto": "Héroes del Silencio",
+      "dificultad": "normal"
     },
     {
       "id": "caifanes",
-      "texto": "Caifanes"
+      "texto": "Caifanes",
+      "dificultad": "normal"
     },
     {
       "id": "zoe",
-      "texto": "Zoé"
+      "texto": "Zoé",
+      "dificultad": "normal"
     },
     {
       "id": "los-fabulosos-cadillacs",
-      "texto": "Los Fabulosos Cadillacs"
+      "texto": "Los Fabulosos Cadillacs",
+      "dificultad": "facil"
     },
     {
       "id": "celia-cruz",
-      "texto": "Celia Cruz"
+      "texto": "Celia Cruz",
+      "dificultad": "normal"
     },
     {
       "id": "hector-lavoe",
-      "texto": "Héctor Lavoe"
+      "texto": "Héctor Lavoe",
+      "dificultad": "normal"
     },
     {
       "id": "marc-anthony",
-      "texto": "Marc Anthony"
+      "texto": "Marc Anthony",
+      "dificultad": "normal"
     },
     {
       "id": "willie-colon",
-      "texto": "Willie Colón"
+      "texto": "Willie Colón",
+      "dificultad": "normal"
     },
     {
       "id": "gilberto-santa-rosa",
-      "texto": "Gilberto Santa Rosa"
+      "texto": "Gilberto Santa Rosa",
+      "dificultad": "normal"
     },
     {
       "id": "franco-de-vita",
-      "texto": "Franco De Vita"
+      "texto": "Franco De Vita",
+      "dificultad": "normal"
     },
     {
       "id": "chayanne",
-      "texto": "Chayanne"
+      "texto": "Chayanne",
+      "dificultad": "normal"
     },
     {
       "id": "luis-fonsi",
-      "texto": "Luis Fonsi"
+      "texto": "Luis Fonsi",
+      "dificultad": "normal"
     },
     {
       "id": "sin-bandera",
-      "texto": "Sin Bandera"
+      "texto": "Sin Bandera",
+      "dificultad": "normal"
     },
     {
       "id": "reik",
-      "texto": "Reik"
+      "texto": "Reik",
+      "dificultad": "normal"
     },
     {
       "id": "camila",
-      "texto": "Camila"
+      "texto": "Camila",
+      "dificultad": "normal"
     },
     {
       "id": "morat",
-      "texto": "Morat"
+      "texto": "Morat",
+      "dificultad": "normal"
     },
     {
       "id": "ha-ash",
-      "texto": "Ha*Ash"
+      "texto": "Ha*Ash",
+      "dificultad": "normal"
     },
     {
       "id": "la-oreja-de-van-gogh",
-      "texto": "La Oreja de Van Gogh"
+      "texto": "La Oreja de Van Gogh",
+      "dificultad": "normal"
     },
     {
       "id": "abba",
-      "texto": "ABBA"
+      "texto": "ABBA",
+      "dificultad": "normal"
     },
     {
       "id": "bee-gees",
-      "texto": "Bee Gees"
+      "texto": "Bee Gees",
+      "dificultad": "normal"
     },
     {
       "id": "backstreet-boys",
-      "texto": "Backstreet Boys"
+      "texto": "Backstreet Boys",
+      "dificultad": "normal"
     },
     {
       "id": "nsync",
-      "texto": "*NSYNC"
+      "texto": "*NSYNC",
+      "dificultad": "normal"
     },
     {
       "id": "one-direction",
-      "texto": "One Direction"
+      "texto": "One Direction",
+      "dificultad": "normal"
     },
     {
       "id": "sia",
-      "texto": "Sia"
+      "texto": "Sia",
+      "dificultad": "normal"
     },
     {
       "id": "the-weeknd",
-      "texto": "The Weeknd"
+      "texto": "The Weeknd",
+      "dificultad": "normal"
     },
     {
       "id": "post-malone",
-      "texto": "Post Malone"
+      "texto": "Post Malone",
+      "dificultad": "normal"
     },
     {
       "id": "drake",
-      "texto": "Drake"
+      "texto": "Drake",
+      "dificultad": "normal"
     },
     {
       "id": "eminem",
-      "texto": "Eminem"
+      "texto": "Eminem",
+      "dificultad": "normal"
     },
     {
       "id": "jennifer-lopez",
-      "texto": "Jennifer Lopez"
+      "texto": "Jennifer Lopez",
+      "dificultad": "normal"
     },
     {
       "id": "bob-marley",
-      "texto": "Bob Marley"
+      "texto": "Bob Marley",
+      "dificultad": "normal"
     },
     {
       "id": "pitbull",
-      "texto": "Pitbull"
+      "texto": "Pitbull",
+      "dificultad": "normal"
     },
     {
       "id": "britney-spears",
-      "texto": "Britney Spears"
+      "texto": "Britney Spears",
+      "dificultad": "normal"
     },
     {
       "id": "pink-floyd",
-      "texto": "Pink Floyd"
+      "texto": "Pink Floyd",
+      "dificultad": "normal"
     },
     {
       "id": "led-zeppelin",
-      "texto": "Led Zeppelin"
+      "texto": "Led Zeppelin",
+      "dificultad": "normal"
     },
     {
       "id": "the-police",
-      "texto": "The Police"
+      "texto": "The Police",
+      "dificultad": "normal"
     },
     {
       "id": "sting",
-      "texto": "Sting"
+      "texto": "Sting",
+      "dificultad": "normal"
     },
     {
       "id": "phil-collins",
-      "texto": "Phil Collins"
+      "texto": "Phil Collins",
+      "dificultad": "normal"
     },
     {
       "id": "genesis",
-      "texto": "Genesis"
+      "texto": "Genesis",
+      "dificultad": "normal"
     },
     {
       "id": "elton-john",
-      "texto": "Elton John"
+      "texto": "Elton John",
+      "dificultad": "normal"
     },
     {
       "id": "rod-stewart",
-      "texto": "Rod Stewart"
+      "texto": "Rod Stewart",
+      "dificultad": "normal"
     },
     {
       "id": "lionel-richie",
-      "texto": "Lionel Richie"
+      "texto": "Lionel Richie",
+      "dificultad": "facil"
     },
     {
       "id": "stevie-wonder",
-      "texto": "Stevie Wonder"
+      "texto": "Stevie Wonder",
+      "dificultad": "normal"
     },
     {
       "id": "earth-wind-fire",
-      "texto": "Earth, Wind & Fire"
+      "texto": "Earth, Wind & Fire",
+      "dificultad": "normal"
     },
     {
       "id": "kiss",
-      "texto": "KISS"
+      "texto": "KISS",
+      "dificultad": "normal"
     },
     {
       "id": "ozzy-osbourne",
-      "texto": "Ozzy Osbourne"
+      "texto": "Ozzy Osbourne",
+      "dificultad": "normal"
     },
     {
       "id": "black-sabbath",
-      "texto": "Black Sabbath"
+      "texto": "Black Sabbath",
+      "dificultad": "dificil"
     },
     {
       "id": "rammstein",
-      "texto": "Rammstein"
+      "texto": "Rammstein",
+      "dificultad": "dificil"
     },
     {
       "id": "scorpions",
-      "texto": "Scorpions"
+      "texto": "Scorpions",
+      "dificultad": "dificil"
     },
     {
       "id": "the-cure",
-      "texto": "The Cure"
+      "texto": "The Cure",
+      "dificultad": "dificil"
     },
     {
       "id": "depeche-mode",
-      "texto": "Depeche Mode"
+      "texto": "Depeche Mode",
+      "dificultad": "dificil"
     },
     {
       "id": "gorillaz",
-      "texto": "Gorillaz"
+      "texto": "Gorillaz",
+      "dificultad": "dificil"
     },
     {
       "id": "oasis",
-      "texto": "Oasis"
+      "texto": "Oasis",
+      "dificultad": "dificil"
     },
     {
       "id": "liam-gallagher",
-      "texto": "Liam Gallagher"
+      "texto": "Liam Gallagher",
+      "dificultad": "dificil"
     },
     {
       "id": "radiohead",
-      "texto": "Radiohead"
+      "texto": "Radiohead",
+      "dificultad": "dificil"
     },
     {
       "id": "the-smiths",
-      "texto": "The Smiths"
+      "texto": "The Smiths",
+      "dificultad": "dificil"
     },
     {
       "id": "morrissey",
-      "texto": "Morrissey"
+      "texto": "Morrissey",
+      "dificultad": "dificil"
     },
     {
       "id": "jamiroquai",
-      "texto": "Jamiroquai"
+      "texto": "Jamiroquai",
+      "dificultad": "dificil"
     },
     {
       "id": "avicii",
-      "texto": "Avicii"
+      "texto": "Avicii",
+      "dificultad": "dificil"
     },
     {
       "id": "calvin-harris",
-      "texto": "Calvin Harris"
+      "texto": "Calvin Harris",
+      "dificultad": "dificil"
     },
     {
       "id": "martin-garrix",
-      "texto": "Martin Garrix"
+      "texto": "Martin Garrix",
+      "dificultad": "dificil"
     },
     {
       "id": "skrillex",
-      "texto": "Skrillex"
+      "texto": "Skrillex",
+      "dificultad": "dificil"
     },
     {
       "id": "marshmello",
-      "texto": "Marshmello"
+      "texto": "Marshmello",
+      "dificultad": "dificil"
     },
     {
       "id": "ariana-grande",
-      "texto": "Ariana Grande"
+      "texto": "Ariana Grande",
+      "dificultad": "dificil"
     },
     {
       "id": "olivia-rodrigo",
-      "texto": "Olivia Rodrigo"
+      "texto": "Olivia Rodrigo",
+      "dificultad": "dificil"
     },
     {
       "id": "harry-styles",
-      "texto": "Harry Styles"
+      "texto": "Harry Styles",
+      "dificultad": "dificil"
     },
     {
       "id": "doja-cat",
-      "texto": "Doja Cat"
+      "texto": "Doja Cat",
+      "dificultad": "facil"
     },
     {
       "id": "lizzo",
-      "texto": "Lizzo"
+      "texto": "Lizzo",
+      "dificultad": "dificil"
     },
     {
       "id": "rosalia",
-      "texto": "Rosalía"
+      "texto": "Rosalía",
+      "dificultad": "dificil"
     },
     {
       "id": "bizarrap",
-      "texto": "Bizarrap"
+      "texto": "Bizarrap",
+      "dificultad": "dificil"
     },
     {
       "id": "peso-pluma",
-      "texto": "Peso Pluma"
+      "texto": "Peso Pluma",
+      "dificultad": "dificil"
     },
     {
       "id": "christian-nodal",
-      "texto": "Christian Nodal"
+      "texto": "Christian Nodal",
+      "dificultad": "dificil"
     },
     {
       "id": "los-tigres-del-norte",
-      "texto": "Los Tigres del Norte"
+      "texto": "Los Tigres del Norte",
+      "dificultad": "facil"
     },
     {
       "id": "juanes",
-      "texto": "Juanes"
+      "texto": "Juanes",
+      "dificultad": "dificil"
     },
     {
       "id": "carlos-vives",
-      "texto": "Carlos Vives"
+      "texto": "Carlos Vives",
+      "dificultad": "dificil"
     },
     {
       "id": "gloria-estefan",
-      "texto": "Gloria Estefan"
+      "texto": "Gloria Estefan",
+      "dificultad": "dificil"
     },
     {
       "id": "rocio-durcal",
-      "texto": "Rocío Dúrcal"
+      "texto": "Rocío Dúrcal",
+      "dificultad": "dificil"
     },
     {
       "id": "roberto-carlos",
-      "texto": "Roberto Carlos"
+      "texto": "Roberto Carlos",
+      "dificultad": "dificil"
     },
     {
       "id": "joan-sebastian",
-      "texto": "Joan Sebastian"
+      "texto": "Joan Sebastian",
+      "dificultad": "dificil"
     },
     {
       "id": "the-doors",
-      "texto": "The Doors"
+      "texto": "The Doors",
+      "dificultad": "dificil"
     },
     {
       "id": "jim-morrison",
-      "texto": "Jim Morrison"
+      "texto": "Jim Morrison",
+      "dificultad": "dificil"
     },
     {
       "id": "eurythmics",
-      "texto": "Eurythmics"
+      "texto": "Eurythmics",
+      "dificultad": "dificil"
     },
     {
       "id": "annie-lennox",
-      "texto": "Annie Lennox"
+      "texto": "Annie Lennox",
+      "dificultad": "dificil"
     }
   ]
 }

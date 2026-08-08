@@ -8,331 +8,413 @@
   "palabras": [
     {
       "id": "futbol",
-      "texto": "Soccer"
+      "texto": "Soccer",
+      "dificultad": "facil"
     },
     {
       "id": "baloncesto",
-      "texto": "Basketball"
+      "texto": "Basketball",
+      "dificultad": "facil"
     },
     {
       "id": "beisbol",
-      "texto": "Baseball"
+      "texto": "Baseball",
+      "dificultad": "facil"
     },
     {
       "id": "tenis",
-      "texto": "Tennis"
+      "texto": "Tennis",
+      "dificultad": "facil"
     },
     {
       "id": "voleibol",
-      "texto": "Volleyball"
+      "texto": "Volleyball",
+      "dificultad": "facil"
     },
     {
       "id": "futbol-americano",
-      "texto": "American Football"
+      "texto": "American Football",
+      "dificultad": "facil"
     },
     {
       "id": "rugby",
-      "texto": "Rugby"
+      "texto": "Rugby",
+      "dificultad": "facil"
     },
     {
       "id": "golf",
-      "texto": "Golf"
+      "texto": "Golf",
+      "dificultad": "facil"
     },
     {
       "id": "hockey-sobre-hielo",
-      "texto": "Ice Hockey"
+      "texto": "Ice Hockey",
+      "dificultad": "facil"
     },
     {
       "id": "hockey-sobre-cesped",
-      "texto": "Field Hockey"
+      "texto": "Field Hockey",
+      "dificultad": "facil"
     },
     {
       "id": "cricket",
-      "texto": "Cricket"
+      "texto": "Cricket",
+      "dificultad": "facil"
     },
     {
       "id": "badminton",
-      "texto": "Badminton"
+      "texto": "Badminton",
+      "dificultad": "facil"
     },
     {
       "id": "tenis-de-mesa",
-      "texto": "Table Tennis"
+      "texto": "Table Tennis",
+      "dificultad": "facil"
     },
     {
       "id": "squash",
-      "texto": "Squash"
+      "texto": "Squash",
+      "dificultad": "facil"
     },
     {
       "id": "padel",
-      "texto": "Padel"
+      "texto": "Padel",
+      "dificultad": "facil"
     },
     {
       "id": "boxeo",
-      "texto": "Boxing"
+      "texto": "Boxing",
+      "dificultad": "facil"
     },
     {
       "id": "karate",
-      "texto": "Karate"
+      "texto": "Karate",
+      "dificultad": "facil"
     },
     {
       "id": "judo",
-      "texto": "Judo"
+      "texto": "Judo",
+      "dificultad": "facil"
     },
     {
       "id": "taekwondo",
-      "texto": "Taekwondo"
+      "texto": "Taekwondo",
+      "dificultad": "facil"
     },
     {
       "id": "kung-fu",
-      "texto": "Kung Fu"
+      "texto": "Kung Fu",
+      "dificultad": "facil"
     },
     {
       "id": "esgrima",
-      "texto": "Fencing"
+      "texto": "Fencing",
+      "dificultad": "facil"
     },
     {
       "id": "lucha-libre",
-      "texto": "Wrestling"
+      "texto": "Wrestling",
+      "dificultad": "facil"
     },
     {
       "id": "jiu-jitsu",
-      "texto": "Jiu-Jitsu"
+      "texto": "Jiu-Jitsu",
+      "dificultad": "facil"
     },
     {
       "id": "mma",
-      "texto": "MMA"
+      "texto": "MMA",
+      "dificultad": "facil"
     },
     {
       "id": "natacion",
-      "texto": "Swimming"
+      "texto": "Swimming",
+      "dificultad": "facil"
     },
     {
       "id": "clavados",
-      "texto": "Diving"
+      "texto": "Diving",
+      "dificultad": "facil"
     },
     {
       "id": "waterpolo",
-      "texto": "Water Polo"
+      "texto": "Water Polo",
+      "dificultad": "facil"
     },
     {
       "id": "natacion-artistica",
-      "texto": "Artistic Swimming"
+      "texto": "Artistic Swimming",
+      "dificultad": "facil"
     },
     {
       "id": "surf",
-      "texto": "Surf"
+      "texto": "Surf",
+      "dificultad": "facil"
     },
     {
       "id": "vela",
-      "texto": "Sailing"
+      "texto": "Sailing",
+      "dificultad": "normal"
     },
     {
       "id": "esqui",
-      "texto": "Skiing"
+      "texto": "Skiing",
+      "dificultad": "normal"
     },
     {
       "id": "snowboard",
-      "texto": "Snowboard"
+      "texto": "Snowboard",
+      "dificultad": "normal"
     },
     {
       "id": "patinaje-artistico",
-      "texto": "Figure Skating"
+      "texto": "Figure Skating",
+      "dificultad": "normal"
     },
     {
       "id": "atletismo",
-      "texto": "Track and Field"
+      "texto": "Track and Field",
+      "dificultad": "normal"
     },
     {
       "id": "maraton",
-      "texto": "Marathon"
+      "texto": "Marathon",
+      "dificultad": "normal"
     },
     {
       "id": "ciclismo",
-      "texto": "Cycling"
+      "texto": "Cycling",
+      "dificultad": "normal"
     },
     {
       "id": "ciclismo-de-montana",
-      "texto": "Mountain Biking"
+      "texto": "Mountain Biking",
+      "dificultad": "normal"
     },
     {
       "id": "bmx",
-      "texto": "BMX"
+      "texto": "BMX",
+      "dificultad": "normal"
     },
     {
       "id": "motocross",
-      "texto": "Motocross"
+      "texto": "Motocross",
+      "dificultad": "normal"
     },
     {
       "id": "motociclismo",
-      "texto": "Motorcycling"
+      "texto": "Motorcycling",
+      "dificultad": "normal"
     },
     {
       "id": "formula-1",
-      "texto": "Formula 1"
+      "texto": "Formula 1",
+      "dificultad": "normal"
     },
     {
       "id": "rally",
-      "texto": "Rally"
+      "texto": "Rally",
+      "dificultad": "normal"
     },
     {
       "id": "karting",
-      "texto": "Karting"
+      "texto": "Karting",
+      "dificultad": "normal"
     },
     {
       "id": "automovilismo",
-      "texto": "Motorsport"
+      "texto": "Motorsport",
+      "dificultad": "normal"
     },
     {
       "id": "gimnasia-artistica",
-      "texto": "Artistic Gymnastics"
+      "texto": "Artistic Gymnastics",
+      "dificultad": "normal"
     },
     {
       "id": "gimnasia-ritmica",
-      "texto": "Rhythmic Gymnastics"
+      "texto": "Rhythmic Gymnastics",
+      "dificultad": "normal"
     },
     {
       "id": "halterofilia",
-      "texto": "Weightlifting"
+      "texto": "Weightlifting",
+      "dificultad": "normal"
     },
     {
       "id": "crossfit",
-      "texto": "CrossFit"
+      "texto": "CrossFit",
+      "dificultad": "normal"
     },
     {
       "id": "fisicoculturismo",
-      "texto": "Bodybuilding"
+      "texto": "Bodybuilding",
+      "dificultad": "normal"
     },
     {
       "id": "escalada",
-      "texto": "Climbing"
+      "texto": "Climbing",
+      "dificultad": "normal"
     },
     {
       "id": "senderismo",
-      "texto": "Hiking"
+      "texto": "Hiking",
+      "dificultad": "normal"
     },
     {
       "id": "paracaidismo",
-      "texto": "Skydiving"
+      "texto": "Skydiving",
+      "dificultad": "normal"
     },
     {
       "id": "parapente",
-      "texto": "Paragliding"
+      "texto": "Paragliding",
+      "dificultad": "normal"
     },
     {
       "id": "buceo",
-      "texto": "Scuba Diving"
+      "texto": "Scuba Diving",
+      "dificultad": "normal"
     },
     {
       "id": "pesca-deportiva",
-      "texto": "Sport Fishing"
+      "texto": "Sport Fishing",
+      "dificultad": "normal"
     },
     {
       "id": "tiro-con-arco",
-      "texto": "Archery"
+      "texto": "Archery",
+      "dificultad": "normal"
     },
     {
       "id": "equitacion",
-      "texto": "Equestrian"
+      "texto": "Equestrian",
+      "dificultad": "normal"
     },
     {
       "id": "bolos",
-      "texto": "Bowling"
+      "texto": "Bowling",
+      "dificultad": "normal"
     },
     {
       "id": "billar",
-      "texto": "Billiards"
+      "texto": "Billiards",
+      "dificultad": "normal"
     },
     {
       "id": "dardos",
-      "texto": "Darts"
+      "texto": "Darts",
+      "dificultad": "normal"
     },
     {
       "id": "ajedrez",
-      "texto": "Chess"
+      "texto": "Chess",
+      "dificultad": "normal"
     },
     {
       "id": "balonmano",
-      "texto": "Handball"
+      "texto": "Handball",
+      "dificultad": "normal"
     },
     {
       "id": "futsal",
-      "texto": "Futsal"
+      "texto": "Futsal",
+      "dificultad": "dificil"
     },
     {
       "id": "triatlon",
-      "texto": "Triathlon"
+      "texto": "Triathlon",
+      "dificultad": "dificil"
     },
     {
       "id": "parkour",
-      "texto": "Parkour"
+      "texto": "Parkour",
+      "dificultad": "dificil"
     },
     {
       "id": "breakdance",
-      "texto": "Breakdance"
+      "texto": "Breakdance",
+      "dificultad": "dificil"
     },
     {
       "id": "patinaje-en-linea",
-      "texto": "Inline Skating"
+      "texto": "Inline Skating",
+      "dificultad": "dificil"
     },
     {
       "id": "skateboarding",
-      "texto": "Skateboarding"
+      "texto": "Skateboarding",
+      "dificultad": "dificil"
     },
     {
       "id": "kickboxing",
-      "texto": "Kickboxing"
+      "texto": "Kickboxing",
+      "dificultad": "dificil"
     },
     {
       "id": "yoga",
-      "texto": "Yoga"
+      "texto": "Yoga",
+      "dificultad": "dificil"
     },
     {
       "id": "capoeira",
-      "texto": "Capoeira"
+      "texto": "Capoeira",
+      "dificultad": "dificil"
     },
     {
       "id": "patinaje-sobre-hielo",
-      "texto": "Ice Skating"
+      "texto": "Ice Skating",
+      "dificultad": "dificil"
     },
     {
       "id": "patinaje-sobre-ruedas",
-      "texto": "Roller Skating"
+      "texto": "Roller Skating",
+      "dificultad": "dificil"
     },
     {
       "id": "cheerleading",
-      "texto": "Cheerleading"
+      "texto": "Cheerleading",
+      "dificultad": "dificil"
     },
     {
       "id": "balon-prisionero",
-      "texto": "Dodgeball"
+      "texto": "Dodgeball",
+      "dificultad": "dificil"
     },
     {
       "id": "saltar-la-cuerda",
-      "texto": "Jump Rope"
+      "texto": "Jump Rope",
+      "dificultad": "dificil"
     },
     {
       "id": "carrera-de-sacos",
-      "texto": "Sack Race"
+      "texto": "Sack Race",
+      "dificultad": "dificil"
     },
     {
       "id": "tira-y-afloja",
-      "texto": "Tug of War"
+      "texto": "Tug of War",
+      "dificultad": "dificil"
     },
     {
       "id": "frisbee",
-      "texto": "Frisbee"
+      "texto": "Frisbee",
+      "dificultad": "dificil"
     },
     {
       "id": "rafting",
-      "texto": "Rafting"
+      "texto": "Rafting",
+      "dificultad": "dificil"
     },
     {
       "id": "zumba",
-      "texto": "Zumba"
+      "texto": "Zumba",
+      "dificultad": "dificil"
     },
     {
       "id": "ironman",
-      "texto": "Ironman"
+      "texto": "Ironman",
+      "dificultad": "dificil"
     }
   ]
 }

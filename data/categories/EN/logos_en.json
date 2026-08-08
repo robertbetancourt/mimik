@@ -8,819 +8,1023 @@
   "palabras": [
     {
       "id": "apple",
-      "texto": "Apple"
+      "texto": "Apple",
+      "dificultad": "facil"
     },
     {
       "id": "google",
-      "texto": "Google"
+      "texto": "Google",
+      "dificultad": "facil"
     },
     {
       "id": "microsoft",
-      "texto": "Microsoft"
+      "texto": "Microsoft",
+      "dificultad": "facil"
     },
     {
       "id": "amazon",
-      "texto": "Amazon"
+      "texto": "Amazon",
+      "dificultad": "facil"
     },
     {
       "id": "netflix",
-      "texto": "Netflix"
+      "texto": "Netflix",
+      "dificultad": "facil"
     },
     {
       "id": "youtube",
-      "texto": "YouTube"
+      "texto": "YouTube",
+      "dificultad": "facil"
     },
     {
       "id": "spotify",
-      "texto": "Spotify"
+      "texto": "Spotify",
+      "dificultad": "facil"
     },
     {
       "id": "instagram",
-      "texto": "Instagram"
+      "texto": "Instagram",
+      "dificultad": "facil"
     },
     {
       "id": "facebook",
-      "texto": "Facebook"
+      "texto": "Facebook",
+      "dificultad": "facil"
     },
     {
       "id": "x",
-      "texto": "X"
+      "texto": "X",
+      "dificultad": "facil"
     },
     {
       "id": "tiktok",
-      "texto": "TikTok"
+      "texto": "TikTok",
+      "dificultad": "facil"
     },
     {
       "id": "whatsapp",
-      "texto": "WhatsApp"
+      "texto": "WhatsApp",
+      "dificultad": "facil"
     },
     {
       "id": "telegram",
-      "texto": "Telegram"
+      "texto": "Telegram",
+      "dificultad": "facil"
     },
     {
       "id": "discord",
-      "texto": "Discord"
+      "texto": "Discord",
+      "dificultad": "facil"
     },
     {
       "id": "reddit",
-      "texto": "Reddit"
+      "texto": "Reddit",
+      "dificultad": "facil"
     },
     {
       "id": "twitch",
-      "texto": "Twitch"
+      "texto": "Twitch",
+      "dificultad": "facil"
     },
     {
       "id": "linkedin",
-      "texto": "LinkedIn"
+      "texto": "LinkedIn",
+      "dificultad": "facil"
     },
     {
       "id": "snapchat",
-      "texto": "Snapchat"
+      "texto": "Snapchat",
+      "dificultad": "facil"
     },
     {
       "id": "pinterest",
-      "texto": "Pinterest"
+      "texto": "Pinterest",
+      "dificultad": "facil"
     },
     {
       "id": "playstation",
-      "texto": "PlayStation"
+      "texto": "PlayStation",
+      "dificultad": "facil"
     },
     {
       "id": "xbox",
-      "texto": "Xbox"
+      "texto": "Xbox",
+      "dificultad": "facil"
     },
     {
       "id": "nintendo",
-      "texto": "Nintendo"
+      "texto": "Nintendo",
+      "dificultad": "facil"
     },
     {
       "id": "steam",
-      "texto": "Steam"
+      "texto": "Steam",
+      "dificultad": "facil"
     },
     {
       "id": "epic-games",
-      "texto": "Epic Games"
+      "texto": "Epic Games",
+      "dificultad": "facil"
     },
     {
       "id": "riot-games",
-      "texto": "Riot Games"
+      "texto": "Riot Games",
+      "dificultad": "facil"
     },
     {
       "id": "ea-sports",
-      "texto": "EA Sports"
+      "texto": "EA Sports",
+      "dificultad": "facil"
     },
     {
       "id": "ubisoft",
-      "texto": "Ubisoft"
+      "texto": "Ubisoft",
+      "dificultad": "facil"
     },
     {
       "id": "rockstar-games",
-      "texto": "Rockstar Games"
+      "texto": "Rockstar Games",
+      "dificultad": "facil"
     },
     {
       "id": "minecraft",
-      "texto": "Minecraft"
+      "texto": "Minecraft",
+      "dificultad": "facil"
     },
     {
       "id": "disney",
-      "texto": "Disney"
+      "texto": "Disney",
+      "dificultad": "facil"
     },
     {
       "id": "pixar",
-      "texto": "Pixar"
+      "texto": "Pixar",
+      "dificultad": "facil"
     },
     {
       "id": "marvel",
-      "texto": "Marvel"
+      "texto": "Marvel",
+      "dificultad": "facil"
     },
     {
       "id": "dc",
-      "texto": "DC"
+      "texto": "DC",
+      "dificultad": "facil"
     },
     {
       "id": "warner-bros",
-      "texto": "Warner Bros."
+      "texto": "Warner Bros.",
+      "dificultad": "facil"
     },
     {
       "id": "universal",
-      "texto": "Universal"
+      "texto": "Universal",
+      "dificultad": "facil"
     },
     {
       "id": "paramount",
-      "texto": "Paramount"
+      "texto": "Paramount",
+      "dificultad": "facil"
     },
     {
       "id": "dreamworks",
-      "texto": "DreamWorks"
+      "texto": "DreamWorks",
+      "dificultad": "facil"
     },
     {
       "id": "nickelodeon",
-      "texto": "Nickelodeon"
+      "texto": "Nickelodeon",
+      "dificultad": "facil"
     },
     {
       "id": "cartoon-network",
-      "texto": "Cartoon Network"
+      "texto": "Cartoon Network",
+      "dificultad": "facil"
     },
     {
       "id": "nike",
-      "texto": "Nike"
+      "texto": "Nike",
+      "dificultad": "facil"
     },
     {
       "id": "adidas",
-      "texto": "Adidas"
+      "texto": "Adidas",
+      "dificultad": "facil"
     },
     {
       "id": "puma",
-      "texto": "Puma"
+      "texto": "Puma",
+      "dificultad": "facil"
     },
     {
       "id": "reebok",
-      "texto": "Reebok"
+      "texto": "Reebok",
+      "dificultad": "facil"
     },
     {
       "id": "under-armour",
-      "texto": "Under Armour"
+      "texto": "Under Armour",
+      "dificultad": "facil"
     },
     {
       "id": "new-balance",
-      "texto": "New Balance"
+      "texto": "New Balance",
+      "dificultad": "facil"
     },
     {
       "id": "converse",
-      "texto": "Converse"
+      "texto": "Converse",
+      "dificultad": "facil"
     },
     {
       "id": "vans",
-      "texto": "Vans"
+      "texto": "Vans",
+      "dificultad": "facil"
     },
     {
       "id": "fila",
-      "texto": "Fila"
+      "texto": "Fila",
+      "dificultad": "facil"
     },
     {
       "id": "lacoste",
-      "texto": "Lacoste"
+      "texto": "Lacoste",
+      "dificultad": "facil"
     },
     {
       "id": "coca-cola",
-      "texto": "Coca-Cola"
+      "texto": "Coca-Cola",
+      "dificultad": "facil"
     },
     {
       "id": "pepsi",
-      "texto": "Pepsi"
+      "texto": "Pepsi",
+      "dificultad": "facil"
     },
     {
       "id": "mcdonalds",
-      "texto": "McDonald's"
+      "texto": "McDonald's",
+      "dificultad": "facil"
     },
     {
       "id": "burger-king",
-      "texto": "Burger King"
+      "texto": "Burger King",
+      "dificultad": "facil"
     },
     {
       "id": "kfc",
-      "texto": "KFC"
+      "texto": "KFC",
+      "dificultad": "facil"
     },
     {
       "id": "starbucks",
-      "texto": "Starbucks"
+      "texto": "Starbucks",
+      "dificultad": "facil"
     },
     {
       "id": "subway",
-      "texto": "Subway"
+      "texto": "Subway",
+      "dificultad": "facil"
     },
     {
       "id": "dominos",
-      "texto": "Domino's"
+      "texto": "Domino's",
+      "dificultad": "facil"
     },
     {
       "id": "pizza-hut",
-      "texto": "Pizza Hut"
+      "texto": "Pizza Hut",
+      "dificultad": "facil"
     },
     {
       "id": "taco-bell",
-      "texto": "Taco Bell"
+      "texto": "Taco Bell",
+      "dificultad": "facil"
     },
     {
       "id": "wendys",
-      "texto": "Wendy's"
+      "texto": "Wendy's",
+      "dificultad": "facil"
     },
     {
       "id": "tesla",
-      "texto": "Tesla"
+      "texto": "Tesla",
+      "dificultad": "facil"
     },
     {
       "id": "ferrari",
-      "texto": "Ferrari"
+      "texto": "Ferrari",
+      "dificultad": "facil"
     },
     {
       "id": "lamborghini",
-      "texto": "Lamborghini"
+      "texto": "Lamborghini",
+      "dificultad": "facil"
     },
     {
       "id": "bmw",
-      "texto": "BMW"
+      "texto": "BMW",
+      "dificultad": "facil"
     },
     {
       "id": "mercedes-benz",
-      "texto": "Mercedes-Benz"
+      "texto": "Mercedes-Benz",
+      "dificultad": "facil"
     },
     {
       "id": "audi",
-      "texto": "Audi"
+      "texto": "Audi",
+      "dificultad": "facil"
     },
     {
       "id": "toyota",
-      "texto": "Toyota"
+      "texto": "Toyota",
+      "dificultad": "facil"
     },
     {
       "id": "honda",
-      "texto": "Honda"
+      "texto": "Honda",
+      "dificultad": "facil"
     },
     {
       "id": "ford",
-      "texto": "Ford"
+      "texto": "Ford",
+      "dificultad": "facil"
     },
     {
       "id": "chevrolet",
-      "texto": "Chevrolet"
+      "texto": "Chevrolet",
+      "dificultad": "facil"
     },
     {
       "id": "hyundai",
-      "texto": "Hyundai"
+      "texto": "Hyundai",
+      "dificultad": "facil"
     },
     {
       "id": "kia",
-      "texto": "Kia"
+      "texto": "Kia",
+      "dificultad": "facil"
     },
     {
       "id": "mazda",
-      "texto": "Mazda"
+      "texto": "Mazda",
+      "dificultad": "normal"
     },
     {
       "id": "volkswagen",
-      "texto": "Volkswagen"
+      "texto": "Volkswagen",
+      "dificultad": "normal"
     },
     {
       "id": "volvo",
-      "texto": "Volvo"
+      "texto": "Volvo",
+      "dificultad": "normal"
     },
     {
       "id": "porsche",
-      "texto": "Porsche"
+      "texto": "Porsche",
+      "dificultad": "normal"
     },
     {
       "id": "bugatti",
-      "texto": "Bugatti"
+      "texto": "Bugatti",
+      "dificultad": "normal"
     },
     {
       "id": "shell",
-      "texto": "Shell"
+      "texto": "Shell",
+      "dificultad": "normal"
     },
     {
       "id": "lego",
-      "texto": "LEGO"
+      "texto": "LEGO",
+      "dificultad": "normal"
     },
     {
       "id": "barbie",
-      "texto": "Barbie"
+      "texto": "Barbie",
+      "dificultad": "normal"
     },
     {
       "id": "nerf",
-      "texto": "NERF"
+      "texto": "NERF",
+      "dificultad": "normal"
     },
     {
       "id": "hasbro",
-      "texto": "Hasbro"
+      "texto": "Hasbro",
+      "dificultad": "normal"
     },
     {
       "id": "mattel",
-      "texto": "Mattel"
+      "texto": "Mattel",
+      "dificultad": "normal"
     },
     {
       "id": "gucci",
-      "texto": "Gucci"
+      "texto": "Gucci",
+      "dificultad": "normal"
     },
     {
       "id": "louis-vuitton",
-      "texto": "Louis Vuitton"
+      "texto": "Louis Vuitton",
+      "dificultad": "normal"
     },
     {
       "id": "chanel",
-      "texto": "Chanel"
+      "texto": "Chanel",
+      "dificultad": "normal"
     },
     {
       "id": "prada",
-      "texto": "Prada"
+      "texto": "Prada",
+      "dificultad": "normal"
     },
     {
       "id": "zara",
-      "texto": "Zara"
+      "texto": "Zara",
+      "dificultad": "normal"
     },
     {
       "id": "hm",
-      "texto": "H&M"
+      "texto": "H&M",
+      "dificultad": "normal"
     },
     {
       "id": "ikea",
-      "texto": "IKEA"
+      "texto": "IKEA",
+      "dificultad": "normal"
     },
     {
       "id": "paypal",
-      "texto": "PayPal"
+      "texto": "PayPal",
+      "dificultad": "normal"
     },
     {
       "id": "visa",
-      "texto": "Visa"
+      "texto": "Visa",
+      "dificultad": "normal"
     },
     {
       "id": "mastercard",
-      "texto": "Mastercard"
+      "texto": "Mastercard",
+      "dificultad": "normal"
     },
     {
       "id": "openai",
-      "texto": "OpenAI"
+      "texto": "OpenAI",
+      "dificultad": "normal"
     },
     {
       "id": "chatgpt",
-      "texto": "ChatGPT"
+      "texto": "ChatGPT",
+      "dificultad": "normal"
     },
     {
       "id": "airbnb",
-      "texto": "Airbnb"
+      "texto": "Airbnb",
+      "dificultad": "normal"
     },
     {
       "id": "uber",
-      "texto": "Uber"
+      "texto": "Uber",
+      "dificultad": "normal"
     },
     {
       "id": "canva",
-      "texto": "Canva"
+      "texto": "Canva",
+      "dificultad": "normal"
     },
     {
       "id": "github",
-      "texto": "GitHub"
+      "texto": "GitHub",
+      "dificultad": "normal"
     },
     {
       "id": "intel",
-      "texto": "Intel"
+      "texto": "Intel",
+      "dificultad": "normal"
     },
     {
       "id": "firefox",
-      "texto": "Firefox"
+      "texto": "Firefox",
+      "dificultad": "normal"
     },
     {
       "id": "nokia",
-      "texto": "Nokia"
+      "texto": "Nokia",
+      "dificultad": "normal"
     },
     {
       "id": "samsung",
-      "texto": "Samsung"
+      "texto": "Samsung",
+      "dificultad": "normal"
     },
     {
       "id": "sony",
-      "texto": "Sony"
+      "texto": "Sony",
+      "dificultad": "normal"
     },
     {
       "id": "lg",
-      "texto": "LG"
+      "texto": "LG",
+      "dificultad": "normal"
     },
     {
       "id": "panasonic",
-      "texto": "Panasonic"
+      "texto": "Panasonic",
+      "dificultad": "facil"
     },
     {
       "id": "toshiba",
-      "texto": "Toshiba"
+      "texto": "Toshiba",
+      "dificultad": "normal"
     },
     {
       "id": "sharp",
-      "texto": "Sharp"
+      "texto": "Sharp",
+      "dificultad": "normal"
     },
     {
       "id": "acer",
-      "texto": "Acer"
+      "texto": "Acer",
+      "dificultad": "normal"
     },
     {
       "id": "asus",
-      "texto": "ASUS"
+      "texto": "ASUS",
+      "dificultad": "normal"
     },
     {
       "id": "lenovo",
-      "texto": "Lenovo"
+      "texto": "Lenovo",
+      "dificultad": "normal"
     },
     {
       "id": "msi",
-      "texto": "MSI"
+      "texto": "MSI",
+      "dificultad": "normal"
     },
     {
       "id": "alienware",
-      "texto": "Alienware"
+      "texto": "Alienware",
+      "dificultad": "normal"
     },
     {
       "id": "razer",
-      "texto": "Razer"
+      "texto": "Razer",
+      "dificultad": "normal"
     },
     {
       "id": "logitech",
-      "texto": "Logitech"
+      "texto": "Logitech",
+      "dificultad": "normal"
     },
     {
       "id": "philips",
-      "texto": "Philips"
+      "texto": "Philips",
+      "dificultad": "normal"
     },
     {
       "id": "bosch",
-      "texto": "Bosch"
+      "texto": "Bosch",
+      "dificultad": "normal"
     },
     {
       "id": "siemens",
-      "texto": "Siemens"
+      "texto": "Siemens",
+      "dificultad": "normal"
     },
     {
       "id": "canon",
-      "texto": "Canon"
+      "texto": "Canon",
+      "dificultad": "normal"
     },
     {
       "id": "nikon",
-      "texto": "Nikon"
+      "texto": "Nikon",
+      "dificultad": "normal"
     },
     {
       "id": "kodak",
-      "texto": "Kodak"
+      "texto": "Kodak",
+      "dificultad": "normal"
     },
     {
       "id": "gopro",
-      "texto": "GoPro"
+      "texto": "GoPro",
+      "dificultad": "normal"
     },
     {
       "id": "dji",
-      "texto": "DJI"
+      "texto": "DJI",
+      "dificultad": "normal"
     },
     {
       "id": "xiaomi",
-      "texto": "Xiaomi"
+      "texto": "Xiaomi",
+      "dificultad": "normal"
     },
     {
       "id": "huawei",
-      "texto": "Huawei"
+      "texto": "Huawei",
+      "dificultad": "normal"
     },
     {
       "id": "oneplus",
-      "texto": "OnePlus"
+      "texto": "OnePlus",
+      "dificultad": "normal"
     },
     {
       "id": "oppo",
-      "texto": "OPPO"
+      "texto": "OPPO",
+      "dificultad": "normal"
     },
     {
       "id": "vivo",
-      "texto": "vivo"
+      "texto": "vivo",
+      "dificultad": "normal"
     },
     {
       "id": "motorola",
-      "texto": "Motorola"
+      "texto": "Motorola",
+      "dificultad": "normal"
     },
     {
       "id": "blackberry",
-      "texto": "BlackBerry"
+      "texto": "BlackBerry",
+      "dificultad": "normal"
     },
     {
       "id": "oracle",
-      "texto": "Oracle"
+      "texto": "Oracle",
+      "dificultad": "normal"
     },
     {
       "id": "ibm",
-      "texto": "IBM"
+      "texto": "IBM",
+      "dificultad": "normal"
     },
     {
       "id": "intel-core",
-      "texto": "Intel Core"
+      "texto": "Intel Core",
+      "dificultad": "normal"
     },
     {
       "id": "amd",
-      "texto": "AMD"
+      "texto": "AMD",
+      "dificultad": "normal"
     },
     {
       "id": "nvidia",
-      "texto": "NVIDIA"
+      "texto": "NVIDIA",
+      "dificultad": "normal"
     },
     {
       "id": "qualcomm",
-      "texto": "Qualcomm"
+      "texto": "Qualcomm",
+      "dificultad": "normal"
     },
     {
       "id": "arm",
-      "texto": "ARM"
+      "texto": "ARM",
+      "dificultad": "normal"
     },
     {
       "id": "cloudflare",
-      "texto": "Cloudflare"
+      "texto": "Cloudflare",
+      "dificultad": "normal"
     },
     {
       "id": "slack",
-      "texto": "Slack"
+      "texto": "Slack",
+      "dificultad": "normal"
     },
     {
       "id": "zoom",
-      "texto": "Zoom"
+      "texto": "Zoom",
+      "dificultad": "normal"
     },
     {
       "id": "skype",
-      "texto": "Skype"
+      "texto": "Skype",
+      "dificultad": "normal"
     },
     {
       "id": "duolingo",
-      "texto": "Duolingo"
+      "texto": "Duolingo",
+      "dificultad": "normal"
     },
     {
       "id": "capcut",
-      "texto": "CapCut"
+      "texto": "CapCut",
+      "dificultad": "normal"
     },
     {
       "id": "adobe",
-      "texto": "Adobe"
+      "texto": "Adobe",
+      "dificultad": "normal"
     },
     {
       "id": "photoshop",
-      "texto": "Photoshop"
+      "texto": "Photoshop",
+      "dificultad": "normal"
     },
     {
       "id": "illustrator",
-      "texto": "Illustrator"
+      "texto": "Illustrator",
+      "dificultad": "normal"
     },
     {
       "id": "premiere",
-      "texto": "Premiere Pro"
+      "texto": "Premiere Pro",
+      "dificultad": "normal"
     },
     {
       "id": "figma",
-      "texto": "Figma"
+      "texto": "Figma",
+      "dificultad": "normal"
     },
     {
       "id": "notion",
-      "texto": "Notion"
+      "texto": "Notion",
+      "dificultad": "normal"
     },
     {
       "id": "trello",
-      "texto": "Trello"
+      "texto": "Trello",
+      "dificultad": "normal"
     },
     {
       "id": "jira",
-      "texto": "Jira"
+      "texto": "Jira",
+      "dificultad": "normal"
     },
     {
       "id": "google-drive",
-      "texto": "Google Drive"
+      "texto": "Google Drive",
+      "dificultad": "normal"
     },
     {
       "id": "gmail",
-      "texto": "Gmail"
+      "texto": "Gmail",
+      "dificultad": "normal"
     },
     {
       "id": "chrome",
-      "texto": "Google Chrome"
+      "texto": "Google Chrome",
+      "dificultad": "normal"
     },
     {
       "id": "firefox-browser",
-      "texto": "Firefox Browser"
+      "texto": "Firefox Browser",
+      "dificultad": "dificil"
     },
     {
       "id": "edge",
-      "texto": "Microsoft Edge"
+      "texto": "Microsoft Edge",
+      "dificultad": "facil"
     },
     {
       "id": "safari",
-      "texto": "Safari"
+      "texto": "Safari",
+      "dificultad": "dificil"
     },
     {
       "id": "opera",
-      "texto": "Opera"
+      "texto": "Opera",
+      "dificultad": "dificil"
     },
     {
       "id": "bing",
-      "texto": "Bing"
+      "texto": "Bing",
+      "dificultad": "dificil"
     },
     {
       "id": "yahoo",
-      "texto": "Yahoo!"
+      "texto": "Yahoo!",
+      "dificultad": "dificil"
     },
     {
       "id": "wikipedia",
-      "texto": "Wikipedia"
+      "texto": "Wikipedia",
+      "dificultad": "dificil"
     },
     {
       "id": "ebay",
-      "texto": "eBay"
+      "texto": "eBay",
+      "dificultad": "dificil"
     },
     {
       "id": "etsy",
-      "texto": "Etsy"
+      "texto": "Etsy",
+      "dificultad": "dificil"
     },
     {
       "id": "booking",
-      "texto": "Booking.com"
+      "texto": "Booking.com",
+      "dificultad": "dificil"
     },
     {
       "id": "expedia",
-      "texto": "Expedia"
+      "texto": "Expedia",
+      "dificultad": "dificil"
     },
     {
       "id": "tripadvisor",
-      "texto": "Tripadvisor"
+      "texto": "Tripadvisor",
+      "dificultad": "dificil"
     },
     {
       "id": "fedex",
-      "texto": "FedEx"
+      "texto": "FedEx",
+      "dificultad": "dificil"
     },
     {
       "id": "ups",
-      "texto": "UPS"
+      "texto": "UPS",
+      "dificultad": "dificil"
     },
     {
       "id": "dhl",
-      "texto": "DHL"
+      "texto": "DHL",
+      "dificultad": "dificil"
     },
     {
       "id": "red-bull",
-      "texto": "Red Bull"
+      "texto": "Red Bull",
+      "dificultad": "facil"
     },
     {
       "id": "monster-energy",
-      "texto": "Monster Energy"
+      "texto": "Monster Energy",
+      "dificultad": "dificil"
     },
     {
       "id": "fanta",
-      "texto": "Fanta"
+      "texto": "Fanta",
+      "dificultad": "dificil"
     },
     {
       "id": "sprite",
-      "texto": "Sprite"
+      "texto": "Sprite",
+      "dificultad": "dificil"
     },
     {
       "id": "7up",
-      "texto": "7UP"
+      "texto": "7UP",
+      "dificultad": "dificil"
     },
     {
       "id": "oreo",
-      "texto": "Oreo"
+      "texto": "Oreo",
+      "dificultad": "dificil"
     },
     {
       "id": "nutella",
-      "texto": "Nutella"
+      "texto": "Nutella",
+      "dificultad": "dificil"
     },
     {
       "id": "pringles",
-      "texto": "Pringles"
+      "texto": "Pringles",
+      "dificultad": "dificil"
     },
     {
       "id": "lays",
-      "texto": "Lay's"
+      "texto": "Lay's",
+      "dificultad": "dificil"
     },
     {
       "id": "doritos",
-      "texto": "Doritos"
+      "texto": "Doritos",
+      "dificultad": "dificil"
     },
     {
       "id": "cheetos",
-      "texto": "Cheetos"
+      "texto": "Cheetos",
+      "dificultad": "dificil"
     },
     {
       "id": "kitkat",
-      "texto": "KitKat"
+      "texto": "KitKat",
+      "dificultad": "dificil"
     },
     {
       "id": "mms",
-      "texto": "M&M's"
+      "texto": "M&M's",
+      "dificultad": "dificil"
     },
     {
       "id": "snickers",
-      "texto": "Snickers"
+      "texto": "Snickers",
+      "dificultad": "dificil"
     },
     {
       "id": "haribo",
-      "texto": "Haribo"
+      "texto": "Haribo",
+      "dificultad": "dificil"
     },
     {
       "id": "kinder",
-      "texto": "Kinder"
+      "texto": "Kinder",
+      "dificultad": "dificil"
     },
     {
       "id": "heinz",
-      "texto": "Heinz"
+      "texto": "Heinz",
+      "dificultad": "dificil"
     },
     {
       "id": "nesquik",
-      "texto": "Nesquik"
+      "texto": "Nesquik",
+      "dificultad": "dificil"
     },
     {
       "id": "nescafe",
-      "texto": "Nescafe"
+      "texto": "Nescafe",
+      "dificultad": "dificil"
     },
     {
       "id": "pringles-mr-p",
-      "texto": "Pringles Mr. P"
+      "texto": "Pringles Mr. P",
+      "dificultad": "dificil"
     },
     {
       "id": "ferrero-rocher",
-      "texto": "Ferrero Rocher"
+      "texto": "Ferrero Rocher",
+      "dificultad": "dificil"
     },
     {
       "id": "bic",
-      "texto": "BIC"
+      "texto": "BIC",
+      "dificultad": "dificil"
     },
     {
       "id": "crayola",
-      "texto": "Crayola"
+      "texto": "Crayola",
+      "dificultad": "dificil"
     },
     {
       "id": "fisher-price",
-      "texto": "Fisher-Price"
+      "texto": "Fisher-Price",
+      "dificultad": "dificil"
     },
     {
       "id": "hot-wheels",
-      "texto": "Hot Wheels"
+      "texto": "Hot Wheels",
+      "dificultad": "dificil"
     },
     {
       "id": "playmobil",
-      "texto": "Playmobil"
+      "texto": "Playmobil",
+      "dificultad": "dificil"
     },
     {
       "id": "disney-plus",
-      "texto": "Disney+"
+      "texto": "Disney+",
+      "dificultad": "dificil"
     },
     {
       "id": "hbo-max",
-      "texto": "HBO Max"
+      "texto": "HBO Max",
+      "dificultad": "dificil"
     },
     {
       "id": "prime-video",
-      "texto": "Prime Video"
+      "texto": "Prime Video",
+      "dificultad": "dificil"
     },
     {
       "id": "hulu",
-      "texto": "Hulu"
+      "texto": "Hulu",
+      "dificultad": "dificil"
     },
     {
       "id": "spotify-premium",
-      "texto": "Spotify Premium"
+      "texto": "Spotify Premium",
+      "dificultad": "dificil"
     },
     {
       "id": "formula-1",
-      "texto": "Formula 1"
+      "texto": "Formula 1",
+      "dificultad": "dificil"
     },
     {
       "id": "fifa",
-      "texto": "FIFA"
+      "texto": "FIFA",
+      "dificultad": "dificil"
     },
     {
       "id": "uefa",
-      "texto": "UEFA"
+      "texto": "UEFA",
+      "dificultad": "dificil"
     },
     {
       "id": "olympics",
-      "texto": "Olympic Rings"
+      "texto": "Olympic Rings",
+      "dificultad": "dificil"
     }
   ]
 }

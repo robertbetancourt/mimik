@@ -8,863 +8,1078 @@
   "palabras": [
     {
       "id": "afganistan",
-      "texto": "Afganistán"
+      "texto": "Afganistán",
+      "dificultad": "facil"
     },
     {
       "id": "alemania",
-      "texto": "Alemania"
+      "texto": "Alemania",
+      "dificultad": "facil"
     },
     {
       "id": "arabia-saudita",
-      "texto": "Arabia Saudita"
+      "texto": "Arabia Saudita",
+      "dificultad": "facil"
     },
     {
       "id": "argelia",
-      "texto": "Argelia"
+      "texto": "Argelia",
+      "dificultad": "facil"
     },
     {
       "id": "argentina",
-      "texto": "Argentina"
+      "texto": "Argentina",
+      "dificultad": "facil"
     },
     {
       "id": "australia",
-      "texto": "Australia"
+      "texto": "Australia",
+      "dificultad": "facil"
     },
     {
       "id": "austria",
-      "texto": "Austria"
+      "texto": "Austria",
+      "dificultad": "facil"
     },
     {
       "id": "bahamas",
-      "texto": "Bahamas"
+      "texto": "Bahamas",
+      "dificultad": "facil"
     },
     {
       "id": "bangladesh",
-      "texto": "Bangladesh"
+      "texto": "Bangladesh",
+      "dificultad": "facil"
     },
     {
       "id": "bolivia",
-      "texto": "Bolivia"
+      "texto": "Bolivia",
+      "dificultad": "facil"
     },
     {
       "id": "brasil",
-      "texto": "Brasil"
+      "texto": "Brasil",
+      "dificultad": "facil"
     },
     {
       "id": "bulgaria",
-      "texto": "Bulgaria"
+      "texto": "Bulgaria",
+      "dificultad": "facil"
     },
     {
       "id": "belgica",
-      "texto": "Bélgica"
+      "texto": "Bélgica",
+      "dificultad": "facil"
     },
     {
       "id": "camboya",
-      "texto": "Camboya"
+      "texto": "Camboya",
+      "dificultad": "facil"
     },
     {
       "id": "canada",
-      "texto": "Canadá"
+      "texto": "Canadá",
+      "dificultad": "facil"
     },
     {
       "id": "catar",
-      "texto": "Catar"
+      "texto": "Catar",
+      "dificultad": "facil"
     },
     {
       "id": "cataratas-del-niagara",
-      "texto": "Cataratas del Niágara"
+      "texto": "Cataratas del Niágara",
+      "dificultad": "facil"
     },
     {
       "id": "chile",
-      "texto": "Chile"
+      "texto": "Chile",
+      "dificultad": "facil"
     },
     {
       "id": "china",
-      "texto": "China"
+      "texto": "China",
+      "dificultad": "facil"
     },
     {
       "id": "colombia",
-      "texto": "Colombia"
+      "texto": "Colombia",
+      "dificultad": "facil"
     },
     {
       "id": "corea-del-norte",
-      "texto": "Corea del Norte"
+      "texto": "Corea del Norte",
+      "dificultad": "facil"
     },
     {
       "id": "corea-del-sur",
-      "texto": "Corea del Sur"
+      "texto": "Corea del Sur",
+      "dificultad": "facil"
     },
     {
       "id": "costa-rica",
-      "texto": "Costa Rica"
+      "texto": "Costa Rica",
+      "dificultad": "facil"
     },
     {
       "id": "croacia",
-      "texto": "Croacia"
+      "texto": "Croacia",
+      "dificultad": "facil"
     },
     {
       "id": "cuba",
-      "texto": "Cuba"
+      "texto": "Cuba",
+      "dificultad": "facil"
     },
     {
       "id": "dinamarca",
-      "texto": "Dinamarca"
+      "texto": "Dinamarca",
+      "dificultad": "facil"
     },
     {
       "id": "dubai",
-      "texto": "Dubái"
+      "texto": "Dubái",
+      "dificultad": "facil"
     },
     {
       "id": "ecuador",
-      "texto": "Ecuador"
+      "texto": "Ecuador",
+      "dificultad": "facil"
     },
     {
       "id": "egipto",
-      "texto": "Egipto"
+      "texto": "Egipto",
+      "dificultad": "facil"
     },
     {
       "id": "el-salvador",
-      "texto": "El Salvador"
+      "texto": "El Salvador",
+      "dificultad": "facil"
     },
     {
       "id": "emiratos-arabes-unidos",
-      "texto": "Emiratos Árabes Unidos"
+      "texto": "Emiratos Árabes Unidos",
+      "dificultad": "facil"
     },
     {
       "id": "eslovaquia",
-      "texto": "Eslovaquia"
+      "texto": "Eslovaquia",
+      "dificultad": "facil"
     },
     {
       "id": "eslovenia",
-      "texto": "Eslovenia"
+      "texto": "Eslovenia",
+      "dificultad": "facil"
     },
     {
       "id": "espana",
-      "texto": "España"
+      "texto": "España",
+      "dificultad": "facil"
     },
     {
       "id": "estados-unidos",
-      "texto": "Estados Unidos"
+      "texto": "Estados Unidos",
+      "dificultad": "facil"
     },
     {
       "id": "estatua-de-la-libertad",
-      "texto": "Estatua de la Libertad"
+      "texto": "Estatua de la Libertad",
+      "dificultad": "facil"
     },
     {
       "id": "etiopia",
-      "texto": "Etiopía"
+      "texto": "Etiopía",
+      "dificultad": "facil"
     },
     {
       "id": "filipinas",
-      "texto": "Filipinas"
+      "texto": "Filipinas",
+      "dificultad": "facil"
     },
     {
       "id": "finlandia",
-      "texto": "Finlandia"
+      "texto": "Finlandia",
+      "dificultad": "facil"
     },
     {
       "id": "francia",
-      "texto": "Francia"
+      "texto": "Francia",
+      "dificultad": "facil"
     },
     {
       "id": "gran-canion",
-      "texto": "Gran Cañón"
+      "texto": "Gran Cañón",
+      "dificultad": "facil"
     },
     {
       "id": "gran-muralla-china",
-      "texto": "Gran Muralla China"
+      "texto": "Gran Muralla China",
+      "dificultad": "facil"
     },
     {
       "id": "grecia",
-      "texto": "Grecia"
+      "texto": "Grecia",
+      "dificultad": "facil"
     },
     {
       "id": "guatemala",
-      "texto": "Guatemala"
+      "texto": "Guatemala",
+      "dificultad": "facil"
     },
     {
       "id": "haiti",
-      "texto": "Haití"
+      "texto": "Haití",
+      "dificultad": "facil"
     },
     {
       "id": "honduras",
-      "texto": "Honduras"
+      "texto": "Honduras",
+      "dificultad": "facil"
     },
     {
       "id": "hungria",
-      "texto": "Hungría"
+      "texto": "Hungría",
+      "dificultad": "facil"
     },
     {
       "id": "india",
-      "texto": "India"
+      "texto": "India",
+      "dificultad": "facil"
     },
     {
       "id": "indonesia",
-      "texto": "Indonesia"
+      "texto": "Indonesia",
+      "dificultad": "facil"
     },
     {
       "id": "irak",
-      "texto": "Irak"
+      "texto": "Irak",
+      "dificultad": "facil"
     },
     {
       "id": "irlanda",
-      "texto": "Irlanda"
+      "texto": "Irlanda",
+      "dificultad": "facil"
     },
     {
       "id": "iran",
-      "texto": "Irán"
+      "texto": "Irán",
+      "dificultad": "facil"
     },
     {
       "id": "islandia",
-      "texto": "Islandia"
+      "texto": "Islandia",
+      "dificultad": "facil"
     },
     {
       "id": "israel",
-      "texto": "Israel"
+      "texto": "Israel",
+      "dificultad": "facil"
     },
     {
       "id": "italia",
-      "texto": "Italia"
+      "texto": "Italia",
+      "dificultad": "facil"
     },
     {
       "id": "jamaica",
-      "texto": "Jamaica"
+      "texto": "Jamaica",
+      "dificultad": "facil"
     },
     {
       "id": "japon",
-      "texto": "Japón"
+      "texto": "Japón",
+      "dificultad": "facil"
     },
     {
       "id": "jordania",
-      "texto": "Jordania"
+      "texto": "Jordania",
+      "dificultad": "facil"
     },
     {
       "id": "kenia",
-      "texto": "Kenia"
+      "texto": "Kenia",
+      "dificultad": "facil"
     },
     {
       "id": "londres",
-      "texto": "Londres"
+      "texto": "Londres",
+      "dificultad": "facil"
     },
     {
       "id": "libano",
-      "texto": "Líbano"
+      "texto": "Líbano",
+      "dificultad": "facil"
     },
     {
       "id": "machu-picchu",
-      "texto": "Machu Picchu"
+      "texto": "Machu Picchu",
+      "dificultad": "facil"
     },
     {
       "id": "madagascar",
-      "texto": "Madagascar"
+      "texto": "Madagascar",
+      "dificultad": "facil"
     },
     {
       "id": "malasia",
-      "texto": "Malasia"
+      "texto": "Malasia",
+      "dificultad": "facil"
     },
     {
       "id": "marruecos",
-      "texto": "Marruecos"
+      "texto": "Marruecos",
+      "dificultad": "facil"
     },
     {
       "id": "mongolia",
-      "texto": "Mongolia"
+      "texto": "Mongolia",
+      "dificultad": "facil"
     },
     {
       "id": "monte-everest",
-      "texto": "Monte Everest"
+      "texto": "Monte Everest",
+      "dificultad": "facil"
     },
     {
       "id": "mexico",
-      "texto": "México"
+      "texto": "México",
+      "dificultad": "facil"
     },
     {
       "id": "nepal",
-      "texto": "Nepal"
+      "texto": "Nepal",
+      "dificultad": "facil"
     },
     {
       "id": "nicaragua",
-      "texto": "Nicaragua"
+      "texto": "Nicaragua",
+      "dificultad": "facil"
     },
     {
       "id": "nigeria",
-      "texto": "Nigeria"
+      "texto": "Nigeria",
+      "dificultad": "facil"
     },
     {
       "id": "noruega",
-      "texto": "Noruega"
+      "texto": "Noruega",
+      "dificultad": "facil"
     },
     {
       "id": "nueva-york",
-      "texto": "Nueva York"
+      "texto": "Nueva York",
+      "dificultad": "facil"
     },
     {
       "id": "nueva-zelanda",
-      "texto": "Nueva Zelanda"
+      "texto": "Nueva Zelanda",
+      "dificultad": "facil"
     },
     {
       "id": "pakistan",
-      "texto": "Pakistán"
+      "texto": "Pakistán",
+      "dificultad": "facil"
     },
     {
       "id": "panama",
-      "texto": "Panamá"
+      "texto": "Panamá",
+      "dificultad": "facil"
     },
     {
       "id": "paraguay",
-      "texto": "Paraguay"
+      "texto": "Paraguay",
+      "dificultad": "facil"
     },
     {
       "id": "paris",
-      "texto": "París"
+      "texto": "París",
+      "dificultad": "normal"
     },
     {
       "id": "paises-bajos",
-      "texto": "Países Bajos"
+      "texto": "Países Bajos",
+      "dificultad": "normal"
     },
     {
       "id": "peru",
-      "texto": "Perú"
+      "texto": "Perú",
+      "dificultad": "normal"
     },
     {
       "id": "piramides-de-guiza",
-      "texto": "Pirámides de Guiza"
+      "texto": "Pirámides de Guiza",
+      "dificultad": "normal"
     },
     {
       "id": "polonia",
-      "texto": "Polonia"
+      "texto": "Polonia",
+      "dificultad": "normal"
     },
     {
       "id": "portugal",
-      "texto": "Portugal"
+      "texto": "Portugal",
+      "dificultad": "normal"
     },
     {
       "id": "reino-unido",
-      "texto": "Reino Unido"
+      "texto": "Reino Unido",
+      "dificultad": "normal"
     },
     {
       "id": "republica-checa",
-      "texto": "República Checa"
+      "texto": "República Checa",
+      "dificultad": "normal"
     },
     {
       "id": "republica-dominicana",
-      "texto": "República Dominicana"
+      "texto": "República Dominicana",
+      "dificultad": "normal"
     },
     {
       "id": "roma",
-      "texto": "Roma"
+      "texto": "Roma",
+      "dificultad": "normal"
     },
     {
       "id": "rumania",
-      "texto": "Rumanía"
+      "texto": "Rumanía",
+      "dificultad": "normal"
     },
     {
       "id": "rusia",
-      "texto": "Rusia"
+      "texto": "Rusia",
+      "dificultad": "normal"
     },
     {
       "id": "rio-de-janeiro",
-      "texto": "Río de Janeiro"
+      "texto": "Río de Janeiro",
+      "dificultad": "normal"
     },
     {
       "id": "serbia",
-      "texto": "Serbia"
+      "texto": "Serbia",
+      "dificultad": "normal"
     },
     {
       "id": "singapur",
-      "texto": "Singapur"
+      "texto": "Singapur",
+      "dificultad": "normal"
     },
     {
       "id": "siria",
-      "texto": "Siria"
+      "texto": "Siria",
+      "dificultad": "normal"
     },
     {
       "id": "sudafrica",
-      "texto": "Sudáfrica"
+      "texto": "Sudáfrica",
+      "dificultad": "normal"
     },
     {
       "id": "suecia",
-      "texto": "Suecia"
+      "texto": "Suecia",
+      "dificultad": "normal"
     },
     {
       "id": "barcelona",
-      "texto": "Barcelona"
+      "texto": "Barcelona",
+      "dificultad": "normal"
     },
     {
       "id": "madrid",
-      "texto": "Madrid"
+      "texto": "Madrid",
+      "dificultad": "normal"
     },
     {
       "id": "venecia",
-      "texto": "Venecia"
+      "texto": "Venecia",
+      "dificultad": "normal"
     },
     {
       "id": "amsterdam",
-      "texto": "Ámsterdam"
+      "texto": "Ámsterdam",
+      "dificultad": "normal"
     },
     {
       "id": "berlin",
-      "texto": "Berlín"
+      "texto": "Berlín",
+      "dificultad": "normal"
     },
     {
       "id": "atenas",
-      "texto": "Atenas"
+      "texto": "Atenas",
+      "dificultad": "normal"
     },
     {
       "id": "lisboa",
-      "texto": "Lisboa"
+      "texto": "Lisboa",
+      "dificultad": "normal"
     },
     {
       "id": "praga",
-      "texto": "Praga"
+      "texto": "Praga",
+      "dificultad": "normal"
     },
     {
       "id": "viena",
-      "texto": "Viena"
+      "texto": "Viena",
+      "dificultad": "normal"
     },
     {
       "id": "bruselas",
-      "texto": "Bruselas"
+      "texto": "Bruselas",
+      "dificultad": "normal"
     },
     {
       "id": "moscu",
-      "texto": "Moscú"
+      "texto": "Moscú",
+      "dificultad": "normal"
     },
     {
       "id": "estambul",
-      "texto": "Estambul"
+      "texto": "Estambul",
+      "dificultad": "normal"
     },
     {
       "id": "el-cairo",
-      "texto": "El Cairo"
+      "texto": "El Cairo",
+      "dificultad": "normal"
     },
     {
       "id": "pekin",
-      "texto": "Pekín"
+      "texto": "Pekín",
+      "dificultad": "normal"
     },
     {
       "id": "hong-kong",
-      "texto": "Hong Kong"
+      "texto": "Hong Kong",
+      "dificultad": "normal"
     },
     {
       "id": "singapur-ciudad",
-      "texto": "Singapur"
+      "texto": "Singapur",
+      "dificultad": "normal"
     },
     {
       "id": "bangkok",
-      "texto": "Bangkok"
+      "texto": "Bangkok",
+      "dificultad": "normal"
     },
     {
       "id": "seul",
-      "texto": "Seúl"
+      "texto": "Seúl",
+      "dificultad": "normal"
     },
     {
       "id": "bombay",
-      "texto": "Bombay"
+      "texto": "Bombay",
+      "dificultad": "normal"
     },
     {
       "id": "delhi",
-      "texto": "Delhi"
+      "texto": "Delhi",
+      "dificultad": "normal"
     },
     {
       "id": "los-angeles",
-      "texto": "Los Ángeles"
+      "texto": "Los Ángeles",
+      "dificultad": "normal"
     },
     {
       "id": "las-vegas",
-      "texto": "Las Vegas"
+      "texto": "Las Vegas",
+      "dificultad": "normal"
     },
     {
       "id": "san-francisco",
-      "texto": "San Francisco"
+      "texto": "San Francisco",
+      "dificultad": "normal"
     },
     {
       "id": "washington-dc",
-      "texto": "Washington D. C."
+      "texto": "Washington D. C.",
+      "dificultad": "normal"
     },
     {
       "id": "chicago",
-      "texto": "Chicago"
+      "texto": "Chicago",
+      "dificultad": "normal"
     },
     {
       "id": "toronto",
-      "texto": "Toronto"
+      "texto": "Toronto",
+      "dificultad": "normal"
     },
     {
       "id": "vancouver",
-      "texto": "Vancouver"
+      "texto": "Vancouver",
+      "dificultad": "normal"
     },
     {
       "id": "ciudad-de-mexico",
-      "texto": "Ciudad de México"
+      "texto": "Ciudad de México",
+      "dificultad": "normal"
     },
     {
       "id": "la-habana",
-      "texto": "La Habana"
+      "texto": "La Habana",
+      "dificultad": "normal"
     },
     {
       "id": "buenos-aires",
-      "texto": "Buenos Aires"
+      "texto": "Buenos Aires",
+      "dificultad": "normal"
     },
     {
       "id": "lima",
-      "texto": "Lima"
+      "texto": "Lima",
+      "dificultad": "normal"
     },
     {
       "id": "santiago",
-      "texto": "Santiago"
+      "texto": "Santiago",
+      "dificultad": "normal"
     },
     {
       "id": "cristo-redentor",
-      "texto": "Cristo Redentor"
+      "texto": "Cristo Redentor",
+      "dificultad": "facil"
     },
     {
       "id": "coliseo-romano",
-      "texto": "Coliseo Romano"
+      "texto": "Coliseo Romano",
+      "dificultad": "normal"
     },
     {
       "id": "taj-mahal",
-      "texto": "Taj Mahal"
+      "texto": "Taj Mahal",
+      "dificultad": "normal"
     },
     {
       "id": "big-ben",
-      "texto": "Big Ben"
+      "texto": "Big Ben",
+      "dificultad": "normal"
     },
     {
       "id": "opera-de-sidney",
-      "texto": "Ópera de Sídney"
+      "texto": "Ópera de Sídney",
+      "dificultad": "normal"
     },
     {
       "id": "torre-de-pisa",
-      "texto": "Torre de Pisa"
+      "texto": "Torre de Pisa",
+      "dificultad": "normal"
     },
     {
       "id": "sagrada-familia",
-      "texto": "Sagrada Familia"
+      "texto": "Sagrada Familia",
+      "dificultad": "normal"
     },
     {
       "id": "arco-del-triunfo",
-      "texto": "Arco del Triunfo"
+      "texto": "Arco del Triunfo",
+      "dificultad": "normal"
     },
     {
       "id": "stonehenge",
-      "texto": "Stonehenge"
+      "texto": "Stonehenge",
+      "dificultad": "normal"
     },
     {
       "id": "monte-rushmore",
-      "texto": "Monte Rushmore"
+      "texto": "Monte Rushmore",
+      "dificultad": "normal"
     },
     {
       "id": "petra",
-      "texto": "Petra"
+      "texto": "Petra",
+      "dificultad": "normal"
     },
     {
       "id": "angkor-wat",
-      "texto": "Angkor Wat"
+      "texto": "Angkor Wat",
+      "dificultad": "normal"
     },
     {
       "id": "burj-khalifa",
-      "texto": "Burj Khalifa"
+      "texto": "Burj Khalifa",
+      "dificultad": "normal"
     },
     {
       "id": "puente-golden-gate",
-      "texto": "Puente Golden Gate"
+      "texto": "Puente Golden Gate",
+      "dificultad": "normal"
     },
     {
       "id": "canal-de-panama",
-      "texto": "Canal de Panamá"
+      "texto": "Canal de Panamá",
+      "dificultad": "facil"
     },
     {
       "id": "canal-de-suez",
-      "texto": "Canal de Suez"
+      "texto": "Canal de Suez",
+      "dificultad": "normal"
     },
     {
       "id": "moais-isla-de-pascua",
-      "texto": "Moáis de la Isla de Pascua"
+      "texto": "Moáis de la Isla de Pascua",
+      "dificultad": "normal"
     },
     {
       "id": "monte-fuji",
-      "texto": "Monte Fuji"
+      "texto": "Monte Fuji",
+      "dificultad": "normal"
     },
     {
       "id": "kilimanjaro",
-      "texto": "Monte Kilimanjaro"
+      "texto": "Monte Kilimanjaro",
+      "dificultad": "normal"
     },
     {
       "id": "k2",
-      "texto": "K2"
+      "texto": "K2",
+      "dificultad": "normal"
     },
     {
       "id": "aconcagua",
-      "texto": "Aconcagua"
+      "texto": "Aconcagua",
+      "dificultad": "facil"
     },
     {
       "id": "mont-blanc",
-      "texto": "Mont Blanc"
+      "texto": "Mont Blanc",
+      "dificultad": "normal"
     },
     {
       "id": "vesubio",
-      "texto": "Vesubio"
+      "texto": "Vesubio",
+      "dificultad": "normal"
     },
     {
       "id": "etna",
-      "texto": "Etna"
+      "texto": "Etna",
+      "dificultad": "normal"
     },
     {
       "id": "krakatoa",
-      "texto": "Krakatoa"
+      "texto": "Krakatoa",
+      "dificultad": "normal"
     },
     {
       "id": "mauna-loa",
-      "texto": "Mauna Loa"
+      "texto": "Mauna Loa",
+      "dificultad": "normal"
     },
     {
       "id": "amazonas",
-      "texto": "Amazonas"
+      "texto": "Amazonas",
+      "dificultad": "normal"
     },
     {
       "id": "rio-nilo",
-      "texto": "Río Nilo"
+      "texto": "Río Nilo",
+      "dificultad": "normal"
     },
     {
       "id": "rio-misisipi",
-      "texto": "Río Misisipi"
+      "texto": "Río Misisipi",
+      "dificultad": "normal"
     },
     {
       "id": "rio-yangtse",
-      "texto": "Río Yangtsé"
+      "texto": "Río Yangtsé",
+      "dificultad": "normal"
     },
     {
       "id": "rio-danubio",
-      "texto": "Río Danubio"
+      "texto": "Río Danubio",
+      "dificultad": "normal"
     },
     {
       "id": "rio-ganges",
-      "texto": "Río Ganges"
+      "texto": "Río Ganges",
+      "dificultad": "normal"
     },
     {
       "id": "oceano-pacifico",
-      "texto": "Océano Pacífico"
+      "texto": "Océano Pacífico",
+      "dificultad": "normal"
     },
     {
       "id": "oceano-atlantico",
-      "texto": "Océano Atlántico"
+      "texto": "Océano Atlántico",
+      "dificultad": "normal"
     },
     {
       "id": "oceano-indico",
-      "texto": "Océano Índico"
+      "texto": "Océano Índico",
+      "dificultad": "normal"
     },
     {
       "id": "oceano-artico",
-      "texto": "Océano Ártico"
+      "texto": "Océano Ártico",
+      "dificultad": "dificil"
     },
     {
       "id": "oceano-antartico",
-      "texto": "Océano Antártico"
+      "texto": "Océano Antártico",
+      "dificultad": "dificil"
     },
     {
       "id": "mar-mediterraneo",
-      "texto": "Mar Mediterráneo"
+      "texto": "Mar Mediterráneo",
+      "dificultad": "dificil"
     },
     {
       "id": "mar-caribe",
-      "texto": "Mar Caribe"
+      "texto": "Mar Caribe",
+      "dificultad": "dificil"
     },
     {
       "id": "mar-rojo",
-      "texto": "Mar Rojo"
+      "texto": "Mar Rojo",
+      "dificultad": "facil"
     },
     {
       "id": "mar-muerto",
-      "texto": "Mar Muerto"
+      "texto": "Mar Muerto",
+      "dificultad": "dificil"
     },
     {
       "id": "mar-negro",
-      "texto": "Mar Negro"
+      "texto": "Mar Negro",
+      "dificultad": "dificil"
     },
     {
       "id": "hawai",
-      "texto": "Hawái"
+      "texto": "Hawái",
+      "dificultad": "dificil"
     },
     {
       "id": "isla-de-pascua",
-      "texto": "Isla de Pascua"
+      "texto": "Isla de Pascua",
+      "dificultad": "dificil"
     },
     {
       "id": "galapagos",
-      "texto": "Islas Galápagos"
+      "texto": "Islas Galápagos",
+      "dificultad": "dificil"
     },
     {
       "id": "bora-bora",
-      "texto": "Bora Bora"
+      "texto": "Bora Bora",
+      "dificultad": "dificil"
     },
     {
       "id": "bali",
-      "texto": "Bali"
+      "texto": "Bali",
+      "dificultad": "dificil"
     },
     {
       "id": "islandia-isla",
-      "texto": "Islandia"
+      "texto": "Islandia",
+      "dificultad": "dificil"
     },
     {
       "id": "groenlandia",
-      "texto": "Groenlandia"
+      "texto": "Groenlandia",
+      "dificultad": "dificil"
     },
     {
       "id": "sicilia",
-      "texto": "Sicilia"
+      "texto": "Sicilia",
+      "dificultad": "dificil"
     },
     {
       "id": "santorini",
-      "texto": "Santorini"
+      "texto": "Santorini",
+      "dificultad": "dificil"
     },
     {
       "id": "maldivas",
-      "texto": "Maldivas"
+      "texto": "Maldivas",
+      "dificultad": "dificil"
     },
     {
       "id": "selva-amazonica",
-      "texto": "Selva Amazónica"
+      "texto": "Selva Amazónica",
+      "dificultad": "dificil"
     },
     {
       "id": "bosque-negro",
-      "texto": "Bosque Negro"
+      "texto": "Bosque Negro",
+      "dificultad": "dificil"
     },
     {
       "id": "yellowstone",
-      "texto": "Yellowstone"
+      "texto": "Yellowstone",
+      "dificultad": "dificil"
     },
     {
       "id": "yosemite",
-      "texto": "Yosemite"
+      "texto": "Yosemite",
+      "dificultad": "dificil"
     },
     {
       "id": "serengeti",
-      "texto": "Serengeti"
+      "texto": "Serengeti",
+      "dificultad": "dificil"
     },
     {
       "id": "sahara",
-      "texto": "Sáhara"
+      "texto": "Sáhara",
+      "dificultad": "dificil"
     },
     {
       "id": "gobi",
-      "texto": "Desierto del Gobi"
+      "texto": "Desierto del Gobi",
+      "dificultad": "dificil"
     },
     {
       "id": "atacama",
-      "texto": "Desierto de Atacama"
+      "texto": "Desierto de Atacama",
+      "dificultad": "facil"
     },
     {
       "id": "kalahari",
-      "texto": "Desierto del Kalahari"
+      "texto": "Desierto del Kalahari",
+      "dificultad": "dificil"
     },
     {
       "id": "mojave",
-      "texto": "Desierto de Mojave"
+      "texto": "Desierto de Mojave",
+      "dificultad": "dificil"
     },
     {
       "id": "aurora-boreal",
-      "texto": "Aurora Boreal"
+      "texto": "Aurora Boreal",
+      "dificultad": "dificil"
     },
     {
       "id": "circulo-polar-artico",
-      "texto": "Círculo Polar Ártico"
+      "texto": "Círculo Polar Ártico",
+      "dificultad": "facil"
     },
     {
       "id": "polo-norte",
-      "texto": "Polo Norte"
+      "texto": "Polo Norte",
+      "dificultad": "dificil"
     },
     {
       "id": "polo-sur",
-      "texto": "Polo Sur"
+      "texto": "Polo Sur",
+      "dificultad": "dificil"
     },
     {
       "id": "antartida",
-      "texto": "Antártida"
+      "texto": "Antártida",
+      "dificultad": "dificil"
     },
     {
       "id": "fiordos-de-noruega",
-      "texto": "Fiordos de Noruega"
+      "texto": "Fiordos de Noruega",
+      "dificultad": "dificil"
     },
     {
       "id": "bahia-de-halong",
-      "texto": "Bahía de Halong"
+      "texto": "Bahía de Halong",
+      "dificultad": "dificil"
     },
     {
       "id": "acantilados-de-moher",
-      "texto": "Acantilados de Moher"
+      "texto": "Acantilados de Moher",
+      "dificultad": "dificil"
     },
     {
       "id": "cueva-azul",
-      "texto": "Cueva Azul"
+      "texto": "Cueva Azul",
+      "dificultad": "facil"
     },
     {
       "id": "uluru",
-      "texto": "Uluru"
+      "texto": "Uluru",
+      "dificultad": "dificil"
     },
     {
       "id": "glaciar-perito-moreno",
-      "texto": "Glaciar Perito Moreno"
+      "texto": "Glaciar Perito Moreno",
+      "dificultad": "dificil"
     },
     {
       "id": "camino-del-inca",
-      "texto": "Camino del Inca"
+      "texto": "Camino del Inca",
+      "dificultad": "dificil"
     },
     {
       "id": "valle-de-los-reyes",
-      "texto": "Valle de los Reyes"
+      "texto": "Valle de los Reyes",
+      "dificultad": "dificil"
     },
     {
       "id": "capadocia",
-      "texto": "Capadocia"
+      "texto": "Capadocia",
+      "dificultad": "dificil"
     },
     {
       "id": "bahia-de-rio",
-      "texto": "Bahía de Río de Janeiro"
+      "texto": "Bahía de Río de Janeiro",
+      "dificultad": "dificil"
     },
     {
       "id": "gran-arrecife-de-coral",
-      "texto": "Gran Arrecife de Coral"
+      "texto": "Gran Arrecife de Coral",
+      "dificultad": "dificil"
     },
     {
       "id": "suiza",
-      "texto": "Suiza"
+      "texto": "Suiza",
+      "dificultad": "dificil"
     },
     {
       "id": "sidney",
-      "texto": "Sídney"
+      "texto": "Sídney",
+      "dificultad": "dificil"
     },
     {
       "id": "tailandia",
-      "texto": "Tailandia"
+      "texto": "Tailandia",
+      "dificultad": "dificil"
     },
     {
       "id": "tokio",
-      "texto": "Tokio"
+      "texto": "Tokio",
+      "dificultad": "dificil"
     },
     {
       "id": "torre-eiffel",
-      "texto": "Torre Eiffel"
+      "texto": "Torre Eiffel",
+      "dificultad": "dificil"
     },
     {
       "id": "turquia",
-      "texto": "Turquía"
+      "texto": "Turquía",
+      "dificultad": "dificil"
     },
     {
       "id": "ucrania",
-      "texto": "Ucrania"
+      "texto": "Ucrania",
+      "dificultad": "dificil"
     },
     {
       "id": "uruguay",
-      "texto": "Uruguay"
+      "texto": "Uruguay",
+      "dificultad": "dificil"
     },
     {
       "id": "venezuela",
-      "texto": "Venezuela"
+      "texto": "Venezuela",
+      "dificultad": "dificil"
     },
     {
       "id": "vietnam",
-      "texto": "Vietnam"
+      "texto": "Vietnam",
+      "dificultad": "dificil"
     }
   ]
 }

@@ -8,603 +8,753 @@
   "palabras": [
     {
       "id": "superman",
-      "texto": "Superman"
+      "texto": "Superman",
+      "dificultad": "facil"
     },
     {
       "id": "batman",
-      "texto": "Batman"
+      "texto": "Batman",
+      "dificultad": "facil"
     },
     {
       "id": "mujer-maravilla",
-      "texto": "Wonder Woman"
+      "texto": "Wonder Woman",
+      "dificultad": "facil"
     },
     {
       "id": "flash",
-      "texto": "Flash"
+      "texto": "Flash",
+      "dificultad": "facil"
     },
     {
       "id": "aquaman",
-      "texto": "Aquaman"
+      "texto": "Aquaman",
+      "dificultad": "facil"
     },
     {
       "id": "linterna-verde",
-      "texto": "Green Lantern"
+      "texto": "Green Lantern",
+      "dificultad": "facil"
     },
     {
       "id": "cyborg",
-      "texto": "Cyborg"
+      "texto": "Cyborg",
+      "dificultad": "facil"
     },
     {
       "id": "capitan-planeta",
-      "texto": "Captain Planet"
+      "texto": "Captain Planet",
+      "dificultad": "facil"
     },
     {
       "id": "flecha-verde",
-      "texto": "Green Arrow"
+      "texto": "Green Arrow",
+      "dificultad": "facil"
     },
     {
       "id": "power-ranger",
-      "texto": "Power Ranger"
+      "texto": "Power Ranger",
+      "dificultad": "facil"
     },
     {
       "id": "shazam",
-      "texto": "Shazam"
+      "texto": "Shazam",
+      "dificultad": "facil"
     },
     {
       "id": "ultraman",
-      "texto": "Ultraman"
+      "texto": "Ultraman",
+      "dificultad": "facil"
     },
     {
       "id": "kim-possible",
-      "texto": "Kim Possible"
+      "texto": "Kim Possible",
+      "dificultad": "facil"
     },
     {
       "id": "inspector-gadget",
-      "texto": "Inspector Gadget"
+      "texto": "Inspector Gadget",
+      "dificultad": "facil"
     },
     {
       "id": "miles-morales",
-      "texto": "Miles Morales"
+      "texto": "Miles Morales",
+      "dificultad": "facil"
     },
     {
       "id": "robin",
-      "texto": "Robin"
+      "texto": "Robin",
+      "dificultad": "facil"
     },
     {
       "id": "ala-nocturna",
-      "texto": "Nightwing"
+      "texto": "Nightwing",
+      "dificultad": "facil"
     },
     {
       "id": "batichica",
-      "texto": "Batgirl"
+      "texto": "Batgirl",
+      "dificultad": "facil"
     },
     {
       "id": "spider-gwen",
-      "texto": "Spider-Gwen"
+      "texto": "Spider-Gwen",
+      "dificultad": "facil"
     },
     {
       "id": "supergirl",
-      "texto": "Supergirl"
+      "texto": "Supergirl",
+      "dificultad": "facil"
     },
     {
       "id": "mr-increible",
-      "texto": "Mr. Incredible"
+      "texto": "Mr. Incredible",
+      "dificultad": "facil"
     },
     {
       "id": "doctor-destino",
-      "texto": "Doctor Fate"
+      "texto": "Doctor Fate",
+      "dificultad": "facil"
     },
     {
       "id": "elastigirl",
-      "texto": "Elastigirl"
+      "texto": "Elastigirl",
+      "dificultad": "facil"
     },
     {
       "id": "frozono",
-      "texto": "Frozone"
+      "texto": "Frozone",
+      "dificultad": "facil"
     },
     {
       "id": "baymax",
-      "texto": "Baymax"
+      "texto": "Baymax",
+      "dificultad": "facil"
     },
     {
       "id": "iron-man",
-      "texto": "Iron Man"
+      "texto": "Iron Man",
+      "dificultad": "facil"
     },
     {
       "id": "capitan-america",
-      "texto": "Captain America"
+      "texto": "Captain America",
+      "dificultad": "facil"
     },
     {
       "id": "thor",
-      "texto": "Thor"
+      "texto": "Thor",
+      "dificultad": "facil"
     },
     {
       "id": "hulk",
-      "texto": "Hulk"
+      "texto": "Hulk",
+      "dificultad": "facil"
     },
     {
       "id": "viuda-negra",
-      "texto": "Black Widow"
+      "texto": "Black Widow",
+      "dificultad": "facil"
     },
     {
       "id": "ojo-de-halcon",
-      "texto": "Hawkeye"
+      "texto": "Hawkeye",
+      "dificultad": "facil"
     },
     {
       "id": "hombre-arana",
-      "texto": "Spider-Man"
+      "texto": "Spider-Man",
+      "dificultad": "facil"
     },
     {
       "id": "doctor-strange",
-      "texto": "Doctor Strange"
+      "texto": "Doctor Strange",
+      "dificultad": "facil"
     },
     {
       "id": "pantera-negra",
-      "texto": "Black Panther"
+      "texto": "Black Panther",
+      "dificultad": "facil"
     },
     {
       "id": "capitana-marvel",
-      "texto": "Captain Marvel"
+      "texto": "Captain Marvel",
+      "dificultad": "facil"
     },
     {
       "id": "bruja-escarlata",
-      "texto": "Scarlet Witch"
+      "texto": "Scarlet Witch",
+      "dificultad": "facil"
     },
     {
       "id": "vision",
-      "texto": "Vision"
+      "texto": "Vision",
+      "dificultad": "facil"
     },
     {
       "id": "halcon",
-      "texto": "Falcon"
+      "texto": "Falcon",
+      "dificultad": "facil"
     },
     {
       "id": "soldado-del-invierno",
-      "texto": "Winter Soldier"
+      "texto": "Winter Soldier",
+      "dificultad": "facil"
     },
     {
       "id": "hombre-hormiga",
-      "texto": "Ant-Man"
+      "texto": "Ant-Man",
+      "dificultad": "facil"
     },
     {
       "id": "avispa",
-      "texto": "Wasp"
+      "texto": "Wasp",
+      "dificultad": "facil"
     },
     {
       "id": "senor-de-las-estrellas",
-      "texto": "Star-Lord"
+      "texto": "Star-Lord",
+      "dificultad": "facil"
     },
     {
       "id": "groot",
-      "texto": "Groot"
+      "texto": "Groot",
+      "dificultad": "facil"
     },
     {
       "id": "rocket",
-      "texto": "Rocket"
+      "texto": "Rocket",
+      "dificultad": "facil"
     },
     {
       "id": "gamora",
-      "texto": "Gamora"
+      "texto": "Gamora",
+      "dificultad": "facil"
     },
     {
       "id": "drax",
-      "texto": "Drax"
+      "texto": "Drax",
+      "dificultad": "facil"
     },
     {
       "id": "capitana-carter",
-      "texto": "Captain Carter"
+      "texto": "Captain Carter",
+      "dificultad": "facil"
     },
     {
       "id": "loki",
-      "texto": "Loki"
+      "texto": "Loki",
+      "dificultad": "facil"
     },
     {
       "id": "daredevil",
-      "texto": "Daredevil"
+      "texto": "Daredevil",
+      "dificultad": "facil"
     },
     {
       "id": "hipo",
-      "texto": "Hiccup"
+      "texto": "Hiccup",
+      "dificultad": "facil"
     },
     {
       "id": "blade",
-      "texto": "Blade"
+      "texto": "Blade",
+      "dificultad": "facil"
     },
     {
       "id": "motorista-fantasma",
-      "texto": "Ghost Rider"
+      "texto": "Ghost Rider",
+      "dificultad": "facil"
     },
     {
       "id": "po",
-      "texto": "Po"
+      "texto": "Po",
+      "dificultad": "facil"
     },
     {
       "id": "antorcha-humana",
-      "texto": "Human Torch"
+      "texto": "Human Torch",
+      "dificultad": "normal"
     },
     {
       "id": "la-cosa",
-      "texto": "The Thing"
+      "texto": "The Thing",
+      "dificultad": "normal"
     },
     {
       "id": "mujer-invisible",
-      "texto": "Invisible Woman"
+      "texto": "Invisible Woman",
+      "dificultad": "normal"
     },
     {
       "id": "senor-fantastico",
-      "texto": "Mister Fantastic"
+      "texto": "Mister Fantastic",
+      "dificultad": "normal"
     },
     {
       "id": "wolverine",
-      "texto": "Wolverine"
+      "texto": "Wolverine",
+      "dificultad": "normal"
     },
     {
       "id": "ciclope",
-      "texto": "Cyclops"
+      "texto": "Cyclops",
+      "dificultad": "normal"
     },
     {
       "id": "tormenta",
-      "texto": "Storm"
+      "texto": "Storm",
+      "dificultad": "normal"
     },
     {
       "id": "jean-grey",
-      "texto": "Jean Grey"
+      "texto": "Jean Grey",
+      "dificultad": "normal"
     },
     {
       "id": "violeta-parr",
-      "texto": "Violet Parr"
+      "texto": "Violet Parr",
+      "dificultad": "normal"
     },
     {
       "id": "bestia",
-      "texto": "Beast"
+      "texto": "Beast",
+      "dificultad": "normal"
     },
     {
       "id": "jack-jack",
-      "texto": "Jack-Jack"
+      "texto": "Jack-Jack",
+      "dificultad": "normal"
     },
     {
       "id": "profesor-x",
-      "texto": "Professor X"
+      "texto": "Professor X",
+      "dificultad": "normal"
     },
     {
       "id": "deadpool",
-      "texto": "Deadpool"
+      "texto": "Deadpool",
+      "dificultad": "normal"
     },
     {
       "id": "elektra",
-      "texto": "Elektra"
+      "texto": "Elektra",
+      "dificultad": "normal"
     },
     {
       "id": "dash",
-      "texto": "Dash"
+      "texto": "Dash",
+      "dificultad": "normal"
     },
     {
       "id": "hellboy",
-      "texto": "Hellboy"
+      "texto": "Hellboy",
+      "dificultad": "normal"
     },
     {
       "id": "la-mascara",
-      "texto": "The Mask"
+      "texto": "The Mask",
+      "dificultad": "normal"
     },
     {
       "id": "tortugas-ninja",
-      "texto": "Teenage Mutant Ninja Turtles"
+      "texto": "Teenage Mutant Ninja Turtles",
+      "dificultad": "normal"
     },
     {
       "id": "leonardo",
-      "texto": "Leonardo"
+      "texto": "Leonardo",
+      "dificultad": "facil"
     },
     {
       "id": "raphael",
-      "texto": "Raphael"
+      "texto": "Raphael",
+      "dificultad": "normal"
     },
     {
       "id": "donatello",
-      "texto": "Donatello"
+      "texto": "Donatello",
+      "dificultad": "normal"
     },
     {
       "id": "michelangelo",
-      "texto": "Michelangelo"
+      "texto": "Michelangelo",
+      "dificultad": "normal"
     },
     {
       "id": "ben-10",
-      "texto": "Ben 10"
+      "texto": "Ben 10",
+      "dificultad": "normal"
     },
     {
       "id": "max-steel",
-      "texto": "Max Steel"
+      "texto": "Max Steel",
+      "dificultad": "normal"
     },
     {
       "id": "he-man",
-      "texto": "He-Man"
+      "texto": "He-Man",
+      "dificultad": "normal"
     },
     {
       "id": "she-ra",
-      "texto": "She-Ra"
+      "texto": "She-Ra",
+      "dificultad": "normal"
     },
     {
       "id": "ms-marvel",
-      "texto": "Ms. Marvel"
+      "texto": "Ms. Marvel",
+      "dificultad": "normal"
     },
     {
       "id": "sailor-moon",
-      "texto": "Sailor Moon"
+      "texto": "Sailor Moon",
+      "dificultad": "normal"
     },
     {
       "id": "goku",
-      "texto": "Goku"
+      "texto": "Goku",
+      "dificultad": "normal"
     },
     {
       "id": "gohan",
-      "texto": "Gohan"
+      "texto": "Gohan",
+      "dificultad": "normal"
     },
     {
       "id": "vegeta",
-      "texto": "Vegeta"
+      "texto": "Vegeta",
+      "dificultad": "normal"
     },
     {
       "id": "piccolo",
-      "texto": "Piccolo"
+      "texto": "Piccolo",
+      "dificultad": "normal"
     },
     {
       "id": "naruto",
-      "texto": "Naruto"
+      "texto": "Naruto",
+      "dificultad": "normal"
     },
     {
       "id": "sasuke",
-      "texto": "Sasuke"
+      "texto": "Sasuke",
+      "dificultad": "normal"
     },
     {
       "id": "kakashi",
-      "texto": "Kakashi"
+      "texto": "Kakashi",
+      "dificultad": "normal"
     },
     {
       "id": "luffy",
-      "texto": "Luffy"
+      "texto": "Luffy",
+      "dificultad": "normal"
     },
     {
       "id": "zoro",
-      "texto": "Zoro"
+      "texto": "Zoro",
+      "dificultad": "normal"
     },
     {
       "id": "sanji",
-      "texto": "Sanji"
+      "texto": "Sanji",
+      "dificultad": "normal"
     },
     {
       "id": "saitama",
-      "texto": "Saitama"
+      "texto": "Saitama",
+      "dificultad": "normal"
     },
     {
       "id": "moon-knight",
-      "texto": "Moon Knight"
+      "texto": "Moon Knight",
+      "dificultad": "normal"
     },
     {
       "id": "all-might",
-      "texto": "All Might"
+      "texto": "All Might",
+      "dificultad": "normal"
     },
     {
       "id": "deku",
-      "texto": "Deku"
+      "texto": "Deku",
+      "dificultad": "normal"
     },
     {
       "id": "stitch",
-      "texto": "Stitch"
+      "texto": "Stitch",
+      "dificultad": "normal"
     },
     {
       "id": "capitan-cavernicola",
-      "texto": "Captain Caveman"
+      "texto": "Captain Caveman",
+      "dificultad": "normal"
     },
     {
       "id": "space-ghost",
-      "texto": "Space Ghost"
+      "texto": "Space Ghost",
+      "dificultad": "normal"
     },
     {
       "id": "birdman",
-      "texto": "Birdman"
+      "texto": "Birdman",
+      "dificultad": "normal"
     },
     {
       "id": "fantasma",
-      "texto": "The Phantom"
+      "texto": "The Phantom",
+      "dificultad": "normal"
     },
     {
       "id": "zorro",
-      "texto": "Zorro"
+      "texto": "Zorro",
+      "dificultad": "normal"
     },
     {
       "id": "llanero-solitario",
-      "texto": "The Lone Ranger"
+      "texto": "The Lone Ranger",
+      "dificultad": "normal"
     },
     {
       "id": "tarzan",
-      "texto": "Tarzan"
+      "texto": "Tarzan",
+      "dificultad": "normal"
     },
     {
       "id": "flash-gordon",
-      "texto": "Flash Gordon"
+      "texto": "Flash Gordon",
+      "dificultad": "normal"
     },
     {
       "id": "buck-rogers",
-      "texto": "Buck Rogers"
+      "texto": "Buck Rogers",
+      "dificultad": "normal"
     },
     {
       "id": "john-carter",
-      "texto": "John Carter"
+      "texto": "John Carter",
+      "dificultad": "normal"
     },
     {
       "id": "rocketeer",
-      "texto": "The Rocketeer"
+      "texto": "The Rocketeer",
+      "dificultad": "normal"
     },
     {
       "id": "phantomias",
-      "texto": "Phantomias"
+      "texto": "Phantomias",
+      "dificultad": "normal"
     },
     {
       "id": "darkwing-duck",
-      "texto": "Darkwing Duck"
+      "texto": "Darkwing Duck",
+      "dificultad": "facil"
     },
     {
       "id": "gargamel",
-      "texto": "Papa Smurf"
+      "texto": "Papa Smurf",
+      "dificultad": "normal"
     },
     {
       "id": "optimus-prime",
-      "texto": "Optimus Prime"
+      "texto": "Optimus Prime",
+      "dificultad": "normal"
     },
     {
       "id": "bumblebee",
-      "texto": "Bumblebee"
+      "texto": "Bumblebee",
+      "dificultad": "normal"
     },
     {
       "id": "megazord",
-      "texto": "Megazord"
+      "texto": "Megazord",
+      "dificultad": "normal"
     },
     {
       "id": "voltron",
-      "texto": "Voltron"
+      "texto": "Voltron",
+      "dificultad": "dificil"
     },
     {
       "id": "mazinger-z",
-      "texto": "Mazinger Z"
+      "texto": "Mazinger Z",
+      "dificultad": "dificil"
     },
     {
       "id": "afrodita-a",
-      "texto": "Aphrodite A"
+      "texto": "Aphrodite A",
+      "dificultad": "dificil"
     },
     {
       "id": "grendizer",
-      "texto": "Grendizer"
+      "texto": "Grendizer",
+      "dificultad": "dificil"
     },
     {
       "id": "goldorak",
-      "texto": "Goldorak"
+      "texto": "Goldorak",
+      "dificultad": "dificil"
     },
     {
       "id": "gigantor",
-      "texto": "Gigantor"
+      "texto": "Gigantor",
+      "dificultad": "dificil"
     },
     {
       "id": "eva-01",
-      "texto": "EVA-01"
+      "texto": "EVA-01",
+      "dificultad": "dificil"
     },
     {
       "id": "shinji",
-      "texto": "Shinji Ikari"
+      "texto": "Shinji Ikari",
+      "dificultad": "dificil"
     },
     {
       "id": "kaneda",
-      "texto": "Kaneda"
+      "texto": "Kaneda",
+      "dificultad": "dificil"
     },
     {
       "id": "akira",
-      "texto": "Akira"
+      "texto": "Akira",
+      "dificultad": "dificil"
     },
     {
       "id": "tanjiro",
-      "texto": "Tanjiro"
+      "texto": "Tanjiro",
+      "dificultad": "dificil"
     },
     {
       "id": "nezuko",
-      "texto": "Nezuko"
+      "texto": "Nezuko",
+      "dificultad": "dificil"
     },
     {
       "id": "inosuke",
-      "texto": "Inosuke"
+      "texto": "Inosuke",
+      "dificultad": "dificil"
     },
     {
       "id": "zenitsu",
-      "texto": "Zenitsu"
+      "texto": "Zenitsu",
+      "dificultad": "dificil"
     },
     {
       "id": "jotaro",
-      "texto": "Jotaro Kujo"
+      "texto": "Jotaro Kujo",
+      "dificultad": "dificil"
     },
     {
       "id": "gon",
-      "texto": "Gon"
+      "texto": "Gon",
+      "dificultad": "dificil"
     },
     {
       "id": "killua",
-      "texto": "Killua"
+      "texto": "Killua",
+      "dificultad": "dificil"
     },
     {
       "id": "yuji-itadori",
-      "texto": "Yuji Itadori"
+      "texto": "Yuji Itadori",
+      "dificultad": "dificil"
     },
     {
       "id": "gojo",
-      "texto": "Satoru Gojo"
+      "texto": "Satoru Gojo",
+      "dificultad": "dificil"
     },
     {
       "id": "asta",
-      "texto": "Asta"
+      "texto": "Asta",
+      "dificultad": "dificil"
     },
     {
       "id": "meliodas",
-      "texto": "Meliodas"
+      "texto": "Meliodas",
+      "dificultad": "dificil"
     },
     {
       "id": "natsu",
-      "texto": "Natsu"
+      "texto": "Natsu",
+      "dificultad": "dificil"
     },
     {
       "id": "erza",
-      "texto": "Erza Scarlet"
+      "texto": "Erza Scarlet",
+      "dificultad": "dificil"
     },
     {
       "id": "yugi",
-      "texto": "Yugi Muto"
+      "texto": "Yugi Muto",
+      "dificultad": "dificil"
     },
     {
       "id": "ash-ketchum",
-      "texto": "Ash Ketchum"
+      "texto": "Ash Ketchum",
+      "dificultad": "dificil"
     },
     {
       "id": "digimon",
-      "texto": "Agumon"
+      "texto": "Agumon",
+      "dificultad": "dificil"
     },
     {
       "id": "ryu",
-      "texto": "Ryu"
+      "texto": "Ryu",
+      "dificultad": "dificil"
     },
     {
       "id": "chun-li",
-      "texto": "Chun-Li"
+      "texto": "Chun-Li",
+      "dificultad": "dificil"
     },
     {
       "id": "sonic",
-      "texto": "Sonic"
+      "texto": "Sonic",
+      "dificultad": "facil"
     },
     {
       "id": "tails",
-      "texto": "Tails"
+      "texto": "Tails",
+      "dificultad": "dificil"
     },
     {
       "id": "knuckles",
-      "texto": "Knuckles"
+      "texto": "Knuckles",
+      "dificultad": "dificil"
     },
     {
       "id": "link",
-      "texto": "Link"
+      "texto": "Link",
+      "dificultad": "dificil"
     },
     {
       "id": "samus",
-      "texto": "Samus Aran"
+      "texto": "Samus Aran",
+      "dificultad": "dificil"
     },
     {
       "id": "los-increibles",
-      "texto": "The Incredibles"
+      "texto": "The Incredibles",
+      "dificultad": "facil"
     },
     {
       "id": "omni-man",
-      "texto": "Omni-Man"
+      "texto": "Omni-Man",
+      "dificultad": "dificil"
     },
     {
       "id": "cat-noir",
-      "texto": "Cat Noir"
+      "texto": "Cat Noir",
+      "dificultad": "facil"
     },
     {
       "id": "ladybug",
-      "texto": "Ladybug"
+      "texto": "Ladybug",
+      "dificultad": "dificil"
     }
   ]
 }
