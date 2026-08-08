@@ -1,7 +1,7 @@
 import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Image, Pressable, Text, TextInput, View } from "react-native";
+import { Alert, Image, Pressable, Text, TextInput, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
@@ -126,10 +126,13 @@ export function PlayerEditorSheet({ player, onClose }: PlayerEditorSheetProps) {
 
           <ChipSelector
             label={t("difficulty.label")}
+            onInfoPress={() => {
+              Alert.alert(t("difficulty.label"), t("difficulty.description"));
+            }}
             options={[
-              { label: `🟢 ${t("difficulty.facil")}`, value: "facil" },
-              { label: `🎯 ${t("difficulty.normal")}`, value: "normal" },
-              { label: `🔴 ${t("difficulty.dificil")}`, value: "dificil" },
+              { label: t("difficulty.facil"), value: "facil" },
+              { label: t("difficulty.normal"), value: "normal" },
+              { label: t("difficulty.dificil"), value: "dificil" },
             ]}
             value={player.dificultad ?? "normal"}
             onChange={(val) => setPlayerDifficulty(player.id, val as DifficultyLevel)}

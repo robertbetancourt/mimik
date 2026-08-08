@@ -10,7 +10,8 @@
     "label": "Word difficulty",
     "facil": "Easy",
     "normal": "Normal",
-    "dificil": "Hard"
+    "dificil": "Hard",
+    "description": "Only applies during this player's turn"
   },
   "mix": {
     "title": "Mix",

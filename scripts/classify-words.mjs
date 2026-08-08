@@ -1,4 +1,4 @@
-﻿/**
+/**
  * classify-words.mjs
  *
  * Classifies every word in the Mimik category JSON files as "facil", "normal"
@@ -22,7 +22,11 @@ const ROOT = join(__dirname, "..");
 const DATA_DIR = join(ROOT, "data", "categories");
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+// Keys starting with "AQ." are OAuth2 access tokens and must be sent as
+// Authorization: Bearer. Classic API keys (AIzaSy...) go in the ?key= param.
+const IS_OAUTH_TOKEN = API_KEY?.startsWith("AQ.");
+const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+const GEMINI_URL = IS_OAUTH_TOKEN ? GEMINI_BASE_URL : `${GEMINI_BASE_URL}?key=${API_KEY}`;
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const LANG_FLAG = process.argv.indexOf("--lang");
@@ -58,9 +62,12 @@ ${wordList}`;
     generationConfig: { temperature: 0.1, responseMimeType: "application/json" },
   };
 
+  const headers = { "Content-Type": "application/json" };
+  if (IS_OAUTH_TOKEN) headers["Authorization"] = `Bearer ${API_KEY}`;
+
   const res = await fetch(GEMINI_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify(body),
   });
 

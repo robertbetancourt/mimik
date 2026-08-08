@@ -1,4 +1,5 @@
 import * as Haptics from "expo-haptics";
+import { Info } from "lucide-react-native";
 import { useEffect } from "react";
 import { Pressable, Text, View } from "react-native";
 import Animated, {
@@ -19,6 +20,7 @@ interface ChipSelectorProps<T extends string | number> {
   options: ChipOption<T>[];
   value: T;
   onChange: (value: T) => void;
+  onInfoPress?: () => void;
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -86,10 +88,18 @@ export function ChipSelector<T extends string | number>({
   options,
   value,
   onChange,
+  onInfoPress,
 }: ChipSelectorProps<T>) {
   return (
     <View className="rounded-3xl border border-white/70 bg-white/70 px-5 py-4">
-      <Text className="font-sans-bold text-base text-ink">{label}</Text>
+      <View className="flex-row items-center gap-2">
+        <Text className="font-sans-bold text-base text-ink">{label}</Text>
+        {onInfoPress ? (
+          <Pressable onPress={onInfoPress} hitSlop={12} className="opacity-50 active:opacity-100">
+            <Info size={16} color="#2B2118" />
+          </Pressable>
+        ) : null}
+      </View>
 
       <View className="mt-3 flex-row gap-2">
         {options.map((option) => (

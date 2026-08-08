@@ -10,7 +10,8 @@
     "label": "Dificultad de palabras",
     "facil": "Fácil",
     "normal": "Normal",
-    "dificil": "Difícil"
+    "dificil": "Difícil",
+    "description": "Solo aplica en el turno de este jugador"
   },
   "mix": {
     "title": "Mezcla",
