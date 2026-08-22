@@ -87,5 +87,5 @@ export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered, threshol
     });
 
     return () => subscription.remove();
-  }, [mode]);
+  }, [mode, threshold]);
 }

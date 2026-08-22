@@ -16,12 +16,17 @@ import * as SplashScreen from "expo-splash-screen";
 
 SplashScreen.preventAutoHideAsync();
 
+import { useState } from "react";
+import { AnimatedSplashScreen } from "@/components/ui/AnimatedSplashScreen";
+
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     Urbanist_400Regular,
     Urbanist_600SemiBold,
     Urbanist_700Bold,
   });
+
+  const [splashAnimationFinished, setSplashAnimationFinished] = useState(false);
 
   if (!fontsLoaded) {
     return null;
@@ -30,14 +35,14 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
-        <StatusBar style="dark" />
-        {/* Hides the native splash only once the real screen has actually
-            laid out — hiding it as soon as fonts resolve (the previous
-            approach) let the splash disappear a frame before React had
-            committed anything, leaving a blank background-color screen
-            until some interaction forced a repaint. */}
-        <View style={{ flex: 1 }} onLayout={() => SplashScreen.hideAsync()}>
+        <StatusBar style="light" />
+        <View style={{ flex: 1 }}>
           <Stack screenOptions={{ headerShown: false }} />
+          {!splashAnimationFinished && (
+            <AnimatedSplashScreen
+              onAnimationFinish={() => setSplashAnimationFinished(true)}
+            />
+          )}
         </View>
       </SafeAreaProvider>
     </GestureHandlerRootView>

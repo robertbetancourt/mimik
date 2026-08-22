@@ -5,6 +5,7 @@ import { Switch, Text, View } from "react-native";
 
 import { BottomSheet } from "@/components/ui/BottomSheet";
 import { ChipSelector } from "@/components/ui/ChipSelector";
+import { MimikLogo } from "@/components/ui/MimikLogo";
 import { type TiltSensitivity, useSettingsStore } from "./settingsStore";
 
 interface SettingsSheetProps {
@@ -100,12 +101,14 @@ export function SettingsSheet({ visible, onClose }: SettingsSheetProps) {
         />
       </View>
 
-      {/* Version section */}
-      <View className="mb-8 mt-4 items-center justify-center">
-        <Text className="font-sans text-sm text-ink/40">
-          Mimik {t("settings.version").toLowerCase()} {appVersion}
+      {/* Version & Logo section */}
+      <View className="mb-8 mt-4 items-center justify-center gap-2">
+        <MimikLogo width={80} height={20} />
+        <Text className="font-sans text-xs text-ink/40">
+          v{appVersion}
         </Text>
       </View>
     </BottomSheet>
   );
 }
+
