@@ -1,0 +1,505 @@
+{
+  "id": "jobs",
+  "titulo": "Professions",
+  "descripcion": "Act out the job without words.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/jobs.png",
+  "palabras": [
+    {
+      "id": "doctor",
+      "texto": "Doctor",
+      "dificultad": "facil"
+    },
+    {
+      "id": "policeman",
+      "texto": "Police Officer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "firefighter",
+      "texto": "Firefighter",
+      "dificultad": "facil"
+    },
+    {
+      "id": "teacher",
+      "texto": "Teacher",
+      "dificultad": "facil"
+    },
+    {
+      "id": "chef",
+      "texto": "Chef",
+      "dificultad": "facil"
+    },
+    {
+      "id": "astronaut",
+      "texto": "Astronaut",
+      "dificultad": "facil"
+    },
+    {
+      "id": "painter",
+      "texto": "Painter",
+      "dificultad": "facil"
+    },
+    {
+      "id": "singer",
+      "texto": "Singer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "dancer",
+      "texto": "Dancer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "photographer",
+      "texto": "Photographer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "pilot",
+      "texto": "Pilot",
+      "dificultad": "normal"
+    },
+    {
+      "id": "carpenter",
+      "texto": "Carpenter",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mechanic",
+      "texto": "Mechanic",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mailman",
+      "texto": "Mailman",
+      "dificultad": "normal"
+    },
+    {
+      "id": "hairdresser",
+      "texto": "Hairdresser",
+      "dificultad": "normal"
+    },
+    {
+      "id": "dentist",
+      "texto": "Dentist",
+      "dificultad": "normal"
+    },
+    {
+      "id": "gardener",
+      "texto": "Gardener",
+      "dificultad": "normal"
+    },
+    {
+      "id": "builder",
+      "texto": "Construction Worker",
+      "dificultad": "normal"
+    },
+    {
+      "id": "farmer",
+      "texto": "Farmer",
+      "dificultad": "normal"
+    },
+    {
+      "id": "detective",
+      "texto": "Detective",
+      "dificultad": "normal"
+    },
+    {
+      "id": "lawyer",
+      "texto": "Lawyer",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "programmer",
+      "texto": "Programmer",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "architect",
+      "texto": "Architect",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "scientist",
+      "texto": "Scientist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "surgeon",
+      "texto": "Surgeon",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "psychologist",
+      "texto": "Psychologist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "veterinarian",
+      "texto": "Veterinarian",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "writer",
+      "texto": "Writer",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "journalist",
+      "texto": "Journalist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "magician",
+      "texto": "Magician",
+      "dificultad": "facil"
+    },
+    {
+      "id": "waiter",
+      "texto": "Waiter",
+      "dificultad": "facil"
+    },
+    {
+      "id": "actor",
+      "texto": "Actor",
+      "dificultad": "facil"
+    },
+    {
+      "id": "baker",
+      "texto": "Baker",
+      "dificultad": "facil"
+    },
+    {
+      "id": "musician",
+      "texto": "Musician",
+      "dificultad": "facil"
+    },
+    {
+      "id": "taxi_driver",
+      "texto": "Taxi Driver",
+      "dificultad": "facil"
+    },
+    {
+      "id": "nurse",
+      "texto": "Nurse",
+      "dificultad": "facil"
+    },
+    {
+      "id": "butcher",
+      "texto": "Butcher",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cashier",
+      "texto": "Cashier",
+      "dificultad": "normal"
+    },
+    {
+      "id": "fisherman",
+      "texto": "Fisherman",
+      "dificultad": "normal"
+    },
+    {
+      "id": "plumber",
+      "texto": "Plumber",
+      "dificultad": "normal"
+    },
+    {
+      "id": "electrician",
+      "texto": "Electrician",
+      "dificultad": "normal"
+    },
+    {
+      "id": "judge",
+      "texto": "Judge",
+      "dificultad": "normal"
+    },
+    {
+      "id": "soldier",
+      "texto": "Soldier",
+      "dificultad": "normal"
+    },
+    {
+      "id": "janitor",
+      "texto": "Janitor",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tailor",
+      "texto": "Tailor",
+      "dificultad": "normal"
+    },
+    {
+      "id": "jeweler",
+      "texto": "Jeweler",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "miner",
+      "texto": "Miner",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "guard",
+      "texto": "Security Guard",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "dj",
+      "texto": "DJ",
+      "dificultad": "facil"
+    },
+    {
+      "id": "athlete",
+      "texto": "Athlete",
+      "dificultad": "facil"
+    },
+    {
+      "id": "model",
+      "texto": "Model",
+      "dificultad": "facil"
+    },
+    {
+      "id": "clown",
+      "texto": "Clown",
+      "dificultad": "facil"
+    },
+    {
+      "id": "acrobat",
+      "texto": "Acrobat",
+      "dificultad": "normal"
+    },
+    {
+      "id": "paramedic",
+      "texto": "Paramedic",
+      "dificultad": "normal"
+    },
+    {
+      "id": "psychiatrist",
+      "texto": "Psychiatrist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "biologist",
+      "texto": "Biologist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "chemist",
+      "texto": "Chemist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "physicist",
+      "texto": "Physicist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "mathematician",
+      "texto": "Mathematician",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "philosopher",
+      "texto": "Philosopher",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "historian",
+      "texto": "Historian",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "politician",
+      "texto": "Politician",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "king",
+      "texto": "King",
+      "dificultad": "facil"
+    },
+    {
+      "id": "president",
+      "texto": "President",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mayor",
+      "texto": "Mayor",
+      "dificultad": "normal"
+    },
+    {
+      "id": "priest",
+      "texto": "Priest",
+      "dificultad": "normal"
+    },
+    {
+      "id": "nun",
+      "texto": "Nun",
+      "dificultad": "normal"
+    },
+    {
+      "id": "sailor",
+      "texto": "Sailor",
+      "dificultad": "normal"
+    },
+    {
+      "id": "captain",
+      "texto": "Captain",
+      "dificultad": "normal"
+    },
+    {
+      "id": "pirate",
+      "texto": "Pirate",
+      "dificultad": "facil"
+    },
+    {
+      "id": "ninja",
+      "texto": "Ninja",
+      "dificultad": "facil"
+    },
+    {
+      "id": "samurai",
+      "texto": "Samurai",
+      "dificultad": "facil"
+    },
+    {
+      "id": "gladiator",
+      "texto": "Gladiator",
+      "dificultad": "normal"
+    },
+    {
+      "id": "hunter",
+      "texto": "Hunter",
+      "dificultad": "normal"
+    },
+    {
+      "id": "guide",
+      "texto": "Tour Guide",
+      "dificultad": "normal"
+    },
+    {
+      "id": "translator",
+      "texto": "Translator",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "radio_host",
+      "texto": "Radio Host",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "cameraman",
+      "texto": "Cameraman",
+      "dificultad": "normal"
+    },
+    {
+      "id": "director",
+      "texto": "Movie Director",
+      "dificultad": "normal"
+    },
+    {
+      "id": "producer",
+      "texto": "Producer",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "critic",
+      "texto": "Critic",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "dealer",
+      "texto": "Casino Dealer",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "banker",
+      "texto": "Banker",
+      "dificultad": "normal"
+    },
+    {
+      "id": "accountant",
+      "texto": "Accountant",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "economist",
+      "texto": "Economist",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "salesman",
+      "texto": "Salesman",
+      "dificultad": "facil"
+    },
+    {
+      "id": "merchant",
+      "texto": "Merchant",
+      "dificultad": "normal"
+    },
+    {
+      "id": "businessman",
+      "texto": "Businessman",
+      "dificultad": "normal"
+    },
+    {
+      "id": "ceo",
+      "texto": "CEO",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "influencer",
+      "texto": "Influencer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "youtuber",
+      "texto": "Youtuber",
+      "dificultad": "facil"
+    },
+    {
+      "id": "gamer",
+      "texto": "Pro Gamer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "hacker",
+      "texto": "Hacker",
+      "dificultad": "facil"
+    },
+    {
+      "id": "spy",
+      "texto": "Spy",
+      "dificultad": "facil"
+    },
+    {
+      "id": "wrestler",
+      "texto": "Wrestler",
+      "dificultad": "facil"
+    },
+    {
+      "id": "boxer",
+      "texto": "Boxer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "referee",
+      "texto": "Referee",
+      "dificultad": "facil"
+    },
+    {
+      "id": "coach",
+      "texto": "Coach",
+      "dificultad": "facil"
+    },
+    {
+      "id": "gymnast",
+      "texto": "Gymnast",
+      "dificultad": "facil"
+    }
+  ]
+}

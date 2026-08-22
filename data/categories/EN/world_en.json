@@ -317,11 +317,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "madagascar",
-      "texto": "Madagascar",
-      "dificultad": "facil"
-    },
-    {
       "id": "malasia",
       "texto": "Malasia",
       "dificultad": "facil"
@@ -909,11 +904,6 @@
     {
       "id": "bosque-negro",
       "texto": "Black Forest",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "yellowstone",
-      "texto": "Yellowstone",
       "dificultad": "dificil"
     },
     {

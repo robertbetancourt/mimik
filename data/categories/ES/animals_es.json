@@ -112,11 +112,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "halcon",
-      "texto": "Halcón",
-      "dificultad": "facil"
-    },
-    {
       "id": "buho",
       "texto": "Búho",
       "dificultad": "facil"
@@ -182,18 +177,8 @@
       "dificultad": "facil"
     },
     {
-      "id": "puma",
-      "texto": "Puma",
-      "dificultad": "facil"
-    },
-    {
       "id": "lobo",
       "texto": "Lobo",
-      "dificultad": "facil"
-    },
-    {
-      "id": "zorro",
-      "texto": "Zorro",
       "dificultad": "facil"
     },
     {
@@ -479,11 +464,6 @@
     {
       "id": "abeja",
       "texto": "Abeja",
-      "dificultad": "normal"
-    },
-    {
-      "id": "avispa",
-      "texto": "Avispa",
       "dificultad": "normal"
     },
     {

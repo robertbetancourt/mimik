@@ -1,0 +1,480 @@
+{
+  "id": "actions",
+  "titulo": "Act It Out",
+  "descripcion": "Act out the verb, no words!",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/actItOut.png",
+  "palabras": [
+    {
+      "id": "sleep",
+      "texto": "Sleeping",
+      "dificultad": "facil"
+    },
+    {
+      "id": "eat",
+      "texto": "Eating",
+      "dificultad": "facil"
+    },
+    {
+      "id": "run",
+      "texto": "Running",
+      "dificultad": "facil"
+    },
+    {
+      "id": "swim",
+      "texto": "Swimming",
+      "dificultad": "facil"
+    },
+    {
+      "id": "cry",
+      "texto": "Crying",
+      "dificultad": "facil"
+    },
+    {
+      "id": "laugh",
+      "texto": "Laughing",
+      "dificultad": "facil"
+    },
+    {
+      "id": "dance",
+      "texto": "Dancing",
+      "dificultad": "facil"
+    },
+    {
+      "id": "jump",
+      "texto": "Jumping",
+      "dificultad": "facil"
+    },
+    {
+      "id": "drive",
+      "texto": "Driving",
+      "dificultad": "facil"
+    },
+    {
+      "id": "read",
+      "texto": "Reading",
+      "dificultad": "facil"
+    },
+    {
+      "id": "fish",
+      "texto": "Fishing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "knit",
+      "texto": "Knitting",
+      "dificultad": "normal"
+    },
+    {
+      "id": "iron",
+      "texto": "Ironing clothes",
+      "dificultad": "normal"
+    },
+    {
+      "id": "sweep",
+      "texto": "Sweeping",
+      "dificultad": "normal"
+    },
+    {
+      "id": "makeup",
+      "texto": "Putting on makeup",
+      "dificultad": "normal"
+    },
+    {
+      "id": "shave",
+      "texto": "Shaving",
+      "dificultad": "normal"
+    },
+    {
+      "id": "sneeze",
+      "texto": "Sneezing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "yawn",
+      "texto": "Yawning",
+      "dificultad": "normal"
+    },
+    {
+      "id": "write",
+      "texto": "Writing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "brush",
+      "texto": "Brushing teeth",
+      "dificultad": "normal"
+    },
+    {
+      "id": "meditate",
+      "texto": "Meditating",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "hypnotize",
+      "texto": "Hypnotizing",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "dream",
+      "texto": "Dreaming",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "fall_in_love",
+      "texto": "Falling in love",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "freeze",
+      "texto": "Freezing",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "faint",
+      "texto": "Fainting",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "stretch",
+      "texto": "Stretching",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "haggle",
+      "texto": "Haggling",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "vomit",
+      "texto": "Vomiting",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "clap",
+      "texto": "Clapping",
+      "dificultad": "facil"
+    },
+    {
+      "id": "whistle",
+      "texto": "Whistling",
+      "dificultad": "facil"
+    },
+    {
+      "id": "walk",
+      "texto": "Walking",
+      "dificultad": "facil"
+    },
+    {
+      "id": "fly",
+      "texto": "Flying",
+      "dificultad": "facil"
+    },
+    {
+      "id": "crawl",
+      "texto": "Crawling",
+      "dificultad": "facil"
+    },
+    {
+      "id": "hug",
+      "texto": "Hugging",
+      "dificultad": "facil"
+    },
+    {
+      "id": "wave",
+      "texto": "Waving",
+      "dificultad": "facil"
+    },
+    {
+      "id": "say_goodbye",
+      "texto": "Saying goodbye",
+      "dificultad": "facil"
+    },
+    {
+      "id": "cook",
+      "texto": "Cooking",
+      "dificultad": "normal"
+    },
+    {
+      "id": "clean",
+      "texto": "Cleaning",
+      "dificultad": "normal"
+    },
+    {
+      "id": "paint",
+      "texto": "Painting",
+      "dificultad": "normal"
+    },
+    {
+      "id": "draw",
+      "texto": "Drawing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "play_guitar",
+      "texto": "Playing guitar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "play_piano",
+      "texto": "Playing piano",
+      "dificultad": "normal"
+    },
+    {
+      "id": "ski",
+      "texto": "Skiing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "dive",
+      "texto": "Diving",
+      "dificultad": "normal"
+    },
+    {
+      "id": "dig",
+      "texto": "Digging",
+      "dificultad": "normal"
+    },
+    {
+      "id": "plant",
+      "texto": "Planting",
+      "dificultad": "normal"
+    },
+    {
+      "id": "water",
+      "texto": "Watering plants",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cut",
+      "texto": "Cutting",
+      "dificultad": "normal"
+    },
+    {
+      "id": "sew",
+      "texto": "Sewing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "hammer",
+      "texto": "Hammering",
+      "dificultad": "normal"
+    },
+    {
+      "id": "drill",
+      "texto": "Drilling",
+      "dificultad": "normal"
+    },
+    {
+      "id": "screw",
+      "texto": "Screwing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "paint_nails",
+      "texto": "Painting nails",
+      "dificultad": "normal"
+    },
+    {
+      "id": "comb",
+      "texto": "Combing hair",
+      "dificultad": "facil"
+    },
+    {
+      "id": "dress",
+      "texto": "Getting dressed",
+      "dificultad": "facil"
+    },
+    {
+      "id": "undress",
+      "texto": "Getting undressed",
+      "dificultad": "normal"
+    },
+    {
+      "id": "button",
+      "texto": "Buttoning",
+      "dificultad": "normal"
+    },
+    {
+      "id": "unbutton",
+      "texto": "Unbuttoning",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tie_shoes",
+      "texto": "Tying shoes",
+      "dificultad": "normal"
+    },
+    {
+      "id": "put_hat",
+      "texto": "Putting on a hat",
+      "dificultad": "normal"
+    },
+    {
+      "id": "take_hat",
+      "texto": "Taking off a hat",
+      "dificultad": "normal"
+    },
+    {
+      "id": "put_gloves",
+      "texto": "Putting on gloves",
+      "dificultad": "normal"
+    },
+    {
+      "id": "take_gloves",
+      "texto": "Taking off gloves",
+      "dificultad": "normal"
+    },
+    {
+      "id": "put_glasses",
+      "texto": "Putting on glasses",
+      "dificultad": "normal"
+    },
+    {
+      "id": "take_glasses",
+      "texto": "Taking off glasses",
+      "dificultad": "normal"
+    },
+    {
+      "id": "check_watch",
+      "texto": "Checking watch",
+      "dificultad": "normal"
+    },
+    {
+      "id": "check_phone",
+      "texto": "Checking phone",
+      "dificultad": "normal"
+    },
+    {
+      "id": "talk_phone",
+      "texto": "Talking on phone",
+      "dificultad": "facil"
+    },
+    {
+      "id": "take_photo",
+      "texto": "Taking a photo",
+      "dificultad": "facil"
+    },
+    {
+      "id": "record_video",
+      "texto": "Recording a video",
+      "dificultad": "normal"
+    },
+    {
+      "id": "type",
+      "texto": "Typing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "use_mouse",
+      "texto": "Using a mouse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "play_videogame",
+      "texto": "Playing videogames",
+      "dificultad": "facil"
+    },
+    {
+      "id": "watch_tv",
+      "texto": "Watching TV",
+      "dificultad": "facil"
+    },
+    {
+      "id": "listen_music",
+      "texto": "Listening to music",
+      "dificultad": "facil"
+    },
+    {
+      "id": "ring_bell",
+      "texto": "Ringing doorbell",
+      "dificultad": "normal"
+    },
+    {
+      "id": "knock_door",
+      "texto": "Knocking on door",
+      "dificultad": "normal"
+    },
+    {
+      "id": "open_door",
+      "texto": "Opening door",
+      "dificultad": "normal"
+    },
+    {
+      "id": "close_door",
+      "texto": "Closing door",
+      "dificultad": "normal"
+    },
+    {
+      "id": "turn_on_light",
+      "texto": "Turning on light",
+      "dificultad": "normal"
+    },
+    {
+      "id": "turn_off_light",
+      "texto": "Turning off light",
+      "dificultad": "normal"
+    },
+    {
+      "id": "start_fire",
+      "texto": "Starting a fire",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "put_out_fire",
+      "texto": "Putting out fire",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "blow",
+      "texto": "Blowing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "breathe",
+      "texto": "Breathing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "smell",
+      "texto": "Smelling",
+      "dificultad": "normal"
+    },
+    {
+      "id": "taste",
+      "texto": "Tasting",
+      "dificultad": "normal"
+    },
+    {
+      "id": "chew",
+      "texto": "Chewing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "swallow",
+      "texto": "Swallowing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "spit",
+      "texto": "Spitting",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "cough",
+      "texto": "Coughing",
+      "dificultad": "normal"
+    },
+    {
+      "id": "burp",
+      "texto": "Burping",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "hiccup",
+      "texto": "Hiccuping",
+      "dificultad": "dificil"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "id": "actions",
+  "titulo": "Acciones",
+  "descripcion": "¡Pura mímica! Actúa el verbo.",
+  "version": 1,
+  "idioma": "es",
+  "ilustracion": "assets/images/categories/actItOut.png",
+  "palabras": [
+    {
+      "id": "dormir",
+      "texto": "Dormir",
+      "dificultad": "facil"
+    },
+    {
+      "id": "comer",
+      "texto": "Comer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "correr",
+      "texto": "Correr",
+      "dificultad": "facil"
+    },
+    {
+      "id": "nadar",
+      "texto": "Nadar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "llorar",
+      "texto": "Llorar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "reir",
+      "texto": "Reír",
+      "dificultad": "facil"
+    },
+    {
+      "id": "bailar",
+      "texto": "Bailar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "saltar",
+      "texto": "Saltar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "conducir",
+      "texto": "Conducir",
+      "dificultad": "facil"
+    },
+    {
+      "id": "leer",
+      "texto": "Leer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "pescar",
+      "texto": "Pescar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tejer",
+      "texto": "Tejer",
+      "dificultad": "normal"
+    },
+    {
+      "id": "planchar",
+      "texto": "Planchar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "barrer",
+      "texto": "Barrer",
+      "dificultad": "normal"
+    },
+    {
+      "id": "maquillarse",
+      "texto": "Maquillarse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "afeitarse",
+      "texto": "Afeitarse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "estornudar",
+      "texto": "Estornudar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "bostezar",
+      "texto": "Bostezar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "escribir",
+      "texto": "Escribir",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cepillarse",
+      "texto": "Cepillarse los dientes",
+      "dificultad": "normal"
+    },
+    {
+      "id": "meditar",
+      "texto": "Meditar",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "hipnotizar",
+      "texto": "Hipnotizar",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "soñar",
+      "texto": "Soñar",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "enamorarse",
+      "texto": "Enamorarse",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "congelarse",
+      "texto": "Congelarse",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "desmayarse",
+      "texto": "Desmayarse",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "estirarse",
+      "texto": "Estirarse",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "espiar",
+      "texto": "Espiar",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "regatear",
+      "texto": "Regatear",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "vomitar",
+      "texto": "Vomitar",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "aplaudir",
+      "texto": "Aplaudir",
+      "dificultad": "facil"
+    },
+    {
+      "id": "cantar",
+      "texto": "Cantar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "silbar",
+      "texto": "Silbar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "caminar",
+      "texto": "Caminar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "volar",
+      "texto": "Volar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "gatear",
+      "texto": "Gatear",
+      "dificultad": "facil"
+    },
+    {
+      "id": "abrazar",
+      "texto": "Abrazar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "besar",
+      "texto": "Besar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "saludar",
+      "texto": "Saludar",
+      "dificultad": "facil"
+    },
+    {
+      "id": "despedirse",
+      "texto": "Despedirse",
+      "dificultad": "facil"
+    },
+    {
+      "id": "cocinar",
+      "texto": "Cocinar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "limpiar",
+      "texto": "Limpiar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "pintar",
+      "texto": "Pintar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "dibujar",
+      "texto": "Dibujar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tocar-guitarra",
+      "texto": "Tocar la guitarra",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tocar-piano",
+      "texto": "Tocar el piano",
+      "dificultad": "normal"
+    },
+    {
+      "id": "esquiar",
+      "texto": "Esquiar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "patinar",
+      "texto": "Patinar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "surfear",
+      "texto": "Surfear",
+      "dificultad": "normal"
+    },
+    {
+      "id": "bucear",
+      "texto": "Bucear",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cavar",
+      "texto": "Cavar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "plantar",
+      "texto": "Plantar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "regar",
+      "texto": "Regar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cortar",
+      "texto": "Cortar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "coser",
+      "texto": "Coser",
+      "dificultad": "normal"
+    },
+    {
+      "id": "martillar",
+      "texto": "Martillar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "serruchar",
+      "texto": "Serruchar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "taladrar",
+      "texto": "Taladrar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "atornillar",
+      "texto": "Atornillar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "pintar-unas",
+      "texto": "Pintarse las uñas",
+      "dificultad": "normal"
+    },
+    {
+      "id": "peinarse",
+      "texto": "Peinarse",
+      "dificultad": "facil"
+    },
+    {
+      "id": "vestirse",
+      "texto": "Vestirse",
+      "dificultad": "facil"
+    },
+    {
+      "id": "desvestirse",
+      "texto": "Desvestirse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "abrocharse",
+      "texto": "Abrocharse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "desabrocharse",
+      "texto": "Desabrocharse",
+      "dificultad": "normal"
+    },
+    {
+      "id": "atar-zapatos",
+      "texto": "Atarse los zapatos",
+      "dificultad": "normal"
+    },
+    {
+      "id": "poner-sombrero",
+      "texto": "Ponerse un sombrero",
+      "dificultad": "normal"
+    },
+    {
+      "id": "quitar-sombrero",
+      "texto": "Quitarse un sombrero",
+      "dificultad": "normal"
+    },
+    {
+      "id": "poner-guantes",
+      "texto": "Ponerse guantes",
+      "dificultad": "normal"
+    },
+    {
+      "id": "quitar-guantes",
+      "texto": "Quitarse guantes",
+      "dificultad": "normal"
+    },
+    {
+      "id": "poner-gafas",
+      "texto": "Ponerse gafas",
+      "dificultad": "normal"
+    },
+    {
+      "id": "quitar-gafas",
+      "texto": "Quitarse gafas",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mirar-reloj",
+      "texto": "Mirar el reloj",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mirar-movil",
+      "texto": "Mirar el celular",
+      "dificultad": "normal"
+    },
+    {
+      "id": "hablar-telefono",
+      "texto": "Hablar por teléfono",
+      "dificultad": "facil"
+    },
+    {
+      "id": "tomar-foto",
+      "texto": "Tomar una foto",
+      "dificultad": "facil"
+    },
+    {
+      "id": "grabar-video",
+      "texto": "Grabar un video",
+      "dificultad": "normal"
+    },
+    {
+      "id": "escribir-teclado",
+      "texto": "Escribir en teclado",
+      "dificultad": "normal"
+    },
+    {
+      "id": "usar-raton",
+      "texto": "Usar el ratón",
+      "dificultad": "normal"
+    },
+    {
+      "id": "jugar-videojuego",
+      "texto": "Jugar videojuegos",
+      "dificultad": "facil"
+    },
+    {
+      "id": "ver-tv",
+      "texto": "Ver la tele",
+      "dificultad": "facil"
+    },
+    {
+      "id": "escuchar-musica",
+      "texto": "Escuchar música",
+      "dificultad": "facil"
+    },
+    {
+      "id": "tocar-timbre",
+      "texto": "Tocar el timbre",
+      "dificultad": "normal"
+    },
+    {
+      "id": "llamar-puerta",
+      "texto": "Llamar a la puerta",
+      "dificultad": "normal"
+    },
+    {
+      "id": "abrir-puerta",
+      "texto": "Abrir una puerta",
+      "dificultad": "normal"
+    },
+    {
+      "id": "cerrar-puerta",
+      "texto": "Cerrar una puerta",
+      "dificultad": "normal"
+    },
+    {
+      "id": "encender-luz",
+      "texto": "Encender la luz",
+      "dificultad": "normal"
+    },
+    {
+      "id": "apagar-luz",
+      "texto": "Apagar la luz",
+      "dificultad": "normal"
+    },
+    {
+      "id": "encender-fuego",
+      "texto": "Encender fuego",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "apagar-fuego",
+      "texto": "Apagar fuego",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "soplar",
+      "texto": "Soplar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "respirar",
+      "texto": "Respirar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "oler",
+      "texto": "Oler",
+      "dificultad": "normal"
+    },
+    {
+      "id": "saborear",
+      "texto": "Saborear",
+      "dificultad": "normal"
+    },
+    {
+      "id": "masticar",
+      "texto": "Masticar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "tragar",
+      "texto": "Tragar",
+      "dificultad": "normal"
+    },
+    {
+      "id": "escupir",
+      "texto": "Escupir",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "toser",
+      "texto": "Toser",
+      "dificultad": "normal"
+    },
+    {
+      "id": "eructar",
+      "texto": "Eructar",
+      "dificultad": "dificil"
+    }
+  ]
+}

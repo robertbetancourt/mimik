@@ -77,11 +77,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "los-increibles",
-      "texto": "The Incredibles",
-      "dificultad": "facil"
-    },
-    {
       "id": "ratatouille",
       "texto": "Ratatouille",
       "dificultad": "facil"
@@ -99,11 +94,6 @@
     {
       "id": "zootopia",
       "texto": "Zootopia",
-      "dificultad": "facil"
-    },
-    {
-      "id": "shrek",
-      "texto": "Shrek",
       "dificultad": "facil"
     },
     {
@@ -352,23 +342,8 @@
       "dificultad": "facil"
     },
     {
-      "id": "iron-man",
-      "texto": "Iron Man",
-      "dificultad": "facil"
-    },
-    {
       "id": "capitan-america-el-primer-vengador",
       "texto": "Captain America: The First Avenger",
-      "dificultad": "facil"
-    },
-    {
-      "id": "thor",
-      "texto": "Thor",
-      "dificultad": "facil"
-    },
-    {
-      "id": "doctor-strange",
-      "texto": "Doctor Strange",
       "dificultad": "facil"
     },
     {
@@ -387,11 +362,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "capitana-marvel",
-      "texto": "Captain Marvel",
-      "dificultad": "facil"
-    },
-    {
       "id": "avengers",
       "texto": "The Avengers",
       "dificultad": "facil"
@@ -402,33 +372,13 @@
       "dificultad": "facil"
     },
     {
-      "id": "batman",
-      "texto": "Batman",
-      "dificultad": "facil"
-    },
-    {
       "id": "the-batman",
       "texto": "The Batman",
       "dificultad": "facil"
     },
     {
-      "id": "superman",
-      "texto": "Superman",
-      "dificultad": "facil"
-    },
-    {
       "id": "el-hombre-de-acero",
       "texto": "Man of Steel",
-      "dificultad": "facil"
-    },
-    {
-      "id": "mujer-maravilla",
-      "texto": "Wonder Woman",
-      "dificultad": "facil"
-    },
-    {
-      "id": "aquaman",
-      "texto": "Aquaman",
       "dificultad": "facil"
     },
     {
@@ -439,11 +389,6 @@
     {
       "id": "suicide-squad",
       "texto": "Suicide Squad",
-      "dificultad": "facil"
-    },
-    {
-      "id": "la-mascara",
-      "texto": "The Mask",
       "dificultad": "facil"
     },
     {
@@ -597,11 +542,6 @@
       "dificultad": "normal"
     },
     {
-      "id": "tarzan",
-      "texto": "Tarzan",
-      "dificultad": "normal"
-    },
-    {
       "id": "mulan",
       "texto": "Mulan",
       "dificultad": "normal"
@@ -749,11 +689,6 @@
     {
       "id": "los-juegos-del-hambre",
       "texto": "The Hunger Games",
-      "dificultad": "normal"
-    },
-    {
-      "id": "deadpool",
-      "texto": "Deadpool",
       "dificultad": "normal"
     },
     {
@@ -997,11 +932,6 @@
       "dificultad": "dificil"
     },
     {
-      "id": "garfield",
-      "texto": "Garfield",
-      "dificultad": "dificil"
-    },
-    {
       "id": "las-tortugas-ninja",
       "texto": "Teenage Mutant Ninja Turtles",
       "dificultad": "dificil"
@@ -1032,11 +962,6 @@
       "dificultad": "dificil"
     },
     {
-      "id": "wolverine",
-      "texto": "The Wolverine",
-      "dificultad": "dificil"
-    },
-    {
       "id": "venom",
       "texto": "Venom",
       "dificultad": "dificil"
@@ -1045,21 +970,6 @@
       "id": "los-cuatro-fantasticos",
       "texto": "Fantastic Four",
       "dificultad": "dificil"
-    },
-    {
-      "id": "shazam",
-      "texto": "¡Shazam!",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "flash",
-      "texto": "The Flash",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "linterna-verde",
-      "texto": "Green Lantern",
-      "dificultad": "facil"
     },
     {
       "id": "constantine",

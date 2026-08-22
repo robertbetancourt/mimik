@@ -14,4 +14,7 @@ export const categoryColors: Record<Category["id"], string> = {
   superheroes: "#DCEAF6",
   "tv-series": "#F2E5D6",
   world: "#DFEEE1",
+  jobs: "#FCE4D6",
+  actions: "#DCEAF6",
+  anime: "#F4DCEE",
 };

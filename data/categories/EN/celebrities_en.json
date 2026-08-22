@@ -102,106 +102,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "michael-jackson",
-      "texto": "Michael Jackson",
-      "dificultad": "facil"
-    },
-    {
-      "id": "elvis-presley",
-      "texto": "Elvis Presley",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "freddie-mercury",
-      "texto": "Freddie Mercury",
-      "dificultad": "facil"
-    },
-    {
-      "id": "madonna",
-      "texto": "Madonna",
-      "dificultad": "facil"
-    },
-    {
-      "id": "shakira",
-      "texto": "Shakira",
-      "dificultad": "facil"
-    },
-    {
-      "id": "bad-bunny",
-      "texto": "Bad Bunny",
-      "dificultad": "facil"
-    },
-    {
-      "id": "karol-g",
-      "texto": "Karol G",
-      "dificultad": "facil"
-    },
-    {
-      "id": "luis-miguel",
-      "texto": "Luis Miguel",
-      "dificultad": "facil"
-    },
-    {
-      "id": "ricardo-arjona",
-      "texto": "Ricardo Arjona",
-      "dificultad": "facil"
-    },
-    {
-      "id": "juan-gabriel",
-      "texto": "Juan Gabriel",
-      "dificultad": "facil"
-    },
-    {
-      "id": "taylor-swift",
-      "texto": "Taylor Swift",
-      "dificultad": "facil"
-    },
-    {
-      "id": "adele",
-      "texto": "Adele",
-      "dificultad": "facil"
-    },
-    {
-      "id": "bruno-mars",
-      "texto": "Bruno Mars",
-      "dificultad": "facil"
-    },
-    {
-      "id": "ed-sheeran",
-      "texto": "Ed Sheeran",
-      "dificultad": "facil"
-    },
-    {
-      "id": "dua-lipa",
-      "texto": "Dua Lipa",
-      "dificultad": "facil"
-    },
-    {
-      "id": "billie-eilish",
-      "texto": "Billie Eilish",
-      "dificultad": "facil"
-    },
-    {
-      "id": "rihanna",
-      "texto": "Rihanna",
-      "dificultad": "facil"
-    },
-    {
-      "id": "beyonce",
-      "texto": "Beyoncé",
-      "dificultad": "facil"
-    },
-    {
-      "id": "justin-bieber",
-      "texto": "Justin Bieber",
-      "dificultad": "facil"
-    },
-    {
-      "id": "selena-gomez",
-      "texto": "Selena Gomez",
-      "dificultad": "facil"
-    },
-    {
       "id": "robert-downey-jr",
       "texto": "Robert Downey Jr.",
       "dificultad": "facil"
@@ -682,33 +582,8 @@
       "dificultad": "normal"
     },
     {
-      "id": "lady-gaga",
-      "texto": "Lady Gaga",
-      "dificultad": "normal"
-    },
-    {
-      "id": "katy-perry",
-      "texto": "Katy Perry",
-      "dificultad": "normal"
-    },
-    {
-      "id": "britney-spears",
-      "texto": "Britney Spears",
-      "dificultad": "normal"
-    },
-    {
       "id": "miley-cyrus",
       "texto": "Miley Cyrus",
-      "dificultad": "normal"
-    },
-    {
-      "id": "ariana-grande",
-      "texto": "Ariana Grande",
-      "dificultad": "normal"
-    },
-    {
-      "id": "jennifer-lopez",
-      "texto": "Jennifer Lopez",
       "dificultad": "normal"
     },
     {
@@ -722,18 +597,8 @@
       "dificultad": "normal"
     },
     {
-      "id": "bob-marley",
-      "texto": "Bob Marley",
-      "dificultad": "normal"
-    },
-    {
       "id": "tupac-shakur",
       "texto": "Tupac Shakur",
-      "dificultad": "normal"
-    },
-    {
-      "id": "eminem",
-      "texto": "Eminem",
       "dificultad": "normal"
     },
     {
@@ -750,26 +615,6 @@
       "id": "kanye-west",
       "texto": "Kanye West",
       "dificultad": "normal"
-    },
-    {
-      "id": "post-malone",
-      "texto": "Post Malone",
-      "dificultad": "normal"
-    },
-    {
-      "id": "the-weeknd",
-      "texto": "The Weeknd",
-      "dificultad": "normal"
-    },
-    {
-      "id": "harry-styles",
-      "texto": "Harry Styles",
-      "dificultad": "normal"
-    },
-    {
-      "id": "one-direction",
-      "texto": "One Direction",
-      "dificultad": "dificil"
     },
     {
       "id": "bts",

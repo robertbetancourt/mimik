@@ -32,11 +32,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "the-last-of-us",
-      "texto": "The Last of Us",
-      "dificultad": "facil"
-    },
-    {
       "id": "stranger-things",
       "texto": "Stranger Things",
       "dificultad": "facil"
@@ -127,11 +122,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "ben-10",
-      "texto": "Ben 10",
-      "dificultad": "facil"
-    },
-    {
       "id": "phineas-and-ferb",
       "texto": "Phineas and Ferb",
       "dificultad": "facil"
@@ -154,21 +144,6 @@
     {
       "id": "teen-titans",
       "texto": "Teen Titans",
-      "dificultad": "facil"
-    },
-    {
-      "id": "pokemon",
-      "texto": "Pokémon",
-      "dificultad": "facil"
-    },
-    {
-      "id": "dragon-ball",
-      "texto": "Dragon Ball",
-      "dificultad": "facil"
-    },
-    {
-      "id": "naruto",
-      "texto": "Naruto",
       "dificultad": "facil"
     },
     {
@@ -287,11 +262,6 @@
       "dificultad": "normal"
     },
     {
-      "id": "dexter",
-      "texto": "Dexter",
-      "dificultad": "normal"
-    },
-    {
       "id": "house",
       "texto": "House",
       "dificultad": "facil"
@@ -335,21 +305,6 @@
       "id": "wanda-vision",
       "texto": "WandaVision",
       "dificultad": "normal"
-    },
-    {
-      "id": "loki",
-      "texto": "Loki",
-      "dificultad": "normal"
-    },
-    {
-      "id": "moon-knight",
-      "texto": "Moon Knight",
-      "dificultad": "normal"
-    },
-    {
-      "id": "daredevil",
-      "texto": "Daredevil",
-      "dificultad": "facil"
     },
     {
       "id": "arrow",
@@ -447,11 +402,6 @@
       "dificultad": "normal"
     },
     {
-      "id": "scooby-doo",
-      "texto": "Scooby-Doo",
-      "dificultad": "normal"
-    },
-    {
       "id": "tom-and-jerry",
       "texto": "Tom and Jerry",
       "dificultad": "normal"
@@ -475,11 +425,6 @@
       "id": "courage-the-cowardly-dog",
       "texto": "Courage the Cowardly Dog",
       "dificultad": "facil"
-    },
-    {
-      "id": "johnny-bravo",
-      "texto": "Johnny Bravo",
-      "dificultad": "normal"
     },
     {
       "id": "the-flintstones",
@@ -510,16 +455,6 @@
       "id": "the-sopranos",
       "texto": "The Sopranos",
       "dificultad": "dificil"
-    },
-    {
-      "id": "sailor-moon",
-      "texto": "Sailor Moon",
-      "dificultad": "normal"
-    },
-    {
-      "id": "digimon",
-      "texto": "Digimon",
-      "dificultad": "normal"
     },
     {
       "id": "yu-gi-oh",
@@ -572,11 +507,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "he-man",
-      "texto": "He-Man and the Masters of the Universe",
-      "dificultad": "normal"
-    },
-    {
       "id": "garfield-and-friends",
       "texto": "Garfield and Friends",
       "dificultad": "dificil"
@@ -585,16 +515,6 @@
       "id": "the-smurfs",
       "texto": "The Smurfs",
       "dificultad": "dificil"
-    },
-    {
-      "id": "inspector-gadget",
-      "texto": "Inspector Gadget",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "pink-panther",
-      "texto": "The Pink Panther",
-      "dificultad": "facil"
     },
     {
       "id": "speed-racer",

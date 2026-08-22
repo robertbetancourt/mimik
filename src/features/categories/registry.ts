@@ -13,6 +13,9 @@ import peliculasEs from "@data/categories/ES/movies_es.json";
 import superheroesEs from "@data/categories/ES/superheroes_es.json";
 import tvSeriesEs from "@data/categories/ES/series_es.json";
 import worldEs from "@data/categories/ES/world_es.json";
+import jobsEs from "@data/categories/ES/jobs_es.json";
+import actionsEs from "@data/categories/ES/actions_es.json";
+import animeEs from "@data/categories/ES/anime_es.json";
 
 import animalesEn from "@data/categories/EN/animals_en.json";
 import comidaEn from "@data/categories/EN/foods_en.json";
@@ -25,6 +28,9 @@ import peliculasEn from "@data/categories/EN/movies_en.json";
 import superheroesEn from "@data/categories/EN/superheroes_en.json";
 import tvSeriesEn from "@data/categories/EN/series_en.json";
 import worldEn from "@data/categories/EN/world_en.json";
+import jobsEn from "@data/categories/EN/jobs_en.json";
+import actionsEn from "@data/categories/EN/actions_en.json";
+import animeEn from "@data/categories/EN/anime_en.json";
 
 const categoriesEs: Category[] = [
   animalesEs,
@@ -38,6 +44,9 @@ const categoriesEs: Category[] = [
   superheroesEs,
   tvSeriesEs,
   worldEs,
+  jobsEs,
+  actionsEs,
+  animeEs,
 ] as unknown as Category[];
 
 const categoriesEn: Category[] = [
@@ -52,6 +61,9 @@ const categoriesEn: Category[] = [
   superheroesEn,
   tvSeriesEn,
   worldEn,
+  jobsEn,
+  actionsEn,
+  animeEn,
 ] as unknown as Category[];
 
 // Only Spanish and English content exists today — any other device language

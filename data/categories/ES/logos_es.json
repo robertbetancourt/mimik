@@ -147,11 +147,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "minecraft",
-      "texto": "Minecraft",
-      "dificultad": "facil"
-    },
-    {
       "id": "disney",
       "texto": "Disney",
       "dificultad": "facil"
@@ -399,11 +394,6 @@
     {
       "id": "lego",
       "texto": "LEGO",
-      "dificultad": "normal"
-    },
-    {
-      "id": "barbie",
-      "texto": "Barbie",
       "dificultad": "normal"
     },
     {
@@ -1004,16 +994,6 @@
     {
       "id": "spotify-premium",
       "texto": "Spotify Premium",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "formula-1",
-      "texto": "Formula 1",
-      "dificultad": "dificil"
-    },
-    {
-      "id": "fifa",
-      "texto": "FIFA",
       "dificultad": "dificil"
     },
     {

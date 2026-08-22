@@ -1,0 +1,380 @@
+{
+  "id": "anime",
+  "titulo": "Cartoons & Anime",
+  "descripcion": "Guess famous cartoons and anime characters.",
+  "version": 1,
+  "idioma": "en",
+  "ilustracion": "assets/images/categories/animeCartoons.png",
+  "palabras": [
+    {
+      "id": "pikachu",
+      "texto": "Pikachu",
+      "dificultad": "facil"
+    },
+    {
+      "id": "homer",
+      "texto": "Homer Simpson",
+      "dificultad": "facil"
+    },
+    {
+      "id": "spongebob",
+      "texto": "SpongeBob",
+      "dificultad": "facil"
+    },
+    {
+      "id": "mickey",
+      "texto": "Mickey Mouse",
+      "dificultad": "facil"
+    },
+    {
+      "id": "bugs-bunny",
+      "texto": "Bugs Bunny",
+      "dificultad": "facil"
+    },
+    {
+      "id": "scooby-doo",
+      "texto": "Scooby-Doo",
+      "dificultad": "facil"
+    },
+    {
+      "id": "spiderman",
+      "texto": "Spider-Man",
+      "dificultad": "facil"
+    },
+    {
+      "id": "peppa-pig",
+      "texto": "Peppa Pig",
+      "dificultad": "facil"
+    },
+    {
+      "id": "shrek",
+      "texto": "Shrek",
+      "dificultad": "facil"
+    },
+    {
+      "id": "dora",
+      "texto": "Dora the Explorer",
+      "dificultad": "facil"
+    },
+    {
+      "id": "minion",
+      "texto": "Minion",
+      "dificultad": "facil"
+    },
+    {
+      "id": "woody",
+      "texto": "Woody",
+      "dificultad": "facil"
+    },
+    {
+      "id": "buzz",
+      "texto": "Buzz Lightyear",
+      "dificultad": "facil"
+    },
+    {
+      "id": "elsa",
+      "texto": "Elsa",
+      "dificultad": "facil"
+    },
+    {
+      "id": "olaf",
+      "texto": "Olaf",
+      "dificultad": "facil"
+    },
+    {
+      "id": "ariel",
+      "texto": "Ariel",
+      "dificultad": "facil"
+    },
+    {
+      "id": "simba",
+      "texto": "Simba",
+      "dificultad": "facil"
+    },
+    {
+      "id": "mario",
+      "texto": "Mario Bros",
+      "dificultad": "facil"
+    },
+    {
+      "id": "snoopy",
+      "texto": "Snoopy",
+      "dificultad": "facil"
+    },
+    {
+      "id": "garfield",
+      "texto": "Garfield",
+      "dificultad": "facil"
+    },
+    {
+      "id": "popeye",
+      "texto": "Popeye",
+      "dificultad": "facil"
+    },
+    {
+      "id": "tom",
+      "texto": "Tom",
+      "dificultad": "facil"
+    },
+    {
+      "id": "jerry",
+      "texto": "Jerry",
+      "dificultad": "facil"
+    },
+    {
+      "id": "pink-panther",
+      "texto": "Pink Panther",
+      "dificultad": "facil"
+    },
+    {
+      "id": "donald-duck",
+      "texto": "Donald Duck",
+      "dificultad": "facil"
+    },
+    {
+      "id": "dexter",
+      "texto": "Dexter",
+      "dificultad": "normal"
+    },
+    {
+      "id": "powerpuff",
+      "texto": "Powerpuff Girls",
+      "dificultad": "normal"
+    },
+    {
+      "id": "johnny-bravo",
+      "texto": "Johnny Bravo",
+      "dificultad": "normal"
+    },
+    {
+      "id": "courage",
+      "texto": "Courage the Cowardly Dog",
+      "dificultad": "normal"
+    },
+    {
+      "id": "phineas",
+      "texto": "Phineas and Ferb",
+      "dificultad": "normal"
+    },
+    {
+      "id": "perry",
+      "texto": "Perry the Platypus",
+      "dificultad": "normal"
+    },
+    {
+      "id": "stewie",
+      "texto": "Stewie Griffin",
+      "dificultad": "normal"
+    },
+    {
+      "id": "rick",
+      "texto": "Rick Sanchez",
+      "dificultad": "normal"
+    },
+    {
+      "id": "morty",
+      "texto": "Morty",
+      "dificultad": "normal"
+    },
+    {
+      "id": "seiya",
+      "texto": "Seiya",
+      "dificultad": "normal"
+    },
+    {
+      "id": "bulma",
+      "texto": "Bulma",
+      "dificultad": "normal"
+    },
+    {
+      "id": "nami",
+      "texto": "Nami",
+      "dificultad": "normal"
+    },
+    {
+      "id": "chopper",
+      "texto": "Chopper",
+      "dificultad": "normal"
+    },
+    {
+      "id": "light-yagami",
+      "texto": "Light Yagami",
+      "dificultad": "normal"
+    },
+    {
+      "id": "l",
+      "texto": "L",
+      "dificultad": "normal"
+    },
+    {
+      "id": "ryuk",
+      "texto": "Ryuk",
+      "dificultad": "normal"
+    },
+    {
+      "id": "ichigo",
+      "texto": "Ichigo",
+      "dificultad": "normal"
+    },
+    {
+      "id": "edward-elric",
+      "texto": "Edward Elric",
+      "dificultad": "normal"
+    },
+    {
+      "id": "totoro",
+      "texto": "Totoro",
+      "dificultad": "normal"
+    },
+    {
+      "id": "chihiro",
+      "texto": "Chihiro",
+      "dificultad": "normal"
+    },
+    {
+      "id": "howl",
+      "texto": "Howl",
+      "dificultad": "normal"
+    },
+    {
+      "id": "asuka",
+      "texto": "Asuka",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "rei",
+      "texto": "Rei Ayanami",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "eren",
+      "texto": "Eren Yeager",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "mikasa",
+      "texto": "Mikasa",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "levi",
+      "texto": "Levi",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "goku-black",
+      "texto": "Goku Black",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "frieza",
+      "texto": "Frieza",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "cell",
+      "texto": "Cell",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "majin-buu",
+      "texto": "Majin Buu",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "itachi",
+      "texto": "Itachi",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "gaara",
+      "texto": "Gaara",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "hinata",
+      "texto": "Hinata",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "sakura",
+      "texto": "Sakura",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "shikamaru",
+      "texto": "Shikamaru",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "jiraiya",
+      "texto": "Jiraiya",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "orochimaru",
+      "texto": "Orochimaru",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "hisoka",
+      "texto": "Hisoka",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "kurapika",
+      "texto": "Kurapika",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "genos",
+      "texto": "Genos",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mob",
+      "texto": "Mob",
+      "dificultad": "normal"
+    },
+    {
+      "id": "bakugo",
+      "texto": "Bakugo",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "todoroki",
+      "texto": "Todoroki",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "dio",
+      "texto": "Dio",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "guts",
+      "texto": "Guts",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "spike",
+      "texto": "Spike Spiegel",
+      "dificultad": "dificil"
+    },
+    {
+      "id": "astroboy",
+      "texto": "Astroboy",
+      "dificultad": "normal"
+    },
+    {
+      "id": "mazinger",
+      "texto": "Mazinger Z",
+      "dificultad": "normal"
+    },
+    {
+      "id": "oliver",
+      "texto": "Captain Tsubasa",
+      "dificultad": "normal"
+    }
+  ]
+}

@@ -15,4 +15,7 @@ export const categoryIllustrations: Record<string, number> = {
   "tv-series": require("../../../assets/images/categories/tv-series.png"),
   mix: require("../../../assets/images/categories/mix.png"),
   world: require("../../../assets/images/categories/countries.png"),
+  jobs: require("../../../assets/images/categories/jobs.png"),
+  actions: require("../../../assets/images/categories/actItOut.png"),
+  anime: require("../../../assets/images/categories/animeCartoons.png"),
 };

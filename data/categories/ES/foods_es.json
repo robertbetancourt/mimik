@@ -117,16 +117,6 @@
       "dificultad": "facil"
     },
     {
-      "id": "atun",
-      "texto": "Atún",
-      "dificultad": "facil"
-    },
-    {
-      "id": "salmon",
-      "texto": "Salmón",
-      "dificultad": "facil"
-    },
-    {
       "id": "langosta",
       "texto": "Langosta",
       "dificultad": "facil"
@@ -489,11 +479,6 @@
     {
       "id": "agua",
       "texto": "Agua",
-      "dificultad": "facil"
-    },
-    {
-      "id": "coco",
-      "texto": "Agua de Coco",
       "dificultad": "facil"
     },
     {
