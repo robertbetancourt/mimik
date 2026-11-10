@@ -22,7 +22,7 @@ credentials. The `production` profile retains its Play Store app-bundle behavior
 Native folders are generated and ignored: change Expo configuration, not only
 the local generated Gradle files. EAS supplies release signing during its build.
 
-Current version is 1.0.1 / versionCode 2. Increment `android.versionCode` in
+Current version is 1.1.0 / versionCode 3. Increment `android.versionCode` in
 `app.json` for every subsequent APK release and update verification expectations
 with `-VersionCode` / `-VersionName`. This profile does not auto-increment.
 
@@ -36,6 +36,18 @@ first, which can remove saved local data. Subsequent releases must keep the same
 production key to preserve update compatibility.
 
 Do not commit keystores, credentials.json, signing passwords or Expo tokens.
+
+## Verified release: 2026-11-10
+
+- EAS build:  (app commit ).
+- Version 1.1.0 / code 3, universal APK (ARM and x86, 32/64-bit).
+- APK SHA-256: .
+-  passed: production certificate
+  , signature v2, not debuggable, blocked permissions absent.
+- Installed over the previous build on a physical Samsung (SM-A566E) and cold-launched:
+  process stayed alive, no crash / ReactNativeJS error logs. Gameplay on the
+  release build was not re-tested by hand; it was exercised in Expo Go during development.
+- Website repository updated with the APK and checksum ( checks passed).
 
 ## Verified release: 2026-10-26
 
