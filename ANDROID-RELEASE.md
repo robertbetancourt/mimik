@@ -39,15 +39,17 @@ Do not commit keystores, credentials.json, signing passwords or Expo tokens.
 
 ## Verified release: 2026-11-10
 
-- EAS build:  (app commit ).
+- EAS build: `961c8737-1bb5-48bb-aab7-61cd33063325` (app commit `593ecb7`).
 - Version 1.1.0 / code 3, universal APK (ARM and x86, 32/64-bit).
-- APK SHA-256: .
--  passed: production certificate
-  , signature v2, not debuggable, blocked permissions absent.
+- APK SHA-256: `22e4a86dad141c981925cdb68929be1a5ecafa78e201f5459ac8260cc9e221fa`.
+- `verify-release.ps1 -VersionCode 3 -VersionName 1.1.0` passed: production certificate
+  `09047d9da4fff6afe58c90fb4a39f0183b0432d31d237b04ea9d0216e0dd4b24`, signature v2,
+  not debuggable, blocked permissions absent.
 - Installed over the previous build on a physical Samsung (SM-A566E) and cold-launched:
   process stayed alive, no crash / ReactNativeJS error logs. Gameplay on the
   release build was not re-tested by hand; it was exercised in Expo Go during development.
-- Website repository updated with the APK and checksum ( checks passed).
+- Website repository updated with the APK and checksum (`npm run build` checks passed,
+  website commit `8056c38`).
 
 ## Verified release: 2026-10-26
 
