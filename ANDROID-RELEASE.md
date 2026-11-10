@@ -37,7 +37,19 @@ production key to preserve update compatibility.
 
 Do not commit keystores, credentials.json, signing passwords or Expo tokens.
 
-## Verified release: 2026-11-10
+## Verified release: 2026-11-10 (1.3.0)
+
+- EAS build: `7135c290-b118-44bc-bc15-fe8e26d6f9b2` (app commit `1e8e9ae`).
+- Version 1.3.0 / code 4. Same code as 1.1.0 below, renumbered to follow the
+  public GitHub release v1.2.0; 1.1.0 was only briefly on the website.
+- APK SHA-256: `ff45fb6ad1f75d5396dd5ee089709ac57c854aef3611298700448aac74b51cc9`.
+- `verify-release.ps1` passed (production certificate, 1.3.0/4, not debuggable,
+  blocked permissions absent).
+- Not re-launched on a device (phone disconnected); the identical 1.1.0 code
+  cold-launched cleanly on the Samsung SM-A566E.
+- Website commit `c363415`; GitHub release `v1.3.0` with `mimik-1.3.0.apk` attached.
+
+## Verified release: 2026-11-10 (1.1.0)
 
 - EAS build: `961c8737-1bb5-48bb-aab7-61cd33063325` (app commit `593ecb7`).
 - Version 1.1.0 / code 3, universal APK (ARM and x86, 32/64-bit).
