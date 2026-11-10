@@ -22,7 +22,7 @@ credentials. The `production` profile retains its Play Store app-bundle behavior
 Native folders are generated and ignored: change Expo configuration, not only
 the local generated Gradle files. EAS supplies release signing during its build.
 
-Current version is 1.1.0 / versionCode 3. Increment `android.versionCode` in
+Current version is 1.3.0 / versionCode 4. (1.3.0 follows the public GitHub release v1.2.0; 1.1.0 was only briefly on the website.) Increment `android.versionCode` in
 `app.json` for every subsequent APK release and update verification expectations
 with `-VersionCode` / `-VersionName`. This profile does not auto-increment.
 

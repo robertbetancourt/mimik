@@ -2,8 +2,8 @@ param(
   [Parameter(Mandatory = $true)][string]$Apk,
   [string]$Sdk = "$env:LOCALAPPDATA/Android/Sdk",
   [string]$BuildTools = '37.0.0',
-  [int]$VersionCode = 3,
-  [string]$VersionName = '1.1.0'
+  [int]$VersionCode = 4,
+  [string]$VersionName = '1.3.0'
 )
 $ErrorActionPreference = 'Stop'
 $apkPath = (Resolve-Path -LiteralPath $Apk).Path
