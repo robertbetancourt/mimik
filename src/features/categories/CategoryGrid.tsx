@@ -1,12 +1,12 @@
 import { View } from "react-native";
 
+import { getStageAccent } from "@/features/gameplay/stage/palette";
 import type { Category } from "@/types/category";
 
-import { categoryColors } from "./colors";
 import { categoryIllustrations } from "./illustrations";
-import { CategoryCard, type CategoryCardVariant } from "./CategoryCard";
+import { CATEGORY_CARD_GAP, StageCategoryCard, type StageCategoryCardVariant } from "./StageCategoryCard";
 
-const CARD_GAP = 10;
+const CARD_GAP = CATEGORY_CARD_GAP;
 
 interface CategoryGridProps {
   categories: Category[];
@@ -15,7 +15,7 @@ interface CategoryGridProps {
 
 interface ColumnItem {
   category: Category;
-  variant: CategoryCardVariant;
+  variant: StageCategoryCardVariant;
   index: number;
 }
 
@@ -51,7 +51,7 @@ function CategoryColumn({
   return (
     <View className="flex-1" style={{ gap: CARD_GAP }}>
       {items.map(({ category, variant, index }) => (
-        <CategoryCard
+        <StageCategoryCard
           key={category.id}
           variant={variant}
           index={index}
@@ -59,8 +59,9 @@ function CategoryColumn({
           title={category.titulo}
           description={category.descripcion}
           wordCount={category.palabras.length}
-          backgroundColor={categoryColors[category.id]}
-          onPress={() => onSelect(category.id)}
+          accent={getStageAccent(category.id)}
+          categoryId={category.id}
+          onSelect={onSelect}
         />
       ))}
     </View>

@@ -25,7 +25,15 @@
     "title": "choose a category",
     "subtitle": "What do you want to play today?",
     "wordCount": "{{count}} words",
-    "playWithLastGroup": "Play with last group"
+    "playWithLastGroup": "Play with last group",
+    "history": "History",
+    "kicker": "Welcome",
+    "stageTitle": "Pick a category",
+    "categories": "Categories",
+    "historySub_one": "{{count}} match",
+    "historySub_other": "{{count}} matches",
+    "historyEmpty": "No matches yet",
+    "settingsSub": "Controls and sound"
   },
   "gameSetup": {
     "gameMode": "Game mode",
@@ -42,13 +50,23 @@
     "matchMode": "Match mode",
     "classicMode": "Classic",
     "survivalMode": "Survival",
-    "survivalHint": "15 s start · +5 s per correct answer"
+    "survivalHint": "15 s start · +5 s per correct answer",
+    "goldenWords": "Golden words",
+    "goldenWordsOn": "On",
+    "goldenWordsOff": "Off",
+    "goldenWordsHint": "Some words turn golden and are worth ×2",
+    "kicker": "Set up the match",
+    "playersSection": "Players",
+    "rulesSection": "Rules",
+    "soundSection": "Sound",
+    "playerHint": "Tap a player to change their name or character"
   },
   "countdown": {
     "go": "Go!",
     "reposition": "Place the phone back on your forehead.",
     "turnOf": "Turn:",
-    "placePhone": "Place the phone on your forehead."
+    "placePhone": "Place the phone on your forehead.",
+    "tapToStart": "Tap the screen to start."
   },
   "gameplay": {
     "teamRed": "Red Team",
@@ -57,7 +75,11 @@
     "exitTitle": "Exit match?",
     "exitMessage": "Your current match progress will be lost.",
     "exitPrimary": "Keep playing",
-    "exitSecondary": "Exit match"
+    "exitSecondary": "Exit match",
+    "goldenWord": "✦ GOLDEN WORD ×2",
+    "goldenStamp": "×2!",
+    "streak": "Streak x{{n}}",
+    "survivalBadge": "⚡ Survival"
   },
   "turnResults": {
     "points": "points",
@@ -66,7 +88,13 @@
     "noneThisTime": "None this time.",
     "leaderboard": "Leaderboard",
     "viewPodium": "View podium",
-    "nextTurnOf": "{{name}}'s turn"
+    "nextTurnOf": "{{name}}'s turn",
+    "tapToFix": "Sensor got it wrong? Tap a word to move it.",
+    "golden": "×2",
+    "round": "Round {{round}} of {{total}}",
+    "roundInfinite": "Round {{round}}",
+    "goldenHits_one": "✦ {{count}} golden word",
+    "goldenHits_other": "✦ {{count}} golden words"
   },
   "finalResults": {
     "teamWins": "{{team}} Team Wins the Match!",
@@ -78,7 +106,10 @@
     "specialAwards": "🏆 Special Awards",
     "finalRanking": "Final ranking",
     "rematch": "Rematch",
-    "goHome": "Go Home"
+    "goHome": "Go Home",
+    "winnerKicker": "Match champion",
+    "teamKicker": "Winning team",
+    "pointsShort": "pts"
   },
   "awards": {
     "speedsterTitle": "The Speedster",
@@ -138,6 +169,36 @@
     "roadtripMode": "Roadtrip Mode",
     "roadtripModeDesc": "Reduces animations to save battery",
     "about": "About",
-    "version": "Version"
+    "version": "Version",
+    "touchControls": "Touch controls",
+    "touchControlsDesc": "Tap right for correct and left to pass. Tilting still works.",
+    "sound": "Sound",
+    "music": "Turn music",
+    "musicDesc": "Speeds up as time runs out",
+    "tiltTest": "Test the tilt",
+    "tiltTestHint": "Hold the phone sideways, like on your forehead, and tilt it.",
+    "tiltCorrect": "Correct",
+    "tiltPass": "Pass",
+    "tiltNeutral": "Centered",
+    "tiltUnavailable": "Sensor not available on this device."
+  },
+  "history": {
+    "title": "History",
+    "emptyTitle": "No matches yet",
+    "emptyMessage": "Finished matches will show up here.",
+    "matches": "Matches",
+    "topWinner": "Most wins",
+    "wins_one": "{{count}} win",
+    "wins_other": "{{count}} wins",
+    "teamWins": "Team {{team}} wins",
+    "winner": "Winner",
+    "tie": "Tie",
+    "clear": "Clear history",
+    "clearTitle": "Clear history?",
+    "clearMessage": "All saved matches will be deleted. This can't be undone.",
+    "clearConfirm": "Clear",
+    "cancel": "Cancel",
+    "players_one": "{{count}} player",
+    "players_other": "{{count}} players"
   }
 }

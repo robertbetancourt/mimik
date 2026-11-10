@@ -22,10 +22,11 @@ interface CharacterGridProps {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
-const SURFACE_COLOR = "#FFFBF4";
-const SELECTED_BG = "rgba(43, 33, 24, 0.15)";
-const BORDER_IDLE = "rgba(43, 33, 24, 0)";
-const BORDER_SELECTED = "#2B2118";
+// Dark stage palette: glass tiles, the chosen one lit in the accent.
+const SURFACE_COLOR = "rgba(255, 255, 255, 0.06)";
+const SELECTED_BG = "rgba(255, 122, 69, 0.22)";
+const BORDER_IDLE = "rgba(255, 255, 255, 0)";
+const BORDER_SELECTED = "#FF7A45";
 
 function CharacterOption({
   character,
@@ -66,7 +67,7 @@ function CharacterOption({
       style={[animatedStyle, { borderWidth: 1.5 }]}
       className="w-[22%] items-center justify-center rounded-2xl py-2"
     >
-      <Image source={character.illustration} resizeMode="contain" style={{ width: 40, height: 40 }} />
+      <Image source={character.illustration} resizeMode="contain" resizeMethod="resize" style={{ width: 40, height: 40 }} />
     </AnimatedPressable>
   );
 }

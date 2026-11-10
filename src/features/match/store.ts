@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 import type { Word } from "@/types/category";
 import { DEFAULT_END_TURN_SOUND_ID } from "@/features/gameplay/endTurnSounds";
+import { GOLDEN_WORD_POINTS } from "@/features/gameplay/gameplayReducer";
 import { pickRandomCharacterId } from "@/features/players/characters";
 import { generateId } from "@/lib/generateId";
 import i18n from "@/i18n";
@@ -11,6 +12,16 @@ import type { DifficultyLevel } from "@/types/player";
 export interface TurnResult {
   correctWords: Word[];
   passedWords: Word[];
+  /** Ids of the turn's golden words (worth GOLDEN_WORD_POINTS when correct). */
+  goldenWordIds: string[];
+}
+
+/** Points a turn result is worth: 1 per correct word, golden words double. */
+export function scoreTurnResult(result: Pick<TurnResult, "correctWords" | "goldenWordIds">): number {
+  return result.correctWords.reduce(
+    (sum, word) => sum + (result.goldenWordIds.includes(word.id) ? GOLDEN_WORD_POINTS : 1),
+    0,
+  );
 }
 
 export const MIN_PLAYERS = 2;
@@ -76,6 +87,12 @@ interface MatchState {
 
   lastTurnResult: TurnResult | null;
   setLastTurnResult: (result: TurnResult) => void;
+  /**
+   * Fixes a sensor mistake from the Turn Results screen: moves a word of the
+   * last turn between "correct" and "passed" and re-scores the current
+   * player (score + stats) by the difference.
+   */
+  toggleLastTurnWord: (wordId: string) => void;
 
   playerScores: Record<string, number>;
   addTurnScore: (playerId: string, points: number) => void;
@@ -111,6 +128,10 @@ interface MatchState {
   survivalMode: boolean;
   setSurvivalMode: (enabled: boolean) => void;
 
+  /** Golden words: random words worth double points. */
+  goldenWordsEnabled: boolean;
+  setGoldenWordsEnabled: (enabled: boolean) => void;
+
   /** Same players, characters, names, category and settings — fresh scores and round progress. */
   startRematch: () => void;
   /** Full reset, as if the app just launched. */
@@ -145,6 +166,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
       survivalMode: false,
+      goldenWordsEnabled: true,
     }),
 
   players: createInitialPlayers(),
@@ -168,6 +190,45 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   setLastTurnResult: (result) => {
     set({
       lastTurnResult: result,
+    });
+  },
+  toggleLastTurnWord: (wordId) => {
+    const { lastTurnResult, players, currentPlayerIndex, playerScores, playerStats } = get();
+    const player = players[currentPlayerIndex];
+    if (!lastTurnResult || !player) return;
+
+    const inCorrect = lastTurnResult.correctWords.find((word) => word.id === wordId);
+    const inPassed = lastTurnResult.passedWords.find((word) => word.id === wordId);
+    const moved = inCorrect ?? inPassed;
+    if (!moved) return;
+
+    const next: TurnResult = inCorrect
+      ? {
+          ...lastTurnResult,
+          correctWords: lastTurnResult.correctWords.filter((word) => word.id !== wordId),
+          passedWords: [...lastTurnResult.passedWords, moved],
+        }
+      : {
+          ...lastTurnResult,
+          correctWords: [...lastTurnResult.correctWords, moved],
+          passedWords: lastTurnResult.passedWords.filter((word) => word.id !== wordId),
+        };
+
+    const pointsDelta = scoreTurnResult(next) - scoreTurnResult(lastTurnResult);
+    const correctDelta = inCorrect ? -1 : 1;
+    const stat = playerStats[player.id] ?? { correct: 0, passed: 0, totalWords: 0 };
+
+    set({
+      lastTurnResult: next,
+      playerScores: { ...playerScores, [player.id]: (playerScores[player.id] ?? 0) + pointsDelta },
+      playerStats: {
+        ...playerStats,
+        [player.id]: {
+          correct: stat.correct + correctDelta,
+          passed: stat.passed - correctDelta,
+          totalWords: stat.totalWords,
+        },
+      },
     });
   },
 
@@ -255,6 +316,9 @@ export const useMatchStore = create<MatchState>((set, get) => ({
   survivalMode: false,
   setSurvivalMode: (survivalMode) => set({ survivalMode }),
 
+  goldenWordsEnabled: true,
+  setGoldenWordsEnabled: (goldenWordsEnabled) => set({ goldenWordsEnabled }),
+
   startRematch: () =>
     set({
       currentPlayerIndex: 0,
@@ -281,6 +345,7 @@ export const useMatchStore = create<MatchState>((set, get) => ({
       timeBonusSeconds: 2,
       endTurnSoundId: DEFAULT_END_TURN_SOUND_ID,
       survivalMode: false,
+      goldenWordsEnabled: true,
     }),
 
   loadPreset: (players, categoryId) =>

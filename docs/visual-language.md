@@ -56,17 +56,52 @@ Never distracted.
 
 ---
 
+## Two Stages
+
+Mimik has two visual modes. Every screen belongs to exactly one.
+
+### Backstage — warm and calm
+
+Home, game setup, player editing, turn results, history, settings.
+
+This is where people configure and read. It stays warm, light, editorial
+and quiet, so the illustrations carry the personality.
+
+### Stage — dark and loud
+
+Countdown, gameplay, podium.
+
+This is the show. A near-black stage (`#0B0912`) lit by two drifting
+lights in the category's accent colors (`src/features/gameplay/stage/palette.ts`).
+High energy, saturated, cinematic. The phone is held up for the room to
+see, so everything must read from across a living room.
+
+Rules on the stage:
+
+- The word is always white (gold for golden words), huge, uppercase and
+  centered on the screen itself — never on the space the HUD leaves over.
+- The timer is the screen frame, not a widget.
+- Color shocks (green correct, orange pass, gold ×2, red urgency) are
+  reserved for game events — never decoration.
+- HUD sits in the corners and never shares the center with the word.
+- Mimik watches from a corner and reacts; it never covers the word.
+- Roadtrip Mode turns every effect into a simple fade.
+
+---
+
 ## Color
 
-Colors should feel:
+Backstage colors should feel:
 
 - Warm
 - Soft
 - Cheerful
 
-Avoid highly saturated interfaces.
+Avoid highly saturated backstage interfaces — illustrations provide the
+strongest colors there.
 
-Illustrations provide the strongest colors.
+On the stage, saturation is the point: the category accents act as stage
+lighting on a dark background, and the word stays white on top.
 
 ---
 
@@ -177,6 +212,11 @@ Never distract.
 
 Never delay gameplay.
 
+On the stage, motion is the main source of energy: letters cascade in,
+correct words fly up and burst, passed words fall, the frame burns down,
+the vignette beats in the last ten seconds and the music speeds up. Every
+feedback animation still fits inside the 400 ms feedback window.
+
 ---
 
 ## Personality
@@ -191,8 +231,8 @@ The contrast between both creates the product identity.
 
 ## Avoid
 
-- Glassmorphism
-- Heavy gradients
+- Glassmorphism (backstage; subtle glass cards are fine on the dark stage)
+- Heavy gradients on backstage screens
 - Excessive shadows
 - Visual noise
 - Overdesigned layouts

@@ -1,40 +1,38 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
 import * as ScreenOrientation from "expo-screen-orientation";
+import { StatusBar } from "expo-status-bar";
 import { ChevronLeft } from "lucide-react-native";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, ScrollView, Text, View } from "react-native";
-import Animated from "react-native-reanimated";
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import Animated, { FadeIn, FadeInDown, ZoomIn } from "react-native-reanimated";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { ChipSelector } from "@/components/ui/ChipSelector";
+import { KineticText } from "@/components/stage/KineticText";
+import { StagePanel, StageSoundSelector, StageStepper, StageLabel, stageStyles } from "@/components/stage/StageControls";
+import { StageGlow } from "@/components/stage/StageGlow";
+import { StageSegmented } from "@/components/stage/StageSegmented";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
-import { SoundSelector } from "@/components/ui/SoundSelector";
-import { Stepper } from "@/components/ui/Stepper";
 import { getCategoryById } from "@/features/categories";
-import { categoryColors } from "@/features/categories/colors";
+import { categoryIllustrations } from "@/features/categories/illustrations";
 import { endTurnSounds } from "@/features/gameplay/endTurnSounds";
+import { getStageAccent, STAGE_BASE } from "@/features/gameplay/stage/palette";
+import { StageBackground } from "@/features/gameplay/stage/StageBackground";
 import { useSoundPreview } from "@/features/gameplay/useSoundPreview";
-import { SelectedCategoryHero } from "@/features/match/SelectedCategoryHero";
-import {
-  MAX_PLAYERS,
-  MIN_PLAYERS,
-  ROUND_DURATIONS_SECONDS,
-  ROUND_STEPS,
-  useMatchStore,
-} from "@/features/match/store";
-import { useMatchSettingsEntrance } from "@/features/match/useMatchSettingsEntrance";
+import { MAX_PLAYERS, MIN_PLAYERS, ROUND_DURATIONS_SECONDS, ROUND_STEPS, useMatchStore } from "@/features/match/store";
 import { PlayerEditorSheet } from "@/features/players/PlayerEditorSheet";
 import { PlayerGrid } from "@/features/players/PlayerGrid";
 import { usePresetStore } from "@/features/players/presetStore";
 import { useLockOrientation } from "@/lib/useLockOrientation";
-import { cardShadow } from "@/theme/shadow";
 
 const roundDurationOptions = ROUND_DURATIONS_SECONDS.map((seconds) => ({
   label: `${seconds}s`,
   value: seconds,
 }));
+
+const HERO_IMAGE = 190;
 
 function getRoundsIndex(totalRounds: number, infiniteMode: boolean): number {
   if (infiniteMode) return ROUND_STEPS.length - 1;
@@ -51,9 +49,7 @@ export default function GameSetup() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
-
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
-  const { headerStyle, settingStyles, buttonStyle } = useMatchSettingsEntrance();
 
   const selectedCategoryId = useMatchStore((state) => state.selectedCategoryId);
   const gameMode = useMatchStore((state) => state.gameMode);
@@ -75,6 +71,8 @@ export default function GameSetup() {
   const setEndTurnSoundId = useMatchStore((state) => state.setEndTurnSoundId);
   const survivalMode = useMatchStore((state) => state.survivalMode);
   const setSurvivalMode = useMatchStore((state) => state.setSurvivalMode);
+  const goldenWordsEnabled = useMatchStore((state) => state.goldenWordsEnabled);
+  const setGoldenWordsEnabled = useMatchStore((state) => state.setGoldenWordsEnabled);
   const saveLastMatch = usePresetStore((state) => state.saveLastMatch);
 
   const { play: previewSound } = useSoundPreview();
@@ -82,14 +80,12 @@ export default function GameSetup() {
   const editingPlayer = players.find((player) => player.id === editingPlayerId) ?? null;
 
   const category = selectedCategoryId ? getCategoryById(selectedCategoryId) : undefined;
+  const accent = getStageAccent(selectedCategoryId);
   const roundsIndex = getRoundsIndex(totalRounds, infiniteMode);
 
   function handlePlayerCountChange(nextCount: number) {
-    if (nextCount > players.length) {
-      addPlayer();
-    } else {
-      removeLastPlayer();
-    }
+    if (nextCount > players.length) addPlayer();
+    else removeLastPlayer();
   }
 
   function handlePreviewSound(soundId: string) {
@@ -108,31 +104,56 @@ export default function GameSetup() {
   }
 
   return (
-    <SafeAreaView 
-      className="flex-1" 
-      edges={["top"]}
-      style={{ backgroundColor: selectedCategoryId && categoryColors[selectedCategoryId] ? categoryColors[selectedCategoryId] : "#FDFDF5" }}
-    >
-      <ScrollView contentContainerClassName="px-4 pb-44 pt-4" showsVerticalScrollIndicator={false}>
-        <Animated.View style={headerStyle}>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => {
-              Haptics.selectionAsync();
-              router.back();
-            }}
-            className="h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/70"
-          >
-            <ChevronLeft size={22} color="#2B2118" />
-          </Pressable>
+    <View style={{ flex: 1, backgroundColor: STAGE_BASE }}>
+      <StatusBar style="light" />
+      <StageBackground accent={accent} dim={0.75} />
 
-          <View className="mt-4">{category ? <SelectedCategoryHero category={category} /> : null}</View>
-        </Animated.View>
+      <ScrollView
+        contentContainerStyle={{ paddingTop: insets.top + 12, paddingBottom: insets.bottom + 140, paddingHorizontal: 16 }}
+        showsVerticalScrollIndicator={false}
+      >
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => {
+            Haptics.selectionAsync();
+            router.back();
+          }}
+          style={styles.backButton}
+        >
+          <ChevronLeft size={22} color="#FFFFFF" />
+        </Pressable>
 
-        <View className="mt-6 gap-3">
-          <Animated.View style={settingStyles[0]}>
-            <ChipSelector
-              label={t("gameSetup.gameMode")}
+        {/* ── Hero: the chosen category under its own spotlight ─────────── */}
+        {category ? (
+          <View className="mt-2 items-center">
+            <Animated.View entering={ZoomIn.springify().damping(12)} style={{ width: HERO_IMAGE, height: HERO_IMAGE }}>
+              <View style={styles.heroGlow}>
+                <StageGlow color={accent.a} width={HERO_IMAGE * 1.7} intensity={0.6} />
+              </View>
+              <Animated.Image
+                source={categoryIllustrations[category.id]}
+                resizeMode="contain"
+                resizeMethod="resize"
+                style={{ width: HERO_IMAGE, height: HERO_IMAGE }}
+              />
+            </Animated.View>
+            <Animated.Text entering={FadeIn.delay(120).duration(300)} style={[styles.kicker, { color: accent.a }]}>
+              {t("gameSetup.kicker")}
+            </Animated.Text>
+            <KineticText text={category.titulo} style={styles.title} align="center" delay={160} />
+            <Animated.Text entering={FadeIn.delay(450).duration(300)} style={styles.description}>
+              {category.descripcion} · {t("home.wordCount", { count: category.palabras.length })}
+            </Animated.Text>
+          </View>
+        ) : null}
+
+        {/* ── Players ────────────────────────────────────────────────────── */}
+        <Animated.Text entering={FadeIn.delay(200)} style={stageStyles.sectionLabel}>
+          {t("gameSetup.playersSection")}
+        </Animated.Text>
+        <Animated.View entering={FadeInDown.delay(220).springify().damping(16)}>
+          <StagePanel>
+            <StageSegmented
               options={[
                 { label: t("gameSetup.individual"), value: "individual" },
                 { label: t("gameSetup.teams"), value: "teams" },
@@ -140,57 +161,54 @@ export default function GameSetup() {
               value={gameMode}
               onChange={(mode) => setGameMode(mode as "individual" | "teams")}
             />
-          </Animated.View>
-
-          <Animated.View style={settingStyles[1]}>
-            <Stepper
+            <View style={stageStyles.divider} />
+            <StageStepper
               label={t("gameSetup.players")}
               value={players.length}
               min={MIN_PLAYERS}
               max={MAX_PLAYERS}
               onChange={handlePlayerCountChange}
             />
-          </Animated.View>
+            <View className="mt-5">
+              <PlayerGrid tone="stage" players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
+            </View>
+            <Text style={stageStyles.hint}>
+              {gameMode === "teams" ? t("gameSetup.teamHint") : t("gameSetup.playerHint")}
+            </Text>
+          </StagePanel>
+        </Animated.View>
 
-          <Animated.View style={settingStyles[2]} className="rounded-3xl border border-white/70 bg-white/70 px-5 py-4">
-            {gameMode === "teams" ? (
-              <Text className="mb-3 font-sans text-xs text-ink/50">{t("gameSetup.teamHint")}</Text>
-            ) : null}
-            <PlayerGrid players={players} onSelectPlayer={(player) => setEditingPlayerId(player.id)} />
-          </Animated.View>
-
-          {/* Match mode: Classic vs Survival */}
-          <Animated.View style={settingStyles[3]}>
-            <ChipSelector
-              label={t("gameSetup.matchMode")}
-              options={[
-                { label: t("gameSetup.classicMode"), value: "classic" },
-                { label: t("gameSetup.survivalMode"), value: "survival" },
-              ]}
-              value={survivalMode ? "survival" : "classic"}
-              onChange={(val) => setSurvivalMode(val === "survival")}
-            />
-            {survivalMode ? (
-              <Text className="mt-2 px-1 font-sans text-xs text-ink/50">
-                {t("gameSetup.survivalHint")}
-              </Text>
-            ) : null}
-          </Animated.View>
-
-          {/* Turn duration — hidden in Survival mode */}
-          {!survivalMode ? (
-            <Animated.View style={settingStyles[4]}>
-              <ChipSelector
-                label={t("gameSetup.turnDuration")}
-                options={roundDurationOptions}
-                value={roundDurationSeconds}
-                onChange={setRoundDurationSeconds}
+        {/* ── Rules ──────────────────────────────────────────────────────── */}
+        <Animated.Text entering={FadeIn.delay(280)} style={stageStyles.sectionLabel}>
+          {t("gameSetup.rulesSection")}
+        </Animated.Text>
+        <Animated.View entering={FadeInDown.delay(300).springify().damping(16)}>
+          <StagePanel>
+            <StageLabel>{t("gameSetup.matchMode")}</StageLabel>
+            <View className="mt-3">
+              <StageSegmented
+                options={[
+                  { label: t("gameSetup.classicMode"), value: "classic" },
+                  { label: t("gameSetup.survivalMode"), value: "survival" },
+                ]}
+                value={survivalMode ? "survival" : "classic"}
+                onChange={(val) => setSurvivalMode(val === "survival")}
               />
-            </Animated.View>
-          ) : null}
+            </View>
+            {survivalMode ? <Text style={stageStyles.hint}>{t("gameSetup.survivalHint")}</Text> : null}
 
-          <Animated.View style={settingStyles[4]}>
-            <Stepper
+            {!survivalMode ? (
+              <>
+                <View style={stageStyles.divider} />
+                <StageLabel>{t("gameSetup.turnDuration")}</StageLabel>
+                <View className="mt-3">
+                  <StageSegmented options={roundDurationOptions} value={roundDurationSeconds} onChange={setRoundDurationSeconds} />
+                </View>
+              </>
+            ) : null}
+
+            <View style={stageStyles.divider} />
+            <StageStepper
               label={t("gameSetup.rounds")}
               value={roundsIndex}
               min={0}
@@ -198,56 +216,113 @@ export default function GameSetup() {
               onChange={handleRoundsChange}
               formatValue={formatRoundsStep}
             />
-          </Animated.View>
 
-          {/* Time bonus — hidden in Survival mode */}
-          {!survivalMode ? (
-            <Animated.View style={settingStyles[5]}>
-              <ChipSelector
-                label={t("gameSetup.timeBonus")}
+            {!survivalMode ? (
+              <>
+                <View style={stageStyles.divider} />
+                <StageLabel>{t("gameSetup.timeBonus")}</StageLabel>
+                <View className="mt-3">
+                  <StageSegmented
+                    options={[
+                      { label: t("gameSetup.timeBonusOff"), value: 0 },
+                      { label: "+1s", value: 1 },
+                      { label: "+2s", value: 2 },
+                      { label: "+3s", value: 3 },
+                      { label: "+5s", value: 5 },
+                    ]}
+                    value={timeBonusEnabled ? timeBonusSeconds : 0}
+                    onChange={(val) => {
+                      if (val === 0) {
+                        setTimeBonusEnabled(false);
+                      } else {
+                        setTimeBonusEnabled(true);
+                        setTimeBonusSeconds(val as number);
+                      }
+                    }}
+                  />
+                </View>
+              </>
+            ) : null}
+
+            <View style={stageStyles.divider} />
+            <StageLabel>{t("gameSetup.goldenWords")}</StageLabel>
+            <View className="mt-3">
+              <StageSegmented
                 options={[
-                  { label: t("gameSetup.timeBonusOff"), value: 0 },
-                  { label: "+1s", value: 1 },
-                  { label: "+2s", value: 2 },
-                  { label: "+3s", value: 3 },
-                  { label: "+5s", value: 5 },
+                  { label: `✦ ${t("gameSetup.goldenWordsOn")}`, value: "on" },
+                  { label: t("gameSetup.goldenWordsOff"), value: "off" },
                 ]}
-                value={timeBonusEnabled ? timeBonusSeconds : 0}
-                onChange={(val) => {
-                  if (val === 0) {
-                    setTimeBonusEnabled(false);
-                  } else {
-                    setTimeBonusEnabled(true);
-                    setTimeBonusSeconds(val as number);
-                  }
-                }}
+                value={goldenWordsEnabled ? "on" : "off"}
+                onChange={(val) => setGoldenWordsEnabled(val === "on")}
               />
-            </Animated.View>
-          ) : null}
+            </View>
+            {goldenWordsEnabled ? <Text style={stageStyles.hint}>{t("gameSetup.goldenWordsHint")}</Text> : null}
+          </StagePanel>
+        </Animated.View>
 
-          <Animated.View style={settingStyles[5]}>
-            <SoundSelector
+        {/* ── Sound ──────────────────────────────────────────────────────── */}
+        <Animated.Text entering={FadeIn.delay(360)} style={stageStyles.sectionLabel}>
+          {t("gameSetup.soundSection")}
+        </Animated.Text>
+        <Animated.View entering={FadeInDown.delay(380).springify().damping(16)}>
+          <StagePanel>
+            <StageSoundSelector
               label={t("gameSetup.endTurnSound")}
               options={endTurnSounds}
               selectedId={endTurnSoundId}
               onChange={setEndTurnSoundId}
               onPreview={handlePreviewSound}
             />
-          </Animated.View>
-        </View>
+          </StagePanel>
+        </Animated.View>
       </ScrollView>
 
-      <Animated.View
-        className="absolute inset-x-0 bottom-0 border-t border-ink/5 bg-background px-4 pt-4"
-        style={[{ paddingBottom: insets.bottom + 24 }, buttonStyle]}
-      >
-        <PrimaryButton label={t("gameSetup.start")} onPress={() => {
-          saveLastMatch(players, selectedCategoryId);
-          router.push("/countdown");
-        }} />
+      <Animated.View entering={FadeIn.delay(300).duration(260)} style={styles.footer}>
+        <LinearGradient
+          colors={["rgba(11,9,18,0)", "rgba(11,9,18,0.92)", STAGE_BASE]}
+          locations={[0, 0.35, 1]}
+          style={{ paddingTop: 34, paddingHorizontal: 16, paddingBottom: insets.bottom + 18 }}
+        >
+          <PrimaryButton
+            tone="accent"
+            label={t("gameSetup.start")}
+            onPress={() => {
+              saveLastMatch(players, selectedCategoryId);
+              router.push("/countdown");
+            }}
+          />
+        </LinearGradient>
       </Animated.View>
 
       <PlayerEditorSheet player={editingPlayer} onClose={() => setEditingPlayerId(null)} />
-    </SafeAreaView>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  backButton: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "rgba(255,255,255,0.10)",
+  },
+  heroGlow: { position: "absolute", left: -HERO_IMAGE * 0.35, top: -HERO_IMAGE * 0.35 },
+  kicker: { marginTop: 4, fontFamily: "Urbanist_700Bold", fontSize: 12, letterSpacing: 3, textTransform: "uppercase" },
+  title: {
+    fontFamily: "Urbanist_700Bold",
+    fontSize: 38,
+    lineHeight: 44,
+    letterSpacing: -1.2,
+    color: "#FFFFFF",
+  },
+  description: {
+    marginTop: 4,
+    textAlign: "center",
+    fontFamily: "Urbanist_400Regular",
+    fontSize: 14,
+    color: "rgba(255,255,255,0.6)",
+  },
+  footer: { position: "absolute", left: 0, right: 0, bottom: 0 },
+});

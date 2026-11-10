@@ -27,7 +27,7 @@ interface ConfirmDialogProps {
 }
 
 const TIMING = { duration: 180, easing: Easing.out(Easing.cubic) };
-const PRIMARY_GRADIENT = ["#3D2F23", "#2B2118", "#1A140F"] as const;
+const PRIMARY_GRADIENT = ["#FF9A6B", "#FF7A45", "#E8552A"] as const;
 const DESTRUCTIVE_GRADIENT = ["#F0806F", "#E85C4A", "#D6482F"] as const;
 
 export function ConfirmDialog({
@@ -73,10 +73,10 @@ export function ConfirmDialog({
 
       <Animated.View
         style={[cardStyle, overlayShadow]}
-        className="w-[80%] max-w-sm rounded-3xl bg-background p-5"
+        className="w-[80%] max-w-sm rounded-3xl border border-white/10 bg-[#14111E] p-5"
       >
-        <Text className="text-center font-sans-bold text-xl text-ink">{title}</Text>
-        <Text className="mt-2 text-center font-sans text-base text-ink/60">{message}</Text>
+        <Text className="text-center font-sans-bold text-xl text-white">{title}</Text>
+        <Text className="mt-2 text-center font-sans text-base text-white/60">{message}</Text>
 
         <Pressable
           accessibilityRole="button"
@@ -105,7 +105,7 @@ export function ConfirmDialog({
           }}
           className="mt-2 items-center py-3"
         >
-          <Text className="font-sans-bold text-base text-ink/60">{secondaryLabel}</Text>
+          <Text className="font-sans-bold text-base text-white/60">{secondaryLabel}</Text>
         </Pressable>
       </Animated.View>
     </View>

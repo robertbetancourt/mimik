@@ -12,7 +12,7 @@ interface InfoDialogProps {
   onClose: () => void;
 }
 
-const PRIMARY_GRADIENT = ["#3D2F23", "#2B2118", "#1A140F"] as const;
+const PRIMARY_GRADIENT = ["#FF9A6B", "#FF7A45", "#E8552A"] as const;
 
 export function InfoDialog({
   visible,
@@ -39,10 +39,10 @@ export function InfoDialog({
 
         <View
           style={overlayShadow}
-          className="w-[85%] max-w-sm rounded-3xl bg-background p-6"
+          className="w-[85%] max-w-sm rounded-3xl border border-white/10 bg-[#14111E] p-6"
         >
-          <Text className="text-center font-sans-bold text-xl text-ink">{title}</Text>
-          <Text className="mt-3 text-center font-sans-medium text-base text-ink/70 leading-6">
+          <Text className="text-center font-sans-bold text-xl text-white">{title}</Text>
+          <Text className="mt-3 text-center font-sans-medium text-base text-white/70 leading-6">
             {message}
           </Text>
 

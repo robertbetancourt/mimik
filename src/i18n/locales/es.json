@@ -25,7 +25,15 @@
     "title": "elige una categoría",
     "subtitle": "¿Qué te apetece jugar hoy?",
     "wordCount": "{{count}} palabras",
-    "playWithLastGroup": "Jugar con el último grupo"
+    "playWithLastGroup": "Jugar con el último grupo",
+    "history": "Historial",
+    "kicker": "Bienvenido",
+    "stageTitle": "Elige una categoría",
+    "categories": "Categorías",
+    "historySub_one": "{{count}} partida",
+    "historySub_other": "{{count}} partidas",
+    "historyEmpty": "Aún sin partidas",
+    "settingsSub": "Controles y sonido"
   },
   "gameSetup": {
     "gameMode": "Modo de juego",
@@ -42,13 +50,23 @@
     "matchMode": "Modo de partida",
     "classicMode": "Clásico",
     "survivalMode": "Supervivencia",
-    "survivalHint": "15 s iniciales · +5 s por cada acierto"
+    "survivalHint": "15 s iniciales · +5 s por cada acierto",
+    "goldenWords": "Palabras doradas",
+    "goldenWordsOn": "Sí",
+    "goldenWordsOff": "No",
+    "goldenWordsHint": "Algunas palabras salen doradas y valen ×2",
+    "kicker": "Prepara la partida",
+    "playersSection": "Jugadores",
+    "rulesSection": "Reglas",
+    "soundSection": "Sonido",
+    "playerHint": "Toca un jugador para cambiar su nombre o personaje"
   },
   "countdown": {
     "go": "¡Ya!",
     "reposition": "Vuelve a colocar el teléfono sobre tu frente.",
     "turnOf": "Es el turno de",
-    "placePhone": "Coloca el teléfono sobre tu frente."
+    "placePhone": "Coloca el teléfono sobre tu frente.",
+    "tapToStart": "Toca la pantalla para empezar."
   },
   "gameplay": {
     "teamRed": "Equipo Rojo",
@@ -57,7 +75,11 @@
     "exitTitle": "¿Salir de la partida?",
     "exitMessage": "El progreso de la partida actual se perderá.",
     "exitPrimary": "Seguir jugando",
-    "exitSecondary": "Salir de la partida"
+    "exitSecondary": "Salir de la partida",
+    "goldenWord": "✦ PALABRA DORADA ×2",
+    "goldenStamp": "¡×2!",
+    "streak": "Racha x{{n}}",
+    "survivalBadge": "⚡ Supervivencia"
   },
   "turnResults": {
     "points": "puntos",
@@ -66,7 +88,13 @@
     "noneThisTime": "Ninguna esta vez.",
     "leaderboard": "Clasificación",
     "viewPodium": "Ver podio",
-    "nextTurnOf": "Turno de {{name}}"
+    "nextTurnOf": "Turno de {{name}}",
+    "tapToFix": "¿El sensor se equivocó? Toca una palabra para moverla.",
+    "golden": "×2",
+    "round": "Ronda {{round}} de {{total}}",
+    "roundInfinite": "Ronda {{round}}",
+    "goldenHits_one": "✦ {{count}} palabra dorada",
+    "goldenHits_other": "✦ {{count}} palabras doradas"
   },
   "finalResults": {
     "teamWins": "¡Equipo {{team}} Gana la Partida!",
@@ -78,7 +106,10 @@
     "specialAwards": "🏆 Premios Especiales",
     "finalRanking": "Clasificación final",
     "rematch": "Revancha",
-    "goHome": "Ir a Inicio"
+    "goHome": "Ir a Inicio",
+    "winnerKicker": "Campeón de la partida",
+    "teamKicker": "Equipo ganador",
+    "pointsShort": "pts"
   },
   "awards": {
     "speedsterTitle": "El Rayo",
@@ -138,6 +169,36 @@
     "roadtripMode": "Modo Roadtrip",
     "roadtripModeDesc": "Reduce las animaciones para ahorrar batería",
     "about": "Acerca de",
-    "version": "Versión"
+    "version": "Versión",
+    "touchControls": "Controles táctiles",
+    "touchControlsDesc": "Toca la derecha para acertar y la izquierda para pasar. La inclinación sigue funcionando.",
+    "sound": "Sonido",
+    "music": "Música del turno",
+    "musicDesc": "Se acelera cuando se acaba el tiempo",
+    "tiltTest": "Prueba la inclinación",
+    "tiltTestHint": "Pon el teléfono en horizontal, como en la frente, e inclínalo.",
+    "tiltCorrect": "Correcto",
+    "tiltPass": "Pasar",
+    "tiltNeutral": "Centrado",
+    "tiltUnavailable": "Sensor no disponible en este dispositivo."
+  },
+  "history": {
+    "title": "Historial",
+    "emptyTitle": "Aún no hay partidas",
+    "emptyMessage": "Cuando termines una partida aparecerá aquí.",
+    "matches": "Partidas",
+    "topWinner": "Más victorias",
+    "wins_one": "{{count}} victoria",
+    "wins_other": "{{count}} victorias",
+    "teamWins": "Gana el equipo {{team}}",
+    "winner": "Ganador",
+    "tie": "Empate",
+    "clear": "Borrar historial",
+    "clearTitle": "¿Borrar el historial?",
+    "clearMessage": "Se eliminarán todas las partidas guardadas. No se puede deshacer.",
+    "clearConfirm": "Borrar",
+    "cancel": "Cancelar",
+    "players_one": "{{count}} jugador",
+    "players_other": "{{count}} jugadores"
   }
 }

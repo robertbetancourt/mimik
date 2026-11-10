@@ -1,24 +1,33 @@
 import { useRouter } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
-import { Settings } from "lucide-react-native";
-import { useState } from "react";
+import { StatusBar } from "expo-status-bar";
+import { History, Settings } from "lucide-react-native";
+import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, ScrollView, Text, View } from "react-native";
-import Animated from "react-native-reanimated";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import Animated, { BounceInDown, FadeIn, FadeInDown } from "react-native-reanimated";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { MimikIdle } from "@/components/effects/MimikIdle";
-import { Sparkle } from "@/components/effects/Sparkle";
-import { allCategories } from "@/features/categories";
+import { KineticText } from "@/components/stage/KineticText";
+import { StageGlow } from "@/components/stage/StageGlow";
+import { allCategories, getCategoryById } from "@/features/categories";
 import { CategoryGrid } from "@/features/categories/CategoryGrid";
-import { useHomeEntrance } from "@/features/categories/useHomeEntrance";
 import { MIX_CATEGORY_ID } from "@/features/categories/mix";
+import { getStageAccent, STAGE_BASE } from "@/features/gameplay/stage/palette";
+import { StageBackground } from "@/features/gameplay/stage/StageBackground";
+import { useHistoryStore } from "@/features/history/historyStore";
+import { HomeTile } from "@/features/home/HomeTile";
+import { LastGroupButton } from "@/features/home/LastGroupButton";
 import { useMatchStore } from "@/features/match/store";
-import { usePresetStore } from "@/features/players/presetStore";
+import { mimikExpressions } from "@/features/mimik/expressions";
 import { OnboardingSheet } from "@/features/onboarding/OnboardingSheet";
 import { useOnboarding } from "@/features/onboarding/useOnboarding";
-import { SettingsSheet } from "@/features/settings/SettingsSheet";
+import { usePresetStore } from "@/features/players/presetStore";
 import { useLockOrientation } from "@/lib/useLockOrientation";
+
+const HOME_ACCENT = getStageAccent(MIX_CATEGORY_ID);
+const MIMIK_SIZE = 140;
 
 export default function CategorySelection() {
   const router = useRouter();
@@ -28,70 +37,129 @@ export default function CategorySelection() {
   const loadPreset = useMatchStore((state) => state.loadPreset);
   const lastPlayers = usePresetStore((state) => state.lastPlayers);
   const lastCategoryId = usePresetStore((state) => state.lastCategoryId);
+  const matchCount = useHistoryStore((state) => state.records.length);
   const { shouldShow: showOnboarding, markCompleted: completeOnboarding } = useOnboarding();
-  const [settingsVisible, setSettingsVisible] = useState(false);
 
   useLockOrientation(ScreenOrientation.OrientationLock.PORTRAIT_UP);
-  const { mimikStyle, titleStyle } = useHomeEntrance();
 
-  function handleSelect(categoryId: string) {
-    selectCategory(categoryId);
-    router.push("/game-setup");
-  }
+  // Stable identity so the memoized category cards don't all re-render
+  // whenever Home does.
+  const handleSelect = useCallback(
+    (categoryId: string) => {
+      selectCategory(categoryId);
+      router.push("/game-setup");
+    },
+    [selectCategory, router],
+  );
+
+  const lastCategory = getCategoryById(lastCategoryId || MIX_CATEGORY_ID);
+  const hasLastGroup = Boolean(lastPlayers && lastPlayers.length > 0);
 
   return (
-    <SafeAreaView className="flex-1 bg-background" edges={["top"]}>
-      <ScrollView
-        contentContainerClassName="px-4 pt-6"
-        contentContainerStyle={{ paddingBottom: insets.bottom + 24 }}
-        showsVerticalScrollIndicator={false}
-      >
-        <View className="flex-row items-center justify-between">
-          <Animated.View style={titleStyle} className="flex-1">
-            <Sparkle animated size={13} style={{ position: "absolute", left: 2, top: -6 }} />
-            <Text className="font-sans-bold text-4xl italic text-ink">{t("home.greeting")}</Text>
-            <Text className="font-sans-bold text-4xl text-ink">{t("home.title")}</Text>
-            <Text className="mt-1 font-sans text-base text-ink/60">{t("home.subtitle")}</Text>
-          </Animated.View>
+    <View style={{ flex: 1, backgroundColor: STAGE_BASE }}>
+      <StatusBar style="light" />
+      {/* Dimmed: on Home the cards are the light source, not the background. */}
+      <StageBackground accent={HOME_ACCENT} dim={0.85} />
 
-        <Animated.View style={[mimikStyle, { marginLeft: -16, alignItems: "flex-end" }]}>
-          <Sparkle animated size={11} style={{ position: "absolute", right: 18, top: 8, zIndex: 1 }} />
-          <MimikIdle source={require("../branding/mimik/popcorn.png")} size={150} />
-        </Animated.View>
-        </View>
+      <SafeAreaView className="flex-1" edges={["top"]}>
+        <ScrollView
+          contentContainerClassName="px-4 pt-4"
+          contentContainerStyle={{ paddingBottom: insets.bottom + 28 }}
+          showsVerticalScrollIndicator={false}
+        >
+          {/* ── Header: kinetic title + Mimik under a spotlight ───────────── */}
+          <View className="flex-row items-center">
+            <View className="flex-1 pr-2">
+              <Animated.Text entering={FadeIn.duration(300)} style={[styles.kicker, { color: HOME_ACCENT.a }]}>
+                ✦ {t("home.kicker")}
+              </Animated.Text>
+              <KineticText text={t("home.stageTitle")} style={styles.title} delay={80} stagger={26} />
+              <Animated.Text entering={FadeIn.delay(650).duration(400)} style={styles.subtitle}>
+                {t("home.subtitle")}
+              </Animated.Text>
+            </View>
 
-        <View className="mt-6">
-          {lastPlayers && lastPlayers.length > 0 ? (
-            <View className="mb-6">
-              <Pressable
-                accessibilityRole="button"
+            <Animated.View entering={BounceInDown.delay(150).duration(800)} style={{ width: MIMIK_SIZE, height: MIMIK_SIZE + 10 }}>
+              <View style={styles.mimikGlow}>
+                <StageGlow color={HOME_ACCENT.a} width={MIMIK_SIZE * 1.6} intensity={0.55} />
+              </View>
+              <MimikIdle source={mimikExpressions.popcorn} size={MIMIK_SIZE} />
+            </Animated.View>
+          </View>
+
+          {hasLastGroup && lastPlayers ? (
+            <Animated.View entering={FadeInDown.delay(220).springify().damping(16)} className="mt-6">
+              <LastGroupButton
+                players={lastPlayers}
+                label={t("home.playWithLastGroup")}
+                subtitle={`${lastCategory?.titulo ?? ""} · ${t("history.players", { count: lastPlayers.length })}`}
                 onPress={() => {
                   loadPreset(lastPlayers, lastCategoryId || MIX_CATEGORY_ID);
                   router.push("/game-setup");
                 }}
-                className="flex-row items-center justify-center gap-2 rounded-3xl bg-ink px-4 py-4"
-              >
-                <Sparkle size={14} color="white" />
-                <Text className="font-sans-bold text-base text-white">{t("home.playWithLastGroup")}</Text>
-              </Pressable>
-            </View>
+              />
+            </Animated.View>
           ) : null}
+
+          <Animated.View entering={FadeIn.delay(240).duration(300)} className="mb-3 mt-7 flex-row items-baseline justify-between px-1">
+            <Text style={styles.sectionLabel}>{t("home.categories")}</Text>
+            <Text style={styles.sectionCount}>{allCategories.length}</Text>
+          </Animated.View>
+
           <CategoryGrid categories={allCategories} onSelect={handleSelect} />
-          
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Ajustes"
-            onPress={() => setSettingsVisible(true)}
-            className="mt-8 mb-4 self-center flex-row items-center justify-center gap-2 rounded-full bg-ink/5 px-6 py-3 active:bg-ink/10"
-          >
-            <Settings size={16} color="rgba(43,33,24,0.6)" />
-            <Text className="font-sans-bold text-sm text-ink/60 uppercase tracking-widest">{t("settings.title")}</Text>
-          </Pressable>
-        </View>
-      </ScrollView>
+
+          {/* ── Secondary destinations, same material as the grid ─────────── */}
+          <Animated.View entering={FadeInDown.delay(500).springify().damping(16)} className="mt-3 flex-row" style={{ gap: 10 }}>
+            <HomeTile
+              icon={History}
+              title={t("home.history")}
+              subtitle={matchCount > 0 ? t("home.historySub", { count: matchCount }) : t("home.historyEmpty")}
+              color={HOME_ACCENT.b}
+              onPress={() => router.push("/history")}
+            />
+            <HomeTile
+              icon={Settings}
+              title={t("settings.title")}
+              subtitle={t("home.settingsSub")}
+              color="#22D3EE"
+              onPress={() => router.push("/settings")}
+            />
+          </Animated.View>
+        </ScrollView>
+      </SafeAreaView>
 
       <OnboardingSheet visible={showOnboarding} onComplete={completeOnboarding} />
-      <SettingsSheet visible={settingsVisible} onClose={() => setSettingsVisible(false)} />
-    </SafeAreaView>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  kicker: {
+    fontFamily: "Urbanist_700Bold",
+    fontSize: 12,
+    letterSpacing: 3,
+    textTransform: "uppercase",
+    marginBottom: 4,
+  },
+  title: {
+    fontFamily: "Urbanist_700Bold",
+    fontSize: 40,
+    lineHeight: 44,
+    letterSpacing: -1.2,
+    color: "#FFFFFF",
+  },
+  subtitle: { marginTop: 6, fontFamily: "Urbanist_400Regular", fontSize: 15, color: "rgba(255,255,255,0.6)" },
+  mimikGlow: {
+    position: "absolute",
+    left: -MIMIK_SIZE * 0.3,
+    top: -MIMIK_SIZE * 0.25,
+  },
+  sectionLabel: {
+    fontFamily: "Urbanist_700Bold",
+    fontSize: 12,
+    letterSpacing: 3,
+    textTransform: "uppercase",
+    color: "rgba(255,255,255,0.5)",
+  },
+  sectionCount: { fontFamily: "Urbanist_700Bold", fontSize: 12, color: "rgba(255,255,255,0.35)" },
+});

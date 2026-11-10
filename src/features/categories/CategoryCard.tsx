@@ -1,16 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
-import * as Haptics from "expo-haptics";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Image, Pressable, Text, View } from "react-native";
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withDelay,
-  withSequence,
-  withSpring,
-  withTiming,
-} from "react-native-reanimated";
+import { Image, Text, View } from "react-native";
 
 export type CategoryCardVariant = "hero" | "default";
 
@@ -23,14 +13,7 @@ interface CategoryCardContentProps {
   variant?: CategoryCardVariant;
 }
 
-interface CategoryCardProps extends CategoryCardContentProps {
-  onPress: () => void;
-  /** Position in the category list — staggers this card's entrance. */
-  index?: number;
-}
 
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
-const PRESS_SPRING = { damping: 16, stiffness: 320 };
 
 function formatWordCount(count: number): string {
   return count >= 1000 ? `+${Math.floor(count / 100) * 100}` : `${count}`;
@@ -55,8 +38,8 @@ const SIZES: Record<CategoryCardVariant, CardSize> = {
   default: { imageBoxHeight: 130, imageSize: 182 },
 };
 
-// The visual shell shared by the selectable grid card and the read-only
-// hero shown on the Match Configuration screen.
+// Read-only category hero shown on the Match Configuration screen. (Home
+// uses StageCategoryCard.)
 export function CategoryCardContent({
   illustration,
   title,
@@ -102,76 +85,5 @@ export function CategoryCardContent({
         </Text>
       </View>
     </View>
-  );
-}
-
-// Mix (the hero card) plays the "primary button" role on Home: its own
-// entrance, then a single attention pulse once that entrance settles.
-const HERO_ENTRANCE_DELAY = 160;
-
-// The rest of the grid staggers in right after, card by card. Stagger is
-// capped so a long category list still finishes well under the ~600ms
-// entrance budget instead of trailing on forever.
-const GRID_BASE_DELAY = 140;
-const GRID_STAGGER = 28;
-const GRID_STAGGER_CAP = 9;
-
-export function CategoryCard({ onPress, index = 0, ...content }: CategoryCardProps) {
-  const scale = useSharedValue(1);
-  const isHero = content.variant === "hero";
-  const entranceOpacity = useSharedValue(0);
-  const entranceScale = useSharedValue(isHero ? 0.94 : 0.96);
-  const pulseScale = useSharedValue(1);
-
-  useEffect(() => {
-    if (isHero) {
-      entranceOpacity.value = withDelay(HERO_ENTRANCE_DELAY, withTiming(1, { duration: 260 }));
-      entranceScale.value = withDelay(
-        HERO_ENTRANCE_DELAY,
-        withSpring(1, { damping: 14, stiffness: 180 }, (finished) => {
-          if (finished) {
-            pulseScale.value = withSequence(
-              withTiming(1.02, { duration: 160 }),
-              withTiming(1, { duration: 160 }),
-            );
-          }
-        }),
-      );
-      return;
-    }
-
-    const delay = GRID_BASE_DELAY + Math.min(index, GRID_STAGGER_CAP) * GRID_STAGGER;
-    entranceOpacity.value = withDelay(delay, withTiming(1, { duration: 200 }));
-    entranceScale.value = withDelay(delay, withTiming(1, { duration: 200 }));
-    // Runs once per mount.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    opacity: entranceOpacity.value,
-    transform: [
-      { scale: scale.value },
-      { scale: entranceScale.value },
-      { scale: pulseScale.value },
-    ],
-  }));
-
-  return (
-    <AnimatedPressable
-      accessibilityRole="button"
-      onPress={() => {
-        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-        onPress();
-      }}
-      onPressIn={() => {
-        scale.value = withSpring(0.98, PRESS_SPRING);
-      }}
-      onPressOut={() => {
-        scale.value = withSpring(1, PRESS_SPRING);
-      }}
-      style={animatedStyle}
-    >
-      <CategoryCardContent {...content} />
-    </AnimatedPressable>
   );
 }

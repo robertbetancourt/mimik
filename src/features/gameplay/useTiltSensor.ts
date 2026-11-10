@@ -1,9 +1,11 @@
 import { Accelerometer } from "expo-sensors";
 import { useEffect, useRef } from "react";
 
+import { TILT_NEUTRAL_THRESHOLD } from "@/features/settings/settingsStore";
+
 const UPDATE_INTERVAL_MS = 100;
 const DEFAULT_TILT_THRESHOLD = 0.6;
-const NEUTRAL_THRESHOLD = 0.3;
+const NEUTRAL_THRESHOLD = TILT_NEUTRAL_THRESHOLD;
 const COOLDOWN_MS = 700;
 // Small pause once the phone is back at neutral before the next word shows —
 // makes the pacing feel intentional instead of instant.

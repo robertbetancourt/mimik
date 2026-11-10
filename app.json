@@ -2,17 +2,17 @@
   "expo": {
     "name": "Mimik",
     "slug": "mimik",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "scheme": "mimik",
     "orientation": "default",
     "icon": "./assets/app-icons/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "com.robertbetancourt.mimik",
-      "versionCode": 2,
+      "versionCode": 3,
       "blockedPermissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.READ_EXTERNAL_STORAGE",
@@ -54,7 +54,14 @@
       ],
       "expo-asset",
       "expo-font",
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-navigation-bar",
+        {
+          "backgroundColor": "#0B0912",
+          "barStyle": "light"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -65,6 +72,7 @@
         "projectId": "63c43aa3-bf70-46e4-96d5-e07437dd1fe2"
       }
     },
-    "owner": "robertb212"
+    "owner": "robertb212",
+    "backgroundColor": "#0B0912"
   }
 }

@@ -21,6 +21,8 @@ interface BottomSheetProps {
   footer?: React.ReactNode;
   /** Fraction of screen height the sheet covers. Defaults to the standard 0.72. */
   heightRatio?: number;
+  /** "stage" = dark surface for the dark screens; "light" = original warm sheet. */
+  tone?: "light" | "stage";
 }
 
 // Smooth native-style slide, no bounce.
@@ -39,7 +41,9 @@ export function BottomSheet({
   children,
   footer,
   heightRatio = DEFAULT_HEIGHT_RATIO,
+  tone = "light",
 }: BottomSheetProps) {
+  const isStage = tone === "stage";
   const { height: screenHeight } = useWindowDimensions();
   const insets = useSafeAreaInsets();
   const sheetHeight = screenHeight * heightRatio;
@@ -116,12 +120,15 @@ export function BottomSheet({
       >
         {/* Shadows don't render through overflow: hidden, so clipping lives
             on this inner wrapper instead of the shadow-casting one above. */}
-        <View className="flex-1 overflow-hidden rounded-t-3xl bg-background">
+        <View
+          className={`flex-1 overflow-hidden rounded-t-3xl ${isStage ? "" : "bg-background"}`}
+          style={isStage ? { backgroundColor: "#14111E", borderTopWidth: 1, borderColor: "rgba(255,255,255,0.10)" } : undefined}
+        >
           {/* Only the handle is draggable, so the content below can scroll
               freely without fighting the dismiss gesture. */}
           <GestureDetector gesture={pan}>
             <View className="items-center py-3">
-              <View className="h-1.5 w-10 rounded-full bg-ink/15" />
+              <View className={`h-1.5 w-10 rounded-full ${isStage ? "bg-white/20" : "bg-ink/15"}`} />
             </View>
           </GestureDetector>
 
@@ -136,7 +143,7 @@ export function BottomSheet({
 
           {footer ? (
             <View
-              className="border-t border-ink/5 px-5 pt-3"
+              className={`border-t px-5 pt-3 ${isStage ? "border-white/10" : "border-ink/5"}`}
               style={{ paddingBottom: insets.bottom + 16 }}
             >
               {footer}

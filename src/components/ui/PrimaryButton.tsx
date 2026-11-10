@@ -8,6 +8,8 @@ import { buttonShadow } from "@/theme/shadow";
 
 interface PrimaryButtonProps {
   label: string;
+  /** "ink" (default) for the warm screens, "accent" for the dark stage. */
+  tone?: "ink" | "accent";
   icon?: LucideIcon;
   disabled?: boolean;
   onPress: () => void;
@@ -16,7 +18,12 @@ interface PrimaryButtonProps {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const SPRING_CONFIG = { damping: 14, stiffness: 260 };
 
-export function PrimaryButton({ label, icon: Icon, disabled, onPress }: PrimaryButtonProps) {
+const GRADIENTS = {
+  ink: ["#3D2F23", "#2B2118", "#1A140F"],
+  accent: ["#FF9A6B", "#FF7A45", "#F0632C"],
+} as const;
+
+export function PrimaryButton({ label, icon: Icon, disabled, onPress, tone = "ink" }: PrimaryButtonProps) {
   const scale = useSharedValue(1);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -43,7 +50,7 @@ export function PrimaryButton({ label, icon: Icon, disabled, onPress }: PrimaryB
     >
       <View className="overflow-hidden rounded-full">
         <LinearGradient
-          colors={["#3D2F23", "#2B2118", "#1A140F"]}
+          colors={GRADIENTS[tone]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           className="flex-row items-center justify-center gap-2 py-4"

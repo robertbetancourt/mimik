@@ -19,6 +19,8 @@ import type { Player } from "@/types/player";
 interface PlayerAvatarProps {
   player: Player;
   onPress: () => void;
+  /** "stage" = dark glass circle + white name (game setup). */
+  tone?: "classic" | "stage";
 }
 
 const TEAM_COLORS = { red: "#FF3B30", blue: "#5B8DEF" } as const;
@@ -31,7 +33,8 @@ const RISE_DISTANCE = 10;
 // entrance waits until that settles instead of animating in simultaneously.
 const ENTER_DELAY = 130;
 
-export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
+export function PlayerAvatar({ player, onPress, tone = "classic" }: PlayerAvatarProps) {
+  const isStage = tone === "stage";
   const character = getCharacterById(player.characterId);
   const gameMode = useMatchStore((state) => state.gameMode);
   const togglePlayerTeam = useMatchStore((state) => state.togglePlayerTeam);
@@ -83,8 +86,11 @@ export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
         className="items-center"
       >
         <View
-          style={gameMode === "teams" ? { borderWidth: 2, borderColor: teamColor } : undefined}
-          className="h-16 w-16 items-center justify-center rounded-full bg-surface"
+          style={[
+            isStage && { backgroundColor: "rgba(255,255,255,0.08)", borderWidth: 1.5, borderColor: "rgba(255,255,255,0.14)" },
+            gameMode === "teams" ? { borderWidth: 2, borderColor: teamColor } : null,
+          ]}
+          className={`h-16 w-16 items-center justify-center rounded-full ${isStage ? "" : "bg-surface"}`}
         >
           {character ? (
             <Image source={character.illustration} resizeMode="contain" style={{ width: 44, height: 44 }} />
@@ -105,7 +111,7 @@ export function PlayerAvatar({ player, onPress }: PlayerAvatarProps) {
             </Pressable>
           ) : null}
         </View>
-        <Text className="mt-1 font-sans-bold text-xs text-ink" numberOfLines={1}>
+        <Text className={`mt-1.5 font-sans-bold text-xs ${isStage ? "text-white/85" : "text-ink"}`} numberOfLines={1}>
           {player.name}
         </Text>
       </AnimatedPressable>

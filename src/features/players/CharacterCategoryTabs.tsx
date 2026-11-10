@@ -18,8 +18,9 @@ interface CharacterCategoryTabsProps {
 }
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
-const SURFACE_COLOR = "#FFF7ED";
-const PRIMARY_COLOR = "#2B2118";
+const SURFACE_COLOR = "rgba(255, 255, 255, 0.06)";
+const PRIMARY_COLOR = "#FF7A45";
+const SHEET_COLOR = "#14111E";
 
 function Tab({
   category,
@@ -52,7 +53,7 @@ function Tab({
       className="mr-2 flex-row items-center gap-1.5 rounded-full px-4 py-2"
     >
       <Text className="text-base">{category.emoji}</Text>
-      <Text className={`font-sans-bold text-sm ${selected ? "text-white" : "text-ink/70"}`}>
+      <Text className={`font-sans-bold text-sm ${selected ? "text-white" : "text-white/70"}`}>
         {category.label}
       </Text>
     </AnimatedPressable>
@@ -80,7 +81,7 @@ export function CharacterCategoryTabs({ categories, selectedId, onChange }: Char
 
       {/* Hints that the tab row scrolls further, without measuring overflow. */}
       <LinearGradient
-        colors={["rgba(255, 247, 237, 0)", "#FFF7ED"]}
+        colors={["rgba(20, 17, 30, 0)", SHEET_COLOR]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
         pointerEvents="none"
