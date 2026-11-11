@@ -40,7 +40,11 @@ export function useTiltSensor({ mode, onTiltDown, onTiltUp, onCentered, threshol
   useEffect(() => {
     if (mode === "off") return;
 
-    armedRef.current = true;
+    // Start disarmed: a tilt only counts after the phone has been seen at the
+    // neutral (upright) angle. Arming on every mode change made a phone lying
+    // flat — touch controls, or held in a hand — fire a "pass" on each new
+    // word, because the sensor re-subscribes after every answer.
+    armedRef.current = false;
     neutralSinceRef.current = null;
     centeredFiredRef.current = false;
     Accelerometer.setUpdateInterval(UPDATE_INTERVAL_MS);
